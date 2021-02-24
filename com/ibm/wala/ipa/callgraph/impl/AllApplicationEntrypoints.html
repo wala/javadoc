@@ -148,6 +148,11 @@ extends java.util.HashSet&lt;<a href="../../../../../../com/ibm/wala/ipa/callgra
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/AllApplicationEntrypoints.html#AllApplicationEntrypoints-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.cha.IClassHierarchy-">AllApplicationEntrypoints</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                          <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/AllApplicationEntrypoints.html#AllApplicationEntrypoints-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.cha.IClassHierarchy-java.util.function.Function-">AllApplicationEntrypoints</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                         <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                         java.util.function.Function&lt;<a href="../../../../../../com/ibm/wala/classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>,java.lang.Boolean&gt;&nbsp;isApplicationClass)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -220,6 +225,24 @@ extends java.util.HashSet&lt;<a href="../../../../../../com/ibm/wala/ipa/callgra
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="AllApplicationEntrypoints-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.cha.IClassHierarchy-java.util.function.Function-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AllApplicationEntrypoints</h4>
+<pre>public&nbsp;AllApplicationEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                 <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                 java.util.function.Function&lt;<a href="../../../../../../com/ibm/wala/classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>,java.lang.Boolean&gt;&nbsp;isApplicationClass)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>scope</code> - governing analyais scope</dd>
+<dd><code>cha</code> - governing class hierarchy</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if cha is null</dd>
+</dl>
+</li>
+</ul>
 <a name="AllApplicationEntrypoints-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.cha.IClassHierarchy-">
 <!--   -->
 </a>
@@ -228,13 +251,6 @@ extends java.util.HashSet&lt;<a href="../../../../../../com/ibm/wala/ipa/callgra
 <h4>AllApplicationEntrypoints</h4>
 <pre>public&nbsp;AllApplicationEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                                  <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>scope</code> - governing analyais scope</dd>
-<dd><code>cha</code> - governing class hierarchy</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if cha is null</dd>
-</dl>
 </li>
 </ul>
 </li>
