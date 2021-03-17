@@ -268,13 +268,13 @@ extends java.lang.Iterable&lt;<a href="../../../../../com/ibm/wala/classLoader/I
 <td class="colFirst"><code><a href="../../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html#resolveMethod-com.ibm.wala.classLoader.IClass-com.ibm.wala.types.Selector-">resolveMethod</a></span>(<a href="../../../../../com/ibm/wala/classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;receiverClass,
              <a href="../../../../../com/ibm/wala/types/Selector.html" title="class in com.ibm.wala.types">Selector</a>&nbsp;selector)</code>
-<div class="block">Return the unique receiver of an invocation of method on an object of type declaringClass</div>
+<div class="block">Return the unique target of an invocation of method on an object of type receiverClass</div>
 </td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html#resolveMethod-com.ibm.wala.types.MethodReference-">resolveMethod</a></span>(<a href="../../../../../com/ibm/wala/types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;m)</code>
-<div class="block">Return the unique receiver of an invocation of method on an object of type m.getDeclaredClass</div>
+<div class="block">Return the unique receiver of an invocation of method on an object of type <code>m.getDeclaredClass()</code>.</div>
 </td>
 </tr>
 </table>
@@ -443,7 +443,9 @@ extends java.lang.Iterable&lt;<a href="../../../../../com/ibm/wala/classLoader/I
 <li class="blockList">
 <h4>resolveMethod</h4>
 <pre><a href="../../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&nbsp;resolveMethod(<a href="../../../../../com/ibm/wala/types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;m)</pre>
-<div class="block">Return the unique receiver of an invocation of method on an object of type m.getDeclaredClass</div>
+<div class="block">Return the unique receiver of an invocation of method on an object of type <code>m.getDeclaredClass()</code>. Note that for Java, <code>m.getDeclaredClass()</code> must represent a
+ <em>class</em>, <em>not</em> an interface. This method does not work for finding inherited
+ methods in interfaces.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>IMethod, or null if no appropriate receiver is found.</dd>
@@ -492,10 +494,12 @@ extends java.lang.Iterable&lt;<a href="../../../../../com/ibm/wala/classLoader/I
 <h4>resolveMethod</h4>
 <pre><a href="../../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&nbsp;resolveMethod(<a href="../../../../../com/ibm/wala/classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;receiverClass,
                       <a href="../../../../../com/ibm/wala/types/Selector.html" title="class in com.ibm.wala.types">Selector</a>&nbsp;selector)</pre>
-<div class="block">Return the unique receiver of an invocation of method on an object of type declaringClass</div>
+<div class="block">Return the unique target of an invocation of method on an object of type receiverClass</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>receiverClass</code> - type of receiver</dd>
+<dd><code>receiverClass</code> - type of receiver. Note that for Java, <code>receiverClass</code> must represent
+     a <em>class</em>, <em>not</em> an interface. This method does not work for finding
+     inherited methods in interfaces.</dd>
 <dd><code>selector</code> - method signature</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Method resolved method abstraction</dd>
