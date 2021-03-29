@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.cast.ipa.callgraph"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.FieldReadAction.html" title="class in com.ibm.wala.cast.ipa.callgraph"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html" target="_top">Frames</a></li>
@@ -151,6 +151,10 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstInstructionVis
 <th class="colLast" scope="col">Class and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.FieldReadAction.html" title="class in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.FieldReadAction</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a></span></code>&nbsp;</td>
 </tr>
@@ -210,31 +214,35 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstInstructionVis
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#fieldReadAction-com.ibm.wala.ipa.callgraph.propagation.PointerKey-">fieldReadAction</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;lhs)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#getBuilder--">getBuilder</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#getPointerKeyForObjectCatalog-com.ibm.wala.ipa.callgraph.propagation.InstanceKey-">getPointerKeyForObjectCatalog</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;I)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#getPointerKeysForReflectedFieldRead-com.ibm.wala.ipa.callgraph.propagation.InstanceKey-com.ibm.wala.ipa.callgraph.propagation.InstanceKey-">getPointerKeysForReflectedFieldRead</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;I,
                                    <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;F)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#getPointerKeysForReflectedFieldWrite-com.ibm.wala.ipa.callgraph.propagation.InstanceKey-com.ibm.wala.ipa.callgraph.propagation.InstanceKey-">getPointerKeysForReflectedFieldWrite</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;I,
                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;F)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldFullOperation-boolean-com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction-com.ibm.wala.ipa.callgraph.propagation.PointerKey-com.ibm.wala.ipa.callgraph.propagation.PointerKey-">newFieldFullOperation</a></span>(boolean&nbsp;isLoadOperation,
                      <a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;action,
                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;objKey,
                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;fieldKey)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldOperationFieldConstant-com.ibm.wala.ipa.callgraph.CGNode-boolean-com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction-int-com.ibm.wala.ipa.callgraph.propagation.InstanceKey:A-">newFieldOperationFieldConstant</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
                               boolean&nbsp;isLoadOperation,
@@ -242,121 +250,121 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstInstructionVis
                               int&nbsp;objVn,
                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;fieldsKeys)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldOperationObjectAndFieldConstant-boolean-com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction-com.ibm.wala.ipa.callgraph.propagation.InstanceKey:A-com.ibm.wala.ipa.callgraph.propagation.InstanceKey:A-">newFieldOperationObjectAndFieldConstant</a></span>(boolean&nbsp;isLoadOperation,
                                        <a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;action,
                                        <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;objKeys,
                                        <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;fieldsKeys)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldOperationOnlyFieldConstant-boolean-com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction-com.ibm.wala.ipa.callgraph.propagation.PointerKey-com.ibm.wala.ipa.callgraph.propagation.InstanceKey:A-">newFieldOperationOnlyFieldConstant</a></span>(boolean&nbsp;isLoadOperation,
                                   <a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;action,
                                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;objKey,
                                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;fieldsKeys)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldOperationOnlyObjectConstant-boolean-com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction-com.ibm.wala.ipa.callgraph.propagation.PointerKey-com.ibm.wala.ipa.callgraph.propagation.InstanceKey:A-">newFieldOperationOnlyObjectConstant</a></span>(boolean&nbsp;isLoadOperation,
                                    <a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;action,
                                    <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;fieldKey,
                                    <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;objKeys)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldRead-com.ibm.wala.ipa.callgraph.CGNode-int-int-int-">newFieldRead</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
             int&nbsp;objVn,
             int&nbsp;fieldsVn,
             int&nbsp;lhsVn)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldRead-com.ibm.wala.ipa.callgraph.CGNode-int-int-com.ibm.wala.ipa.callgraph.propagation.PointerKey-">newFieldRead</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
             int&nbsp;objVn,
             int&nbsp;fieldsVn,
             <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;lhs)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldWrite-com.ibm.wala.ipa.callgraph.CGNode-int-com.ibm.wala.ipa.callgraph.propagation.InstanceKey:A-com.ibm.wala.ipa.callgraph.propagation.InstanceKey:A-">newFieldWrite</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
              int&nbsp;objVn,
              <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;fieldKeys,
              <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;rhsValues)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldWrite-com.ibm.wala.ipa.callgraph.CGNode-int-com.ibm.wala.ipa.callgraph.propagation.InstanceKey:A-com.ibm.wala.ipa.callgraph.propagation.PointerKey-">newFieldWrite</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
              int&nbsp;objVn,
              <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;fieldKeys,
              <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;rhs)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldWrite-com.ibm.wala.ipa.callgraph.CGNode-int-int-com.ibm.wala.ipa.callgraph.propagation.InstanceKey:A-">newFieldWrite</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
              int&nbsp;objVn,
              int&nbsp;fieldsVn,
              <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;rhsFixedValues)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldWrite-com.ibm.wala.ipa.callgraph.CGNode-int-int-int-">newFieldWrite</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
              int&nbsp;objVn,
              int&nbsp;fieldsVn,
              int&nbsp;rhsVn)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#newFieldWrite-com.ibm.wala.ipa.callgraph.CGNode-int-int-com.ibm.wala.ipa.callgraph.propagation.PointerKey-">newFieldWrite</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
              int&nbsp;objVn,
              int&nbsp;fieldsVn,
              <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;rhs)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitAssert-com.ibm.wala.cast.ir.ssa.AstAssertInstruction-">visitAssert</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstAssertInstruction.html" title="class in com.ibm.wala.cast.ir.ssa">AstAssertInstruction</a>&nbsp;instruction)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitAstGlobalRead-com.ibm.wala.cast.ir.ssa.AstGlobalRead-">visitAstGlobalRead</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstGlobalRead.html" title="class in com.ibm.wala.cast.ir.ssa">AstGlobalRead</a>&nbsp;instruction)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitAstGlobalWrite-com.ibm.wala.cast.ir.ssa.AstGlobalWrite-">visitAstGlobalWrite</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstGlobalWrite.html" title="class in com.ibm.wala.cast.ir.ssa">AstGlobalWrite</a>&nbsp;instruction)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitAstLexicalRead-com.ibm.wala.cast.ir.ssa.AstLexicalRead-">visitAstLexicalRead</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstLexicalRead.html" title="class in com.ibm.wala.cast.ir.ssa">AstLexicalRead</a>&nbsp;instruction)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitAstLexicalWrite-com.ibm.wala.cast.ir.ssa.AstLexicalWrite-">visitAstLexicalWrite</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstLexicalWrite.html" title="class in com.ibm.wala.cast.ir.ssa">AstLexicalWrite</a>&nbsp;instruction)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitEachElementGet-com.ibm.wala.cast.ir.ssa.EachElementGetInstruction-">visitEachElementGet</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/EachElementGetInstruction.html" title="class in com.ibm.wala.cast.ir.ssa">EachElementGetInstruction</a>&nbsp;inst)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitEachElementHasNext-com.ibm.wala.cast.ir.ssa.EachElementHasNextInstruction-">visitEachElementHasNext</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/EachElementHasNextInstruction.html" title="class in com.ibm.wala.cast.ir.ssa">EachElementHasNextInstruction</a>&nbsp;inst)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitEcho-com.ibm.wala.cast.ir.ssa.AstEchoInstruction-">visitEcho</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstEchoInstruction.html" title="class in com.ibm.wala.cast.ir.ssa">AstEchoInstruction</a>&nbsp;inst)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitIsDefined-com.ibm.wala.cast.ir.ssa.AstIsDefinedInstruction-">visitIsDefined</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstIsDefinedInstruction.html" title="class in com.ibm.wala.cast.ir.ssa">AstIsDefinedInstruction</a>&nbsp;inst)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitPropertyRead-com.ibm.wala.cast.ir.ssa.AstPropertyRead-">visitPropertyRead</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstPropertyRead.html" title="class in com.ibm.wala.cast.ir.ssa">AstPropertyRead</a>&nbsp;instruction)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitPropertyWrite-com.ibm.wala.cast.ir.ssa.AstPropertyWrite-">visitPropertyWrite</a></span>(<a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstPropertyWrite.html" title="class in com.ibm.wala.cast.ir.ssa">AstPropertyWrite</a>&nbsp;instruction)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html#visitPut-com.ibm.wala.ssa.SSAPutInstruction-">visitPut</a></span>(<a href="../../../../../../com/ibm/wala/ssa/SSAPutInstruction.html" title="class in com.ibm.wala.ssa">SSAPutInstruction</a>&nbsp;inst)</code>&nbsp;</td>
 </tr>
@@ -761,6 +769,15 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstInstructionVis
                             int&nbsp;lhsVn)</pre>
 </li>
 </ul>
+<a name="fieldReadAction-com.ibm.wala.ipa.callgraph.propagation.PointerKey-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fieldReadAction</h4>
+<pre>protected&nbsp;<a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;fieldReadAction(<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;lhs)</pre>
+</li>
+</ul>
 <a name="newFieldRead-com.ibm.wala.ipa.callgraph.CGNode-int-int-com.ibm.wala.ipa.callgraph.propagation.PointerKey-">
 <!--   -->
 </a>
@@ -801,7 +818,7 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/ssa/AstInstructionVis
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.cast.ipa.callgraph"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.FieldReadAction.html" title="class in com.ibm.wala.cast.ipa.callgraph"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?com/ibm/wala/cast/ipa/callgraph/AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.html" target="_top">Frames</a></li>

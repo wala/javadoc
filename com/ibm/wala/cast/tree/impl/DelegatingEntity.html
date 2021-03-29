@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -231,44 +231,50 @@ implements <a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" ti
 </td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/tree/impl/DelegatingEntity.html#getOriginal--">getOriginal</a></span>()</code>
+<div class="block">Allow finding original entity after rewrites</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/ibm/wala/cast/tree/CAstSourcePositionMap.Position.html" title="interface in com.ibm.wala.cast.tree">CAstSourcePositionMap.Position</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/tree/impl/DelegatingEntity.html#getPosition--">getPosition</a></span>()</code>
 <div class="block">The source position of this entity.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/ibm/wala/cast/tree/CAstSourcePositionMap.Position.html" title="interface in com.ibm.wala.cast.tree">CAstSourcePositionMap.Position</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/tree/impl/DelegatingEntity.html#getPosition-int-">getPosition</a></span>(int&nbsp;arg)</code>
 <div class="block">The source position of argument 'arg' this entity, if any;</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.util.Collection&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstQualifier.html" title="class in com.ibm.wala.cast.tree">CAstQualifier</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/tree/impl/DelegatingEntity.html#getQualifiers--">getQualifiers</a></span>()</code>
 <div class="block">Returns an Iterator over the qualifiers of the given entity, if it has any, e.g., "final",
  "private".</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/tree/impl/DelegatingEntity.html#getScopedEntities-com.ibm.wala.cast.tree.CAstNode-">getScopedEntities</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;construct)</code>
 <div class="block">Some programming language constructs have a lexical structure.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/tree/impl/DelegatingEntity.html#getSignature--">getSignature</a></span>()</code>
 <div class="block">Some programming language constructs have signatures, which are like names but usually have
  some detail to distinguish the construct from others with the same name.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/ibm/wala/cast/tree/CAstSourcePositionMap.html" title="interface in com.ibm.wala.cast.tree">CAstSourcePositionMap</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/tree/impl/DelegatingEntity.html#getSourceMap--">getSourceMap</a></span>()</code>
 <div class="block">The map of CAstNodes to source positions for the CAPA AST of this entity.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/ibm/wala/cast/tree/CAstType.html" title="interface in com.ibm.wala.cast.tree">CAstType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/tree/impl/DelegatingEntity.html#getType--">getType</a></span>()</code>
 <div class="block">The CAst type of this entity.</div>
@@ -313,6 +319,21 @@ implements <a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" ti
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getOriginal--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOriginal</h4>
+<pre>public&nbsp;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;getOriginal()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html#getOriginal--">CAstEntity</a></code></span></div>
+<div class="block">Allow finding original entity after rewrites</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html#getOriginal--">getOriginal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getKind--">
 <!--   -->
 </a>
