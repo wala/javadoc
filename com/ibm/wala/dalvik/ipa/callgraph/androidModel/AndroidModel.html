@@ -233,13 +233,13 @@ implements <a href="../../../../../../../com/ibm/wala/ipa/cha/IClassHierarchyDwe
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/AndroidModel.html#build-com.ibm.wala.util.strings.Atom-">build</a></span>(<a href="../../../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&nbsp;name)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/AndroidModel.html#build-com.ibm.wala.core.util.strings.Atom-">build</a></span>(<a href="../../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;name)</code>
 <div class="block">Generates the model on a sub-set of Entrypoints.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/AndroidModel.html#build-com.ibm.wala.util.strings.Atom-java.util.Collection-">build</a></span>(<a href="../../../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&nbsp;name,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/AndroidModel.html#build-com.ibm.wala.core.util.strings.Atom-java.util.Collection-">build</a></span>(<a href="../../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;name,
      java.util.Collection&lt;? extends <a href="../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/impl/AndroidEntryPoint.html" title="class in com.ibm.wala.dalvik.ipa.callgraph.impl">AndroidEntryPoint</a>&gt;&nbsp;entrypoints)</code>
 <div class="block">Generate the SummarizedMethod for the model (in this.model).</div>
 </td>
@@ -280,7 +280,7 @@ implements <a href="../../../../../../../com/ibm/wala/ipa/cha/IClassHierarchyDwe
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a></code></td>
+<td class="colFirst"><code><a href="../../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/AndroidModel.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -440,18 +440,18 @@ implements <a href="../../../../../../../com/ibm/wala/ipa/cha/IClassHierarchyDwe
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="build-com.ibm.wala.util.strings.Atom-">
+<a name="build-com.ibm.wala.core.util.strings.Atom-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>build</h4>
-<pre>protected&nbsp;void&nbsp;build(<a href="../../../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&nbsp;name)
+<pre>protected&nbsp;void&nbsp;build(<a href="../../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;name)
               throws <a href="../../../../../../../com/ibm/wala/util/CancelException.html" title="class in com.ibm.wala.util">CancelException</a></pre>
 <div class="block">Generates the model on a sub-set of Entrypoints.
 
  <p>Asks <a href="../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/AndroidModel.html#selectEntryPoint-com.ibm.wala.dalvik.ipa.callgraph.impl.AndroidEntryPoint-"><code>selectEntryPoint(AndroidEntryPoint)</code></a> for each EntryPoint known to the
- AndroidEntryPointManager, if the EntryPoint should be included in the model. Then calls <a href="../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/AndroidModel.html#build-com.ibm.wala.util.strings.Atom-java.util.Collection-"><code>build(Atom, Collection)</code></a> on these.</div>
+ AndroidEntryPointManager, if the EntryPoint should be included in the model. Then calls <a href="../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/AndroidModel.html#build-com.ibm.wala.core.util.strings.Atom-java.util.Collection-"><code>build(Atom, Collection)</code></a> on these.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>name</code> - The name the generated method will be known as</dd>
@@ -466,7 +466,7 @@ implements <a href="../../../../../../../com/ibm/wala/ipa/cha/IClassHierarchyDwe
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&nbsp;getName()</pre>
+<pre>public&nbsp;<a href="../../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;getName()</pre>
 </li>
 </ul>
 <a name="isStatic--">
@@ -501,13 +501,13 @@ implements <a href="../../../../../../../com/ibm/wala/ipa/cha/IClassHierarchyDwe
 </dl>
 </li>
 </ul>
-<a name="build-com.ibm.wala.util.strings.Atom-java.util.Collection-">
+<a name="build-com.ibm.wala.core.util.strings.Atom-java.util.Collection-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>build</h4>
-<pre>protected&nbsp;void&nbsp;build(<a href="../../../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&nbsp;name,
+<pre>protected&nbsp;void&nbsp;build(<a href="../../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;name,
                      java.util.Collection&lt;? extends <a href="../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/impl/AndroidEntryPoint.html" title="class in com.ibm.wala.dalvik.ipa.callgraph.impl">AndroidEntryPoint</a>&gt;&nbsp;entrypoints)
               throws <a href="../../../../../../../com/ibm/wala/util/CancelException.html" title="class in com.ibm.wala.util">CancelException</a></pre>
 <div class="block">Generate the SummarizedMethod for the model (in this.model).

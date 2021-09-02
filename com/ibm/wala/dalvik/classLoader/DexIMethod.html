@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":9,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":9,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -255,11 +255,11 @@ implements <a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#getExceptionReg--">getExceptionReg</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../../../../com/ibm/wala/shrikeBT/ExceptionHandler.html" title="class in com.ibm.wala.shrikeBT">ExceptionHandler</a>[][]</code></td>
+<td class="colFirst"><code><a href="../../../../../com/ibm/wala/shrike/shrikeBT/ExceptionHandler.html" title="class in com.ibm.wala.shrike.shrikeBT">ExceptionHandler</a>[][]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#getHandlers--">getHandlers</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../com/ibm/wala/shrikeBT/IndirectionData.html" title="interface in com.ibm.wala.shrikeBT">IndirectionData</a></code></td>
+<td class="colFirst"><code><a href="../../../../../com/ibm/wala/shrike/shrikeBT/IndirectionData.html" title="interface in com.ibm.wala.shrike.shrikeBT">IndirectionData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#getIndirectionData--">getIndirectionData</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
@@ -294,7 +294,7 @@ implements <a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#getMaxStackHeight--">getMaxStackHeight</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a></code></td>
+<td class="colFirst"><code><a href="../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
@@ -387,91 +387,103 @@ implements <a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html
 </tr>
 <tr id="i40" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isAnnotation--">isAnnotation</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i41" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isBridge--">isBridge</a></span>()</code>
 <div class="block">Is this method a bridge method? See JLS 3rd Edition 15.12.4.5</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isClinit--">isClinit</a></span>()</code>
 <div class="block">Is this method a class initializer?</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i43" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isEnum--">isEnum</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isFinal--">isFinal</a></span>()</code>
 <div class="block">Is this method final?</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isInit--">isInit</a></span>()</code>
 <div class="block">Is this method an object initializer?</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i46" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isModule--">isModule</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isNative--">isNative</a></span>()</code>
 <div class="block">Is this method native?</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isPrivate--">isPrivate</a></span>()</code>
 <div class="block">Is this method private?</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isProtected--">isProtected</a></span>()</code>
 <div class="block">Is this method protected?</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isPublic--">isPublic</a></span>()</code>
 <div class="block">Is this method public?</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isStatic--">isStatic</a></span>()</code>
 <div class="block">Is this member static?</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isSynchronized--">isSynchronized</a></span>()</code>
 <div class="block">Is this method synchronized?</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isSynthetic--">isSynthetic</a></span>()</code>
 <div class="block">Is this method synthetic, i.e., compiler-generated (this refers to the synthetic flag in
  java/dex bytecode)</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isVolatile--">isVolatile</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#isWalaSynthetic--">isWalaSynthetic</a></span>()</code>
 <div class="block">Is the implementation of this method a model generated by WALA? For compiler-generated
  synthetic methods, refer to <a href="../../../../../com/ibm/wala/classLoader/IMethod.html#isSynthetic--"><code>IMethod.isSynthetic()</code></a></div>
 </td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#parseBytecode--">parseBytecode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>org.jf.dexlib2.iface.Method</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#toEncodedMethod--">toEncodedMethod</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/dalvik/classLoader/DexIMethod.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -1001,6 +1013,45 @@ implements <a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html
 <pre>public&nbsp;boolean&nbsp;isVolatile()</pre>
 </li>
 </ul>
+<a name="isAnnotation--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAnnotation</h4>
+<pre>public&nbsp;boolean&nbsp;isAnnotation()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../com/ibm/wala/classLoader/IMethod.html#isAnnotation--">isAnnotation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isEnum--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEnum</h4>
+<pre>public&nbsp;boolean&nbsp;isEnum()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../com/ibm/wala/classLoader/IMethod.html#isEnum--">isEnum</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isModule--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isModule</h4>
+<pre>public&nbsp;boolean&nbsp;isModule()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../com/ibm/wala/classLoader/IMethod.html#isModule--">isModule</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getDeclaringClass--">
 <!--   -->
 </a>
@@ -1037,7 +1088,7 @@ implements <a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre>public&nbsp;<a href="../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&nbsp;getName()</pre>
+<pre>public&nbsp;<a href="../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;getName()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../com/ibm/wala/classLoader/IMember.html#getName--">getName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IMember.html" title="interface in com.ibm.wala.classLoader">IMember</a></code></dd>
@@ -1122,7 +1173,7 @@ implements <a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getHandlers</h4>
-<pre>public&nbsp;<a href="../../../../../com/ibm/wala/shrikeBT/ExceptionHandler.html" title="class in com.ibm.wala.shrikeBT">ExceptionHandler</a>[][]&nbsp;getHandlers()</pre>
+<pre>public&nbsp;<a href="../../../../../com/ibm/wala/shrike/shrikeBT/ExceptionHandler.html" title="class in com.ibm.wala.shrike.shrikeBT">ExceptionHandler</a>[][]&nbsp;getHandlers()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getHandlers--">getHandlers</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../../com/ibm/wala/dalvik/dex/instructions/Instruction.html" title="class in com.ibm.wala.dalvik.dex.instructions">Instruction</a>&gt;</code></dd>
@@ -1227,7 +1278,7 @@ implements <a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getIndirectionData</h4>
-<pre>public&nbsp;<a href="../../../../../com/ibm/wala/shrikeBT/IndirectionData.html" title="interface in com.ibm.wala.shrikeBT">IndirectionData</a>&nbsp;getIndirectionData()</pre>
+<pre>public&nbsp;<a href="../../../../../com/ibm/wala/shrike/shrikeBT/IndirectionData.html" title="interface in com.ibm.wala.shrike.shrikeBT">IndirectionData</a>&nbsp;getIndirectionData()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getIndirectionData--">getIndirectionData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../../com/ibm/wala/dalvik/dex/instructions/Instruction.html" title="class in com.ibm.wala.dalvik.dex.instructions">Instruction</a>&gt;</code></dd>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":42,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":42,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -224,7 +224,7 @@ implements <a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="in
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/ibm/wala/util/bytecode/BytecodeStream.html" title="class in com.ibm.wala.util.bytecode">BytecodeStream</a></code></td>
+<td class="colFirst"><code><a href="../../../../com/ibm/wala/core/util/bytecode/BytecodeStream.html" title="class in com.ibm.wala.core.util.bytecode">BytecodeStream</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#getBytecodeStream--">getBytecodeStream</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -265,7 +265,7 @@ implements <a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#getMaxStackHeight--">getMaxStackHeight</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a></code></td>
+<td class="colFirst"><code><a href="../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
@@ -351,96 +351,108 @@ implements <a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="in
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isAnnotation--">isAnnotation</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isBridge--">isBridge</a></span>()</code>
 <div class="block">Is this method a bridge method? See JLS 3rd Edition 15.12.4.5</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isClinit--">isClinit</a></span>()</code>
 <div class="block">Is this method a class initializer?</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isEnum--">isEnum</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isFactoryMethod--">isFactoryMethod</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isFinal--">isFinal</a></span>()</code>
 <div class="block">Is this method final?</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isInit--">isInit</a></span>()</code>
 <div class="block">Is this method an object initializer?</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isModule--">isModule</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isNative--">isNative</a></span>()</code>
 <div class="block">Is this method native?</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isPrivate--">isPrivate</a></span>()</code>
 <div class="block">Is this method private?</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isProtected--">isProtected</a></span>()</code>
 <div class="block">Is this method protected?</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isPublic--">isPublic</a></span>()</code>
 <div class="block">Is this method public?</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isStatic--">isStatic</a></span>()</code>
 <div class="block">Is this member static?</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isSynchronized--">isSynchronized</a></span>()</code>
 <div class="block">Is this method synchronized?</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isSynthetic--">isSynthetic</a></span>()</code>
 <div class="block">Is this method synthetic, i.e., compiler-generated (this refers to the synthetic flag in
  java/dex bytecode)</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#isWalaSynthetic--">isWalaSynthetic</a></span>()</code>
 <div class="block">Is the implementation of this method a model generated by WALA? For compiler-generated
  synthetic methods, refer to <a href="../../../../com/ibm/wala/classLoader/IMethod.html#isSynthetic--"><code>IMethod.isSynthetic()</code></a></div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/cfg/InducedCFG.html" title="class in com.ibm.wala.cfg">InducedCFG</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#makeControlFlowGraph-com.ibm.wala.ssa.SSAInstruction:A-">makeControlFlowGraph</a></span>(<a href="../../../../com/ibm/wala/ssa/SSAInstruction.html" title="class in com.ibm.wala.ssa">SSAInstruction</a>[]&nbsp;instructions)</code>
 <div class="block">Create an <a href="../../../../com/ibm/wala/cfg/InducedCFG.html" title="class in com.ibm.wala.cfg"><code>InducedCFG</code></a> from an instruction array.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/ssa/IR.html" title="class in com.ibm.wala.ssa">IR</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#makeIR-com.ibm.wala.ipa.callgraph.Context-com.ibm.wala.ssa.SSAOptions-">makeIR</a></span>(<a href="../../../../com/ibm/wala/ipa/callgraph/Context.html" title="interface in com.ibm.wala.ipa.callgraph">Context</a>&nbsp;context,
       <a href="../../../../com/ibm/wala/ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;options)</code>
 <div class="block">Most subclasses should override this.</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/SyntheticMethod.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -709,6 +721,45 @@ implements <a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="in
 </dl>
 </li>
 </ul>
+<a name="isAnnotation--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAnnotation</h4>
+<pre>public&nbsp;boolean&nbsp;isAnnotation()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/ibm/wala/classLoader/IMethod.html#isAnnotation--">isAnnotation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isEnum--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEnum</h4>
+<pre>public&nbsp;boolean&nbsp;isEnum()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/ibm/wala/classLoader/IMethod.html#isEnum--">isEnum</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isModule--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isModule</h4>
+<pre>public&nbsp;boolean&nbsp;isModule()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/ibm/wala/classLoader/IMethod.html#isModule--">isModule</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="isWalaSynthetic--">
 <!--   -->
 </a>
@@ -774,7 +825,7 @@ implements <a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="in
 <ul class="blockList">
 <li class="blockList">
 <h4>getBytecodeStream</h4>
-<pre>public&nbsp;<a href="../../../../com/ibm/wala/util/bytecode/BytecodeStream.html" title="class in com.ibm.wala.util.bytecode">BytecodeStream</a>&nbsp;getBytecodeStream()
+<pre>public&nbsp;<a href="../../../../com/ibm/wala/core/util/bytecode/BytecodeStream.html" title="class in com.ibm.wala.core.util.bytecode">BytecodeStream</a>&nbsp;getBytecodeStream()
                                  throws java.lang.UnsupportedOperationException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -975,7 +1026,7 @@ public&nbsp;<a href="../../../../com/ibm/wala/ssa/SSAInstruction.html" title="cl
 <li class="blockList">
 <h4>getDeclaredExceptions</h4>
 <pre>public&nbsp;<a href="../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>[]&nbsp;getDeclaredExceptions()
-                                      throws <a href="../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></pre>
+                                      throws <a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/ibm/wala/classLoader/IMethod.html#getDeclaredExceptions--">getDeclaredExceptions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></dd>
@@ -983,7 +1034,7 @@ public&nbsp;<a href="../../../../com/ibm/wala/ssa/SSAInstruction.html" title="cl
 <dd>an array of the exception types declared by the throws clause for this method, or null
      if there are none</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></code></dd>
+<dd><code><a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -993,7 +1044,7 @@ public&nbsp;<a href="../../../../com/ibm/wala/ssa/SSAInstruction.html" title="cl
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre>public&nbsp;<a href="../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&nbsp;getName()</pre>
+<pre>public&nbsp;<a href="../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;getName()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/ibm/wala/classLoader/IMember.html#getName--">getName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/classLoader/IMember.html" title="interface in com.ibm.wala.classLoader">IMember</a></code></dd>
@@ -1024,12 +1075,12 @@ public&nbsp;<a href="../../../../com/ibm/wala/ssa/SSAInstruction.html" title="cl
 <li class="blockList">
 <h4>getSourcePosition</h4>
 <pre>public&nbsp;<a href="../../../../com/ibm/wala/classLoader/IMethod.SourcePosition.html" title="interface in com.ibm.wala.classLoader">IMethod.SourcePosition</a>&nbsp;getSourcePosition(int&nbsp;bcIndex)
-                                         throws <a href="../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></pre>
+                                         throws <a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/ibm/wala/classLoader/IMethod.html#getSourcePosition-int-">getSourcePosition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></code></dd>
+<dd><code><a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1040,12 +1091,12 @@ public&nbsp;<a href="../../../../com/ibm/wala/ssa/SSAInstruction.html" title="cl
 <li class="blockList">
 <h4>getParameterSourcePosition</h4>
 <pre>public&nbsp;<a href="../../../../com/ibm/wala/classLoader/IMethod.SourcePosition.html" title="interface in com.ibm.wala.classLoader">IMethod.SourcePosition</a>&nbsp;getParameterSourcePosition(int&nbsp;paramNum)
-                                                  throws <a href="../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></pre>
+                                                  throws <a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/ibm/wala/classLoader/IMethod.html#getParameterSourcePosition-int-">getParameterSourcePosition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></code></dd>
+<dd><code><a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
 </dl>
 </li>
 </ul>

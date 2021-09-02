@@ -133,36 +133,42 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/ClassFactoryContextSelector.html" title="class in com.ibm.wala.analysis.reflection">ClassFactoryContextSelector</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph"><code>ContextSelector</code></a> to intercept calls to reflective class factories (e.g.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/ClassNewInstanceContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection">ClassNewInstanceContextInterpreter</a></td>
 <td class="colLast">
 <div class="block">An <a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>SSAContextInterpreter</code></a> specialized to interpret Class.newInstance in a <a href="../../../../../com/ibm/wala/analysis/reflection/JavaTypeContext.html" title="class in com.ibm.wala.analysis.reflection"><code>JavaTypeContext</code></a> which represents the point-type of the class object created by the call.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/CloneInterpreter.html" title="class in com.ibm.wala.analysis.reflection">CloneInterpreter</a></td>
 <td class="colLast">
 <div class="block">A context interpreter for java.lang.Object.clone</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/FactoryBypassInterpreter.html" title="class in com.ibm.wala.analysis.reflection">FactoryBypassInterpreter</a></td>
 <td class="colLast">
 <div class="block">Logic to interpret "factory" methods in context.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/GetClassContextInterpeter.html" title="class in com.ibm.wala.analysis.reflection">GetClassContextInterpeter</a></td>
 <td class="colLast">
 <div class="block"><a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>SSAContextInterpreter</code></a> specialized to interpret Object.getClass() in a <a href="../../../../../com/ibm/wala/analysis/reflection/JavaTypeContext.html" title="class in com.ibm.wala.analysis.reflection"><code>JavaTypeContext</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/GetClassContextSelector.html" title="class in com.ibm.wala.analysis.reflection">GetClassContextSelector</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph"><code>ContextSelector</code></a> to intercept calls to Object.getClass()</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/GetMethodContext.html" title="class in com.ibm.wala.analysis.reflection">GetMethodContext</a></td>
 <td class="colLast">
 <div class="block">A context which may be used if
@@ -174,47 +180,47 @@
    the value of the first argument (the method name) is a constant.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/GetMethodContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection">GetMethodContextInterpreter</a></td>
 <td class="colLast">
 <div class="block">Understands <a href="../../../../../com/ibm/wala/analysis/reflection/GetMethodContext.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContext</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/GetMethodContextSelector.html" title="class in com.ibm.wala.analysis.reflection">GetMethodContextSelector</a></td>
 <td class="colLast">
 <div class="block">Produces <a href="../../../../../com/ibm/wala/analysis/reflection/GetMethodContext.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContext</code></a> if appropriate.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/IllegalArgumentExceptionContext.html" title="class in com.ibm.wala.analysis.reflection">IllegalArgumentExceptionContext</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/JavaLangClassContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection">JavaLangClassContextInterpreter</a></td>
 <td class="colLast">
 <div class="block">An <a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>SSAContextInterpreter</code></a> specialized to interpret methods on java.lang.Class in a <a href="../../../../../com/ibm/wala/analysis/reflection/JavaTypeContext.html" title="class in com.ibm.wala.analysis.reflection"><code>JavaTypeContext</code></a> which represents the point-type of the class object created by the call.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/JavaTypeContext.html" title="class in com.ibm.wala.analysis.reflection">JavaTypeContext</a></td>
 <td class="colLast">
 <div class="block">Implements a Context which corresponds to a given type abstraction.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/ReflectionContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection">ReflectionContextInterpreter</a></td>
 <td class="colLast">
 <div class="block"><a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>SSAContextInterpreter</code></a> to handle all reflection procession.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/ReflectionContextSelector.html" title="class in com.ibm.wala.analysis.reflection">ReflectionContextSelector</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph"><code>ContextSelector</code></a> to handle default reflection logic.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../com/ibm/wala/analysis/reflection/ReflectiveInvocationInterpreter.html" title="class in com.ibm.wala.analysis.reflection">ReflectiveInvocationInterpreter</a></td>
 <td class="colLast">
 <div class="block">An <a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>SSAContextInterpreter</code></a> specialized to interpret reflective invocations such as

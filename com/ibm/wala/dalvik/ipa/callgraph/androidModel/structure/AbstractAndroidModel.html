@@ -161,11 +161,11 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/structure/AbstractAndroidModel.html#entryPoints">entryPoints</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../../../../com/ibm/wala/util/ssa/TypeSafeInstructionFactory.html" title="class in com.ibm.wala.util.ssa">TypeSafeInstructionFactory</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../../../../../com/ibm/wala/core/util/ssa/TypeSafeInstructionFactory.html" title="class in com.ibm.wala.core.util.ssa">TypeSafeInstructionFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/structure/AbstractAndroidModel.html#insts">insts</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../../../../../com/ibm/wala/util/ssa/SSAValueManager.html" title="class in com.ibm.wala.util.ssa">SSAValueManager</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../../../../../com/ibm/wala/core/util/ssa/SSAValueManager.html" title="class in com.ibm.wala.core.util.ssa">SSAValueManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/structure/AbstractAndroidModel.html#paramManager">paramManager</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -183,9 +183,9 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/structure/AbstractAndroidModel.html#AbstractAndroidModel-com.ibm.wala.ipa.summaries.VolatileMethodSummary-com.ibm.wala.util.ssa.TypeSafeInstructionFactory-com.ibm.wala.util.ssa.SSAValueManager-java.lang.Iterable-">AbstractAndroidModel</a></span>(<a href="../../../../../../../../com/ibm/wala/ipa/summaries/VolatileMethodSummary.html" title="class in com.ibm.wala.ipa.summaries">VolatileMethodSummary</a>&nbsp;body,
-                    <a href="../../../../../../../../com/ibm/wala/util/ssa/TypeSafeInstructionFactory.html" title="class in com.ibm.wala.util.ssa">TypeSafeInstructionFactory</a>&nbsp;insts,
-                    <a href="../../../../../../../../com/ibm/wala/util/ssa/SSAValueManager.html" title="class in com.ibm.wala.util.ssa">SSAValueManager</a>&nbsp;paramManager,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/ibm/wala/dalvik/ipa/callgraph/androidModel/structure/AbstractAndroidModel.html#AbstractAndroidModel-com.ibm.wala.ipa.summaries.VolatileMethodSummary-com.ibm.wala.core.util.ssa.TypeSafeInstructionFactory-com.ibm.wala.core.util.ssa.SSAValueManager-java.lang.Iterable-">AbstractAndroidModel</a></span>(<a href="../../../../../../../../com/ibm/wala/ipa/summaries/VolatileMethodSummary.html" title="class in com.ibm.wala.ipa.summaries">VolatileMethodSummary</a>&nbsp;body,
+                    <a href="../../../../../../../../com/ibm/wala/core/util/ssa/TypeSafeInstructionFactory.html" title="class in com.ibm.wala.core.util.ssa">TypeSafeInstructionFactory</a>&nbsp;insts,
+                    <a href="../../../../../../../../com/ibm/wala/core/util/ssa/SSAValueManager.html" title="class in com.ibm.wala.core.util.ssa">SSAValueManager</a>&nbsp;paramManager,
                     java.lang.Iterable&lt;? extends <a href="../../../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;entryPoints)</code>
 <div class="block">If you don't intend to use the paramManager, you can pass null.</div>
 </td>
@@ -322,7 +322,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>insts</h4>
-<pre>protected&nbsp;<a href="../../../../../../../../com/ibm/wala/util/ssa/TypeSafeInstructionFactory.html" title="class in com.ibm.wala.util.ssa">TypeSafeInstructionFactory</a> insts</pre>
+<pre>protected&nbsp;<a href="../../../../../../../../com/ibm/wala/core/util/ssa/TypeSafeInstructionFactory.html" title="class in com.ibm.wala.core.util.ssa">TypeSafeInstructionFactory</a> insts</pre>
 </li>
 </ul>
 <a name="paramManager">
@@ -331,7 +331,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>paramManager</h4>
-<pre>protected&nbsp;<a href="../../../../../../../../com/ibm/wala/util/ssa/SSAValueManager.html" title="class in com.ibm.wala.util.ssa">SSAValueManager</a> paramManager</pre>
+<pre>protected&nbsp;<a href="../../../../../../../../com/ibm/wala/core/util/ssa/SSAValueManager.html" title="class in com.ibm.wala.core.util.ssa">SSAValueManager</a> paramManager</pre>
 </li>
 </ul>
 <a name="entryPoints">
@@ -351,15 +351,15 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractAndroidModel-com.ibm.wala.ipa.summaries.VolatileMethodSummary-com.ibm.wala.util.ssa.TypeSafeInstructionFactory-com.ibm.wala.util.ssa.SSAValueManager-java.lang.Iterable-">
+<a name="AbstractAndroidModel-com.ibm.wala.ipa.summaries.VolatileMethodSummary-com.ibm.wala.core.util.ssa.TypeSafeInstructionFactory-com.ibm.wala.core.util.ssa.SSAValueManager-java.lang.Iterable-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractAndroidModel</h4>
 <pre>public&nbsp;AbstractAndroidModel(<a href="../../../../../../../../com/ibm/wala/ipa/summaries/VolatileMethodSummary.html" title="class in com.ibm.wala.ipa.summaries">VolatileMethodSummary</a>&nbsp;body,
-                            <a href="../../../../../../../../com/ibm/wala/util/ssa/TypeSafeInstructionFactory.html" title="class in com.ibm.wala.util.ssa">TypeSafeInstructionFactory</a>&nbsp;insts,
-                            <a href="../../../../../../../../com/ibm/wala/util/ssa/SSAValueManager.html" title="class in com.ibm.wala.util.ssa">SSAValueManager</a>&nbsp;paramManager,
+                            <a href="../../../../../../../../com/ibm/wala/core/util/ssa/TypeSafeInstructionFactory.html" title="class in com.ibm.wala.core.util.ssa">TypeSafeInstructionFactory</a>&nbsp;insts,
+                            <a href="../../../../../../../../com/ibm/wala/core/util/ssa/SSAValueManager.html" title="class in com.ibm.wala.core.util.ssa">SSAValueManager</a>&nbsp;paramManager,
                             java.lang.Iterable&lt;? extends <a href="../../../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;entryPoints)</pre>
 <div class="block">If you don't intend to use the paramManager, you can pass null. However all other parameters
  are required.</div>

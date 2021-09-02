@@ -153,6 +153,10 @@ extends java.lang.Object</pre>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/summaries/MethodSummary.html#MethodSummary-com.ibm.wala.types.MethodReference-">MethodSummary</a></span>(<a href="../../../../../com/ibm/wala/types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;method)</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/summaries/MethodSummary.html#MethodSummary-com.ibm.wala.types.MethodReference-int-">MethodSummary</a></span>(<a href="../../../../../com/ibm/wala/types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;method,
+             int&nbsp;numberOfParameters)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -222,11 +226,11 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/summaries/MethodSummary.html#getStatements--">getStatements</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a></code></td>
+<td class="colFirst"><code><a href="../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/summaries/MethodSummary.html#getValue-java.lang.Integer-">getValue</a></span>(java.lang.Integer&nbsp;v)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>java.util.Map&lt;java.lang.Integer,<a href="../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Map&lt;java.lang.Integer,<a href="../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/summaries/MethodSummary.html#getValueNames--">getValueNames</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
@@ -262,7 +266,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/summaries/MethodSummary.html#setValueNames-java.util.Map-">setValueNames</a></span>(java.util.Map&lt;java.lang.Integer,<a href="../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&gt;&nbsp;nameTable)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/summaries/MethodSummary.html#setValueNames-java.util.Map-">setValueNames</a></span>(java.util.Map&lt;java.lang.Integer,<a href="../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&gt;&nbsp;nameTable)</code>&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -310,10 +314,20 @@ extends java.lang.Object</pre>
 <a name="MethodSummary-com.ibm.wala.types.MethodReference-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>MethodSummary</h4>
 <pre>public&nbsp;MethodSummary(<a href="../../../../../com/ibm/wala/types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;method)</pre>
+</li>
+</ul>
+<a name="MethodSummary-com.ibm.wala.types.MethodReference-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>MethodSummary</h4>
+<pre>public&nbsp;MethodSummary(<a href="../../../../../com/ibm/wala/types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;method,
+                     int&nbsp;numberOfParameters)</pre>
 </li>
 </ul>
 </li>
@@ -330,7 +344,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setValueNames</h4>
-<pre>public&nbsp;void&nbsp;setValueNames(java.util.Map&lt;java.lang.Integer,<a href="../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&gt;&nbsp;nameTable)</pre>
+<pre>public&nbsp;void&nbsp;setValueNames(java.util.Map&lt;java.lang.Integer,<a href="../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&gt;&nbsp;nameTable)</pre>
 </li>
 </ul>
 <a name="getValueNames--">
@@ -339,7 +353,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getValueNames</h4>
-<pre>public&nbsp;java.util.Map&lt;java.lang.Integer,<a href="../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&gt;&nbsp;getValueNames()</pre>
+<pre>public&nbsp;java.util.Map&lt;java.lang.Integer,<a href="../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&gt;&nbsp;getValueNames()</pre>
 </li>
 </ul>
 <a name="getValue-java.lang.Integer-">
@@ -348,7 +362,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getValue</h4>
-<pre>public&nbsp;<a href="../../../../../com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a>&nbsp;getValue(java.lang.Integer&nbsp;v)</pre>
+<pre>public&nbsp;<a href="../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;getValue(java.lang.Integer&nbsp;v)</pre>
 </li>
 </ul>
 <a name="getNumberOfStatements--">

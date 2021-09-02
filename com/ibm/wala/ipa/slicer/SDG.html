@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -201,30 +201,35 @@ implements <a href="../../../../../com/ibm/wala/ipa/slicer/ISDG.html" title="int
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html#getDOptions--">getDOptions</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;? extends <a href="../../../../../com/ibm/wala/ipa/slicer/Dependency.html" title="enum in com.ibm.wala.ipa.slicer">Dependency</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html#getEdgeLabels-com.ibm.wala.ipa.slicer.Statement-com.ibm.wala.ipa.slicer.Statement-">getEdgeLabels</a></span>(<a href="../../../../../com/ibm/wala/ipa/slicer/Statement.html" title="class in com.ibm.wala.ipa.slicer">Statement</a>&nbsp;src,
+             <a href="../../../../../com/ibm/wala/ipa/slicer/Statement.html" title="class in com.ibm.wala.ipa.slicer">Statement</a>&nbsp;dst)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../com/ibm/wala/util/graph/NumberedEdgeManager.html" title="interface in com.ibm.wala.util.graph">NumberedEdgeManager</a>&lt;<a href="../../../../../com/ibm/wala/ipa/slicer/Statement.html" title="class in com.ibm.wala.ipa.slicer">Statement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html#getEdgeManager--">getEdgeManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/ibm/wala/util/graph/NumberedNodeManager.html" title="interface in com.ibm.wala.util.graph">NumberedNodeManager</a>&lt;<a href="../../../../../com/ibm/wala/ipa/slicer/Statement.html" title="class in com.ibm.wala.ipa.slicer">Statement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html#getNodeManager--">getNodeManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/ibm/wala/ipa/slicer/PDG.html" title="class in com.ibm.wala.ipa.slicer">PDG</a>&lt;<a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html" title="type parameter in SDG">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html#getPDG-com.ibm.wala.ipa.callgraph.CGNode-">getPDG</a></span>(<a href="../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</code>
 <div class="block">Get the program dependence graph constructed for a particular node.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerAnalysis.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerAnalysis</a>&lt;<a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html" title="type parameter in SDG">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html#getPointerAnalysis--">getPointerAnalysis</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.util.Iterator&lt;? extends <a href="../../../../../com/ibm/wala/ipa/slicer/Statement.html" title="class in com.ibm.wala.ipa.slicer">Statement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html#iterateLazyNodes--">iterateLazyNodes</a></span>()</code>
 <div class="block">iterate over the nodes <b>without</b> constructing any new ones.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html#toString--">toString</a></span>()</code>
 <div class="block">Use this with care.</div>
@@ -243,7 +248,7 @@ implements <a href="../../../../../com/ibm/wala/ipa/slicer/ISDG.html" title="int
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.ibm.wala.util.graph.<a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="class in com.ibm.wala.util.graph">AbstractGraph</a></h3>
-<code><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#addEdge-T-T-">addEdge</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#addNode-T-">addNode</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#containsNode-T-">containsNode</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#edgeString-T-T-">edgeString</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getNumberOfNodes--">getNumberOfNodes</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getPredNodeCount-T-">getPredNodeCount</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getPredNodes-T-">getPredNodes</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getSuccNodeCount-T-">getSuccNodeCount</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getSuccNodes-T-">getSuccNodes</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#hasEdge-T-T-">hasEdge</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#iterator--">iterator</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeAllIncidentEdges-T-">removeAllIncidentEdges</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeEdge-T-T-">removeEdge</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeIncomingEdges-T-">removeIncomingEdges</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeNode-T-">removeNode</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeNodeAndEdges-T-">removeNodeAndEdges</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeOutgoingEdges-T-">removeOutgoingEdges</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#stream--">stream</a></code></li>
+<code><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#addEdge-T-T-">addEdge</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#addNode-T-">addNode</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#containsNode-T-">containsNode</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#edgeString-T-T-">edgeString</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getNumberOfNodes--">getNumberOfNodes</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getPredNodeCount-T-">getPredNodeCount</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getPredNodes-T-">getPredNodes</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getSuccNodeCount-T-">getSuccNodeCount</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getSuccNodes-T-">getSuccNodes</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#hasEdge-T-T-">hasEdge</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#iterator--">iterator</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#nodeString-T-boolean-">nodeString</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeAllIncidentEdges-T-">removeAllIncidentEdges</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeEdge-T-T-">removeEdge</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeIncomingEdges-T-">removeIncomingEdges</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeNode-T-">removeNode</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeNodeAndEdges-T-">removeNodeAndEdges</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeOutgoingEdges-T-">removeOutgoingEdges</a>, <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#stream--">stream</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -485,10 +490,20 @@ implements <a href="../../../../../com/ibm/wala/ipa/slicer/ISDG.html" title="int
 <a name="getPointerAnalysis--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getPointerAnalysis</h4>
 <pre>public&nbsp;<a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerAnalysis.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerAnalysis</a>&lt;<a href="../../../../../com/ibm/wala/ipa/slicer/SDG.html" title="type parameter in SDG">T</a>&gt;&nbsp;getPointerAnalysis()</pre>
+</li>
+</ul>
+<a name="getEdgeLabels-com.ibm.wala.ipa.slicer.Statement-com.ibm.wala.ipa.slicer.Statement-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getEdgeLabels</h4>
+<pre>public&nbsp;java.util.Set&lt;? extends <a href="../../../../../com/ibm/wala/ipa/slicer/Dependency.html" title="enum in com.ibm.wala.ipa.slicer">Dependency</a>&gt;&nbsp;getEdgeLabels(<a href="../../../../../com/ibm/wala/ipa/slicer/Statement.html" title="class in com.ibm.wala.ipa.slicer">Statement</a>&nbsp;src,
+                                                         <a href="../../../../../com/ibm/wala/ipa/slicer/Statement.html" title="class in com.ibm.wala.ipa.slicer">Statement</a>&nbsp;dst)</pre>
 </li>
 </ul>
 </li>

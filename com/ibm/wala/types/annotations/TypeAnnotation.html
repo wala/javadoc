@@ -177,9 +177,8 @@ extends java.lang.Object</pre>
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTargetConverter.html" title="interface in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTargetConverter</a></span></code>
-<div class="block">A @{TypeAnnotationTargetConverter} takes "unresolved" instances of <a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TypeAnnotationTarget.html" title="class in com.ibm.wala.shrikeCT"><code>TypeAnnotationsReader.TypeAnnotationTarget</code></a>, resolves some byte-code
- specific data, and returns instances of the corresponding <a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTarget.html" title="class in com.ibm.wala.types.annotations"><code>TypeAnnotation.TypeAnnotationTarget</code></a>
- subclass.</div>
+<div class="block">A @{TypeAnnotationTargetConverter} takes "unresolved" instances of <a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationTarget.html" title="class in com.ibm.wala.shrike.shrikeCT"><code>TypeAnnotationsReader.TypeAnnotationTarget</code></a>, resolves some
+ byte-code specific data, and returns instances of the corresponding <a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTarget.html" title="class in com.ibm.wala.types.annotations"><code>TypeAnnotation.TypeAnnotationTarget</code></a> subclass.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -218,12 +217,12 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html#getAnnotation--">getAnnotation</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrikeCT">TypeAnnotationsReader.TargetType</a></code></td>
+<td class="colFirst"><code><a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TargetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html#getTargetType--">getTargetType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html#getTypeAnnotationsFromReader-com.ibm.wala.shrikeCT.TypeAnnotationsReader-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTargetConverter-com.ibm.wala.types.ClassLoaderReference-">getTypeAnnotationsFromReader</a></span>(<a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.html" title="class in com.ibm.wala.shrikeCT">TypeAnnotationsReader</a>&nbsp;r,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html#getTypeAnnotationsFromReader-com.ibm.wala.shrike.shrikeCT.TypeAnnotationsReader-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTargetConverter-com.ibm.wala.types.ClassLoaderReference-">getTypeAnnotationsFromReader</a></span>(<a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader</a>&nbsp;r,
                             <a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTargetConverter.html" title="interface in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTargetConverter</a>&nbsp;converter,
                             <a href="../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;clRef)</code>&nbsp;</td>
 </tr>
@@ -232,7 +231,7 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html#getTypeAnnotationTarget--">getTypeAnnotationTarget</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;<a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TypePathKind.html" title="enum in com.ibm.wala.shrikeCT">TypeAnnotationsReader.TypePathKind</a>,java.lang.Integer&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypePathKind.html" title="enum in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypePathKind</a>,java.lang.Integer&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html#getTypePath--">getTypePath</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -241,18 +240,18 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html#make-com.ibm.wala.types.annotations.Annotation-java.util.List-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTarget-com.ibm.wala.shrikeCT.TypeAnnotationsReader.TargetType-">make</a></span>(<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&nbsp;annotation,
-    java.util.List&lt;<a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TypePathKind.html" title="enum in com.ibm.wala.shrikeCT">TypeAnnotationsReader.TypePathKind</a>,java.lang.Integer&gt;&gt;&nbsp;typePath,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html#make-com.ibm.wala.types.annotations.Annotation-java.util.List-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTarget-com.ibm.wala.shrike.shrikeCT.TypeAnnotationsReader.TargetType-">make</a></span>(<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&nbsp;annotation,
+    java.util.List&lt;<a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypePathKind.html" title="enum in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypePathKind</a>,java.lang.Integer&gt;&gt;&nbsp;typePath,
     <a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTarget</a>&nbsp;typeAnnotationTarget,
-    <a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrikeCT">TypeAnnotationsReader.TargetType</a>&nbsp;targetType)</code>
+    <a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TargetType</a>&nbsp;targetType)</code>
 <div class="block">This method is intended to be used in testing only.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html#make-com.ibm.wala.types.annotations.Annotation-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTarget-com.ibm.wala.shrikeCT.TypeAnnotationsReader.TargetType-">make</a></span>(<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&nbsp;annotation,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html#make-com.ibm.wala.types.annotations.Annotation-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTarget-com.ibm.wala.shrike.shrikeCT.TypeAnnotationsReader.TargetType-">make</a></span>(<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&nbsp;annotation,
     <a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTarget</a>&nbsp;typeAnnotationTarget,
-    <a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrikeCT">TypeAnnotationsReader.TargetType</a>&nbsp;targetType)</code>
+    <a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TargetType</a>&nbsp;targetType)</code>
 <div class="block">This method is intended to be used in testing only.</div>
 </td>
 </tr>
@@ -338,32 +337,32 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="getTypeAnnotationsFromReader-com.ibm.wala.shrikeCT.TypeAnnotationsReader-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTargetConverter-com.ibm.wala.types.ClassLoaderReference-">
+<a name="getTypeAnnotationsFromReader-com.ibm.wala.shrike.shrikeCT.TypeAnnotationsReader-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTargetConverter-com.ibm.wala.types.ClassLoaderReference-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getTypeAnnotationsFromReader</h4>
-<pre>public static&nbsp;java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation</a>&gt;&nbsp;getTypeAnnotationsFromReader(<a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.html" title="class in com.ibm.wala.shrikeCT">TypeAnnotationsReader</a>&nbsp;r,
+<pre>public static&nbsp;java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation</a>&gt;&nbsp;getTypeAnnotationsFromReader(<a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader</a>&nbsp;r,
                                                                                 <a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTargetConverter.html" title="interface in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTargetConverter</a>&nbsp;converter,
                                                                                 <a href="../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;clRef)
-                                                                         throws <a href="../../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></pre>
+                                                                         throws <a href="../../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></code></dd>
+<dd><code><a href="../../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="make-com.ibm.wala.types.annotations.Annotation-java.util.List-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTarget-com.ibm.wala.shrikeCT.TypeAnnotationsReader.TargetType-">
+<a name="make-com.ibm.wala.types.annotations.Annotation-java.util.List-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTarget-com.ibm.wala.shrike.shrikeCT.TypeAnnotationsReader.TargetType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>make</h4>
 <pre>public static&nbsp;<a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation</a>&nbsp;make(<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&nbsp;annotation,
-                                  java.util.List&lt;<a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TypePathKind.html" title="enum in com.ibm.wala.shrikeCT">TypeAnnotationsReader.TypePathKind</a>,java.lang.Integer&gt;&gt;&nbsp;typePath,
+                                  java.util.List&lt;<a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypePathKind.html" title="enum in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypePathKind</a>,java.lang.Integer&gt;&gt;&nbsp;typePath,
                                   <a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTarget</a>&nbsp;typeAnnotationTarget,
-                                  <a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrikeCT">TypeAnnotationsReader.TargetType</a>&nbsp;targetType)</pre>
+                                  <a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TargetType</a>&nbsp;targetType)</pre>
 <div class="block">This method is intended to be used in testing only.
 
  <p>Otherwise, obtain TypeAnnotations from
@@ -380,7 +379,7 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="make-com.ibm.wala.types.annotations.Annotation-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTarget-com.ibm.wala.shrikeCT.TypeAnnotationsReader.TargetType-">
+<a name="make-com.ibm.wala.types.annotations.Annotation-com.ibm.wala.types.annotations.TypeAnnotation.TypeAnnotationTarget-com.ibm.wala.shrike.shrikeCT.TypeAnnotationsReader.TargetType-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -388,7 +387,7 @@ extends java.lang.Object</pre>
 <h4>make</h4>
 <pre>public static&nbsp;<a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation</a>&nbsp;make(<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&nbsp;annotation,
                                   <a href="../../../../../com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTarget</a>&nbsp;typeAnnotationTarget,
-                                  <a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrikeCT">TypeAnnotationsReader.TargetType</a>&nbsp;targetType)</pre>
+                                  <a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TargetType</a>&nbsp;targetType)</pre>
 <div class="block">This method is intended to be used in testing only.
 
  <p>Otherwise, obtain TypeAnnotations from
@@ -461,7 +460,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getTypePath</h4>
-<pre>public&nbsp;java.util.List&lt;<a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TypePathKind.html" title="enum in com.ibm.wala.shrikeCT">TypeAnnotationsReader.TypePathKind</a>,java.lang.Integer&gt;&gt;&nbsp;getTypePath()</pre>
+<pre>public&nbsp;java.util.List&lt;<a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypePathKind.html" title="enum in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypePathKind</a>,java.lang.Integer&gt;&gt;&nbsp;getTypePath()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the typePath of this <code>TypeAnnotation</code></dd>
@@ -490,10 +489,10 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getTargetType</h4>
-<pre>public&nbsp;<a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrikeCT">TypeAnnotationsReader.TargetType</a>&nbsp;getTargetType()</pre>
+<pre>public&nbsp;<a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TargetType</a>&nbsp;getTargetType()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="../../../../../com/ibm/wala/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrikeCT"><code>TypeAnnotationsReader.TargetType</code></a> of this <code>TypeAnnotation</code></dd>
+<dd>the <a href="../../../../../com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum in com.ibm.wala.shrike.shrikeCT"><code>TypeAnnotationsReader.TargetType</code></a> of this <code>TypeAnnotation</code></dd>
 </dl>
 </li>
 </ul>

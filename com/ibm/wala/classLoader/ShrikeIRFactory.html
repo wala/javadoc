@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interface in com.ibm.wala.ssa">IRFactory</a>&lt;<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrikeBT">IInstruction</a>&gt;&gt;</dd>
+<dd><a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interface in com.ibm.wala.ssa">IRFactory</a>&lt;<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrike/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrike.shrikeBT">IInstruction</a>&gt;&gt;</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ShrikeIRFactory</span>
 extends java.lang.Object
-implements <a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interface in com.ibm.wala.ssa">IRFactory</a>&lt;<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrikeBT">IInstruction</a>&gt;&gt;</pre>
+implements <a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interface in com.ibm.wala.ssa">IRFactory</a>&lt;<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrike/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrike.shrikeBT">IInstruction</a>&gt;&gt;</pre>
 <div class="block">An <a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interface in com.ibm.wala.ssa"><code>IRFactory</code></a> that for methods that originate from Shrike.</div>
 </li>
 </ul>
@@ -171,17 +171,17 @@ implements <a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interfac
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeIRFactory.html#contextIsIrrelevant-com.ibm.wala.classLoader.IBytecodeMethod-">contextIsIrrelevant</a></span>(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrikeBT">IInstruction</a>&gt;&nbsp;method)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeIRFactory.html#contextIsIrrelevant-com.ibm.wala.classLoader.IBytecodeMethod-">contextIsIrrelevant</a></span>(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrike/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrike.shrikeBT">IInstruction</a>&gt;&nbsp;method)</code>
 <div class="block">Does this factory always return the same IR for a method, regardless of context?</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/cfg/ShrikeCFG.html" title="class in com.ibm.wala.cfg">ShrikeCFG</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeIRFactory.html#makeCFG-com.ibm.wala.classLoader.IBytecodeMethod-">makeCFG</a></span>(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrikeBT">IInstruction</a>&gt;&nbsp;method)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeIRFactory.html#makeCFG-com.ibm.wala.classLoader.IBytecodeMethod-">makeCFG</a></span>(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrike/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrike.shrikeBT">IInstruction</a>&gt;&nbsp;method)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/ssa/IR.html" title="class in com.ibm.wala.ssa">IR</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeIRFactory.html#makeIR-com.ibm.wala.classLoader.IBytecodeMethod-com.ibm.wala.ipa.callgraph.Context-com.ibm.wala.ssa.SSAOptions-">makeIR</a></span>(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrikeBT">IInstruction</a>&gt;&nbsp;method,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeIRFactory.html#makeIR-com.ibm.wala.classLoader.IBytecodeMethod-com.ibm.wala.ipa.callgraph.Context-com.ibm.wala.ssa.SSAOptions-">makeIR</a></span>(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrike/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrike.shrikeBT">IInstruction</a>&gt;&nbsp;method,
       <a href="../../../../com/ibm/wala/ipa/callgraph/Context.html" title="interface in com.ibm.wala.ipa.callgraph">Context</a>&nbsp;C,
       <a href="../../../../com/ibm/wala/ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;options)</code>
 <div class="block">Build an SSA <a href="../../../../com/ibm/wala/ssa/IR.html" title="class in com.ibm.wala.ssa"><code>IR</code></a> for a method in a particular context</div>
@@ -253,7 +253,7 @@ implements <a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interfac
 <ul class="blockList">
 <li class="blockList">
 <h4>makeCFG</h4>
-<pre>public&nbsp;<a href="../../../../com/ibm/wala/cfg/ShrikeCFG.html" title="class in com.ibm.wala.cfg">ShrikeCFG</a>&nbsp;makeCFG(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrikeBT">IInstruction</a>&gt;&nbsp;method)</pre>
+<pre>public&nbsp;<a href="../../../../com/ibm/wala/cfg/ShrikeCFG.html" title="class in com.ibm.wala.cfg">ShrikeCFG</a>&nbsp;makeCFG(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrike/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrike.shrikeBT">IInstruction</a>&gt;&nbsp;method)</pre>
 </li>
 </ul>
 <a name="makeIR-com.ibm.wala.classLoader.IBytecodeMethod-com.ibm.wala.ipa.callgraph.Context-com.ibm.wala.ssa.SSAOptions-">
@@ -262,7 +262,7 @@ implements <a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interfac
 <ul class="blockList">
 <li class="blockList">
 <h4>makeIR</h4>
-<pre>public&nbsp;<a href="../../../../com/ibm/wala/ssa/IR.html" title="class in com.ibm.wala.ssa">IR</a>&nbsp;makeIR(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrikeBT">IInstruction</a>&gt;&nbsp;method,
+<pre>public&nbsp;<a href="../../../../com/ibm/wala/ssa/IR.html" title="class in com.ibm.wala.ssa">IR</a>&nbsp;makeIR(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrike/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrike.shrikeBT">IInstruction</a>&gt;&nbsp;method,
                  <a href="../../../../com/ibm/wala/ipa/callgraph/Context.html" title="interface in com.ibm.wala.ipa.callgraph">Context</a>&nbsp;C,
                  <a href="../../../../com/ibm/wala/ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;options)
           throws java.lang.IllegalArgumentException</pre>
@@ -270,7 +270,7 @@ implements <a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interfac
 <div class="block">Build an SSA <a href="../../../../com/ibm/wala/ssa/IR.html" title="class in com.ibm.wala.ssa"><code>IR</code></a> for a method in a particular context</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/ibm/wala/ssa/IRFactory.html#makeIR-T-com.ibm.wala.ipa.callgraph.Context-com.ibm.wala.ssa.SSAOptions-">makeIR</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interface in com.ibm.wala.ssa">IRFactory</a>&lt;<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrikeBT">IInstruction</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../../../com/ibm/wala/ssa/IRFactory.html#makeIR-T-com.ibm.wala.ipa.callgraph.Context-com.ibm.wala.ssa.SSAOptions-">makeIR</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interface in com.ibm.wala.ssa">IRFactory</a>&lt;<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrike/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrike.shrikeBT">IInstruction</a>&gt;&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code></dd>
 </dl>
@@ -282,12 +282,12 @@ implements <a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interfac
 <ul class="blockListLast">
 <li class="blockList">
 <h4>contextIsIrrelevant</h4>
-<pre>public&nbsp;boolean&nbsp;contextIsIrrelevant(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrikeBT">IInstruction</a>&gt;&nbsp;method)</pre>
+<pre>public&nbsp;boolean&nbsp;contextIsIrrelevant(<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrike/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrike.shrikeBT">IInstruction</a>&gt;&nbsp;method)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/ibm/wala/ssa/IRFactory.html#contextIsIrrelevant-T-">IRFactory</a></code></span></div>
 <div class="block">Does this factory always return the same IR for a method, regardless of context?</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/ibm/wala/ssa/IRFactory.html#contextIsIrrelevant-T-">contextIsIrrelevant</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interface in com.ibm.wala.ssa">IRFactory</a>&lt;<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrikeBT">IInstruction</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../../../com/ibm/wala/ssa/IRFactory.html#contextIsIrrelevant-T-">contextIsIrrelevant</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/ssa/IRFactory.html" title="interface in com.ibm.wala.ssa">IRFactory</a>&lt;<a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="interface in com.ibm.wala.classLoader">IBytecodeMethod</a>&lt;<a href="../../../../com/ibm/wala/shrike/shrikeBT/IInstruction.html" title="interface in com.ibm.wala.shrike.shrikeBT">IInstruction</a>&gt;&gt;</code></dd>
 </dl>
 </li>
 </ul>

@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.javax.swing.JSplitPane">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.ibm.wala.viz.viewer.PaPanel">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.ibm.wala.core.viz.viewer.PaPanel">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
@@ -110,7 +110,7 @@ var activeTableTab = "activeTableTab";
 <li>javax.swing.JSplitPane</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="class in com.ibm.wala.viz.viewer">com.ibm.wala.viz.viewer.PaPanel</a></li>
+<li><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html" title="class in com.ibm.wala.core.viz.viewer">com.ibm.wala.core.viz.viewer.PaPanel</a></li>
 <li>
 <ul class="inheritance">
 <li>com.ibm.wala.cast.js.vis.JsPaPanel</li>
@@ -137,7 +137,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">JsPaPanel</span>
-extends <a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="class in com.ibm.wala.viz.viewer">PaPanel</a></pre>
+extends <a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html" title="class in com.ibm.wala.core.viz.viewer">PaPanel</a></pre>
 <div class="block">Augments the PaPanel with: 1) global pointer keys at the root level. 2) property catalog key for
  instance keys.</div>
 <dl>
@@ -195,11 +195,11 @@ extends <a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.com.ibm.wala.viz.viewer.PaPanel">
+<li class="blockList"><a name="fields.inherited.from.class.com.ibm.wala.core.viz.viewer.PaPanel">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;com.ibm.wala.viz.viewer.<a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="class in com.ibm.wala.viz.viewer">PaPanel</a></h3>
-<code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#cg">cg</a>, <a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#pa">pa</a></code></li>
+<h3>Fields inherited from class&nbsp;com.ibm.wala.core.viz.viewer.<a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html" title="class in com.ibm.wala.core.viz.viewer">PaPanel</a></h3>
+<code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#cg">cg</a>, <a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#pa">pa</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.javax.swing.JSplitPane">
@@ -281,11 +281,11 @@ extends <a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.com.ibm.wala.viz.viewer.PaPanel">
+<li class="blockList"><a name="methods.inherited.from.class.com.ibm.wala.core.viz.viewer.PaPanel">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.ibm.wala.viz.viewer.<a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="class in com.ibm.wala.viz.viewer">PaPanel</a></h3>
-<code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#init--">init</a>, <a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#mapUsingMutableMapping-com.ibm.wala.util.intset.MutableMapping-int-T-">mapUsingMutableMapping</a>, <a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#nonNullList-java.util.List-">nonNullList</a></code></li>
+<h3>Methods inherited from class&nbsp;com.ibm.wala.core.viz.viewer.<a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html" title="class in com.ibm.wala.core.viz.viewer">PaPanel</a></h3>
+<code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#init--">init</a>, <a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#mapUsingMutableMapping-com.ibm.wala.util.intset.MutableMapping-int-T-">mapUsingMutableMapping</a>, <a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#nonNullList-java.util.List-">nonNullList</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.javax.swing.JSplitPane">
@@ -361,12 +361,12 @@ extends <a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="
 <li class="blockList">
 <h4>getPointerKeysUnderInstanceKey</h4>
 <pre>protected&nbsp;java.util.List&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&gt;&nbsp;getPointerKeysUnderInstanceKey(<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;ik)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#getPointerKeysUnderInstanceKey-com.ibm.wala.ipa.callgraph.propagation.InstanceKey-">PaPanel</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#getPointerKeysUnderInstanceKey-com.ibm.wala.ipa.callgraph.propagation.InstanceKey-">PaPanel</a></code></span></div>
 <div class="block">Get the set of pointer keys that should be presented below an instance key in the heap tree.
  Override if you have special pointer keys (not just for fields)</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#getPointerKeysUnderInstanceKey-com.ibm.wala.ipa.callgraph.propagation.InstanceKey-">getPointerKeysUnderInstanceKey</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="class in com.ibm.wala.viz.viewer">PaPanel</a></code></dd>
+<dd><code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#getPointerKeysUnderInstanceKey-com.ibm.wala.ipa.callgraph.propagation.InstanceKey-">getPointerKeysUnderInstanceKey</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html" title="class in com.ibm.wala.core.viz.viewer">PaPanel</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -377,11 +377,11 @@ extends <a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="
 <li class="blockList">
 <h4>getRootNodes</h4>
 <pre>protected&nbsp;java.util.List&lt;java.lang.Object&gt;&nbsp;getRootNodes()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#getRootNodes--">PaPanel</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#getRootNodes--">PaPanel</a></code></span></div>
 <div class="block">Override if you want different roots for your heap tree.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#getRootNodes--">getRootNodes</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="class in com.ibm.wala.viz.viewer">PaPanel</a></code></dd>
+<dd><code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#getRootNodes--">getRootNodes</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html" title="class in com.ibm.wala.core.viz.viewer">PaPanel</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -392,11 +392,11 @@ extends <a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="
 <li class="blockList">
 <h4>getChildrenFor</h4>
 <pre>protected&nbsp;java.util.List&lt;java.lang.Object&gt;&nbsp;getChildrenFor(java.lang.Object&nbsp;node)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#getChildrenFor-java.lang.Object-">PaPanel</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#getChildrenFor-java.lang.Object-">PaPanel</a></code></span></div>
 <div class="block">Used for filling the tree dynamically. Override and handle your own nodes / different links.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html#getChildrenFor-java.lang.Object-">getChildrenFor</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="class in com.ibm.wala.viz.viewer">PaPanel</a></code></dd>
+<dd><code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html#getChildrenFor-java.lang.Object-">getChildrenFor</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/ibm/wala/core/viz/viewer/PaPanel.html" title="class in com.ibm.wala.core.viz.viewer">PaPanel</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -453,7 +453,7 @@ extends <a href="../../../../../../com/ibm/wala/viz/viewer/PaPanel.html" title="
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.javax.swing.JSplitPane">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.ibm.wala.viz.viewer.PaPanel">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.ibm.wala.core.viz.viewer.PaPanel">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>

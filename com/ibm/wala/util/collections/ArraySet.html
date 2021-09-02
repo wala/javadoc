@@ -117,14 +117,19 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.lang.Iterable&lt;T&gt;, java.util.Collection&lt;T&gt;, java.util.Set&lt;T&gt;</dd>
+<dd>java.io.Serializable, java.lang.Iterable&lt;T&gt;, java.util.Collection&lt;T&gt;, java.util.Set&lt;T&gt;</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ArraySet&lt;T&gt;</span>
-extends java.util.AbstractSet&lt;T&gt;</pre>
+extends java.util.AbstractSet&lt;T&gt;
+implements java.io.Serializable</pre>
 <div class="block">A set implementation backed by an array. This implementation is space-efficient for small sets,
  but several operations like <a href="../../../../../com/ibm/wala/util/collections/ArraySet.html#contains-java.lang.Object-"><code>contains(Object)</code></a> are linear time.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../serialized-form.html#com.ibm.wala.util.collections.ArraySet">Serialized Form</a></dd>
+</dl>
 </li>
 </ul>
 </div>

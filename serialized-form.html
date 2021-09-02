@@ -103,7 +103,7 @@
 <li class="blockList"><a name="com.ibm.wala.cast.js.vis.JsPaPanel">
 <!--   -->
 </a>
-<h3>Class <a href="com/ibm/wala/cast/js/vis/JsPaPanel.html" title="class in com.ibm.wala.cast.js.vis">com.ibm.wala.cast.js.vis.JsPaPanel</a> extends <a href="com/ibm/wala/viz/viewer/PaPanel.html" title="class in com.ibm.wala.viz.viewer">PaPanel</a> implements Serializable</h3>
+<h3>Class <a href="com/ibm/wala/cast/js/vis/JsPaPanel.html" title="class in com.ibm.wala.cast.js.vis">com.ibm.wala.cast.js.vis.JsPaPanel</a> extends <a href="com/ibm/wala/core/viz/viewer/PaPanel.html" title="class in com.ibm.wala.core.viz.viewer">PaPanel</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -135,7 +135,7 @@
 <li class="blockList"><a name="com.ibm.wala.cast.js.vis.JsViewer">
 <!--   -->
 </a>
-<h3>Class <a href="com/ibm/wala/cast/js/vis/JsViewer.html" title="class in com.ibm.wala.cast.js.vis">com.ibm.wala.cast.js.vis.JsViewer</a> extends <a href="com/ibm/wala/viz/viewer/WalaViewer.html" title="class in com.ibm.wala.viz.viewer">WalaViewer</a> implements Serializable</h3>
+<h3>Class <a href="com/ibm/wala/cast/js/vis/JsViewer.html" title="class in com.ibm.wala.cast.js.vis">com.ibm.wala.cast.js.vis.JsViewer</a> extends <a href="com/ibm/wala/core/viz/viewer/WalaViewer.html" title="class in com.ibm.wala.core.viz.viewer">WalaViewer</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -181,6 +181,259 @@
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>333L</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.ibm.wala.core.util</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.ibm.wala.core.util.CancelRuntimeException">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/core/util/CancelRuntimeException.html" title="class in com.ibm.wala.core.util">com.ibm.wala.core.util.CancelRuntimeException</a> extends java.lang.RuntimeException implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>5859062345002606705L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.ibm.wala.core.util.ProgressMasterImpl.TooMuchMemoryUsed">
+<!--   -->
+</a>
+<h3>Class com.ibm.wala.core.util.ProgressMasterImpl.TooMuchMemoryUsed extends java.lang.Exception implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-7174940833610292692L</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.ibm.wala.core.util.ssa</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.ibm.wala.core.util.ssa.ClassLookupException">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/core/util/ssa/ClassLookupException.html" title="class in com.ibm.wala.core.util.ssa">com.ibm.wala.core.util.ssa.ClassLookupException</a> extends java.lang.RuntimeException implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>7551139209041666026L</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.ibm.wala.core.util.strings</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.ibm.wala.core.util.strings.Atom">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">com.ibm.wala.core.util.strings.Atom</a> extends java.lang.Object implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-3256390509887654329L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>readResolve</h4>
+<pre>private&nbsp;java.lang.Object&nbsp;readResolve()</pre>
+<div class="block">Special method that is called by Java deserialization process. Any HashCons'ed object should
+ implement it, in order to make sure that all equal objects are consolidated.</div>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>val</h4>
+<pre>byte[] val</pre>
+<div class="block">The utf8 value this atom represents</div>
+</li>
+<li class="blockListLast">
+<h4>hash</h4>
+<pre>int hash</pre>
+<div class="block">Cached hash code for this atom key.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;com.ibm.wala.core.viz.viewer</h2>
+<ul class="blockList">
+<li class="blockList"><a name="com.ibm.wala.core.viz.viewer.CgPanel">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/core/viz/viewer/CgPanel.html" title="class in com.ibm.wala.core.viz.viewer">com.ibm.wala.core.viz.viewer.CgPanel</a> extends javax.swing.JSplitPane implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-4094408933344852549L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>cg</h4>
+<pre><a href="com/ibm/wala/ipa/callgraph/CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a> cg</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.ibm.wala.core.viz.viewer.ChaPanel">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/core/viz/viewer/ChaPanel.html" title="class in com.ibm.wala.core.viz.viewer">com.ibm.wala.core.viz.viewer.ChaPanel</a> extends javax.swing.JSplitPane implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-9058908127737757320L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>cha</h4>
+<pre><a href="com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a> cha</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.ibm.wala.core.viz.viewer.IrViewer">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/core/viz/viewer/IrViewer.html" title="class in com.ibm.wala.core.viz.viewer">com.ibm.wala.core.viz.viewer.IrViewer</a> extends javax.swing.JPanel implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-5668847442988389016L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>methodName</h4>
+<pre>javax.swing.JTextField methodName</pre>
+</li>
+<li class="blockList">
+<h4>irLineList</h4>
+<pre>javax.swing.DefaultListModel&lt;E&gt; irLineList</pre>
+</li>
+<li class="blockList">
+<h4>irLines</h4>
+<pre>javax.swing.JList&lt;E&gt; irLines</pre>
+</li>
+<li class="blockList">
+<h4>lineToPosition</h4>
+<pre>java.util.Map&lt;K,V&gt; lineToPosition</pre>
+</li>
+<li class="blockList">
+<h4>pcToLine</h4>
+<pre>java.util.Map&lt;K,V&gt; pcToLine</pre>
+</li>
+<li class="blockList">
+<h4>lineToPc</h4>
+<pre>java.util.Map&lt;K,V&gt; lineToPc</pre>
+</li>
+<li class="blockListLast">
+<h4>selectedPcListners</h4>
+<pre>java.util.Set&lt;E&gt; selectedPcListners</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.ibm.wala.core.viz.viewer.PaPanel">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/core/viz/viewer/PaPanel.html" title="class in com.ibm.wala.core.viz.viewer">com.ibm.wala.core.viz.viewer.PaPanel</a> extends javax.swing.JSplitPane implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>8120735305334110889L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>pa</h4>
+<pre><a href="com/ibm/wala/ipa/callgraph/propagation/PointerAnalysis.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerAnalysis</a>&lt;<a href="com/ibm/wala/ipa/callgraph/propagation/PointerAnalysis.html" title="type parameter in PointerAnalysis">T</a> extends <a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt; pa</pre>
+</li>
+<li class="blockList">
+<h4>cg</h4>
+<pre><a href="com/ibm/wala/ipa/callgraph/CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a> cg</pre>
+</li>
+<li class="blockList">
+<h4>fullName</h4>
+<pre>javax.swing.JTextField fullName</pre>
+</li>
+<li class="blockList">
+<h4>irViewer</h4>
+<pre><a href="com/ibm/wala/core/viz/viewer/IrAndSourceViewer.html" title="class in com.ibm.wala.core.viz.viewer">IrAndSourceViewer</a> irViewer</pre>
+</li>
+<li class="blockList">
+<h4>cgNodeIdToLocalPointers</h4>
+<pre><a href="com/ibm/wala/util/intset/MutableMapping.html" title="class in com.ibm.wala.util.intset">MutableMapping</a>&lt;<a href="com/ibm/wala/util/intset/MutableMapping.html" title="type parameter in MutableMapping">T</a>&gt; cgNodeIdToLocalPointers</pre>
+</li>
+<li class="blockList">
+<h4>cgNodeIdToReturnValue</h4>
+<pre><a href="com/ibm/wala/util/intset/MutableMapping.html" title="class in com.ibm.wala.util.intset">MutableMapping</a>&lt;<a href="com/ibm/wala/util/intset/MutableMapping.html" title="type parameter in MutableMapping">T</a>&gt; cgNodeIdToReturnValue</pre>
+</li>
+<li class="blockListLast">
+<h4>instanceKeyIdToInstanceFieldPointers</h4>
+<pre><a href="com/ibm/wala/util/intset/MutableMapping.html" title="class in com.ibm.wala.util.intset">MutableMapping</a>&lt;<a href="com/ibm/wala/util/intset/MutableMapping.html" title="type parameter in MutableMapping">T</a>&gt; instanceKeyIdToInstanceFieldPointers</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.ibm.wala.core.viz.viewer.SourceViewer">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/core/viz/viewer/SourceViewer.html" title="class in com.ibm.wala.core.viz.viewer">com.ibm.wala.core.viz.viewer.SourceViewer</a> extends javax.swing.JPanel implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-1688405955293925453L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>sourceURL</h4>
+<pre>java.net.URL sourceURL</pre>
+</li>
+<li class="blockList">
+<h4>sourceCodeLocation</h4>
+<pre>javax.swing.JTextField sourceCodeLocation</pre>
+</li>
+<li class="blockList">
+<h4>sourceCodeLinesList</h4>
+<pre>javax.swing.DefaultListModel&lt;E&gt; sourceCodeLinesList</pre>
+</li>
+<li class="blockListLast">
+<h4>sourceCodeLines</h4>
+<pre>javax.swing.JList&lt;E&gt; sourceCodeLines</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.ibm.wala.core.viz.viewer.WalaViewer">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/core/viz/viewer/WalaViewer.html" title="class in com.ibm.wala.core.viz.viewer">com.ibm.wala.core.viz.viewer.WalaViewer</a> extends javax.swing.JFrame implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-8580178580211053765L</dd>
 </dl>
 </li>
 </ul>
@@ -414,6 +667,107 @@
 <li class="blockList">
 <h2 title="Package">Package&nbsp;com.ibm.wala.demandpa.flowgraph</h2>
 <ul class="blockList">
+<li class="blockList"><a name="com.ibm.wala.demandpa.flowgraph.AbstractDemandFlowGraph">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/demandpa/flowgraph/AbstractDemandFlowGraph.html" title="class in com.ibm.wala.demandpa.flowgraph">com.ibm.wala.demandpa.flowgraph.AbstractDemandFlowGraph</a> extends <a href="com/ibm/wala/demandpa/flowgraph/AbstractFlowGraph.html" title="class in com.ibm.wala.demandpa.flowgraph">AbstractFlowGraph</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>cgNodesVisited</h4>
+<pre><a href="com/ibm/wala/util/intset/BitVectorIntSet.html" title="class in com.ibm.wala.util.intset">BitVectorIntSet</a> cgNodesVisited</pre>
+<div class="block">node numbers of CGNodes we have already visited</div>
+</li>
+<li class="blockListLast">
+<h4>callerCache</h4>
+<pre>java.util.Map&lt;K,V&gt; callerCache</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.ibm.wala.demandpa.flowgraph.AbstractFlowGraph">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/demandpa/flowgraph/AbstractFlowGraph.html" title="class in com.ibm.wala.demandpa.flowgraph">com.ibm.wala.demandpa.flowgraph.AbstractFlowGraph</a> extends <a href="com/ibm/wala/util/graph/labeled/SlowSparseNumberedLabeledGraph.html" title="class in com.ibm.wala.util.graph.labeled">SlowSparseNumberedLabeledGraph</a>&lt;java.lang.Object,<a href="com/ibm/wala/demandpa/flowgraph/IFlowLabel.html" title="interface in com.ibm.wala.demandpa.flowgraph">IFlowLabel</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>callDefs</h4>
+<pre>java.util.Map&lt;K,V&gt; callDefs</pre>
+<div class="block">Map: LocalPointerKey -&gt; SSAInvokeInstruction. If we have (x, foo()), that means that x was
+ def'fed by the return value from the call to foo()</div>
+</li>
+<li class="blockList">
+<h4>callParams</h4>
+<pre>java.util.Map&lt;K,V&gt; callParams</pre>
+<div class="block">Map: <a href="com/ibm/wala/ipa/callgraph/propagation/LocalPointerKey.html" title="class in com.ibm.wala.ipa.callgraph.propagation"><code>LocalPointerKey</code></a> -&gt; <code>Set</code>&lt;<a href="com/ibm/wala/ssa/SSAInvokeInstruction.html" title="class in com.ibm.wala.ssa"><code>SSAInvokeInstruction</code></a>&gt;. If we have
+ (x, foo()), that means x was passed as a parameter to the call to foo(). The parameter position
+ is not represented and must be recovered.</div>
+</li>
+<li class="blockList">
+<h4>params</h4>
+<pre>java.util.Map&lt;K,V&gt; params</pre>
+<div class="block">Map: LocalPointerKey -&gt; CGNode. If we have (x, foo), then x is a parameter of method foo.
+ For now, we have to re-discover the parameter position. TODO this should just be a set; we can
+ get the CGNode from the <a href="com/ibm/wala/ipa/callgraph/propagation/LocalPointerKey.html" title="class in com.ibm.wala.ipa.callgraph.propagation"><code>LocalPointerKey</code></a></div>
+</li>
+<li class="blockList">
+<h4>returns</h4>
+<pre>java.util.Map&lt;K,V&gt; returns</pre>
+<div class="block">Map: <a href="com/ibm/wala/ipa/callgraph/propagation/LocalPointerKey.html" title="class in com.ibm.wala.ipa.callgraph.propagation"><code>LocalPointerKey</code></a> -&gt; <a href="com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CGNode</code></a>. If we have (x, foo), then x is a return
+ value of method foo. Must re-discover if x is normal or exceptional return value.</div>
+</li>
+<li class="blockList">
+<h4>mam</h4>
+<pre><a href="com/ibm/wala/demandpa/util/MemoryAccessMap.html" title="interface in com.ibm.wala.demandpa.util">MemoryAccessMap</a> mam</pre>
+</li>
+<li class="blockList">
+<h4>heapModel</h4>
+<pre><a href="com/ibm/wala/ipa/callgraph/propagation/HeapModel.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">HeapModel</a> heapModel</pre>
+</li>
+<li class="blockList">
+<h4>cha</h4>
+<pre><a href="com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a> cha</pre>
+</li>
+<li class="blockListLast">
+<h4>cg</h4>
+<pre><a href="com/ibm/wala/ipa/callgraph/CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a> cg</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.ibm.wala.demandpa.flowgraph.DemandPointerFlowGraph">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/demandpa/flowgraph/DemandPointerFlowGraph.html" title="class in com.ibm.wala.demandpa.flowgraph">com.ibm.wala.demandpa.flowgraph.DemandPointerFlowGraph</a> extends <a href="com/ibm/wala/demandpa/flowgraph/AbstractDemandFlowGraph.html" title="class in com.ibm.wala.demandpa.flowgraph">AbstractDemandFlowGraph</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="com.ibm.wala.demandpa.flowgraph.DemandValueFlowGraph">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/demandpa/flowgraph/DemandValueFlowGraph.html" title="class in com.ibm.wala.demandpa.flowgraph">com.ibm.wala.demandpa.flowgraph.DemandValueFlowGraph</a> extends <a href="com/ibm/wala/demandpa/flowgraph/AbstractDemandFlowGraph.html" title="class in com.ibm.wala.demandpa.flowgraph">AbstractDemandFlowGraph</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
 <li class="blockList"><a name="com.ibm.wala.demandpa.flowgraph.SimpleDemandPointerFlowGraph">
 <!--   -->
 </a>
@@ -584,12 +938,12 @@
 </ul>
 </li>
 <li class="blockList">
-<h2 title="Package">Package&nbsp;com.ibm.wala.shrikeBT</h2>
+<h2 title="Package">Package&nbsp;com.ibm.wala.shrike.shrikeBT</h2>
 <ul class="blockList">
-<li class="blockList"><a name="com.ibm.wala.shrikeBT.Decoder.InvalidBytecodeException">
+<li class="blockList"><a name="com.ibm.wala.shrike.shrikeBT.Decoder.InvalidBytecodeException">
 <!--   -->
 </a>
-<h3>Class <a href="com/ibm/wala/shrikeBT/Decoder.InvalidBytecodeException.html" title="class in com.ibm.wala.shrikeBT">com.ibm.wala.shrikeBT.Decoder.InvalidBytecodeException</a> extends java.lang.Exception implements Serializable</h3>
+<h3>Class <a href="com/ibm/wala/shrike/shrikeBT/Decoder.InvalidBytecodeException.html" title="class in com.ibm.wala.shrike.shrikeBT">com.ibm.wala.shrike.shrikeBT.Decoder.InvalidBytecodeException</a> extends java.lang.Exception implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>-8807125136613458111L</dd>
@@ -609,12 +963,12 @@
 </ul>
 </li>
 <li class="blockList">
-<h2 title="Package">Package&nbsp;com.ibm.wala.shrikeBT.analysis</h2>
+<h2 title="Package">Package&nbsp;com.ibm.wala.shrike.shrikeBT.analysis</h2>
 <ul class="blockList">
-<li class="blockList"><a name="com.ibm.wala.shrikeBT.analysis.Analyzer.FailureException">
+<li class="blockList"><a name="com.ibm.wala.shrike.shrikeBT.analysis.Analyzer.FailureException">
 <!--   -->
 </a>
-<h3>Class <a href="com/ibm/wala/shrikeBT/analysis/Analyzer.FailureException.html" title="class in com.ibm.wala.shrikeBT.analysis">com.ibm.wala.shrikeBT.analysis.Analyzer.FailureException</a> extends java.lang.Exception implements Serializable</h3>
+<h3>Class <a href="com/ibm/wala/shrike/shrikeBT/analysis/Analyzer.FailureException.html" title="class in com.ibm.wala.shrike.shrikeBT.analysis">com.ibm.wala.shrike.shrikeBT.analysis.Analyzer.FailureException</a> extends java.lang.Exception implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>-7663520961403117526L</dd>
@@ -642,12 +996,12 @@
 </ul>
 </li>
 <li class="blockList">
-<h2 title="Package">Package&nbsp;com.ibm.wala.shrikeBT.tools</h2>
+<h2 title="Package">Package&nbsp;com.ibm.wala.shrike.shrikeBT.tools</h2>
 <ul class="blockList">
-<li class="blockList"><a name="com.ibm.wala.shrikeBT.tools.MethodOptimizer.UnoptimizableCodeException">
+<li class="blockList"><a name="com.ibm.wala.shrike.shrikeBT.tools.MethodOptimizer.UnoptimizableCodeException">
 <!--   -->
 </a>
-<h3>Class <a href="com/ibm/wala/shrikeBT/tools/MethodOptimizer.UnoptimizableCodeException.html" title="class in com.ibm.wala.shrikeBT.tools">com.ibm.wala.shrikeBT.tools.MethodOptimizer.UnoptimizableCodeException</a> extends java.lang.Exception implements Serializable</h3>
+<h3>Class <a href="com/ibm/wala/shrike/shrikeBT/tools/MethodOptimizer.UnoptimizableCodeException.html" title="class in com.ibm.wala.shrike.shrikeBT.tools">com.ibm.wala.shrike.shrikeBT.tools.MethodOptimizer.UnoptimizableCodeException</a> extends java.lang.Exception implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>2543170335674010642L</dd>
@@ -656,12 +1010,12 @@
 </ul>
 </li>
 <li class="blockList">
-<h2 title="Package">Package&nbsp;com.ibm.wala.shrikeCT</h2>
+<h2 title="Package">Package&nbsp;com.ibm.wala.shrike.shrikeCT</h2>
 <ul class="blockList">
-<li class="blockList"><a name="com.ibm.wala.shrikeCT.InvalidClassFileException">
+<li class="blockList"><a name="com.ibm.wala.shrike.shrikeCT.InvalidClassFileException">
 <!--   -->
 </a>
-<h3>Class <a href="com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">com.ibm.wala.shrikeCT.InvalidClassFileException</a> extends java.lang.Exception implements Serializable</h3>
+<h3>Class <a href="com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">com.ibm.wala.shrike.shrikeCT.InvalidClassFileException</a> extends java.lang.Exception implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>-6224203694783674259L</dd>
@@ -681,12 +1035,12 @@
 </ul>
 </li>
 <li class="blockList">
-<h2 title="Package">Package&nbsp;com.ibm.wala.sourcepos</h2>
+<h2 title="Package">Package&nbsp;com.ibm.wala.shrike.sourcepos</h2>
 <ul class="blockList">
-<li class="blockList"><a name="com.ibm.wala.sourcepos.InvalidSourceInfoException">
+<li class="blockList"><a name="com.ibm.wala.shrike.sourcepos.InvalidSourceInfoException">
 <!--   -->
 </a>
-<h3>Class <a href="com/ibm/wala/sourcepos/InvalidSourceInfoException.html" title="class in com.ibm.wala.sourcepos">com.ibm.wala.sourcepos.InvalidSourceInfoException</a> extends java.lang.Exception implements Serializable</h3>
+<h3>Class <a href="com/ibm/wala/shrike/sourcepos/InvalidSourceInfoException.html" title="class in com.ibm.wala.shrike.sourcepos">com.ibm.wala.shrike.sourcepos.InvalidSourceInfoException</a> extends java.lang.Exception implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>-5895195422989965097L</dd>
@@ -711,12 +1065,12 @@
 <ul class="blockList">
 <li class="blockList">
 <h4>name</h4>
-<pre><a href="com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a> name</pre>
+<pre><a href="com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a> name</pre>
 <div class="block">A String which identifies this loader</div>
 </li>
 <li class="blockList">
 <h4>language</h4>
-<pre><a href="com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">Atom</a> language</pre>
+<pre><a href="com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a> language</pre>
 <div class="block">A String which identifies the language for this loader</div>
 </li>
 <li class="blockListLast">
@@ -789,24 +1143,6 @@
 <dd>3728159810629412928L</dd>
 </dl>
 </li>
-<li class="blockList"><a name="com.ibm.wala.util.CancelRuntimeException">
-<!--   -->
-</a>
-<h3>Class <a href="com/ibm/wala/util/CancelRuntimeException.html" title="class in com.ibm.wala.util">com.ibm.wala.util.CancelRuntimeException</a> extends java.lang.RuntimeException implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>5859062345002606705L</dd>
-</dl>
-</li>
-<li class="blockList"><a name="com.ibm.wala.util.ProgressMaster.TooMuchMemoryUsed">
-<!--   -->
-</a>
-<h3>Class <a href="com/ibm/wala/util/ProgressMaster.TooMuchMemoryUsed.html" title="class in com.ibm.wala.util">com.ibm.wala.util.ProgressMaster.TooMuchMemoryUsed</a> extends java.lang.Exception implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>-7174940833610292692L</dd>
-</dl>
-</li>
 <li class="blockList"><a name="com.ibm.wala.util.WalaException">
 <!--   -->
 </a>
@@ -830,6 +1166,34 @@
 <li class="blockList">
 <h2 title="Package">Package&nbsp;com.ibm.wala.util.collections</h2>
 <ul class="blockList">
+<li class="blockList"><a name="com.ibm.wala.util.collections.ArraySet">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/util/collections/ArraySet.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.ArraySet</a> extends java.util.AbstractSet&lt;<a href="com/ibm/wala/util/collections/ArraySet.html" title="type parameter in ArraySet">T</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-5842124218051589966L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>_elems</h4>
+<pre>java.lang.Object[] _elems</pre>
+</li>
+<li class="blockList">
+<h4>_curIndex</h4>
+<pre>int _curIndex</pre>
+</li>
+<li class="blockListLast">
+<h4>checkDupes</h4>
+<pre>boolean checkDupes</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a name="com.ibm.wala.util.collections.ArraySetMultiMap">
 <!--   -->
 </a>
@@ -847,6 +1211,46 @@
 <dt>serialVersionUID:</dt>
 <dd>1699856257459175263L</dd>
 </dl>
+</li>
+<li class="blockList"><a name="com.ibm.wala.util.collections.Iterator2List">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/util/collections/Iterator2List.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.Iterator2List</a> extends <a href="com/ibm/wala/util/collections/Iterator2Collection.html" title="class in com.ibm.wala.util.collections">Iterator2Collection</a>&lt;<a href="com/ibm/wala/util/collections/Iterator2List.html" title="type parameter in Iterator2List">T</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-4364941553982190713L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>delegate</h4>
+<pre>java.util.List&lt;E&gt; delegate</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="com.ibm.wala.util.collections.Iterator2Set">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/util/collections/Iterator2Set.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.Iterator2Set</a> extends <a href="com/ibm/wala/util/collections/Iterator2Collection.html" title="class in com.ibm.wala.util.collections">Iterator2Collection</a>&lt;<a href="com/ibm/wala/util/collections/Iterator2Set.html" title="type parameter in Iterator2Set">T</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>3771468677527694694L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>delegate</h4>
+<pre>java.util.Set&lt;E&gt; delegate</pre>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li class="blockList"><a name="com.ibm.wala.util.collections.Pair">
 <!--   -->
@@ -1139,6 +1543,30 @@
 <li class="blockList">
 <h2 title="Package">Package&nbsp;com.ibm.wala.util.graph.labeled</h2>
 <ul class="blockList">
+<li class="blockList"><a name="com.ibm.wala.util.graph.labeled.SlowSparseNumberedLabeledGraph">
+<!--   -->
+</a>
+<h3>Class <a href="com/ibm/wala/util/graph/labeled/SlowSparseNumberedLabeledGraph.html" title="class in com.ibm.wala.util.graph.labeled">com.ibm.wala.util.graph.labeled.SlowSparseNumberedLabeledGraph</a> extends <a href="com/ibm/wala/util/graph/labeled/AbstractNumberedLabeledGraph.html" title="class in com.ibm.wala.util.graph.labeled">AbstractNumberedLabeledGraph</a>&lt;<a href="com/ibm/wala/util/graph/labeled/SlowSparseNumberedLabeledGraph.html" title="type parameter in SlowSparseNumberedLabeledGraph">T</a>,<a href="com/ibm/wala/util/graph/labeled/SlowSparseNumberedLabeledGraph.html" title="type parameter in SlowSparseNumberedLabeledGraph">U</a>&gt; implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-6929183520814732209L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>nodeManager</h4>
+<pre><a href="com/ibm/wala/util/graph/impl/SlowNumberedNodeManager.html" title="class in com.ibm.wala.util.graph.impl">SlowNumberedNodeManager</a>&lt;<a href="com/ibm/wala/util/graph/impl/SlowNumberedNodeManager.html" title="type parameter in SlowNumberedNodeManager">T</a>&gt; nodeManager</pre>
+</li>
+<li class="blockListLast">
+<h4>edgeManager</h4>
+<pre><a href="com/ibm/wala/util/graph/labeled/SparseNumberedLabeledEdgeManager.html" title="class in com.ibm.wala.util.graph.labeled">SparseNumberedLabeledEdgeManager</a>&lt;<a href="com/ibm/wala/util/graph/labeled/SparseNumberedLabeledEdgeManager.html" title="type parameter in SparseNumberedLabeledEdgeManager">T</a>,<a href="com/ibm/wala/util/graph/labeled/SparseNumberedLabeledEdgeManager.html" title="type parameter in SparseNumberedLabeledEdgeManager">U</a>&gt; edgeManager</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a name="com.ibm.wala.util.graph.labeled.SparseNumberedLabeledEdgeManager">
 <!--   -->
 </a>
@@ -1801,236 +2229,6 @@
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="blockList">
-<h2 title="Package">Package&nbsp;com.ibm.wala.util.ssa</h2>
-<ul class="blockList">
-<li class="blockList"><a name="com.ibm.wala.util.ssa.ClassLookupException">
-<!--   -->
-</a>
-<h3>Class <a href="com/ibm/wala/util/ssa/ClassLookupException.html" title="class in com.ibm.wala.util.ssa">com.ibm.wala.util.ssa.ClassLookupException</a> extends java.lang.RuntimeException implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>7551139209041666026L</dd>
-</dl>
-</li>
-</ul>
-</li>
-<li class="blockList">
-<h2 title="Package">Package&nbsp;com.ibm.wala.util.strings</h2>
-<ul class="blockList">
-<li class="blockList"><a name="com.ibm.wala.util.strings.Atom">
-<!--   -->
-</a>
-<h3>Class <a href="com/ibm/wala/util/strings/Atom.html" title="class in com.ibm.wala.util.strings">com.ibm.wala.util.strings.Atom</a> extends java.lang.Object implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>-3256390509887654329L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialization Methods</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>readResolve</h4>
-<pre>private&nbsp;java.lang.Object&nbsp;readResolve()</pre>
-<div class="block">Special method that is called by Java deserialization process. Any HashCons'ed object should
- implement it, in order to make sure that all equal objects are consolidated.</div>
-</li>
-</ul>
-</li>
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>val</h4>
-<pre>byte[] val</pre>
-<div class="block">The utf8 value this atom represents</div>
-</li>
-<li class="blockListLast">
-<h4>hash</h4>
-<pre>int hash</pre>
-<div class="block">Cached hash code for this atom key.</div>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList">
-<h2 title="Package">Package&nbsp;com.ibm.wala.viz.viewer</h2>
-<ul class="blockList">
-<li class="blockList"><a name="com.ibm.wala.viz.viewer.CgPanel">
-<!--   -->
-</a>
-<h3>Class <a href="com/ibm/wala/viz/viewer/CgPanel.html" title="class in com.ibm.wala.viz.viewer">com.ibm.wala.viz.viewer.CgPanel</a> extends javax.swing.JSplitPane implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>-4094408933344852549L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>cg</h4>
-<pre><a href="com/ibm/wala/ipa/callgraph/CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a> cg</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="com.ibm.wala.viz.viewer.ChaPanel">
-<!--   -->
-</a>
-<h3>Class <a href="com/ibm/wala/viz/viewer/ChaPanel.html" title="class in com.ibm.wala.viz.viewer">com.ibm.wala.viz.viewer.ChaPanel</a> extends javax.swing.JSplitPane implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>-9058908127737757320L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>cha</h4>
-<pre><a href="com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a> cha</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="com.ibm.wala.viz.viewer.IrViewer">
-<!--   -->
-</a>
-<h3>Class <a href="com/ibm/wala/viz/viewer/IrViewer.html" title="class in com.ibm.wala.viz.viewer">com.ibm.wala.viz.viewer.IrViewer</a> extends javax.swing.JPanel implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>-5668847442988389016L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>methodName</h4>
-<pre>javax.swing.JTextField methodName</pre>
-</li>
-<li class="blockList">
-<h4>irLineList</h4>
-<pre>javax.swing.DefaultListModel&lt;E&gt; irLineList</pre>
-</li>
-<li class="blockList">
-<h4>irLines</h4>
-<pre>javax.swing.JList&lt;E&gt; irLines</pre>
-</li>
-<li class="blockList">
-<h4>lineToPosition</h4>
-<pre>java.util.Map&lt;K,V&gt; lineToPosition</pre>
-</li>
-<li class="blockList">
-<h4>pcToLine</h4>
-<pre>java.util.Map&lt;K,V&gt; pcToLine</pre>
-</li>
-<li class="blockList">
-<h4>lineToPc</h4>
-<pre>java.util.Map&lt;K,V&gt; lineToPc</pre>
-</li>
-<li class="blockListLast">
-<h4>selectedPcListners</h4>
-<pre>java.util.Set&lt;E&gt; selectedPcListners</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="com.ibm.wala.viz.viewer.PaPanel">
-<!--   -->
-</a>
-<h3>Class <a href="com/ibm/wala/viz/viewer/PaPanel.html" title="class in com.ibm.wala.viz.viewer">com.ibm.wala.viz.viewer.PaPanel</a> extends javax.swing.JSplitPane implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>8120735305334110889L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>pa</h4>
-<pre><a href="com/ibm/wala/ipa/callgraph/propagation/PointerAnalysis.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerAnalysis</a>&lt;<a href="com/ibm/wala/ipa/callgraph/propagation/PointerAnalysis.html" title="type parameter in PointerAnalysis">T</a> extends <a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt; pa</pre>
-</li>
-<li class="blockList">
-<h4>cg</h4>
-<pre><a href="com/ibm/wala/ipa/callgraph/CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a> cg</pre>
-</li>
-<li class="blockList">
-<h4>fullName</h4>
-<pre>javax.swing.JTextField fullName</pre>
-</li>
-<li class="blockList">
-<h4>irViewer</h4>
-<pre><a href="com/ibm/wala/viz/viewer/IrAndSourceViewer.html" title="class in com.ibm.wala.viz.viewer">IrAndSourceViewer</a> irViewer</pre>
-</li>
-<li class="blockList">
-<h4>cgNodeIdToLocalPointers</h4>
-<pre><a href="com/ibm/wala/util/intset/MutableMapping.html" title="class in com.ibm.wala.util.intset">MutableMapping</a>&lt;<a href="com/ibm/wala/util/intset/MutableMapping.html" title="type parameter in MutableMapping">T</a>&gt; cgNodeIdToLocalPointers</pre>
-</li>
-<li class="blockList">
-<h4>cgNodeIdToReturnValue</h4>
-<pre><a href="com/ibm/wala/util/intset/MutableMapping.html" title="class in com.ibm.wala.util.intset">MutableMapping</a>&lt;<a href="com/ibm/wala/util/intset/MutableMapping.html" title="type parameter in MutableMapping">T</a>&gt; cgNodeIdToReturnValue</pre>
-</li>
-<li class="blockListLast">
-<h4>instanceKeyIdToInstanceFieldPointers</h4>
-<pre><a href="com/ibm/wala/util/intset/MutableMapping.html" title="class in com.ibm.wala.util.intset">MutableMapping</a>&lt;<a href="com/ibm/wala/util/intset/MutableMapping.html" title="type parameter in MutableMapping">T</a>&gt; instanceKeyIdToInstanceFieldPointers</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="com.ibm.wala.viz.viewer.SourceViewer">
-<!--   -->
-</a>
-<h3>Class <a href="com/ibm/wala/viz/viewer/SourceViewer.html" title="class in com.ibm.wala.viz.viewer">com.ibm.wala.viz.viewer.SourceViewer</a> extends javax.swing.JPanel implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>-1688405955293925453L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>sourceURL</h4>
-<pre>java.net.URL sourceURL</pre>
-</li>
-<li class="blockList">
-<h4>sourceCodeLocation</h4>
-<pre>javax.swing.JTextField sourceCodeLocation</pre>
-</li>
-<li class="blockList">
-<h4>sourceCodeLinesList</h4>
-<pre>javax.swing.DefaultListModel&lt;E&gt; sourceCodeLinesList</pre>
-</li>
-<li class="blockListLast">
-<h4>sourceCodeLines</h4>
-<pre>javax.swing.JList&lt;E&gt; sourceCodeLines</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="com.ibm.wala.viz.viewer.WalaViewer">
-<!--   -->
-</a>
-<h3>Class <a href="com/ibm/wala/viz/viewer/WalaViewer.html" title="class in com.ibm.wala.viz.viewer">com.ibm.wala.viz.viewer.WalaViewer</a> extends javax.swing.JFrame implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>-8580178580211053765L</dd>
-</dl>
 </li>
 </ul>
 </li>

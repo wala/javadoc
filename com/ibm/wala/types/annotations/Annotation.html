@@ -130,8 +130,8 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected static java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/Annotation.html#convertToAnnotations-com.ibm.wala.types.ClassLoaderReference-com.ibm.wala.shrikeCT.AnnotationsReader.AnnotationAttribute:A-">convertToAnnotations</a></span>(<a href="../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;clRef,
-                    <a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.AnnotationAttribute.html" title="class in com.ibm.wala.shrikeCT">AnnotationsReader.AnnotationAttribute</a>[]&nbsp;allAnnotations)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/Annotation.html#convertToAnnotations-com.ibm.wala.types.ClassLoaderReference-com.ibm.wala.shrike.shrikeCT.AnnotationsReader.AnnotationAttribute:A-">convertToAnnotations</a></span>(<a href="../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;clRef,
+                    <a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.AnnotationAttribute.html" title="class in com.ibm.wala.shrike.shrikeCT">AnnotationsReader.AnnotationAttribute</a>[]&nbsp;allAnnotations)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -139,18 +139,18 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/Annotation.html#getAnnotationsFromReader-com.ibm.wala.shrikeCT.AnnotationsReader-com.ibm.wala.types.ClassLoaderReference-">getAnnotationsFromReader</a></span>(<a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.html" title="class in com.ibm.wala.shrikeCT">AnnotationsReader</a>&nbsp;r,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/Annotation.html#getAnnotationsFromReader-com.ibm.wala.shrike.shrikeCT.AnnotationsReader-com.ibm.wala.types.ClassLoaderReference-">getAnnotationsFromReader</a></span>(<a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.html" title="class in com.ibm.wala.shrike.shrikeCT">AnnotationsReader</a>&nbsp;r,
                         <a href="../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;clRef)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrikeCT">AnnotationsReader.ElementValue</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrike.shrikeCT">AnnotationsReader.ElementValue</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/Annotation.html#getNamedArguments--">getNamedArguments</a></span>()</code>
 <div class="block">Get the named arguments to the annotation, represented as a mapping from name to value</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/Annotation.html#getParameterAnnotationsFromReader-com.ibm.wala.shrikeCT.AnnotationsReader-com.ibm.wala.types.ClassLoaderReference-">getParameterAnnotationsFromReader</a></span>(<a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.html" title="class in com.ibm.wala.shrikeCT">AnnotationsReader</a>&nbsp;r,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/Annotation.html#getParameterAnnotationsFromReader-com.ibm.wala.shrike.shrikeCT.AnnotationsReader-com.ibm.wala.types.ClassLoaderReference-">getParameterAnnotationsFromReader</a></span>(<a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.html" title="class in com.ibm.wala.shrike.shrikeCT">AnnotationsReader</a>&nbsp;r,
                                  <a href="../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;clRef)</code>
 <div class="block">If r != null, return parameter annotations as an array with length equal to number of
  annotatable parameters.</div>
@@ -180,13 +180,13 @@ extends java.lang.Object</pre>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/Annotation.html#makeUnnamedAndNamed-com.ibm.wala.types.TypeReference-java.util.Map-com.ibm.wala.util.collections.Pair:A-">makeUnnamedAndNamed</a></span>(<a href="../../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;t,
-                   java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrikeCT">AnnotationsReader.ElementValue</a>&gt;&nbsp;namedArguments,
+                   java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrike.shrikeCT">AnnotationsReader.ElementValue</a>&gt;&nbsp;namedArguments,
                    <a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>,java.lang.Object&gt;[]&nbsp;unnamedArguments)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/types/annotations/Annotation.html#makeWithNamed-com.ibm.wala.types.TypeReference-java.util.Map-">makeWithNamed</a></span>(<a href="../../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;t,
-             java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrikeCT">AnnotationsReader.ElementValue</a>&gt;&nbsp;namedArguments)</code>&nbsp;</td>
+             java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrike.shrikeCT">AnnotationsReader.ElementValue</a>&gt;&nbsp;namedArguments)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a></code></td>
@@ -226,7 +226,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>makeUnnamedAndNamed</h4>
 <pre>public static&nbsp;<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&nbsp;makeUnnamedAndNamed(<a href="../../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;t,
-                                             java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrikeCT">AnnotationsReader.ElementValue</a>&gt;&nbsp;namedArguments,
+                                             java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrike.shrikeCT">AnnotationsReader.ElementValue</a>&gt;&nbsp;namedArguments,
                                              <a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>,java.lang.Object&gt;[]&nbsp;unnamedArguments)</pre>
 </li>
 </ul>
@@ -256,49 +256,49 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>makeWithNamed</h4>
 <pre>public static&nbsp;<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&nbsp;makeWithNamed(<a href="../../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;t,
-                                       java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrikeCT">AnnotationsReader.ElementValue</a>&gt;&nbsp;namedArguments)</pre>
+                                       java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrike.shrikeCT">AnnotationsReader.ElementValue</a>&gt;&nbsp;namedArguments)</pre>
 </li>
 </ul>
-<a name="getAnnotationsFromReader-com.ibm.wala.shrikeCT.AnnotationsReader-com.ibm.wala.types.ClassLoaderReference-">
+<a name="getAnnotationsFromReader-com.ibm.wala.shrike.shrikeCT.AnnotationsReader-com.ibm.wala.types.ClassLoaderReference-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAnnotationsFromReader</h4>
-<pre>public static&nbsp;java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;&nbsp;getAnnotationsFromReader(<a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.html" title="class in com.ibm.wala.shrikeCT">AnnotationsReader</a>&nbsp;r,
+<pre>public static&nbsp;java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;&nbsp;getAnnotationsFromReader(<a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.html" title="class in com.ibm.wala.shrike.shrikeCT">AnnotationsReader</a>&nbsp;r,
                                                                         <a href="../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;clRef)
-                                                                 throws <a href="../../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></pre>
+                                                                 throws <a href="../../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></code></dd>
+<dd><code><a href="../../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getParameterAnnotationsFromReader-com.ibm.wala.shrikeCT.AnnotationsReader-com.ibm.wala.types.ClassLoaderReference-">
+<a name="getParameterAnnotationsFromReader-com.ibm.wala.shrike.shrikeCT.AnnotationsReader-com.ibm.wala.types.ClassLoaderReference-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getParameterAnnotationsFromReader</h4>
-<pre>public static&nbsp;java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;[]&nbsp;getParameterAnnotationsFromReader(<a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.html" title="class in com.ibm.wala.shrikeCT">AnnotationsReader</a>&nbsp;r,
+<pre>public static&nbsp;java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;[]&nbsp;getParameterAnnotationsFromReader(<a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.html" title="class in com.ibm.wala.shrike.shrikeCT">AnnotationsReader</a>&nbsp;r,
                                                                                    <a href="../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;clRef)
-                                                                            throws <a href="../../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></pre>
+                                                                            throws <a href="../../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
 <div class="block">If r != null, return parameter annotations as an array with length equal to number of
  annotatable parameters. Otherwise, return null.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../com/ibm/wala/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrikeCT">InvalidClassFileException</a></code></dd>
+<dd><code><a href="../../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="convertToAnnotations-com.ibm.wala.types.ClassLoaderReference-com.ibm.wala.shrikeCT.AnnotationsReader.AnnotationAttribute:A-">
+<a name="convertToAnnotations-com.ibm.wala.types.ClassLoaderReference-com.ibm.wala.shrike.shrikeCT.AnnotationsReader.AnnotationAttribute:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>convertToAnnotations</h4>
 <pre>protected static&nbsp;java.util.Collection&lt;<a href="../../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;&nbsp;convertToAnnotations(<a href="../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;clRef,
-                                                                       <a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.AnnotationAttribute.html" title="class in com.ibm.wala.shrikeCT">AnnotationsReader.AnnotationAttribute</a>[]&nbsp;allAnnotations)</pre>
+                                                                       <a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.AnnotationAttribute.html" title="class in com.ibm.wala.shrike.shrikeCT">AnnotationsReader.AnnotationAttribute</a>[]&nbsp;allAnnotations)</pre>
 </li>
 </ul>
 <a name="toString--">
@@ -359,7 +359,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getNamedArguments</h4>
-<pre>public&nbsp;java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrikeCT">AnnotationsReader.ElementValue</a>&gt;&nbsp;getNamedArguments()</pre>
+<pre>public&nbsp;java.util.Map&lt;java.lang.String,<a href="../../../../../com/ibm/wala/shrike/shrikeCT/AnnotationsReader.ElementValue.html" title="interface in com.ibm.wala.shrike.shrikeCT">AnnotationsReader.ElementValue</a>&gt;&nbsp;getNamedArguments()</pre>
 <div class="block">Get the named arguments to the annotation, represented as a mapping from name to value</div>
 </li>
 </ul>

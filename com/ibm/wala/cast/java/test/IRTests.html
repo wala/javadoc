@@ -252,7 +252,7 @@ extends java.lang.Object</pre>
              java.util.List&lt;java.lang.String&gt;&nbsp;libs)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a>,<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerAnalysis.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerAnalysis</a>&lt;? extends <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a>,<a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraphBuilder</a>&lt;? super <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/java/test/IRTests.html#runTest-java.util.Collection-java.util.List-java.lang.String:A-java.util.List-boolean-java.lang.String-">runTest</a></span>(java.util.Collection&lt;java.lang.String&gt;&nbsp;sources,
        java.util.List&lt;java.lang.String&gt;&nbsp;libs,
        java.lang.String[]&nbsp;mainClassDescriptors,
@@ -459,15 +459,15 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>runTest</h4>
-<pre>public&nbsp;<a href="../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a>,<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/PointerAnalysis.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerAnalysis</a>&lt;? extends <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;&gt;&nbsp;runTest(java.util.Collection&lt;java.lang.String&gt;&nbsp;sources,
-                                                                      java.util.List&lt;java.lang.String&gt;&nbsp;libs,
-                                                                      java.lang.String[]&nbsp;mainClassDescriptors,
-                                                                      java.util.List&lt;? extends <a href="../../../../../../com/ibm/wala/cast/java/test/IRTests.IRAssertion.html" title="interface in com.ibm.wala.cast.java.test">IRTests.IRAssertion</a>&gt;&nbsp;ca,
-                                                                      boolean&nbsp;assertReachable,
-                                                                      java.lang.String&nbsp;exclusionsFile)
-                                                               throws java.lang.IllegalArgumentException,
-                                                                      <a href="../../../../../../com/ibm/wala/util/CancelException.html" title="class in com.ibm.wala.util">CancelException</a>,
-                                                                      java.io.IOException</pre>
+<pre>public&nbsp;<a href="../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a>,<a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraphBuilder</a>&lt;? super <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;&gt;&nbsp;runTest(java.util.Collection&lt;java.lang.String&gt;&nbsp;sources,
+                                                                     java.util.List&lt;java.lang.String&gt;&nbsp;libs,
+                                                                     java.lang.String[]&nbsp;mainClassDescriptors,
+                                                                     java.util.List&lt;? extends <a href="../../../../../../com/ibm/wala/cast/java/test/IRTests.IRAssertion.html" title="interface in com.ibm.wala.cast.java.test">IRTests.IRAssertion</a>&gt;&nbsp;ca,
+                                                                     boolean&nbsp;assertReachable,
+                                                                     java.lang.String&nbsp;exclusionsFile)
+                                                              throws java.lang.IllegalArgumentException,
+                                                                     <a href="../../../../../../com/ibm/wala/util/CancelException.html" title="class in com.ibm.wala.util">CancelException</a>,
+                                                                     java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code></dd>

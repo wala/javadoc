@@ -217,8 +217,9 @@ extends <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../../com/ibm/wala/cast/ir/translator/TranslatorToCAst.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToCAst</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractModuleLoader.html#getTranslatorToCAst-com.ibm.wala.cast.tree.CAst-com.ibm.wala.classLoader.ModuleEntry-">getTranslatorToCAst</a></span>(<a href="../../../../../com/ibm/wala/cast/tree/CAst.html" title="interface in com.ibm.wala.cast.tree">CAst</a>&nbsp;ast,
-                   <a href="../../../../../com/ibm/wala/classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;M)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractModuleLoader.html#getTranslatorToCAst-com.ibm.wala.cast.tree.CAst-com.ibm.wala.classLoader.ModuleEntry-java.util.List-">getTranslatorToCAst</a></span>(<a href="../../../../../com/ibm/wala/cast/tree/CAst.html" title="interface in com.ibm.wala.cast.tree">CAst</a>&nbsp;ast,
+                   <a href="../../../../../com/ibm/wala/classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;M,
+                   java.util.List&lt;<a href="../../../../../com/ibm/wala/classLoader/Module.html" title="interface in com.ibm.wala.classLoader">Module</a>&gt;&nbsp;modules)</code>
 <div class="block">create the appropriate CAst translator for the language and source module</div>
 </td>
 </tr>
@@ -230,7 +231,7 @@ extends <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../../com/ibm/wala/cast/ir/translator/TranslatorToIR.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToIR</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractModuleLoader.html#initTranslator--">initTranslator</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractModuleLoader.html#initTranslator-java.util.Set-">initTranslator</a></span>(java.util.Set&lt;<a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,<a href="../../../../../com/ibm/wala/classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&gt;&gt;&nbsp;topLevelEntities)</code>
 <div class="block">create the appropriate IR translator for the language</div>
 </td>
 </tr>
@@ -246,7 +247,7 @@ extends <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.ibm.wala.cast.loader.<a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html" title="class in com.ibm.wala.cast.loader">CAstAbstractLoader</a></h3>
-<code><a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#addMessage-com.ibm.wala.classLoader.ModuleEntry-com.ibm.wala.util.warnings.Warning-">addMessage</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#addMessages-com.ibm.wala.classLoader.ModuleEntry-java.util.Set-">addMessages</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#clearMessages--">clearMessages</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getMessages-com.ibm.wala.classLoader.ModuleEntry-">getMessages</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getModulesWithParseErrors--">getModulesWithParseErrors</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getModulesWithWarnings--">getModulesWithWarnings</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getName--">getName</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getNumberOfClasses--">getNumberOfClasses</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getNumberOfMethods--">getNumberOfMethods</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getParent--">getParent</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getSource-com.ibm.wala.classLoader.IClass-">getSource</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getSource-com.ibm.wala.classLoader.IMethod-int-">getSource</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getSourceFileName-com.ibm.wala.classLoader.IClass-">getSourceFileName</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getSourceFileName-com.ibm.wala.classLoader.IMethod-int-">getSourceFileName</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#iterateAllClasses--">iterateAllClasses</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#lookupClass-java.lang.String-com.ibm.wala.ipa.cha.IClassHierarchy-">lookupClass</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#lookupClass-com.ibm.wala.types.TypeName-">lookupClass</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#removeAll-java.util.Collection-">removeAll</a></code></li>
+<code><a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#addMessage-com.ibm.wala.classLoader.ModuleEntry-com.ibm.wala.core.util.warnings.Warning-">addMessage</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#addMessages-com.ibm.wala.classLoader.ModuleEntry-java.util.Set-">addMessages</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#clearMessages--">clearMessages</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getMessages-com.ibm.wala.classLoader.ModuleEntry-">getMessages</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getModulesWithParseErrors--">getModulesWithParseErrors</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getModulesWithWarnings--">getModulesWithWarnings</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getName--">getName</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getNumberOfClasses--">getNumberOfClasses</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getNumberOfMethods--">getNumberOfMethods</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getParent--">getParent</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getSource-com.ibm.wala.classLoader.IClass-">getSource</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getSource-com.ibm.wala.classLoader.IMethod-int-">getSource</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getSourceFileName-com.ibm.wala.classLoader.IClass-">getSourceFileName</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#getSourceFileName-com.ibm.wala.classLoader.IMethod-int-">getSourceFileName</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#iterateAllClasses--">iterateAllClasses</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#lookupClass-java.lang.String-com.ibm.wala.ipa.cha.IClassHierarchy-">lookupClass</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#lookupClass-com.ibm.wala.types.TypeName-">lookupClass</a>, <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html#removeAll-java.util.Collection-">removeAll</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -303,17 +304,20 @@ extends <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getTranslatorToCAst-com.ibm.wala.cast.tree.CAst-com.ibm.wala.classLoader.ModuleEntry-">
+<a name="getTranslatorToCAst-com.ibm.wala.cast.tree.CAst-com.ibm.wala.classLoader.ModuleEntry-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getTranslatorToCAst</h4>
 <pre>protected abstract&nbsp;<a href="../../../../../com/ibm/wala/cast/ir/translator/TranslatorToCAst.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToCAst</a>&nbsp;getTranslatorToCAst(<a href="../../../../../com/ibm/wala/cast/tree/CAst.html" title="interface in com.ibm.wala.cast.tree">CAst</a>&nbsp;ast,
-                                                        <a href="../../../../../com/ibm/wala/classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;M)
+                                                        <a href="../../../../../com/ibm/wala/classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;M,
+                                                        java.util.List&lt;<a href="../../../../../com/ibm/wala/classLoader/Module.html" title="interface in com.ibm.wala.classLoader">Module</a>&gt;&nbsp;modules)
                                                  throws java.io.IOException</pre>
 <div class="block">create the appropriate CAst translator for the language and source module</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>modules</code> - all modules in the analysis</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
 </dl>
@@ -329,14 +333,18 @@ extends <a href="../../../../../com/ibm/wala/cast/loader/CAstAbstractLoader.html
 <div class="block">should IR be generated for entity?</div>
 </li>
 </ul>
-<a name="initTranslator--">
+<a name="initTranslator-java.util.Set-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initTranslator</h4>
-<pre>protected abstract&nbsp;<a href="../../../../../com/ibm/wala/cast/ir/translator/TranslatorToIR.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToIR</a>&nbsp;initTranslator()</pre>
+<pre>protected abstract&nbsp;<a href="../../../../../com/ibm/wala/cast/ir/translator/TranslatorToIR.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToIR</a>&nbsp;initTranslator(java.util.Set&lt;<a href="../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,<a href="../../../../../com/ibm/wala/classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&gt;&gt;&nbsp;topLevelEntities)</pre>
 <div class="block">create the appropriate IR translator for the language</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>topLevelEntities</code> - the set of all modules being translated</dd>
+</dl>
 </li>
 </ul>
 <a name="getLocalFile-com.ibm.wala.classLoader.SourceModule-">

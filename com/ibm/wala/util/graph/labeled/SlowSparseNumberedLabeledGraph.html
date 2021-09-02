@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;T&gt;, <a href="../../../../../../com/ibm/wala/util/graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;, <a href="../../../../../../com/ibm/wala/util/graph/labeled/LabeledEdgeManager.html" title="interface in com.ibm.wala.util.graph.labeled">LabeledEdgeManager</a>&lt;T,U&gt;, <a href="../../../../../../com/ibm/wala/util/graph/labeled/LabeledGraph.html" title="interface in com.ibm.wala.util.graph.labeled">LabeledGraph</a>&lt;T,U&gt;, <a href="../../../../../../com/ibm/wala/util/graph/labeled/NumberedLabeledEdgeManager.html" title="interface in com.ibm.wala.util.graph.labeled">NumberedLabeledEdgeManager</a>&lt;T,U&gt;, <a href="../../../../../../com/ibm/wala/util/graph/labeled/NumberedLabeledGraph.html" title="interface in com.ibm.wala.util.graph.labeled">NumberedLabeledGraph</a>&lt;T,U&gt;, <a href="../../../../../../com/ibm/wala/util/graph/NodeManager.html" title="interface in com.ibm.wala.util.graph">NodeManager</a>&lt;T&gt;, <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManager.html" title="interface in com.ibm.wala.util.graph">NumberedEdgeManager</a>&lt;T&gt;, <a href="../../../../../../com/ibm/wala/util/graph/NumberedGraph.html" title="interface in com.ibm.wala.util.graph">NumberedGraph</a>&lt;T&gt;, <a href="../../../../../../com/ibm/wala/util/graph/NumberedNodeManager.html" title="interface in com.ibm.wala.util.graph">NumberedNodeManager</a>&lt;T&gt;, java.lang.Iterable&lt;T&gt;</dd>
+<dd><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;T&gt;, <a href="../../../../../../com/ibm/wala/util/graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;, <a href="../../../../../../com/ibm/wala/util/graph/labeled/LabeledEdgeManager.html" title="interface in com.ibm.wala.util.graph.labeled">LabeledEdgeManager</a>&lt;T,U&gt;, <a href="../../../../../../com/ibm/wala/util/graph/labeled/LabeledGraph.html" title="interface in com.ibm.wala.util.graph.labeled">LabeledGraph</a>&lt;T,U&gt;, <a href="../../../../../../com/ibm/wala/util/graph/labeled/NumberedLabeledEdgeManager.html" title="interface in com.ibm.wala.util.graph.labeled">NumberedLabeledEdgeManager</a>&lt;T,U&gt;, <a href="../../../../../../com/ibm/wala/util/graph/labeled/NumberedLabeledGraph.html" title="interface in com.ibm.wala.util.graph.labeled">NumberedLabeledGraph</a>&lt;T,U&gt;, <a href="../../../../../../com/ibm/wala/util/graph/NodeManager.html" title="interface in com.ibm.wala.util.graph">NodeManager</a>&lt;T&gt;, <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManager.html" title="interface in com.ibm.wala.util.graph">NumberedEdgeManager</a>&lt;T&gt;, <a href="../../../../../../com/ibm/wala/util/graph/NumberedGraph.html" title="interface in com.ibm.wala.util.graph">NumberedGraph</a>&lt;T&gt;, <a href="../../../../../../com/ibm/wala/util/graph/NumberedNodeManager.html" title="interface in com.ibm.wala.util.graph">NumberedNodeManager</a>&lt;T&gt;, java.io.Serializable, java.lang.Iterable&lt;T&gt;</dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -131,8 +131,13 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">SlowSparseNumberedLabeledGraph&lt;T,U&gt;</span>
-extends <a href="../../../../../../com/ibm/wala/util/graph/labeled/AbstractNumberedLabeledGraph.html" title="class in com.ibm.wala.util.graph.labeled">AbstractNumberedLabeledGraph</a>&lt;T,U&gt;</pre>
+extends <a href="../../../../../../com/ibm/wala/util/graph/labeled/AbstractNumberedLabeledGraph.html" title="class in com.ibm.wala.util.graph.labeled">AbstractNumberedLabeledGraph</a>&lt;T,U&gt;
+implements java.io.Serializable</pre>
 <div class="block">A labeled graph implementation suitable for sparse graphs.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../serialized-form.html#com.ibm.wala.util.graph.labeled.SlowSparseNumberedLabeledGraph">Serialized Form</a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -151,6 +156,9 @@ extends <a href="../../../../../../com/ibm/wala/util/graph/labeled/AbstractNumbe
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/util/graph/labeled/SlowSparseNumberedLabeledGraph.html#SlowSparseNumberedLabeledGraph--">SlowSparseNumberedLabeledGraph</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/util/graph/labeled/SlowSparseNumberedLabeledGraph.html#SlowSparseNumberedLabeledGraph-U-">SlowSparseNumberedLabeledGraph</a></span>(<a href="../../../../../../com/ibm/wala/util/graph/labeled/SlowSparseNumberedLabeledGraph.html" title="type parameter in SlowSparseNumberedLabeledGraph">U</a>&nbsp;defaultLabel)</code>&nbsp;</td>
 </tr>
 </table>
@@ -205,7 +213,7 @@ extends <a href="../../../../../../com/ibm/wala/util/graph/labeled/AbstractNumbe
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.ibm.wala.util.graph.<a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="class in com.ibm.wala.util.graph">AbstractGraph</a></h3>
-<code><a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#addEdge-T-T-">addEdge</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#addNode-T-">addNode</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#containsNode-T-">containsNode</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getNumberOfNodes--">getNumberOfNodes</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getPredNodeCount-T-">getPredNodeCount</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getPredNodes-T-">getPredNodes</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getSuccNodeCount-T-">getSuccNodeCount</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getSuccNodes-T-">getSuccNodes</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#hasEdge-T-T-">hasEdge</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#iterator--">iterator</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeAllIncidentEdges-T-">removeAllIncidentEdges</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeEdge-T-T-">removeEdge</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeIncomingEdges-T-">removeIncomingEdges</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeNode-T-">removeNode</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeNodeAndEdges-T-">removeNodeAndEdges</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeOutgoingEdges-T-">removeOutgoingEdges</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#stream--">stream</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#toString--">toString</a></code></li>
+<code><a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#addEdge-T-T-">addEdge</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#addNode-T-">addNode</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#containsNode-T-">containsNode</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getNumberOfNodes--">getNumberOfNodes</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getPredNodeCount-T-">getPredNodeCount</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getPredNodes-T-">getPredNodes</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getSuccNodeCount-T-">getSuccNodeCount</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#getSuccNodes-T-">getSuccNodes</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#hasEdge-T-T-">hasEdge</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#iterator--">iterator</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#nodeString-T-boolean-">nodeString</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeAllIncidentEdges-T-">removeAllIncidentEdges</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeEdge-T-T-">removeEdge</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeIncomingEdges-T-">removeIncomingEdges</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeNode-T-">removeNode</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeNodeAndEdges-T-">removeNodeAndEdges</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeOutgoingEdges-T-">removeOutgoingEdges</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#stream--">stream</a>, <a href="../../../../../../com/ibm/wala/util/graph/AbstractGraph.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -277,6 +285,15 @@ extends <a href="../../../../../../com/ibm/wala/util/graph/labeled/AbstractNumbe
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="SlowSparseNumberedLabeledGraph--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SlowSparseNumberedLabeledGraph</h4>
+<pre>public&nbsp;SlowSparseNumberedLabeledGraph()</pre>
+</li>
+</ul>
 <a name="SlowSparseNumberedLabeledGraph-java.lang.Object-">
 <!--   -->
 </a><a name="SlowSparseNumberedLabeledGraph-U-">

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":6,"i5":6,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":6,"i5":6,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -220,39 +220,44 @@ implements <a href="../../../../../com/ibm/wala/util/graph/Graph.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#iterator--">iterator</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code>protected java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#nodeString-T-boolean-">nodeString</a></span>(<a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n,
+          boolean&nbsp;forEdge)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeAllIncidentEdges-T-">removeAllIncidentEdges</a></span>(<a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;node)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeEdge-T-T-">removeEdge</a></span>(<a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;src,
           <a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;dst)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeIncomingEdges-T-">removeIncomingEdges</a></span>(<a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;node)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeNode-T-">removeNode</a></span>(<a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)</code>
 <div class="block">remove a node from this graph</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeNodeAndEdges-T-">removeNodeAndEdges</a></span>(<a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;N)</code>
 <div class="block">remove a node and all its incident edges</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#removeOutgoingEdges-T-">removeOutgoingEdges</a></span>(<a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;node)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>java.util.stream.Stream&lt;<a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#stream--">stream</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -630,6 +635,18 @@ implements <a href="../../../../../com/ibm/wala/util/graph/Graph.html" title="in
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code></dd>
 </dl>
+</li>
+</ul>
+<a name="nodeString-java.lang.Object-boolean-">
+<!--   -->
+</a><a name="nodeString-T-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nodeString</h4>
+<pre>protected&nbsp;java.lang.String&nbsp;nodeString(<a href="../../../../../com/ibm/wala/util/graph/AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n,
+                                      boolean&nbsp;forEdge)</pre>
 </li>
 </ul>
 <a name="edgeString-java.lang.Object-java.lang.Object-">

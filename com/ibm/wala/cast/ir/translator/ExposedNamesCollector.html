@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -205,6 +205,10 @@ extends <a href="../../../../../../com/ibm/wala/cast/tree/visit/CAstVisitor.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/ExposedNamesCollector.html#getEntity2ExposedNames--">getEntity2ExposedNames</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>java.util.Map&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,java.util.Set&lt;<a href="../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,java.lang.String&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/ExposedNamesCollector.html#getEntity2WrittenNames--">getEntity2WrittenNames</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/ExposedNamesCollector.html#leaveClassStmt-com.ibm.wala.cast.tree.CAstNode-com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext-com.ibm.wala.cast.tree.visit.CAstVisitor-">leaveClassStmt</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
               com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext&nbsp;c,
@@ -212,7 +216,7 @@ extends <a href="../../../../../../com/ibm/wala/cast/tree/visit/CAstVisitor.html
 <div class="block">Leave a FunctionStmt node.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/ExposedNamesCollector.html#leaveDeclStmt-com.ibm.wala.cast.tree.CAstNode-com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext-com.ibm.wala.cast.tree.visit.CAstVisitor-">leaveDeclStmt</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
              com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext&nbsp;c,
@@ -220,7 +224,7 @@ extends <a href="../../../../../../com/ibm/wala/cast/tree/visit/CAstVisitor.html
 <div class="block">Leave a DeclStmt node.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/ExposedNamesCollector.html#leaveFunctionStmt-com.ibm.wala.cast.tree.CAstNode-com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext-com.ibm.wala.cast.tree.visit.CAstVisitor-">leaveFunctionStmt</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
                  com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext&nbsp;c,
@@ -228,7 +232,7 @@ extends <a href="../../../../../../com/ibm/wala/cast/tree/visit/CAstVisitor.html
 <div class="block">Leave a FunctionStmt node.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/ExposedNamesCollector.html#leaveVar-com.ibm.wala.cast.tree.CAstNode-com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext-com.ibm.wala.cast.tree.visit.CAstVisitor-">leaveVar</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
         com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext&nbsp;c,
@@ -236,7 +240,7 @@ extends <a href="../../../../../../com/ibm/wala/cast/tree/visit/CAstVisitor.html
 <div class="block">Leave a Var node.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/ExposedNamesCollector.html#leaveVarAssign-com.ibm.wala.cast.tree.CAstNode-com.ibm.wala.cast.tree.CAstNode-com.ibm.wala.cast.tree.CAstNode-com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext-com.ibm.wala.cast.tree.visit.CAstVisitor-">leaveVarAssign</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
               <a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;v,
@@ -246,7 +250,7 @@ extends <a href="../../../../../../com/ibm/wala/cast/tree/visit/CAstVisitor.html
 <div class="block">Visit a Var Assignment node after visiting the LHS.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/ExposedNamesCollector.html#leaveVarAssignOp-com.ibm.wala.cast.tree.CAstNode-com.ibm.wala.cast.tree.CAstNode-com.ibm.wala.cast.tree.CAstNode-boolean-com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext-com.ibm.wala.cast.tree.visit.CAstVisitor-">leaveVarAssignOp</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
                 <a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;v,
@@ -257,14 +261,14 @@ extends <a href="../../../../../../com/ibm/wala/cast/tree/visit/CAstVisitor.html
 <div class="block">Visit a Var Op/Assignment node after visiting the LHS.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>protected com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/ExposedNamesCollector.html#makeCodeContext-com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext-com.ibm.wala.cast.tree.CAstEntity-">makeCodeContext</a></span>(com.ibm.wala.cast.ir.translator.ExposedNamesCollector.EntityContext&nbsp;context,
                <a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;n)</code>
 <div class="block">Construct a context for a Code entity.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/ExposedNamesCollector.html#run-com.ibm.wala.cast.tree.CAstEntity-">run</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;N)</code>
 <div class="block">run the collector on an entity</div>
@@ -323,6 +327,15 @@ extends <a href="../../../../../../com/ibm/wala/cast/tree/visit/CAstVisitor.html
 <li class="blockList">
 <h4>getEntity2ExposedNames</h4>
 <pre>public&nbsp;java.util.Map&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,java.util.Set&lt;java.lang.String&gt;&gt;&nbsp;getEntity2ExposedNames()</pre>
+</li>
+</ul>
+<a name="getEntity2WrittenNames--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEntity2WrittenNames</h4>
+<pre>public&nbsp;java.util.Map&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,java.util.Set&lt;<a href="../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,java.lang.String&gt;&gt;&gt;&nbsp;getEntity2WrittenNames()</pre>
 </li>
 </ul>
 <a name="run-com.ibm.wala.cast.tree.CAstEntity-">

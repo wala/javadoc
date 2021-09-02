@@ -266,14 +266,18 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/translator/ArrayOpHan
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/AstTranslator.html#entity2ExposedNames">entity2ExposedNames</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected java.util.Map&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,java.util.Set&lt;<a href="../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,java.lang.String&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/AstTranslator.html#entity2WrittenNames">entity2WrittenNames</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/ssa/SSAInstructionFactory.html" title="interface in com.ibm.wala.ssa">SSAInstructionFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/AstTranslator.html#insts">insts</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/AstTranslator.html#loader">loader</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected java.util.Map&lt;java.lang.Object,<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/AstTranslator.html#namedEntityResolver">namedEntityResolver</a></span></code>
 <div class="block">for handling languages that let you include other source files named statically (e.g., ABAP)</div>
@@ -1320,15 +1324,15 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/translator/ArrayOpHan
 </td>
 </tr>
 <tr id="i128" class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/shrikeBT/IBinaryOpInstruction.IOperator.html" title="interface in com.ibm.wala.shrikeBT">IBinaryOpInstruction.IOperator</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/shrike/shrikeBT/IBinaryOpInstruction.IOperator.html" title="interface in com.ibm.wala.shrike.shrikeBT">IBinaryOpInstruction.IOperator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/AstTranslator.html#translateBinaryOpcode-com.ibm.wala.cast.tree.CAstNode-">translateBinaryOpcode</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;op)</code>&nbsp;</td>
 </tr>
 <tr id="i129" class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/shrikeBT/IConditionalBranchInstruction.IOperator.html" title="interface in com.ibm.wala.shrikeBT">IConditionalBranchInstruction.IOperator</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/shrike/shrikeBT/IConditionalBranchInstruction.IOperator.html" title="interface in com.ibm.wala.shrike.shrikeBT">IConditionalBranchInstruction.IOperator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/AstTranslator.html#translateConditionOpcode-com.ibm.wala.cast.tree.CAstNode-">translateConditionOpcode</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;op)</code>&nbsp;</td>
 </tr>
 <tr id="i130" class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/shrikeBT/IUnaryOpInstruction.IOperator.html" title="interface in com.ibm.wala.shrikeBT">IUnaryOpInstruction.IOperator</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/shrike/shrikeBT/IUnaryOpInstruction.IOperator.html" title="interface in com.ibm.wala.shrike.shrikeBT">IUnaryOpInstruction.IOperator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/cast/ir/translator/AstTranslator.html#translateUnaryOpcode-com.ibm.wala.cast.tree.CAstNode-">translateUnaryOpcode</a></span>(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;op)</code>&nbsp;</td>
 </tr>
 <tr id="i131" class="rowColor">
@@ -1963,10 +1967,19 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/translator/ArrayOpHan
 <a name="entity2ExposedNames">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>entity2ExposedNames</h4>
 <pre>protected&nbsp;java.util.Map&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,java.util.Set&lt;java.lang.String&gt;&gt; entity2ExposedNames</pre>
+</li>
+</ul>
+<a name="entity2WrittenNames">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>entity2WrittenNames</h4>
+<pre>protected&nbsp;java.util.Map&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,java.util.Set&lt;<a href="../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../com/ibm/wala/cast/tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>,java.lang.String&gt;&gt;&gt; entity2WrittenNames</pre>
 </li>
 </ul>
 </li>
@@ -2522,7 +2535,7 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/translator/ArrayOpHan
 <ul class="blockList">
 <li class="blockList">
 <h4>translateUnaryOpcode</h4>
-<pre>protected&nbsp;<a href="../../../../../../com/ibm/wala/shrikeBT/IUnaryOpInstruction.IOperator.html" title="interface in com.ibm.wala.shrikeBT">IUnaryOpInstruction.IOperator</a>&nbsp;translateUnaryOpcode(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;op)</pre>
+<pre>protected&nbsp;<a href="../../../../../../com/ibm/wala/shrike/shrikeBT/IUnaryOpInstruction.IOperator.html" title="interface in com.ibm.wala.shrike.shrikeBT">IUnaryOpInstruction.IOperator</a>&nbsp;translateUnaryOpcode(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;op)</pre>
 </li>
 </ul>
 <a name="translateBinaryOpcode-com.ibm.wala.cast.tree.CAstNode-">
@@ -2531,7 +2544,7 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/translator/ArrayOpHan
 <ul class="blockList">
 <li class="blockList">
 <h4>translateBinaryOpcode</h4>
-<pre>protected&nbsp;<a href="../../../../../../com/ibm/wala/shrikeBT/IBinaryOpInstruction.IOperator.html" title="interface in com.ibm.wala.shrikeBT">IBinaryOpInstruction.IOperator</a>&nbsp;translateBinaryOpcode(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;op)</pre>
+<pre>protected&nbsp;<a href="../../../../../../com/ibm/wala/shrike/shrikeBT/IBinaryOpInstruction.IOperator.html" title="interface in com.ibm.wala.shrike.shrikeBT">IBinaryOpInstruction.IOperator</a>&nbsp;translateBinaryOpcode(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;op)</pre>
 </li>
 </ul>
 <a name="translateConditionOpcode-com.ibm.wala.cast.tree.CAstNode-">
@@ -2540,7 +2553,7 @@ implements <a href="../../../../../../com/ibm/wala/cast/ir/translator/ArrayOpHan
 <ul class="blockList">
 <li class="blockList">
 <h4>translateConditionOpcode</h4>
-<pre>protected&nbsp;<a href="../../../../../../com/ibm/wala/shrikeBT/IConditionalBranchInstruction.IOperator.html" title="interface in com.ibm.wala.shrikeBT">IConditionalBranchInstruction.IOperator</a>&nbsp;translateConditionOpcode(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;op)</pre>
+<pre>protected&nbsp;<a href="../../../../../../com/ibm/wala/shrike/shrikeBT/IConditionalBranchInstruction.IOperator.html" title="interface in com.ibm.wala.shrike.shrikeBT">IConditionalBranchInstruction.IOperator</a>&nbsp;translateConditionOpcode(<a href="../../../../../../com/ibm/wala/cast/tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;op)</pre>
 </li>
 </ul>
 <a name="makeNameMap-com.ibm.wala.cast.tree.CAstEntity-java.util.Set-com.ibm.wala.ssa.SSAInstruction:A-">
