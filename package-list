@@ -75,6 +75,7 @@ com.ibm.wala.cfg.exc.inter
 com.ibm.wala.cfg.exc.intra
 com.ibm.wala.classLoader
 com.ibm.wala.client
+com.ibm.wala.core.java11
 com.ibm.wala.core.tests.callGraph
 com.ibm.wala.core.tests.ir
 com.ibm.wala.core.tests.shrike
