@@ -124,7 +124,6 @@ com.ibm.wala.ide
 com.ibm.wala.ide.classloader
 com.ibm.wala.ide.client
 com.ibm.wala.ide.jdt
-com.ibm.wala.ide.jsdt
 com.ibm.wala.ide.plugin
 com.ibm.wala.ide.ui
 com.ibm.wala.ide.util
