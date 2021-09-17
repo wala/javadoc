@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":41,"i1":41,"i2":9,"i3":9,"i4":41,"i5":9,"i6":9,"i7":9,"i8":9,"i9":41,"i10":41,"i11":41,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":41,"i19":9,"i20":41,"i21":9,"i22":41,"i23":9,"i24":41,"i25":9,"i26":41,"i27":9,"i28":41,"i29":41,"i30":9,"i31":9,"i32":41,"i33":9,"i34":41,"i35":41,"i36":9,"i37":9,"i38":41,"i39":9,"i40":41,"i41":41,"i42":9,"i43":9,"i44":41,"i45":41,"i46":9,"i47":9,"i48":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -161,7 +161,7 @@ extends java.lang.Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -173,7 +173,11 @@ extends java.lang.Object</pre>
               java.lang.ClassLoader&nbsp;cl,
               java.lang.String&nbsp;xmlFile,
               <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
-<div class="block">Modify an options object to include bypass logic as specified by a an XML file.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">This method is being replaced. Please
+     <p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-java.lang.String-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>addBypassLogic(AnalysisOptions, ClassLoader, String, IClassHierarchy)</code></a>
+     instead</span></div>
+</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -182,16 +186,48 @@ extends java.lang.Object</pre>
               <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
               java.lang.ClassLoader&nbsp;cl,
               <a href="../../../../../../com/ibm/wala/ipa/summaries/XMLMethodSummaryReader.html" title="class in com.ibm.wala.ipa.summaries">XMLMethodSummaryReader</a>&nbsp;summary,
-              <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+              <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Method will be replaced. Please
+     <p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-com.ibm.wala.ipa.summaries.XMLMethodSummaryReader-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>addBypassLogic(AnalysisOptions, ClassLoader, XMLMethodSummaryReader,
+     IClassHierarchy)</code></a> instead</span></div>
+</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-java.lang.String-com.ibm.wala.ipa.cha.IClassHierarchy-">addBypassLogic</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+              java.lang.ClassLoader&nbsp;cl,
+              java.lang.String&nbsp;xmlFile,
+              <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
+<div class="block">Modify an options object to include bypass logic as specified by a an XML file.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-com.ibm.wala.ipa.summaries.XMLMethodSummaryReader-com.ibm.wala.ipa.cha.IClassHierarchy-">addBypassLogic</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+              java.lang.ClassLoader&nbsp;cl,
+              <a href="../../../../../../com/ibm/wala/ipa/summaries/XMLMethodSummaryReader.html" title="class in com.ibm.wala.ipa.summaries">XMLMethodSummaryReader</a>&nbsp;summary,
+              <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addDefaultBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.AnalysisScope-java.lang.ClassLoader-com.ibm.wala.ipa.cha.IClassHierarchy-">addDefaultBypassLogic</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                      java.lang.ClassLoader&nbsp;cl,
+                     <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addDefaultBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>addDefaultBypassLogic(AnalysisOptions, ClassLoader, IClassHierarchy)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addDefaultBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-com.ibm.wala.ipa.cha.IClassHierarchy-">addDefaultBypassLogic</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                     java.lang.ClassLoader&nbsp;cl,
                      <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addDefaultSelectors-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.cha.IClassHierarchy-">addDefaultSelectors</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                    <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
@@ -199,103 +235,200 @@ extends java.lang.Object</pre>
  lookup</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#checkGraphSubset-com.ibm.wala.util.graph.Graph-com.ibm.wala.util.graph.Graph-">checkGraphSubset</a></span>(<a href="../../../../../../com/ibm/wala/util/graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;supG,
                 <a href="../../../../../../com/ibm/wala/util/graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;subG)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#getNativeSpec--">getNativeSpec</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.cha.IClassHierarchy-">makeMainEntrypoints</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
-                   <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+                   <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeMainEntrypoints(IClassHierarchy)</code></a> instead</span></div>
+</div>
+</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String-">makeMainEntrypoints</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                    <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                   java.lang.String&nbsp;className)</code>&nbsp;</td>
+                   java.lang.String&nbsp;className)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String-"><code>makeMainEntrypoints(IClassHierarchy, String)</code></a></span></div>
+</div>
+</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String:A-">makeMainEntrypoints</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                    <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                   java.lang.String[]&nbsp;classNames)</code>&nbsp;</td>
+                   java.lang.String[]&nbsp;classNames)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Please
+     <p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String:A-"><code>makeMainEntrypoints(IClassHierarchy, String[])</code></a></span></div>
+</div>
+</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.types.ClassLoaderReference-com.ibm.wala.ipa.cha.IClassHierarchy-">makeMainEntrypoints</a></span>(<a href="../../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;clr,
                    <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.types.ClassLoaderReference-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String:A-">makeMainEntrypoints</a></span>(<a href="../../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loaderRef,
                    <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                    java.lang.String[]&nbsp;classNames)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>static java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-">makeMainEntrypoints</a></span>(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>static java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String-">makeMainEntrypoints</a></span>(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                   java.lang.String&nbsp;className)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>static java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String:A-">makeMainEntrypoints</a></span>(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                   java.lang.String[]&nbsp;classNames)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeNCFABuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeNCFABuilder</a></span>(int&nbsp;n,
+               <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+               <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+               <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
+<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses call-string context sensitivity, with call-string
+ length limited to n, and a context-sensitive allocation-site-based heap abstraction.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeNCFABuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeNCFABuilder</a></span>(int&nbsp;n,
                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
-<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses call-string context sensitivity, with call-string
- length limited to n, and a context-sensitive allocation-site-based heap abstraction.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeNCFABuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeNCFABuilder(int, AnalysisOptions,
+     IAnalysisCacheView,IClassHierarchy)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeNObjBuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeNObjBuilder</a></span>(int&nbsp;n,
+               <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+               <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+               <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
+<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses object context sensitivity, with allocation-string
+ length limited to n</div>
+</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeNObjBuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeNObjBuilder</a></span>(int&nbsp;n,
                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
-<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses object context sensitivity, with allocation-string
- length limited to n</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeNObjBuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeNObjBuilder(int, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraphBuilder</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeRTABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeRTABuilder</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+              <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+              <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraphBuilder</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeRTABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeRTABuilder</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
               <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
               <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-              <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>&nbsp;</td>
+              <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeRTABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeRTABuilder(AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></span></div>
+</div>
+</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNCFABuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeVanillaNCFABuilder</a></span>(int&nbsp;n,
+                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                      <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
+<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses call-string context sensitivity, with call-string
+ length limited to n, and a context-sensitive allocation-site-based heap abstraction.</div>
+</td>
+</tr>
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNCFABuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeVanillaNCFABuilder</a></span>(int&nbsp;n,
                       <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                       <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                       <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                       <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
-<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses call-string context sensitivity, with call-string
- length limited to n, and a context-sensitive allocation-site-based heap abstraction.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNCFABuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeVanillaNCFABuilder(int, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNObjBuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeVanillaNObjBuilder</a></span>(int&nbsp;n,
+                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                      <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
+<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses object context sensitivity, with allocation-string
+ length limited to n</div>
+</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNObjBuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeVanillaNObjBuilder</a></span>(int&nbsp;n,
                       <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                       <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                       <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                       <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
-<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses object context sensitivity, with allocation-string
- length limited to n</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNObjBuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeVanillaNObjBuilder(int, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeVanillaZeroOneCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;analysisCache,
+                            <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeVanillaZeroOneCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;analysisCache,
                             <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>&nbsp;</td>
+                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeVanillaZeroOneCFABuilder(Language, AnalysisOptions,
+     IAnalysisCacheView, IClassHierarchy)</code></a></span></div>
+</div>
+</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">makeVanillaZeroOneCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
@@ -303,24 +436,61 @@ extends java.lang.Object</pre>
                             <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
+                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-"><code>makeVanillaZeroOneCFABuilder(Language, AnalysisOptions,
+     IAnalysisCacheView, IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">makeVanillaZeroOneCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;analysisCache,
+                            <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeVanillaZeroOneContainerCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                     <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeVanillaZeroOneContainerCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                                      <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>&nbsp;</td>
+                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeVanillaZeroOneContainerCFABuilder(AnalysisOptions,
+     IAnalysisCacheView, IClassHierarchy)</code></a></span></div>
+</div>
+</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeZeroCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                  <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                  <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                  <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeZeroCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                   <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                  <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>&nbsp;</td>
+                  <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeZeroCFABuilder(Language, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
+</div>
+</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">makeZeroCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
@@ -328,24 +498,61 @@ extends java.lang.Object</pre>
                   <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
+                  <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-"><code>makeZeroCFABuilder(Language, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">makeZeroCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                  <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                  <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                  <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                  <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeZeroContainerCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                           <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                           <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeZeroContainerCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                            <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                           <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>&nbsp;</td>
+                           <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeZeroContainerCFABuilder(AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
+</div>
+</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i39" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeZeroOneCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                     <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+</tr>
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeZeroOneCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                      <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>&nbsp;</td>
+                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
+</div>
+</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">makeZeroOneCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
@@ -353,31 +560,69 @@ extends java.lang.Object</pre>
                      <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
+                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-"><code>makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i42" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">makeZeroOneCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                     <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i43" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">makeZeroOneContainerCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                              <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+</tr>
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-">makeZeroOneContainerCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                               <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>&nbsp;</td>
+                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
+</div>
+</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">makeZeroOneContainerCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                               <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;appSelector,
+                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;appInterpreter)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-"><code>makeZeroOneContainerCFABuilder(AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i46" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">makeZeroOneContainerCFABuilder</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                              <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;appSelector,
                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;appInterpreter)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.Set&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#setify-java.util.Iterator-">setify</a></span>(java.util.Iterator&lt;? extends T&gt;&nbsp;x)</code>
 <div class="block">create a set holding the contents of an <code>Iterator</code></div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#setNativeSpec-java.lang.String-">setNativeSpec</a></span>(java.lang.String&nbsp;xmlFile)</code>&nbsp;</td>
 </tr>
@@ -478,8 +723,33 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>addBypassLogic</h4>
+<pre>@Deprecated
+public static&nbsp;void&nbsp;addBypassLogic(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                              java.lang.ClassLoader&nbsp;cl,
+                                              java.lang.String&nbsp;xmlFile,
+                                              <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)
+                                       throws java.lang.IllegalArgumentException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">This method is being replaced. Please
+     <p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-java.lang.String-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>addBypassLogic(AnalysisOptions, ClassLoader, String, IClassHierarchy)</code></a>
+     instead</span></div>
+<div class="block">Modify an options object to include bypass logic as specified by a an XML file.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if scope is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if cl is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if options is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if scope is null</dd>
+</dl>
+</li>
+</ul>
+<a name="addBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-java.lang.String-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addBypassLogic</h4>
 <pre>public static&nbsp;void&nbsp;addBypassLogic(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                                  <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                                   java.lang.ClassLoader&nbsp;cl,
                                   java.lang.String&nbsp;xmlFile,
                                   <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)
@@ -500,8 +770,29 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>addBypassLogic</h4>
+<pre>@Deprecated
+public static&nbsp;void&nbsp;addBypassLogic(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                              java.lang.ClassLoader&nbsp;cl,
+                                              <a href="../../../../../../com/ibm/wala/ipa/summaries/XMLMethodSummaryReader.html" title="class in com.ibm.wala.ipa.summaries">XMLMethodSummaryReader</a>&nbsp;summary,
+                                              <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)
+                                       throws java.lang.IllegalArgumentException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Method will be replaced. Please
+     <p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-com.ibm.wala.ipa.summaries.XMLMethodSummaryReader-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>addBypassLogic(AnalysisOptions, ClassLoader, XMLMethodSummaryReader,
+     IClassHierarchy)</code></a> instead</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code></dd>
+</dl>
+</li>
+</ul>
+<a name="addBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-com.ibm.wala.ipa.summaries.XMLMethodSummaryReader-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addBypassLogic</h4>
 <pre>public static&nbsp;void&nbsp;addBypassLogic(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                                  <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                                   java.lang.ClassLoader&nbsp;cl,
                                   <a href="../../../../../../com/ibm/wala/ipa/summaries/XMLMethodSummaryReader.html" title="class in com.ibm.wala.ipa.summaries">XMLMethodSummaryReader</a>&nbsp;summary,
                                   <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)
@@ -518,8 +809,25 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeMainEntrypoints</h4>
-<pre>public static&nbsp;java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;makeMainEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
-                                                                 <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
+<pre>@Deprecated
+public static&nbsp;java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;makeMainEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                                                             <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeMainEntrypoints(IClassHierarchy)</code></a> instead</span></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>set of all eligible Main classes in the class hierarchy</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if scope is null</dd>
+</dl>
+</li>
+</ul>
+<a name="makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeMainEntrypoints</h4>
+<pre>public static&nbsp;java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;makeMainEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>set of all eligible Main classes in the class hierarchy</dd>
@@ -544,12 +852,24 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeMainEntrypoints</h4>
-<pre>public static&nbsp;java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;makeMainEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
-                                                                 <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+<pre>@Deprecated
+public static&nbsp;java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;makeMainEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                                                             <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                             java.lang.String&nbsp;className)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String-"><code>makeMainEntrypoints(IClassHierarchy, String)</code></a></span></div>
+</li>
+</ul>
+<a name="makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeMainEntrypoints</h4>
+<pre>public static&nbsp;java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;makeMainEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                                                                  java.lang.String&nbsp;className)</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Entrypoints object for a Main J2SE class</dd>
+<dd>Entrypoints for a set of J2SE Main classes</dd>
 </dl>
 </li>
 </ul>
@@ -559,9 +879,26 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeMainEntrypoints</h4>
-<pre>public static&nbsp;java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;makeMainEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
-                                                                 <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+<pre>@Deprecated
+public static&nbsp;java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;makeMainEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                                                             <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                             java.lang.String[]&nbsp;classNames)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Please
+     <p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String:A-"><code>makeMainEntrypoints(IClassHierarchy, String[])</code></a></span></div>
+</li>
+</ul>
+<a name="makeMainEntrypoints-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeMainEntrypoints</h4>
+<pre>public static&nbsp;java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;makeMainEntrypoints(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                                                                  java.lang.String[]&nbsp;classNames)</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Entrypoints for a set of J2SE Main classes</dd>
+</dl>
 </li>
 </ul>
 <a name="makeMainEntrypoints-com.ibm.wala.types.ClassLoaderReference-com.ibm.wala.ipa.cha.IClassHierarchy-java.lang.String:A-">
@@ -573,9 +910,7 @@ extends java.lang.Object</pre>
 <pre>public static&nbsp;java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;makeMainEntrypoints(<a href="../../../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loaderRef,
                                                                  <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                                                                  java.lang.String[]&nbsp;classNames)
-                                                          throws java.lang.IllegalArgumentException,
-                                                                 java.lang.IllegalArgumentException,
-                                                                 java.lang.IllegalArgumentException</pre>
+                                                          throws java.lang.IllegalArgumentException</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Entrypoints for a set of J2SE Main classes</dd>
@@ -618,15 +953,35 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeRTABuilder</h4>
-<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraphBuilder</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;&nbsp;makeRTABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                                                           <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                           <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                           <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraphBuilder</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;&nbsp;makeRTABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                       <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                       <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                       <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeRTABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeRTABuilder(AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></span></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - options that govern call graph construction</dd>
 <dd><code>cha</code> - governing class hierarchy</dd>
 <dd><code>scope</code> - representation of the analysis scope</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an RTA Call Graph builder.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeRTABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeRTABuilder</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraphBuilder</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;&nbsp;makeRTABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                           <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                           <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>options</code> - options that govern call graph construction</dd>
+<dd><code>cha</code> - governing class hierarchy</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an RTA Call Graph builder.</dd>
 </dl>
@@ -638,16 +993,38 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeZeroCFABuilder</h4>
-<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
-                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                                <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeZeroCFABuilder(Language, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - options that govern call graph construction</dd>
 <dd><code>cha</code> - governing class hierarchy</dd>
 <dd><code>scope</code> - representation of the analysis scope</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a 0-CFA Call Graph Builder.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeZeroCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeZeroCFABuilder</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>options</code> - options that govern call graph construction</dd>
+<dd><code>cha</code> - governing class hierarchy</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a 0-CFA Call Graph Builder.</dd>
 </dl>
@@ -659,18 +1036,46 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeZeroCFABuilder</h4>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-"><code>makeZeroCFABuilder(Language, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></span></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>options</code> - options that govern call graph construction</dd>
+<dd><code>cha</code> - governing class hierarchy</dd>
+<dd><code>scope</code> - representation of the analysis scope</dd>
+<dd><code>customSelector</code> - user-defined context selector, or null if none</dd>
+<dd><code>customInterpreter</code> - user-defined context interpreter, or null if none</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a 0-CFA Call Graph Builder.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if options is null</dd>
+</dl>
+</li>
+</ul>
+<a name="makeZeroCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeZeroCFABuilder</h4>
 <pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
                                                                 <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                                                 <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                                                                 <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                                                                 <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
                                                                 <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - options that govern call graph construction</dd>
 <dd><code>cha</code> - governing class hierarchy</dd>
-<dd><code>scope</code> - representation of the analysis scope</dd>
 <dd><code>customSelector</code> - user-defined context selector, or null if none</dd>
 <dd><code>customInterpreter</code> - user-defined context interpreter, or null if none</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -686,16 +1091,38 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeZeroOneCFABuilder</h4>
-<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroOneCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
-                                                                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                                                                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                                   <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroOneCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                                                                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                               <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - options that govern call graph construction</dd>
 <dd><code>cha</code> - governing class hierarchy</dd>
 <dd><code>scope</code> - representation of the analysis scope</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a 0-1-CFA Call Graph Builder.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeZeroOneCFABuilder</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroOneCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                                                                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                   <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>options</code> - options that govern call graph construction</dd>
+<dd><code>cha</code> - governing class hierarchy</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a 0-1-CFA Call Graph Builder.</dd>
 </dl>
@@ -707,18 +1134,46 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeVanillaZeroOneCFABuilder</h4>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaZeroOneCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                                                                                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;analysisCache,
+                                                                                      <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                                                                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
+                                                                                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-"><code>makeVanillaZeroOneCFABuilder(Language, AnalysisOptions,
+     IAnalysisCacheView, IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></span></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>options</code> - options that govern call graph construction</dd>
+<dd><code>cha</code> - governing class hierarchy</dd>
+<dd><code>scope</code> - representation of the analysis scope</dd>
+<dd><code>customSelector</code> - user-defined context selector, or null if none</dd>
+<dd><code>customInterpreter</code> - user-defined context interpreter, or null if none</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a 0-1-CFA Call Graph Builder.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if options is null</dd>
+</dl>
+</li>
+</ul>
+<a name="makeVanillaZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeVanillaZeroOneCFABuilder</h4>
 <pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaZeroOneCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
                                                                           <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                                                           <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;analysisCache,
                                                                           <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                          <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                                                                           <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
                                                                           <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - options that govern call graph construction</dd>
 <dd><code>cha</code> - governing class hierarchy</dd>
-<dd><code>scope</code> - representation of the analysis scope</dd>
 <dd><code>customSelector</code> - user-defined context selector, or null if none</dd>
 <dd><code>customInterpreter</code> - user-defined context interpreter, or null if none</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -734,16 +1189,38 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeVanillaZeroOneCFABuilder</h4>
-<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaZeroOneCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
-                                                                          <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                                                                          <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;analysisCache,
-                                                                          <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                          <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaZeroOneCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                                                                                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;analysisCache,
+                                                                                      <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                                      <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeVanillaZeroOneCFABuilder(Language, AnalysisOptions,
+     IAnalysisCacheView, IClassHierarchy)</code></a></span></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - options that govern call graph construction</dd>
 <dd><code>cha</code> - governing class hierarchy</dd>
 <dd><code>scope</code> - representation of the analysis scope</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a 0-1-CFA Call Graph Builder.</dd>
+</dl>
+</li>
+</ul>
+<a name="makeVanillaZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeVanillaZeroOneCFABuilder</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaZeroOneCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                                                                          <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                          <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;analysisCache,
+                                                                          <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>options</code> - options that govern call graph construction</dd>
+<dd><code>cha</code> - governing class hierarchy</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a 0-1-CFA Call Graph Builder.</dd>
 </dl>
@@ -755,18 +1232,46 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeZeroOneCFABuilder</h4>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroOneCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
+                                                                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                               <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                                                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
+                                                                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-"><code>makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></span></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>options</code> - options that govern call graph construction</dd>
+<dd><code>cha</code> - governing class hierarchy</dd>
+<dd><code>scope</code> - representation of the analysis scope</dd>
+<dd><code>customSelector</code> - user-defined context selector, or null if none</dd>
+<dd><code>customInterpreter</code> - user-defined context interpreter, or null if none</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a 0-1-CFA Call Graph Builder.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if options is null</dd>
+</dl>
+</li>
+</ul>
+<a name="makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeZeroOneCFABuilder</h4>
 <pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroOneCFABuilder(<a href="../../../../../../com/ibm/wala/classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a>&nbsp;l,
                                                                    <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                                                    <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                                                                    <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                                                                    <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
                                                                    <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - options that govern call graph construction</dd>
 <dd><code>cha</code> - governing class hierarchy</dd>
-<dd><code>scope</code> - representation of the analysis scope</dd>
 <dd><code>customSelector</code> - user-defined context selector, or null if none</dd>
 <dd><code>customInterpreter</code> - user-defined context interpreter, or null if none</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -782,15 +1287,38 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeZeroContainerCFABuilder</h4>
-<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroContainerCFABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                                                                         <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                                         <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                         <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroContainerCFABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                                     <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeZeroContainerCFABuilder(AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - options that govern call graph construction</dd>
 <dd><code>cha</code> - governing class hierarchy</dd>
 <dd><code>scope</code> - representation of the analysis scope</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a 0-CFA Call Graph Builder augmented with extra logic for containers</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if options is null</dd>
+</dl>
+</li>
+</ul>
+<a name="makeZeroContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeZeroContainerCFABuilder</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroContainerCFABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                         <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                         <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>options</code> - options that govern call graph construction</dd>
+<dd><code>cha</code> - governing class hierarchy</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a 0-CFA Call Graph Builder augmented with extra logic for containers</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -804,10 +1332,13 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeZeroOneContainerCFABuilder</h4>
-<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroOneContainerCFABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                                            <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroOneContainerCFABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                                        <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                                        <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                                        <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder-com.ibm.wala.classLoader.Language-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - options that govern call graph construction</dd>
@@ -826,10 +1357,46 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeZeroOneContainerCFABuilder</h4>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroOneContainerCFABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                                        <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                                        <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                                        <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                                                                        <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;appSelector,
+                                                                                        <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;appInterpreter)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-"><code>makeZeroOneContainerCFABuilder(AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></span></div>
+</li>
+</ul>
+<a name="makeZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeZeroOneContainerCFABuilder</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroOneContainerCFABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                            <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>options</code> - options that govern call graph construction</dd>
+<dd><code>cha</code> - governing class hierarchy</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a 0-1-CFA Call Graph Builder augmented with extra logic for containers</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if options is null</dd>
+</dl>
+</li>
+</ul>
+<a name="makeZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeZeroOneContainerCFABuilder</h4>
 <pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroOneContainerCFABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                                                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
                                                                             <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                            <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                                                                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;appSelector,
                                                                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;appInterpreter)</pre>
 </li>
@@ -840,11 +1407,28 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeNCFABuilder</h4>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeNCFABuilder(int&nbsp;n,
+                                                                         <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                         <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                         <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                         <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeNCFABuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeNCFABuilder(int, AnalysisOptions,
+     IAnalysisCacheView,IClassHierarchy)</code></a></span></div>
+<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses call-string context sensitivity, with call-string
+ length limited to n, and a context-sensitive allocation-site-based heap abstraction.</div>
+</li>
+</ul>
+<a name="makeNCFABuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeNCFABuilder</h4>
 <pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeNCFABuilder(int&nbsp;n,
                                                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                             <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+                                                             <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
 <div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses call-string context sensitivity, with call-string
  length limited to n, and a context-sensitive allocation-site-based heap abstraction.</div>
 </li>
@@ -855,11 +1439,28 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeNObjBuilder</h4>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeNObjBuilder(int&nbsp;n,
+                                                                         <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                         <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                         <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                         <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeNObjBuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeNObjBuilder(int, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
+<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses object context sensitivity, with allocation-string
+ length limited to n</div>
+</li>
+</ul>
+<a name="makeNObjBuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeNObjBuilder</h4>
 <pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeNObjBuilder(int&nbsp;n,
                                                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                                              <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                             <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                             <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+                                                             <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
 <div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses object context sensitivity, with allocation-string
  length limited to n</div>
 </li>
@@ -870,11 +1471,28 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeVanillaNObjBuilder</h4>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaNObjBuilder(int&nbsp;n,
+                                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                                <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNObjBuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeVanillaNObjBuilder(int, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
+<div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses object context sensitivity, with allocation-string
+ length limited to n</div>
+</li>
+</ul>
+<a name="makeVanillaNObjBuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeVanillaNObjBuilder</h4>
 <pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaNObjBuilder(int&nbsp;n,
                                                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                                    <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                    <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+                                                                    <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
 <div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses object context sensitivity, with allocation-string
  length limited to n</div>
 </li>
@@ -885,11 +1503,26 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeVanillaNCFABuilder</h4>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaNCFABuilder(int&nbsp;n,
+                                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                                <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                                <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNCFABuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeVanillaNCFABuilder(int, AnalysisOptions, IAnalysisCacheView,
+     IClassHierarchy)</code></a></span></div>
+</li>
+</ul>
+<a name="makeVanillaNCFABuilder-int-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeVanillaNCFABuilder</h4>
 <pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaNCFABuilder(int&nbsp;n,
                                                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                                    <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                    <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+                                                                    <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
 <div class="block">make a <a href="../../../../../../com/ibm/wala/ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CallGraphBuilder</code></a> that uses call-string context sensitivity, with call-string
  length limited to n, and a context-sensitive allocation-site-based heap abstraction. Standard
  optimizations in the heap abstraction like smushing of strings are disabled.</div>
@@ -901,15 +1534,28 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>makeVanillaZeroOneContainerCFABuilder</h4>
+<pre>@Deprecated
+public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaZeroOneContainerCFABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                                                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
+                                                                                               <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+                                                                                               <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>makeVanillaZeroOneContainerCFABuilder(AnalysisOptions,
+     IAnalysisCacheView, IClassHierarchy)</code></a></span></div>
+</li>
+</ul>
+<a name="makeVanillaZeroOneContainerCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeVanillaZeroOneContainerCFABuilder</h4>
 <pre>public static&nbsp;<a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeVanillaZeroOneContainerCFABuilder(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                                                                    <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                                                   <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                                   <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope)</pre>
+                                                                                   <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>options</code> - options that govern call graph construction</dd>
 <dd><code>cha</code> - governing class hierarchy</dd>
-<dd><code>scope</code> - representation of the analysis scope</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a 0-1-CFA Call Graph Builder augmented with extra logic for containers</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -920,11 +1566,24 @@ extends java.lang.Object</pre>
 <a name="addDefaultBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.AnalysisScope-java.lang.ClassLoader-com.ibm.wala.ipa.cha.IClassHierarchy-">
 <!--   -->
 </a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addDefaultBypassLogic</h4>
+<pre>@Deprecated
+public static&nbsp;void&nbsp;addDefaultBypassLogic(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+                                                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+                                                     java.lang.ClassLoader&nbsp;cl,
+                                                     <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment"><p>Use <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/Util.html#addDefaultBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-com.ibm.wala.ipa.cha.IClassHierarchy-"><code>addDefaultBypassLogic(AnalysisOptions, ClassLoader, IClassHierarchy)</code></a></span></div>
+</li>
+</ul>
+<a name="addDefaultBypassLogic-com.ibm.wala.ipa.callgraph.AnalysisOptions-java.lang.ClassLoader-com.ibm.wala.ipa.cha.IClassHierarchy-">
+<!--   -->
+</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>addDefaultBypassLogic</h4>
 <pre>public static&nbsp;void&nbsp;addDefaultBypassLogic(<a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                                         <a href="../../../../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                                          java.lang.ClassLoader&nbsp;cl,
                                          <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
 </li>
