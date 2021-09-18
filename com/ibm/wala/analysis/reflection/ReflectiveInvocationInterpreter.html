@@ -333,6 +333,8 @@ extends <a href="../../../../../com/ibm/wala/analysis/reflection/AbstractReflect
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the IR that models the method context, or null if it's an unmodelled native method</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html#getIR-com.ibm.wala.ipa.callgraph.CGNode-"><code>SSAContextInterpreter.getIR(com.ibm.wala.ipa.callgraph.CGNode)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -355,6 +357,8 @@ extends <a href="../../../../../com/ibm/wala/analysis/reflection/AbstractReflect
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the number of the statements in the IR, or -1 if it's an unmodelled native method.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html#getNumberOfStatements-com.ibm.wala.ipa.callgraph.CGNode-"><code>SSAContextInterpreter.getNumberOfStatements(com.ibm.wala.ipa.callgraph.CGNode)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -368,6 +372,10 @@ extends <a href="../../../../../com/ibm/wala/analysis/reflection/AbstractReflect
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../com/ibm/wala/ipa/callgraph/cha/CHAContextInterpreter.html#understands-com.ibm.wala.ipa.callgraph.CGNode-">CHAContextInterpreter</a></code></span></div>
 <div class="block">Does this object understand the given method? The caller had better check this before inquiring
  on other properties.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/ipa/callgraph/cha/CHAContextInterpreter.html#understands-com.ibm.wala.ipa.callgraph.CGNode-"><code>CHAContextInterpreter.understands(com.ibm.wala.ipa.callgraph.CGNode)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="iterateNewSites-com.ibm.wala.ipa.callgraph.CGNode-">
@@ -380,6 +388,8 @@ extends <a href="../../../../../com/ibm/wala/analysis/reflection/AbstractReflect
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an Iterator of the types that may be allocated by a given method in a given context.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/rta/RTAContextInterpreter.html#iterateNewSites-com.ibm.wala.ipa.callgraph.CGNode-"><code>RTAContextInterpreter.iterateNewSites(com.ibm.wala.ipa.callgraph.CGNode)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -394,6 +404,8 @@ extends <a href="../../../../../com/ibm/wala/analysis/reflection/AbstractReflect
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an Iterator of the call statements that may execute in a given method for a given
      context</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/ipa/callgraph/cha/CHAContextInterpreter.html#iterateCallSites-com.ibm.wala.ipa.callgraph.CGNode-"><code>CHAContextInterpreter.iterateCallSites(com.ibm.wala.ipa.callgraph.CGNode)</code></a></dd>
 </dl>
 </li>
 </ul>

@@ -356,6 +356,8 @@ extends <a href="../../../../../com/ibm/wala/analysis/reflection/AbstractReflect
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the number of the statements in the IR, or -1 if it's an unmodelled native method.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html#getNumberOfStatements-com.ibm.wala.ipa.callgraph.CGNode-"><code>SSAContextInterpreter.getNumberOfStatements(com.ibm.wala.ipa.callgraph.CGNode)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -369,6 +371,10 @@ extends <a href="../../../../../com/ibm/wala/analysis/reflection/AbstractReflect
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../com/ibm/wala/ipa/callgraph/cha/CHAContextInterpreter.html#understands-com.ibm.wala.ipa.callgraph.CGNode-">CHAContextInterpreter</a></code></span></div>
 <div class="block">Does this object understand the given method? The caller had better check this before inquiring
  on other properties.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/ipa/callgraph/cha/CHAContextInterpreter.html#understands-com.ibm.wala.ipa.callgraph.CGNode-"><code>CHAContextInterpreter.understands(CGNode)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="iterateNewSites-com.ibm.wala.ipa.callgraph.CGNode-">
@@ -434,6 +440,9 @@ extends <a href="../../../../../com/ibm/wala/analysis/reflection/AbstractReflect
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true iff a NEW type was recorded, false if the type was previously recorded.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/rta/RTAContextInterpreter.html#recordFactoryType-com.ibm.wala.ipa.callgraph.CGNode-com.ibm.wala.classLoader.IClass-"><code>RTAContextInterpreter.recordFactoryType(com.ibm.wala.ipa.callgraph.CGNode,
+     com.ibm.wala.classLoader.IClass)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -506,6 +515,10 @@ extends <a href="../../../../../com/ibm/wala/analysis/reflection/AbstractReflect
 <li class="blockList">
 <h4>getCFG</h4>
 <pre>public&nbsp;<a href="../../../../../com/ibm/wala/cfg/ControlFlowGraph.html" title="interface in com.ibm.wala.cfg">ControlFlowGraph</a>&lt;<a href="../../../../../com/ibm/wala/ssa/SSAInstruction.html" title="class in com.ibm.wala.ssa">SSAInstruction</a>,<a href="../../../../../com/ibm/wala/ssa/ISSABasicBlock.html" title="interface in com.ibm.wala.ssa">ISSABasicBlock</a>&gt;&nbsp;getCFG(<a href="../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;N)</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html#getCFG-com.ibm.wala.ipa.callgraph.CGNode-"><code>SSAContextInterpreter.getCFG(com.ibm.wala.ipa.callgraph.CGNode)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getDU-com.ibm.wala.ipa.callgraph.CGNode-">

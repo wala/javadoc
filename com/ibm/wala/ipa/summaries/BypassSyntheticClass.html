@@ -374,6 +374,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <dd><code><a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html#getClassLoader--">getClassLoader</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" title="class in com.ibm.wala.classLoader">SyntheticClass</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the object that represents the defining class loader for this class.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getClassLoader--"><code>IClass.getClassLoader()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -387,6 +389,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the superclass, or null if java.lang.Object</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getSuperclass--"><code>IClass.getSuperclass()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -402,6 +406,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <dd>Collection of (IClass) interfaces this class implements, including all ancestors of
      interfaces immediately implemented. If this class is an interface, it returns all
      super-interfaces.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getAllImplementedInterfaces--"><code>IClass.getAllImplementedInterfaces()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -420,6 +426,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>IMethod from this class matching the signature; null if not found in this class or any
      superclass.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getMethod-com.ibm.wala.types.Selector-"><code>IClass.getMethod(Selector)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -432,6 +440,10 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <pre>public&nbsp;<a href="../../../../../com/ibm/wala/classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a>&nbsp;getField(<a href="../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;name)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getField-com.ibm.wala.core.util.strings.Atom-">IClass</a></code></span></div>
 <div class="block">Finds a field.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getMethod-com.ibm.wala.types.Selector-"><code>IClass.getMethod(Selector)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getSourceFileName--">
@@ -449,6 +461,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>String holding the name of the source file that defined this class, or null if none
      found</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getSourceFileName--"><code>IClass.getSourceFileName()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -462,6 +476,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the method that is this class's initializer, or null if none</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getClassInitializer--"><code>IClass.getClassInitializer()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -475,6 +491,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an Iterator of the IMethods declared by this class.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getDeclaredMethods--"><code>IClass.getDeclaredMethods()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -490,6 +508,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Collection of IFields</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getDeclaredInstanceFields--"><code>IClass.getDeclaredInstanceFields()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -503,6 +523,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Collection of IField</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getDeclaredStaticFields--"><code>IClass.getDeclaredStaticFields()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -513,6 +535,10 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <li class="blockList">
 <h4>isSyntheticImplentor</h4>
 <pre>public&nbsp;boolean&nbsp;isSyntheticImplentor()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#isInterface--"><code>IClass.isInterface()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="toString--">
@@ -578,6 +604,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <dd>the integer that encodes the class's modifiers, as defined by the JVM specification</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../com/ibm/wala/util/debug/UnimplementedError.html" title="class in com.ibm.wala.util.debug">UnimplementedError</a></code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getModifiers--"><code>IClass.getModifiers()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -590,6 +618,10 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <pre>public&nbsp;boolean&nbsp;isReferenceType()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IClass.html#isReferenceType--">IClass</a></code></span></div>
 <div class="block">Does 'this' refer to a reference type? If not, then it refers to a primitive type.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#isReferenceType--"><code>IClass.isReferenceType()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getDirectInterfaces--">
@@ -606,6 +638,8 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
      interface, returns the interfaces it immediately extends.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../com/ibm/wala/util/debug/UnimplementedError.html" title="class in com.ibm.wala.util.debug">UnimplementedError</a></code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getDirectInterfaces--"><code>IClass.getDirectInterfaces()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -618,6 +652,10 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <pre>public&nbsp;java.util.Collection&lt;<a href="../../../../../com/ibm/wala/classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a>&gt;&nbsp;getAllInstanceFields()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getAllInstanceFields--">IClass</a></code></span></div>
 <div class="block">Compute the instance fields declared by this class or any of its superclasses.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getAllInstanceFields--"><code>IClass.getAllInstanceFields()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getAllStaticFields--">
@@ -629,6 +667,10 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <pre>public&nbsp;java.util.Collection&lt;<a href="../../../../../com/ibm/wala/classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a>&gt;&nbsp;getAllStaticFields()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getAllStaticFields--">IClass</a></code></span></div>
 <div class="block">Compute the static fields declared by this class or any of its superclasses.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getAllStaticFields--"><code>IClass.getAllStaticFields()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getAllMethods--">
@@ -640,6 +682,10 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <pre>public&nbsp;java.util.Collection&lt;? extends <a href="../../../../../com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&gt;&nbsp;getAllMethods()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getAllMethods--">IClass</a></code></span></div>
 <div class="block">Compute the methods declared by this class or any of its superclasses.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getAllMethods--"><code>IClass.getAllMethods()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getAllFields--">
@@ -651,6 +697,10 @@ extends <a href="../../../../../com/ibm/wala/classLoader/SyntheticClass.html" ti
 <pre>public&nbsp;java.util.Collection&lt;<a href="../../../../../com/ibm/wala/classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a>&gt;&nbsp;getAllFields()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getAllFields--">IClass</a></code></span></div>
 <div class="block">Compute the instance and static fields declared by this class or any of its superclasses.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/ibm/wala/classLoader/IClass.html#getAllFields--"><code>IClass.getAllFields()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="isPublic--">
