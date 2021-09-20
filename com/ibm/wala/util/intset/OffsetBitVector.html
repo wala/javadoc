@@ -417,7 +417,7 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>public final&nbsp;void&nbsp;set(int&nbsp;bit)</pre>
+<pre>public&nbsp;void&nbsp;set(int&nbsp;bit)</pre>
 <div class="block">Sets a bit.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -433,7 +433,7 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>clear</h4>
-<pre>public final&nbsp;void&nbsp;clear(int&nbsp;bit)</pre>
+<pre>public&nbsp;void&nbsp;clear(int&nbsp;bit)</pre>
 <div class="block">Clears a bit.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -449,7 +449,7 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>public final&nbsp;boolean&nbsp;get(int&nbsp;bit)</pre>
+<pre>public&nbsp;boolean&nbsp;get(int&nbsp;bit)</pre>
 <div class="block">Gets a bit.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -480,7 +480,7 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>not</h4>
-<pre>public final&nbsp;void&nbsp;not()</pre>
+<pre>public&nbsp;void&nbsp;not()</pre>
 <div class="block">Logically NOT this bit string</div>
 </li>
 </ul>
@@ -503,7 +503,7 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>length</h4>
-<pre>public final&nbsp;int&nbsp;length()</pre>
+<pre>public&nbsp;int&nbsp;length()</pre>
 <div class="block">Calculates and returns the set's size in bits. The maximum element in the set is the size - 1st
  element.</div>
 <dl>
@@ -518,7 +518,7 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>setAll</h4>
-<pre>public final&nbsp;void&nbsp;setAll()</pre>
+<pre>public&nbsp;void&nbsp;setAll()</pre>
 <div class="block">Sets all bits.</div>
 </li>
 </ul>
@@ -546,8 +546,8 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>intersectionEmpty</h4>
-<pre>public final&nbsp;boolean&nbsp;intersectionEmpty(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)
-                                throws java.lang.IllegalArgumentException</pre>
+<pre>public&nbsp;boolean&nbsp;intersectionEmpty(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)
+                          throws java.lang.IllegalArgumentException</pre>
 <div class="block">Check if the intersection of the two sets is empty</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -565,8 +565,8 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>sameBits</h4>
-<pre>public final&nbsp;boolean&nbsp;sameBits(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)
-                       throws java.lang.IllegalArgumentException</pre>
+<pre>public&nbsp;boolean&nbsp;sameBits(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)
+                 throws java.lang.IllegalArgumentException</pre>
 <div class="block">Compares this object against the specified object.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -602,7 +602,7 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>copyBits</h4>
-<pre>public final&nbsp;void&nbsp;copyBits(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)</pre>
+<pre>public&nbsp;void&nbsp;copyBits(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)</pre>
 <div class="block">Copies the values of the bits in the specified set into this set.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -618,8 +618,8 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>and</h4>
-<pre>public final&nbsp;void&nbsp;and(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)
-               throws java.lang.IllegalArgumentException</pre>
+<pre>public&nbsp;void&nbsp;and(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)
+         throws java.lang.IllegalArgumentException</pre>
 <div class="block">Logically ANDs this bit set with the specified set of bits.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -637,8 +637,8 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>or</h4>
-<pre>public final&nbsp;void&nbsp;or(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)
-              throws java.lang.IllegalArgumentException</pre>
+<pre>public&nbsp;void&nbsp;or(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)
+        throws java.lang.IllegalArgumentException</pre>
 <div class="block">Logically ORs this bit set with the specified set of bits.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -656,8 +656,8 @@ extends <a href="../../../../../com/ibm/wala/util/intset/BitVectorBase.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>xor</h4>
-<pre>public final&nbsp;void&nbsp;xor(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)
-               throws java.lang.IllegalArgumentException</pre>
+<pre>public&nbsp;void&nbsp;xor(<a href="../../../../../com/ibm/wala/util/intset/OffsetBitVector.html" title="class in com.ibm.wala.util.intset">OffsetBitVector</a>&nbsp;set)
+         throws java.lang.IllegalArgumentException</pre>
 <div class="block">Logically XORs this bit set with the specified set of bits.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

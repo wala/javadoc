@@ -1701,7 +1701,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getClassLoader</h4>
-<pre>public final&nbsp;<a href="../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;getClassLoader()</pre>
+<pre>public&nbsp;<a href="../../../../com/ibm/wala/types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;getClassLoader()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the classloader component of this type reference</dd>
@@ -1714,7 +1714,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre>public final&nbsp;<a href="../../../../com/ibm/wala/types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;getName()</pre>
+<pre>public&nbsp;<a href="../../../../com/ibm/wala/types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;getName()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the type name component of this type reference</dd>
@@ -1727,7 +1727,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getArrayElementType</h4>
-<pre>public final&nbsp;<a href="../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;getArrayElementType()</pre>
+<pre>public&nbsp;<a href="../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;getArrayElementType()</pre>
 <div class="block">TODO: specialized form of TypeReference for arrays, please. Get the element type of for this
  array type.</div>
 </li>
@@ -1738,7 +1738,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getArrayTypeForElementType</h4>
-<pre>public final&nbsp;<a href="../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;getArrayTypeForElementType()</pre>
+<pre>public&nbsp;<a href="../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;getArrayTypeForElementType()</pre>
 <div class="block">Get array type corresponding to "this" array element type.</div>
 </li>
 </ul>
@@ -1748,7 +1748,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDerivedMask</h4>
-<pre>public final&nbsp;int&nbsp;getDerivedMask()</pre>
+<pre>public&nbsp;int&nbsp;getDerivedMask()</pre>
 <div class="block">Return the dimensionality of the type. By convention, class types have dimensionality 0,
  primitives -1, and arrays the number of [ in their descriptor.</div>
 </li>
@@ -1759,7 +1759,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getInnermostElementType</h4>
-<pre>public final&nbsp;<a href="../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;getInnermostElementType()</pre>
+<pre>public&nbsp;<a href="../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;getInnermostElementType()</pre>
 <div class="block">Return the innermost element type reference for an array</div>
 </li>
 </ul>
@@ -1769,7 +1769,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isClassType</h4>
-<pre>public final&nbsp;boolean&nbsp;isClassType()</pre>
+<pre>public&nbsp;boolean&nbsp;isClassType()</pre>
 <div class="block">Does 'this' refer to a class?</div>
 </li>
 </ul>
@@ -1779,7 +1779,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isArrayType</h4>
-<pre>public final&nbsp;boolean&nbsp;isArrayType()</pre>
+<pre>public&nbsp;boolean&nbsp;isArrayType()</pre>
 <div class="block">Does 'this' refer to an array?</div>
 </li>
 </ul>
@@ -1789,7 +1789,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isPrimitiveType</h4>
-<pre>public final&nbsp;boolean&nbsp;isPrimitiveType()</pre>
+<pre>public&nbsp;boolean&nbsp;isPrimitiveType()</pre>
 <div class="block">Does 'this' refer to a primitive type</div>
 </li>
 </ul>
@@ -1799,7 +1799,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isReferenceType</h4>
-<pre>public final&nbsp;boolean&nbsp;isReferenceType()</pre>
+<pre>public&nbsp;boolean&nbsp;isReferenceType()</pre>
 <div class="block">Does 'this' refer to a reference type</div>
 </li>
 </ul>
@@ -1809,7 +1809,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre>public final&nbsp;int&nbsp;hashCode()</pre>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
@@ -1822,7 +1822,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre>public final&nbsp;boolean&nbsp;equals(java.lang.Object&nbsp;other)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(java.lang.Object&nbsp;other)</pre>
 <div class="block">TypeReferences are canonical. However, note that two TypeReferences can be non-equal, yet still
  represent the same IClass.
 
@@ -1841,7 +1841,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre>public final&nbsp;java.lang.String&nbsp;toString()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>

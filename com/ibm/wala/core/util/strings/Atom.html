@@ -433,7 +433,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre>public final&nbsp;java.lang.String&nbsp;toString()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
 <div class="block">Return printable representation of "this" atom. Does not correctly handle UTF8 translation.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -447,8 +447,8 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toUnicodeString</h4>
-<pre>public final&nbsp;java.lang.String&nbsp;toUnicodeString()
-                                       throws java.io.UTFDataFormatException</pre>
+<pre>public&nbsp;java.lang.String&nbsp;toUnicodeString()
+                                 throws java.io.UTFDataFormatException</pre>
 <div class="block">Return printable representation of "this" atom.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -462,7 +462,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>left</h4>
-<pre>public final&nbsp;<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;left(int&nbsp;count)</pre>
+<pre>public&nbsp;<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;left(int&nbsp;count)</pre>
 <div class="block">New Atom containing first count bytes</div>
 </li>
 </ul>
@@ -472,7 +472,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>right</h4>
-<pre>public final&nbsp;<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;right(int&nbsp;count)</pre>
+<pre>public&nbsp;<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;right(int&nbsp;count)</pre>
 <div class="block">New Atom containing last count bytes</div>
 </li>
 </ul>
@@ -482,7 +482,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>startsWith</h4>
-<pre>public final&nbsp;boolean&nbsp;startsWith(<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;start)</pre>
+<pre>public&nbsp;boolean&nbsp;startsWith(<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;start)</pre>
 </li>
 </ul>
 <a name="arrayDescriptorFromElementDescriptor--">
@@ -491,7 +491,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>arrayDescriptorFromElementDescriptor</h4>
-<pre>public final&nbsp;<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;arrayDescriptorFromElementDescriptor()</pre>
+<pre>public&nbsp;<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;arrayDescriptorFromElementDescriptor()</pre>
 <div class="block">Return array descriptor corresponding to "this" array-element descriptor. this: array-element
  descriptor - something like "I" or "Ljava/lang/Object;"</div>
 <dl>
@@ -506,7 +506,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isReservedMemberName</h4>
-<pre>public final&nbsp;boolean&nbsp;isReservedMemberName()</pre>
+<pre>public&nbsp;boolean&nbsp;isReservedMemberName()</pre>
 <div class="block">Is "this" atom a reserved member name? Note: Sun has reserved all member names starting with
  '&lt;' for future use. At present, only &lt;init&gt; and &lt;clinit&gt; are used.</div>
 </li>
@@ -517,7 +517,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isClassDescriptor</h4>
-<pre>public final&nbsp;boolean&nbsp;isClassDescriptor()</pre>
+<pre>public&nbsp;boolean&nbsp;isClassDescriptor()</pre>
 <div class="block">Is "this" atom a class descriptor?</div>
 </li>
 </ul>
@@ -527,7 +527,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isArrayDescriptor</h4>
-<pre>public final&nbsp;boolean&nbsp;isArrayDescriptor()</pre>
+<pre>public&nbsp;boolean&nbsp;isArrayDescriptor()</pre>
 <div class="block">Is "this" atom an array descriptor?</div>
 </li>
 </ul>
@@ -537,8 +537,8 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isMethodDescriptor</h4>
-<pre>public final&nbsp;boolean&nbsp;isMethodDescriptor()
-                                 throws java.lang.IllegalArgumentException</pre>
+<pre>public&nbsp;boolean&nbsp;isMethodDescriptor()
+                           throws java.lang.IllegalArgumentException</pre>
 <div class="block">Is "this" atom a method descriptor?</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -552,7 +552,7 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>length</h4>
-<pre>public final&nbsp;int&nbsp;length()</pre>
+<pre>public&nbsp;int&nbsp;length()</pre>
 </li>
 </ul>
 <a name="parseForArrayElementDescriptor--">
@@ -561,8 +561,8 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseForArrayElementDescriptor</h4>
-<pre>public final&nbsp;<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;parseForArrayElementDescriptor()
-                                          throws java.lang.IllegalArgumentException</pre>
+<pre>public&nbsp;<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;parseForArrayElementDescriptor()
+                                    throws java.lang.IllegalArgumentException</pre>
 <div class="block">Parse "this" array descriptor to obtain descriptor for array's element type. this: array
  descriptor - something like "[I"</div>
 <dl>
@@ -579,8 +579,8 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseForArrayDimensionality</h4>
-<pre>public final&nbsp;int&nbsp;parseForArrayDimensionality()
-                                      throws java.lang.IllegalArgumentException</pre>
+<pre>public&nbsp;int&nbsp;parseForArrayDimensionality()
+                                throws java.lang.IllegalArgumentException</pre>
 <div class="block">Parse "this" array descriptor to obtain number of dimensions in corresponding array type. this:
  descriptor - something like "[Ljava/lang/String;" or "[[I"</div>
 <dl>
@@ -598,8 +598,8 @@ implements java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseForInnermostArrayElementDescriptor</h4>
-<pre>public final&nbsp;<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;parseForInnermostArrayElementDescriptor()
-                                                   throws java.lang.IllegalArgumentException</pre>
+<pre>public&nbsp;<a href="../../../../../../com/ibm/wala/core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;parseForInnermostArrayElementDescriptor()
+                                             throws java.lang.IllegalArgumentException</pre>
 <div class="block">Return the innermost element type reference for an array</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
