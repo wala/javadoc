@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -155,32 +155,48 @@ extends <a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="inter
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getAnnotations-boolean-">getAnnotations</a></span>(boolean&nbsp;runtimeInvisible)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.util.Iterator&lt;<a href="../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getArraysWritten--">getArraysWritten</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getBytecodeIndex-int-">getBytecodeIndex</a></span>(int&nbsp;i)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.Collection&lt;<a href="../../../../com/ibm/wala/classLoader/CallSiteReference.html" title="class in com.ibm.wala.classLoader">CallSiteReference</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getCallSites--">getCallSites</a></span>()</code>
 <div class="block">there</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>java.util.Iterator&lt;<a href="../../../../com/ibm/wala/types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getFieldsRead--">getFieldsRead</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.util.Iterator&lt;<a href="../../../../com/ibm/wala/types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getFieldsWritten--">getFieldsWritten</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/shrike/shrikeBT/ExceptionHandler.html" title="class in com.ibm.wala.shrike.shrikeBT">ExceptionHandler</a>[][]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getHandlers--">getHandlers</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/shrike/shrikeBT/IndirectionData.html" title="interface in com.ibm.wala.shrike.shrikeBT">IndirectionData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getIndirectionData--">getIndirectionData</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getInstructionIndex-int-">getInstructionIndex</a></span>(int&nbsp;bcIndex)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html" title="type parameter in IBytecodeMethod">I</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getInstructions--">getInstructions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>java.util.Collection&lt;<a href="../../../../com/ibm/wala/classLoader/NewSiteReference.html" title="class in com.ibm.wala.classLoader">NewSiteReference</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getNewSites--">getNewSites</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.util.Collection&lt;<a href="../../../../com/ibm/wala/types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/IBytecodeMethod.html#getParameterAnnotations--">getParameterAnnotations</a></span>()</code>&nbsp;</td>
 </tr>
@@ -297,6 +313,64 @@ extends <a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="inter
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the call sites declared in the bytecode for this method</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getFieldsRead--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFieldsRead</h4>
+<pre>java.util.Iterator&lt;<a href="../../../../com/ibm/wala/types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&gt;&nbsp;getFieldsRead()
+                                          throws <a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getFieldsWritten--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFieldsWritten</h4>
+<pre>java.util.Iterator&lt;<a href="../../../../com/ibm/wala/types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&gt;&nbsp;getFieldsWritten()
+                                             throws <a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getArraysWritten--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getArraysWritten</h4>
+<pre>java.util.Iterator&lt;<a href="../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;&nbsp;getArraysWritten()
+                                            throws <a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getNewSites--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNewSites</h4>
+<pre>java.util.Collection&lt;<a href="../../../../com/ibm/wala/classLoader/NewSiteReference.html" title="class in com.ibm.wala.classLoader">NewSiteReference</a>&gt;&nbsp;getNewSites()
+                                            throws <a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new sites declared in the bytecode for this method</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
 </dl>

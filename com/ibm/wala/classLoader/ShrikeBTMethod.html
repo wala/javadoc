@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":6,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":6,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":6,"i38":10,"i39":6,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":6,"i58":6,"i59":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":6,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":6,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":6,"i39":10,"i40":6,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":6,"i59":6,"i60":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -348,169 +348,173 @@ implements <a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
+<td class="colFirst"><code>java.util.Collection&lt;<a href="../../../../com/ibm/wala/classLoader/NewSiteReference.html" title="class in com.ibm.wala.classLoader">NewSiteReference</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#getNewSites--">getNewSites</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#getNumberOfParameters--">getNumberOfParameters</a></span>()</code>
 <div class="block">Method getNumberOfParameters.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#getNumShrikeInstructions--">getNumShrikeInstructions</a></span>()</code>
 <div class="block">Return the number of Shrike instructions for this method.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/classLoader/IMethod.SourcePosition.html" title="interface in com.ibm.wala.classLoader">IMethod.SourcePosition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#getParameterSourcePosition-int-">getParameterSourcePosition</a></span>(int&nbsp;paramNum)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#getParameterType-int-">getParameterType</a></span>(int&nbsp;i)</code>
 <div class="block">By convention, for a non-static method, getParameterType(0) is the this pointer</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#getReference--">getReference</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/types/Selector.html" title="class in com.ibm.wala.types">Selector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#getSelector--">getSelector</a></span>()</code>
 <div class="block">something like: foo(Ljava/langString;)Ljava/lang/Class;</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#getSignature--">getSignature</a></span>()</code>
 <div class="block">something like:
  com.foo.bar.createLargeOrder(IILjava.lang.String;SLjava.sql.Date;)Ljava.lang.Integer;</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../../../com/ibm/wala/classLoader/IMethod.SourcePosition.html" title="interface in com.ibm.wala.classLoader">IMethod.SourcePosition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#getSourcePosition-int-">getSourcePosition</a></span>(int&nbsp;bcIndex)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#hasExceptionHandler--">hasExceptionHandler</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#hasLocalVariableTable--">hasLocalVariableTable</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#hasMonitorOp--">hasMonitorOp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isAbstract--">isAbstract</a></span>()</code>
 <div class="block">Is this method abstract?</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isAnnotation--">isAnnotation</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isBridge--">isBridge</a></span>()</code>
 <div class="block">Is this method a bridge method? See JLS 3rd Edition 15.12.4.5</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isClinit--">isClinit</a></span>()</code>
 <div class="block">Is this method a class initializer?</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isEnum--">isEnum</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isFinal--">isFinal</a></span>()</code>
 <div class="block">Is this method final?</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isInit--">isInit</a></span>()</code>
 <div class="block">Is this method an object initializer?</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isModule--">isModule</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isNative--">isNative</a></span>()</code>
 <div class="block">Is this method native?</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isPrivate--">isPrivate</a></span>()</code>
 <div class="block">Is this method private?</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isProtected--">isProtected</a></span>()</code>
 <div class="block">Is this method protected?</div>
 </td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isPublic--">isPublic</a></span>()</code>
 <div class="block">Is this method public?</div>
 </td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isStatic--">isStatic</a></span>()</code>
 <div class="block">Is this member static?</div>
 </td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isSynchronized--">isSynchronized</a></span>()</code>
 <div class="block">Is this method synchronized?</div>
 </td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isSynthetic--">isSynthetic</a></span>()</code>
 <div class="block">Is this method synthetic, i.e., compiler-generated (this refers to the synthetic flag in
  java/dex bytecode)</div>
 </td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#isWalaSynthetic--">isWalaSynthetic</a></span>()</code>
 <div class="block">Is the implementation of this method a model generated by WALA? For compiler-generated
  synthetic methods, refer to <a href="../../../../com/ibm/wala/classLoader/IMethod.html#isSynthetic--"><code>IMethod.isSynthetic()</code></a></div>
 </td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../com/ibm/wala/shrike/shrikeBT/Decoder.html" title="class in com.ibm.wala.shrike.shrikeBT">Decoder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#makeDecoder--">makeDecoder</a></span>()</code>
 <div class="block">Find the decoder object for this method, or create one if necessary.</div>
 </td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>protected abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#processDebugInfo-com.ibm.wala.classLoader.ShrikeBTMethod.BytecodeInfo-">processDebugInfo</a></span>(<a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.BytecodeInfo.html" title="class in com.ibm.wala.classLoader">ShrikeBTMethod.BytecodeInfo</a>&nbsp;bcInfo)</code>
 <div class="block">Walk through the bytecodes and collect trivial information.</div>
 </td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/ibm/wala/classLoader/ShrikeBTMethod.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -662,6 +666,20 @@ implements <a href="../../../../com/ibm/wala/classLoader/IMethod.html" title="in
 <h4>getCallSites</h4>
 <pre>public&nbsp;java.util.Collection&lt;<a href="../../../../com/ibm/wala/classLoader/CallSiteReference.html" title="class in com.ibm.wala.classLoader">CallSiteReference</a>&gt;&nbsp;getCallSites()
                                                      throws <a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getNewSites--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNewSites</h4>
+<pre>public&nbsp;java.util.Collection&lt;<a href="../../../../com/ibm/wala/classLoader/NewSiteReference.html" title="class in com.ibm.wala.classLoader">NewSiteReference</a>&gt;&nbsp;getNewSites()
+                                                   throws <a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../com/ibm/wala/shrike/shrikeCT/InvalidClassFileException.html" title="class in com.ibm.wala.shrike.shrikeCT">InvalidClassFileException</a></code></dd>
