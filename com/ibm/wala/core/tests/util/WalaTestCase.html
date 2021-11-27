@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9};
+var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -150,37 +150,33 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/core/tests/util/WalaTestCase.html#analyzingJar--">analyzingJar</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/core/tests/util/WalaTestCase.html#getClasspathEntry-java.lang.String-">getClasspathEntry</a></span>(java.lang.String&nbsp;elt)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/core/tests/util/WalaTestCase.html#justThisTest-java.lang.Class-">justThisTest</a></span>(java.lang.Class&lt;?&gt;&nbsp;testClass)</code>
 <div class="block">Utility function: each DetoxTestCase subclass can have a main() method that calls this, to
  create a test suite consisting of just this test.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/core/tests/util/WalaTestCase.html#makeAnalysisCache--">makeAnalysisCache</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/core/tests/util/WalaTestCase.html#makeAnalysisCache-com.ibm.wala.ssa.SSAOptions-">makeAnalysisCache</a></span>(<a href="../../../../../../com/ibm/wala/ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/core/tests/util/WalaTestCase.html#setUp--">setUp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/core/tests/util/WalaTestCase.html#tearDown--">tearDown</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/core/tests/util/WalaTestCase.html#useShortProfile--">useShortProfile</a></span>()</code>&nbsp;</td>
 </tr>
@@ -230,15 +226,6 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>useShortProfile</h4>
 <pre>public static&nbsp;boolean&nbsp;useShortProfile()</pre>
-</li>
-</ul>
-<a name="analyzingJar--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>analyzingJar</h4>
-<pre>public static&nbsp;boolean&nbsp;analyzingJar()</pre>
 </li>
 </ul>
 <a name="setUp--">
