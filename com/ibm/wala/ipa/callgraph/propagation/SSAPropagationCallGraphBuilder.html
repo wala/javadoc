@@ -288,7 +288,7 @@ implements <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/Hea
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html#addNodeValueConstraints-com.ibm.wala.ipa.callgraph.CGNode-com.ibm.wala.util.MonitorUtil.IProgressMonitor-">addNodeValueConstraints</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node,
                        <a href="../../../../../../com/ibm/wala/util/MonitorUtil.IProgressMonitor.html" title="interface in com.ibm.wala.util">MonitorUtil.IProgressMonitor</a>&nbsp;monitor)</code>
-<div class="block">Hook for aubclasses to add pointer flow constraints based on values in a given node</div>
+<div class="block">Hook for subclasses to add pointer flow constraints based on values in a given node</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -664,7 +664,7 @@ implements <a href="../../../../../../com/ibm/wala/ipa/callgraph/propagation/Hea
 <pre>protected&nbsp;void&nbsp;addNodeValueConstraints(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node,
                                        <a href="../../../../../../com/ibm/wala/util/MonitorUtil.IProgressMonitor.html" title="interface in com.ibm.wala.util">MonitorUtil.IProgressMonitor</a>&nbsp;monitor)
                                 throws <a href="../../../../../../com/ibm/wala/util/CancelException.html" title="class in com.ibm.wala.util">CancelException</a></pre>
-<div class="block">Hook for aubclasses to add pointer flow constraints based on values in a given node</div>
+<div class="block">Hook for subclasses to add pointer flow constraints based on values in a given node</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../../com/ibm/wala/util/CancelException.html" title="class in com.ibm.wala.util">CancelException</a></code></dd>
