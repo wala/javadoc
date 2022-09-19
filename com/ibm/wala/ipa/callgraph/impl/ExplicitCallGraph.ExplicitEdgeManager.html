@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.ibm.wala.ipa.callgraph.impl.ExplicitPredecessorsEdgeManager">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
@@ -98,7 +98,12 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitPredecessorsEdgeManager.html" title="class in com.ibm.wala.ipa.callgraph.impl">com.ibm.wala.ipa.callgraph.impl.ExplicitPredecessorsEdgeManager</a></li>
+<li>
+<ul class="inheritance">
 <li>com.ibm.wala.ipa.callgraph.impl.ExplicitCallGraph.ExplicitEdgeManager</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -116,14 +121,28 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>protected class <span class="typeNameLabel">ExplicitCallGraph.ExplicitEdgeManager</span>
-extends java.lang.Object
-implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManager.html" title="interface in com.ibm.wala.util.graph">NumberedEdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</pre>
+extends <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitPredecessorsEdgeManager.html" title="class in com.ibm.wala.ipa.callgraph.impl">ExplicitPredecessorsEdgeManager</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.com.ibm.wala.ipa.callgraph.impl.ExplicitPredecessorsEdgeManager">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.ibm.wala.ipa.callgraph.impl.<a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitPredecessorsEdgeManager.html" title="class in com.ibm.wala.ipa.callgraph.impl">ExplicitPredecessorsEdgeManager</a></h3>
+<code><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitPredecessorsEdgeManager.html#predecessors">predecessors</a>, <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitPredecessorsEdgeManager.html#toNode">toNode</a></code></li>
+</ul>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -167,59 +186,50 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#getPredNodeCount-com.ibm.wala.ipa.callgraph.CGNode-">getPredNodeCount</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;N)</code>
-<div class="block">Return the number of <a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getPredNodes-T-"><code>immediate predecessor</code></a> nodes of n</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../com/ibm/wala/util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#getPredNodeNumbers-com.ibm.wala.ipa.callgraph.CGNode-">getPredNodeNumbers</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>java.util.Iterator&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#getPredNodes-com.ibm.wala.ipa.callgraph.CGNode-">getPredNodes</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;N)</code>
-<div class="block">Return an <code>Iterator</code> over the immediate predecessor nodes of n</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#getSuccNodeCount-com.ibm.wala.ipa.callgraph.CGNode-">getSuccNodeCount</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;N)</code>
 <div class="block">Return the number of <a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getSuccNodes-T-"><code>immediate successor</code></a> nodes of this Node in the Graph</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/ibm/wala/util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#getSuccNodeNumbers-com.ibm.wala.ipa.callgraph.CGNode-">getSuccNodeNumbers</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#getSuccNodes-com.ibm.wala.ipa.callgraph.CGNode-">getSuccNodes</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;N)</code>
 <div class="block">Return an Iterator over the immediate successor nodes of n</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#hasEdge-com.ibm.wala.ipa.callgraph.CGNode-com.ibm.wala.ipa.callgraph.CGNode-">hasEdge</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;src,
        <a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;dst)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#removeAllIncidentEdges-com.ibm.wala.ipa.callgraph.CGNode-">removeAllIncidentEdges</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#removeEdge-com.ibm.wala.ipa.callgraph.CGNode-com.ibm.wala.ipa.callgraph.CGNode-">removeEdge</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;src,
           <a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;dst)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#removeIncomingEdges-com.ibm.wala.ipa.callgraph.CGNode-">removeIncomingEdges</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitCallGraph.ExplicitEdgeManager.html#removeOutgoingEdges-com.ibm.wala.ipa.callgraph.CGNode-">removeOutgoingEdges</a></span>(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.ibm.wala.ipa.callgraph.impl.ExplicitPredecessorsEdgeManager">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.ibm.wala.ipa.callgraph.impl.<a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitPredecessorsEdgeManager.html" title="class in com.ibm.wala.ipa.callgraph.impl">ExplicitPredecessorsEdgeManager</a></h3>
+<code><a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitPredecessorsEdgeManager.html#getPredNodeCount-com.ibm.wala.ipa.callgraph.CGNode-">getPredNodeCount</a>, <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitPredecessorsEdgeManager.html#getPredNodeNumbers-com.ibm.wala.ipa.callgraph.CGNode-">getPredNodeNumbers</a>, <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/ExplicitPredecessorsEdgeManager.html#getPredNodes-com.ibm.wala.ipa.callgraph.CGNode-">getPredNodes</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -266,61 +276,8 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 <h4>getSuccNodeNumbers</h4>
 <pre>public&nbsp;<a href="../../../../../../com/ibm/wala/util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;getSuccNodeNumbers(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManager.html#getSuccNodeNumbers-T-">getSuccNodeNumbers</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManager.html" title="interface in com.ibm.wala.util.graph">NumberedEdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the numbers identifying the immediate successors of node</dd>
-</dl>
-</li>
-</ul>
-<a name="getPredNodeNumbers-com.ibm.wala.ipa.callgraph.CGNode-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPredNodeNumbers</h4>
-<pre>public&nbsp;<a href="../../../../../../com/ibm/wala/util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;getPredNodeNumbers(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManager.html#getPredNodeNumbers-T-">getPredNodeNumbers</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManager.html" title="interface in com.ibm.wala.util.graph">NumberedEdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the numbers identifying the immediate predecessors of node</dd>
-</dl>
-</li>
-</ul>
-<a name="getPredNodes-com.ibm.wala.ipa.callgraph.CGNode-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPredNodes</h4>
-<pre>public&nbsp;java.util.Iterator&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;&nbsp;getPredNodes(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;N)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getPredNodes-T-">EdgeManager</a></code></span></div>
-<div class="block">Return an <code>Iterator</code> over the immediate predecessor nodes of n
-
- <p>This method never returns <code>null</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getPredNodes-T-">getPredNodes</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>an <code>Iterator</code> over the immediate predecessor nodes of this Node.</dd>
-</dl>
-</li>
-</ul>
-<a name="getPredNodeCount-com.ibm.wala.ipa.callgraph.CGNode-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPredNodeCount</h4>
-<pre>public&nbsp;int&nbsp;getPredNodeCount(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;N)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getPredNodeCount-T-">EdgeManager</a></code></span></div>
-<div class="block">Return the number of <a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getPredNodes-T-"><code>immediate predecessor</code></a> nodes of n</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getPredNodeCount-T-">getPredNodeCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the number of immediate predecessors of n.</dd>
 </dl>
 </li>
 </ul>
@@ -336,8 +293,6 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 
  <p>This method never returns <code>null</code>.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getSuccNodes-T-">getSuccNodes</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an Iterator over the immediate successor nodes of n</dd>
 </dl>
@@ -353,8 +308,6 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getSuccNodeCount-T-">EdgeManager</a></code></span></div>
 <div class="block">Return the number of <a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getSuccNodes-T-"><code>immediate successor</code></a> nodes of this Node in the Graph</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#getSuccNodeCount-T-">getSuccNodeCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the number of immediate successor Nodes of this Node in the Graph.</dd>
 </dl>
@@ -368,10 +321,6 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 <h4>addEdge</h4>
 <pre>public&nbsp;void&nbsp;addEdge(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;src,
                     <a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;dst)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#addEdge-T-T-">addEdge</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 <a name="removeEdge-com.ibm.wala.ipa.callgraph.CGNode-com.ibm.wala.ipa.callgraph.CGNode-">
@@ -382,10 +331,6 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 <h4>removeEdge</h4>
 <pre>public&nbsp;void&nbsp;removeEdge(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;src,
                        <a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;dst)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#removeEdge-T-T-">removeEdge</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 <a name="addEdge-int-int-">
@@ -405,10 +350,6 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 <li class="blockList">
 <h4>removeAllIncidentEdges</h4>
 <pre>public&nbsp;void&nbsp;removeAllIncidentEdges(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#removeAllIncidentEdges-T-">removeAllIncidentEdges</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 <a name="removeIncomingEdges-com.ibm.wala.ipa.callgraph.CGNode-">
@@ -418,10 +359,6 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 <li class="blockList">
 <h4>removeIncomingEdges</h4>
 <pre>public&nbsp;void&nbsp;removeIncomingEdges(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#removeIncomingEdges-T-">removeIncomingEdges</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 <a name="removeOutgoingEdges-com.ibm.wala.ipa.callgraph.CGNode-">
@@ -431,10 +368,6 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 <li class="blockList">
 <h4>removeOutgoingEdges</h4>
 <pre>public&nbsp;void&nbsp;removeOutgoingEdges(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;node)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#removeOutgoingEdges-T-">removeOutgoingEdges</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 <a name="hasEdge-com.ibm.wala.ipa.callgraph.CGNode-com.ibm.wala.ipa.callgraph.CGNode-">
@@ -445,10 +378,6 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 <h4>hasEdge</h4>
 <pre>public&nbsp;boolean&nbsp;hasEdge(<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;src,
                        <a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;dst)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html#hasEdge-T-T-">hasEdge</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/ibm/wala/util/graph/EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -504,7 +433,7 @@ implements <a href="../../../../../../com/ibm/wala/util/graph/NumberedEdgeManage
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.ibm.wala.ipa.callgraph.impl.ExplicitPredecessorsEdgeManager">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>

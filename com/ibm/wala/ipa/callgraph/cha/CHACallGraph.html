@@ -128,6 +128,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">CHACallGraph</span>
 extends <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/BasicCallGraph.html" title="class in com.ibm.wala.ipa.callgraph.impl">BasicCallGraph</a>&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/cha/CHAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.cha">CHAContextInterpreter</a>&gt;</pre>
+<div class="block">Call graph in which call targets are determined entirely based on an <a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha"><code>IClassHierarchy</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -176,11 +177,17 @@ extends <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/BasicCallGrap
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/cha/CHACallGraph.html#CHACallGraph-com.ibm.wala.ipa.cha.IClassHierarchy-">CHACallGraph</a></span>(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/cha/CHACallGraph.html#CHACallGraph-com.ibm.wala.ipa.cha.IClassHierarchy-">CHACallGraph</a></span>(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code>
+<div class="block">NOTE: after calling this contructor, <a href="../../../../../../com/ibm/wala/ipa/callgraph/cha/CHACallGraph.html#init-java.lang.Iterable-"><code>init(Iterable)</code></a> must be invoked to complete
+ initialization</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/cha/CHACallGraph.html#CHACallGraph-com.ibm.wala.ipa.cha.IClassHierarchy-boolean-">CHACallGraph</a></span>(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-            boolean&nbsp;applicationOnly)</code>&nbsp;</td>
+            boolean&nbsp;applicationOnly)</code>
+<div class="block">NOTE: after calling this contructor, <a href="../../../../../../com/ibm/wala/ipa/callgraph/cha/CHACallGraph.html#init-java.lang.Iterable-"><code>init(Iterable)</code></a> must be invoked to complete
+ initialization</div>
+</td>
 </tr>
 </table>
 </li>
@@ -232,7 +239,9 @@ extends <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/BasicCallGrap
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/cha/CHACallGraph.html#init-java.lang.Iterable-">init</a></span>(java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;entrypoints)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/ibm/wala/ipa/callgraph/cha/CHACallGraph.html#init-java.lang.Iterable-">init</a></span>(java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;entrypoints)</code>
+<div class="block">Builds the call graph data structures.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../../com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a></code></td>
@@ -327,6 +336,8 @@ extends <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/BasicCallGrap
 <li class="blockList">
 <h4>CHACallGraph</h4>
 <pre>public&nbsp;CHACallGraph(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</pre>
+<div class="block">NOTE: after calling this contructor, <a href="../../../../../../com/ibm/wala/ipa/callgraph/cha/CHACallGraph.html#init-java.lang.Iterable-"><code>init(Iterable)</code></a> must be invoked to complete
+ initialization</div>
 </li>
 </ul>
 <a name="CHACallGraph-com.ibm.wala.ipa.cha.IClassHierarchy-boolean-">
@@ -337,6 +348,8 @@ extends <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/BasicCallGrap
 <h4>CHACallGraph</h4>
 <pre>public&nbsp;CHACallGraph(<a href="../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                     boolean&nbsp;applicationOnly)</pre>
+<div class="block">NOTE: after calling this contructor, <a href="../../../../../../com/ibm/wala/ipa/callgraph/cha/CHACallGraph.html#init-java.lang.Iterable-"><code>init(Iterable)</code></a> must be invoked to complete
+ initialization</div>
 </li>
 </ul>
 </li>
@@ -355,6 +368,8 @@ extends <a href="../../../../../../com/ibm/wala/ipa/callgraph/impl/BasicCallGrap
 <h4>init</h4>
 <pre>public&nbsp;void&nbsp;init(java.lang.Iterable&lt;<a href="../../../../../../com/ibm/wala/ipa/callgraph/Entrypoint.html" title="class in com.ibm.wala.ipa.callgraph">Entrypoint</a>&gt;&nbsp;entrypoints)
           throws <a href="../../../../../../com/ibm/wala/util/CancelException.html" title="class in com.ibm.wala.util">CancelException</a></pre>
+<div class="block">Builds the call graph data structures. The call graph will only include methods reachable from
+ the provided entrypoints.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../../com/ibm/wala/util/CancelException.html" title="class in com.ibm.wala.util">CancelException</a></code></dd>
