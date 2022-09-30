@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9,"i7":9};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -199,17 +199,6 @@ extends java.lang.Object</pre>
                   java.util.Collection&lt;java.io.InputStream&gt;&nbsp;summariesStreams,
                   <a href="../../../com/ibm/wala/ipa/summaries/MethodSummary.html" title="class in com.ibm.wala.ipa.summaries">MethodSummary</a>&nbsp;extraSummary)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/scandroid/util/AndroidAnalysisContext.html#makeZeroCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-java.util.List-com.ibm.wala.ipa.summaries.MethodSummary-">makeZeroCFABuilder</a></span>(<a href="../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                  <a href="../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                  <a href="../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                  <a href="../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
-                  <a href="../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
-                  <a href="../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter,
-                  java.util.List&lt;java.io.InputStream&gt;&nbsp;arrayList,
-                  <a href="../../../com/ibm/wala/ipa/summaries/MethodSummary.html" title="class in com.ibm.wala.ipa.summaries">MethodSummary</a>&nbsp;extraSummary)</code>&nbsp;</td>
-</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -300,35 +289,6 @@ extends java.lang.Object</pre>
                                                                           <a href="../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter,
                                                                           java.io.InputStream&nbsp;summariesStream,
                                                                           <a href="../../../com/ibm/wala/ipa/summaries/MethodSummary.html" title="class in com.ibm.wala.ipa.summaries">MethodSummary</a>&nbsp;extraSummary)</pre>
-</li>
-</ul>
-<a name="makeZeroCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-java.util.List-com.ibm.wala.ipa.summaries.MethodSummary-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeZeroCFABuilder</h4>
-<pre>public static&nbsp;<a href="../../../com/ibm/wala/ipa/callgraph/propagation/SSAPropagationCallGraphBuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder</a>&nbsp;makeZeroCFABuilder(<a href="../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
-                                                                <a href="../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                                                <a href="../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
-                                                                <a href="../../../com/ibm/wala/ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
-                                                                <a href="../../../com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a>&nbsp;customSelector,
-                                                                <a href="../../../com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAContextInterpreter</a>&nbsp;customInterpreter,
-                                                                java.util.List&lt;java.io.InputStream&gt;&nbsp;arrayList,
-                                                                <a href="../../../com/ibm/wala/ipa/summaries/MethodSummary.html" title="class in com.ibm.wala.ipa.summaries">MethodSummary</a>&nbsp;extraSummary)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>options</code> - options that govern call graph construction</dd>
-<dd><code>cha</code> - governing class hierarchy</dd>
-<dd><code>scope</code> - representation of the analysis scope</dd>
-<dd><code>customSelector</code> - user-defined context selector, or null if none</dd>
-<dd><code>customInterpreter</code> - user-defined context interpreter, or null if none</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>a 0-CFA Call Graph Builder.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if options is null
-     <p>TODO: move</dd>
-</dl>
 </li>
 </ul>
 <a name="makeZeroCFABuilder-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisScope-com.ibm.wala.ipa.callgraph.ContextSelector-com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter-java.util.Collection-com.ibm.wala.ipa.summaries.MethodSummary-">
