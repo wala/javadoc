@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -183,10 +183,11 @@ extends <a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/WorklistBasedOptimisticCallgraphBuilder.html#WorklistBasedOptimisticCallgraphBuilder-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-boolean-">WorklistBasedOptimisticCallgraphBuilder</a></span>(<a href="../../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/WorklistBasedOptimisticCallgraphBuilder.html#WorklistBasedOptimisticCallgraphBuilder-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-boolean-int-">WorklistBasedOptimisticCallgraphBuilder</a></span>(<a href="../../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                                        <a href="../../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                        <a href="../../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                       boolean&nbsp;supportFullPointerAnalysis)</code>&nbsp;</td>
+                                       boolean&nbsp;supportFullPointerAnalysis,
+                                       int&nbsp;bound)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -222,6 +223,22 @@ extends <a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/
                      <a href="../../../../../../../com/ibm/wala/util/MonitorUtil.IProgressMonitor.html" title="interface in com.ibm.wala.util">MonitorUtil.IProgressMonitor</a>&nbsp;monitor)</code>
 <div class="block">Extract call edges from the flow graph into high-level representation.</div>
 </td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/WorklistBasedOptimisticCallgraphBuilder.html#processPendingCallWorklist-com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.FlowGraph-java.util.Map-com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices.VertexFactory-java.util.Map-java.util.Map-java.util.Set-">processPendingCallWorklist</a></span>(<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/FlowGraph.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph">FlowGraph</a>&nbsp;flowgraph,
+                          java.util.Map&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a>,java.util.Set&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/FuncVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">FuncVertex</a>&gt;&gt;&nbsp;pendingCallWorklist,
+                          <a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VertexFactory.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VertexFactory</a>&nbsp;factory,
+                          java.util.Map&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a>,java.util.Set&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/FuncVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">FuncVertex</a>&gt;&gt;&nbsp;reachingFunctions,
+                          java.util.Map&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VarVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VarVertex</a>,<a href="../../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../../com/ibm/wala/cast/js/ssa/JavaScriptInvoke.html" title="class in com.ibm.wala.cast.js.ssa">JavaScriptInvoke</a>,java.lang.Boolean&gt;&gt;&nbsp;reflectiveCalleeVertices,
+                          java.util.Set&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a>&gt;&nbsp;worklist)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/WorklistBasedOptimisticCallgraphBuilder.html#processPendingReflectiveCallWorklist-com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.FlowGraph-java.util.Map-java.util.Map-java.util.Set-">processPendingReflectiveCallWorklist</a></span>(<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/FlowGraph.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph">FlowGraph</a>&nbsp;flowgraph,
+                                    java.util.Map&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a>,java.util.Set&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/FuncVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">FuncVertex</a>&gt;&gt;&nbsp;pendingReflectiveCallWorklist,
+                                    java.util.Map&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VarVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VarVertex</a>,<a href="../../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../../com/ibm/wala/cast/js/ssa/JavaScriptInvoke.html" title="class in com.ibm.wala.cast.js.ssa">JavaScriptInvoke</a>,java.lang.Boolean&gt;&gt;&nbsp;reflectiveCalleeVertices,
+                                    java.util.Set&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a>&gt;&nbsp;worklist)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -270,7 +287,7 @@ extends <a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="WorklistBasedOptimisticCallgraphBuilder-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-boolean-">
+<a name="WorklistBasedOptimisticCallgraphBuilder-com.ibm.wala.ipa.cha.IClassHierarchy-com.ibm.wala.ipa.callgraph.AnalysisOptions-com.ibm.wala.ipa.callgraph.IAnalysisCacheView-boolean-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -279,7 +296,8 @@ extends <a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/
 <pre>public&nbsp;WorklistBasedOptimisticCallgraphBuilder(<a href="../../../../../../../com/ibm/wala/ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
                                                <a href="../../../../../../../com/ibm/wala/ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
                                                <a href="../../../../../../../com/ibm/wala/ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache,
-                                               boolean&nbsp;supportFullPointerAnalysis)</pre>
+                                               boolean&nbsp;supportFullPointerAnalysis,
+                                               int&nbsp;bound)</pre>
 </li>
 </ul>
 </li>
@@ -325,6 +343,32 @@ extends <a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../../../com/ibm/wala/util/CancelException.html" title="class in com.ibm.wala.util">CancelException</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="processPendingCallWorklist-com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.FlowGraph-java.util.Map-com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices.VertexFactory-java.util.Map-java.util.Map-java.util.Set-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>processPendingCallWorklist</h4>
+<pre>public&nbsp;void&nbsp;processPendingCallWorklist(<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/FlowGraph.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph">FlowGraph</a>&nbsp;flowgraph,
+                                       java.util.Map&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a>,java.util.Set&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/FuncVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">FuncVertex</a>&gt;&gt;&nbsp;pendingCallWorklist,
+                                       <a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VertexFactory.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VertexFactory</a>&nbsp;factory,
+                                       java.util.Map&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a>,java.util.Set&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/FuncVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">FuncVertex</a>&gt;&gt;&nbsp;reachingFunctions,
+                                       java.util.Map&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VarVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VarVertex</a>,<a href="../../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../../com/ibm/wala/cast/js/ssa/JavaScriptInvoke.html" title="class in com.ibm.wala.cast.js.ssa">JavaScriptInvoke</a>,java.lang.Boolean&gt;&gt;&nbsp;reflectiveCalleeVertices,
+                                       java.util.Set&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a>&gt;&nbsp;worklist)</pre>
+</li>
+</ul>
+<a name="processPendingReflectiveCallWorklist-com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.FlowGraph-java.util.Map-java.util.Map-java.util.Set-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>processPendingReflectiveCallWorklist</h4>
+<pre>public&nbsp;void&nbsp;processPendingReflectiveCallWorklist(<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/FlowGraph.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph">FlowGraph</a>&nbsp;flowgraph,
+                                                 java.util.Map&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a>,java.util.Set&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/FuncVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">FuncVertex</a>&gt;&gt;&nbsp;pendingReflectiveCallWorklist,
+                                                 java.util.Map&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VarVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VarVertex</a>,<a href="../../../../../../../com/ibm/wala/util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../../../../../com/ibm/wala/cast/js/ssa/JavaScriptInvoke.html" title="class in com.ibm.wala.cast.js.ssa">JavaScriptInvoke</a>,java.lang.Boolean&gt;&gt;&nbsp;reflectiveCalleeVertices,
+                                                 java.util.Set&lt;<a href="../../../../../../../com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a>&gt;&nbsp;worklist)</pre>
 </li>
 </ul>
 <a name="addFlowEdge-com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.FlowGraph-com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices.Vertex-com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices.Vertex-java.util.Set-">
