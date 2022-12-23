@@ -148,6 +148,7 @@ com.ibm.wala.model
 com.ibm.wala.model.java.lang
 com.ibm.wala.model.java.lang.reflect
 com.ibm.wala.properties
+com.ibm.wala.qual
 com.ibm.wala.shrike.bench
 com.ibm.wala.shrike.cg
 com.ibm.wala.shrike.copywriter

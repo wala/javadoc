@@ -199,7 +199,7 @@ implements <a href="Graph.html" title="interface in com.ibm.wala.util.graph">Gra
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsNode(T)">containsNode</a></span>&#8203;(<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsNode(T)">containsNode</a></span>&#8203;(@Nullable <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -232,7 +232,7 @@ implements <a href="Graph.html" title="interface in com.ibm.wala.util.graph">Gra
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPredNodes(T)">getPredNodes</a></span>&#8203;(<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPredNodes(T)">getPredNodes</a></span>&#8203;(@Nullable <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)</code></th>
 <td class="colLast">
 <div class="block">Return an <code>Iterator</code> over the immediate predecessor nodes of n</div>
 </td>
@@ -246,15 +246,15 @@ implements <a href="Graph.html" title="interface in com.ibm.wala.util.graph">Gra
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuccNodes(T)">getSuccNodes</a></span>&#8203;(<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuccNodes(T)">getSuccNodes</a></span>&#8203;(@Nullable <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)</code></th>
 <td class="colLast">
 <div class="block">Return an Iterator over the immediate successor nodes of n</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasEdge(T,T)">hasEdge</a></span>&#8203;(<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;src,
-       <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;dst)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasEdge(T,T)">hasEdge</a></span>&#8203;(@Nullable <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;src,
+       @Nullable <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;dst)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
@@ -472,7 +472,7 @@ implements <a href="Graph.html" title="interface in com.ibm.wala.util.graph">Gra
 <ul class="blockList">
 <li class="blockList">
 <h4>getPredNodes</h4>
-<pre class="methodSignature">public&nbsp;java.util.Iterator&lt;<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&gt;&nbsp;getPredNodes&#8203;(<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)
+<pre class="methodSignature">public&nbsp;java.util.Iterator&lt;<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&gt;&nbsp;getPredNodes&#8203;(@Nullable <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)
                                    throws java.lang.IllegalArgumentException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="EdgeManager.html#getPredNodes(T)">EdgeManager</a></code></span></div>
 <div class="block">Return an <code>Iterator</code> over the immediate predecessor nodes of n
@@ -522,7 +522,7 @@ implements <a href="Graph.html" title="interface in com.ibm.wala.util.graph">Gra
 <ul class="blockList">
 <li class="blockList">
 <h4>getSuccNodes</h4>
-<pre class="methodSignature">public&nbsp;java.util.Iterator&lt;<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&gt;&nbsp;getSuccNodes&#8203;(<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)
+<pre class="methodSignature">public&nbsp;java.util.Iterator&lt;<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&gt;&nbsp;getSuccNodes&#8203;(@Nullable <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)
                                    throws java.lang.IllegalArgumentException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="EdgeManager.html#getSuccNodes(T)">EdgeManager</a></code></span></div>
 <div class="block">Return an Iterator over the immediate successor nodes of n
@@ -609,8 +609,8 @@ implements <a href="Graph.html" title="interface in com.ibm.wala.util.graph">Gra
 <ul class="blockList">
 <li class="blockList">
 <h4>hasEdge</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;hasEdge&#8203;(<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;src,
-                       <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;dst)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;hasEdge&#8203;(@Nullable <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;src,
+                       @Nullable <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;dst)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="EdgeManager.html#hasEdge(T,T)">hasEdge</a></code>&nbsp;in interface&nbsp;<code><a href="EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&gt;</code></dd>
@@ -768,7 +768,7 @@ implements <a href="Graph.html" title="interface in com.ibm.wala.util.graph">Gra
 <ul class="blockListLast">
 <li class="blockList">
 <h4>containsNode</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;containsNode&#8203;(<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;containsNode&#8203;(@Nullable <a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&nbsp;n)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="NodeManager.html#containsNode(T)">containsNode</a></code>&nbsp;in interface&nbsp;<code><a href="NodeManager.html" title="interface in com.ibm.wala.util.graph">NodeManager</a>&lt;<a href="AbstractGraph.html" title="type parameter in AbstractGraph">T</a>&gt;</code></dd>

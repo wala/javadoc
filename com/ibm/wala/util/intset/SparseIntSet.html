@@ -327,7 +327,7 @@ implements <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">I
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSubset(com.ibm.wala.util.intset.IntSet)">isSubset</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSubset(com.ibm.wala.util.intset.IntSet)">isSubset</a></span>&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
@@ -460,7 +460,8 @@ implements <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">I
 <ul class="blockList">
 <li class="blockList">
 <h4>SparseIntSet</h4>
-<pre>public&nbsp;SparseIntSet()</pre>
+<pre>@NullUnmarked
+public&nbsp;SparseIntSet()</pre>
 <div class="block">Subclasses should use this with extreme care.</div>
 </li>
 </ul>
@@ -779,7 +780,7 @@ implements <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">I
 <ul class="blockList">
 <li class="blockList">
 <h4>isSubset</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isSubset&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isSubset&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="IntSet.html#isSubset(com.ibm.wala.util.intset.IntSet)">isSubset</a></code>&nbsp;in interface&nbsp;<code><a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></dd>

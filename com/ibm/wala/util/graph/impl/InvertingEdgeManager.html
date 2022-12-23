@@ -195,7 +195,7 @@ implements <a href="../EdgeManager.html" title="interface in com.ibm.wala.util.g
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPredNodes(T)">getPredNodes</a></span>&#8203;(<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;N)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPredNodes(T)">getPredNodes</a></span>&#8203;(@Nullable <a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;N)</code></th>
 <td class="colLast">
 <div class="block">Return an <code>Iterator</code> over the immediate predecessor nodes of n</div>
 </td>
@@ -209,15 +209,15 @@ implements <a href="../EdgeManager.html" title="interface in com.ibm.wala.util.g
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuccNodes(T)">getSuccNodes</a></span>&#8203;(<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;N)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuccNodes(T)">getSuccNodes</a></span>&#8203;(@Nullable <a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;N)</code></th>
 <td class="colLast">
 <div class="block">Return an Iterator over the immediate successor nodes of n</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasEdge(T,T)">hasEdge</a></span>&#8203;(<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;src,
-       <a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;dst)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasEdge(T,T)">hasEdge</a></span>&#8203;(@Nullable <a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;src,
+       @Nullable <a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;dst)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -292,7 +292,7 @@ implements <a href="../EdgeManager.html" title="interface in com.ibm.wala.util.g
 <ul class="blockList">
 <li class="blockList">
 <h4>getPredNodes</h4>
-<pre class="methodSignature">public&nbsp;java.util.Iterator&lt;<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&gt;&nbsp;getPredNodes&#8203;(<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;N)
+<pre class="methodSignature">public&nbsp;java.util.Iterator&lt;<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&gt;&nbsp;getPredNodes&#8203;(@Nullable <a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;N)
                                    throws java.lang.IllegalArgumentException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../EdgeManager.html#getPredNodes(T)">EdgeManager</a></code></span></div>
 <div class="block">Return an <code>Iterator</code> over the immediate predecessor nodes of n
@@ -338,7 +338,7 @@ implements <a href="../EdgeManager.html" title="interface in com.ibm.wala.util.g
 <ul class="blockList">
 <li class="blockList">
 <h4>getSuccNodes</h4>
-<pre class="methodSignature">public&nbsp;java.util.Iterator&lt;<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&gt;&nbsp;getSuccNodes&#8203;(<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;N)
+<pre class="methodSignature">public&nbsp;java.util.Iterator&lt;<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&gt;&nbsp;getSuccNodes&#8203;(@Nullable <a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;N)
                                    throws java.lang.IllegalArgumentException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../EdgeManager.html#getSuccNodes(T)">EdgeManager</a></code></span></div>
 <div class="block">Return an Iterator over the immediate successor nodes of n
@@ -422,8 +422,8 @@ implements <a href="../EdgeManager.html" title="interface in com.ibm.wala.util.g
 <ul class="blockList">
 <li class="blockList">
 <h4>hasEdge</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;hasEdge&#8203;(<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;src,
-                       <a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;dst)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;hasEdge&#8203;(@Nullable <a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;src,
+                       @Nullable <a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&nbsp;dst)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../EdgeManager.html#hasEdge(T,T)">hasEdge</a></code>&nbsp;in interface&nbsp;<code><a href="../EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="InvertingEdgeManager.html" title="type parameter in InvertingEdgeManager">T</a>&gt;</code></dd>

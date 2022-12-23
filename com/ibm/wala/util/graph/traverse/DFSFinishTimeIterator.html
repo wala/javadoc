@@ -225,7 +225,7 @@ implements java.util.Iterator&lt;T&gt;</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected java.util.Iterator&lt;<a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnected(T)">getConnected</a></span>&#8203;(<a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a>&nbsp;n)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnected(T)">getConnected</a></span>&#8203;(@Nullable <a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a>&nbsp;n)</code></th>
 <td class="colLast">
 <div class="block">get the out edges of a given node</div>
 </td>
@@ -246,7 +246,7 @@ implements java.util.Iterator&lt;T&gt;</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a></code></td>
+<td class="colFirst"><code>@Nullable <a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#next()">next</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Find the next graph node in finishing time order.</div>
@@ -368,8 +368,8 @@ implements java.util.Iterator&lt;T&gt;</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>next</h4>
-<pre class="methodSignature">public&nbsp;<a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a>&nbsp;next()
-       throws java.util.NoSuchElementException</pre>
+<pre class="methodSignature">public&nbsp;@Nullable <a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a>&nbsp;next()
+                 throws java.util.NoSuchElementException</pre>
 <div class="block">Find the next graph node in finishing time order.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -389,7 +389,7 @@ implements java.util.Iterator&lt;T&gt;</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getConnected</h4>
-<pre class="methodSignature">protected&nbsp;java.util.Iterator&lt;<a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a>&gt;&nbsp;getConnected&#8203;(<a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a>&nbsp;n)</pre>
+<pre class="methodSignature">protected&nbsp;java.util.Iterator&lt;<a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a>&gt;&nbsp;getConnected&#8203;(@Nullable <a href="DFSFinishTimeIterator.html" title="type parameter in DFSFinishTimeIterator">T</a>&nbsp;n)</pre>
 <div class="block">get the out edges of a given node</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

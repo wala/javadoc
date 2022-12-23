@@ -271,7 +271,7 @@ extends <a href="DFSDiscoverTimeIterator.html" title="class in com.ibm.wala.util
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected java.util.Iterator&lt;? extends <a href="SlowDFSDiscoverTimeIterator.html" title="type parameter in SlowDFSDiscoverTimeIterator">T</a>&gt;</code></td>
+<td class="colFirst"><code>protected @Nullable java.util.Iterator&lt;? extends <a href="SlowDFSDiscoverTimeIterator.html" title="type parameter in SlowDFSDiscoverTimeIterator">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPendingChildren(java.lang.Object)">getPendingChildren</a></span>&#8203;(java.lang.Object&nbsp;n)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -453,7 +453,7 @@ extends <a href="DFSDiscoverTimeIterator.html" title="class in com.ibm.wala.util
 <ul class="blockList">
 <li class="blockList">
 <h4>getPendingChildren</h4>
-<pre class="methodSignature">protected&nbsp;java.util.Iterator&lt;? extends <a href="SlowDFSDiscoverTimeIterator.html" title="type parameter in SlowDFSDiscoverTimeIterator">T</a>&gt;&nbsp;getPendingChildren&#8203;(java.lang.Object&nbsp;n)</pre>
+<pre class="methodSignature">protected&nbsp;@Nullable java.util.Iterator&lt;? extends <a href="SlowDFSDiscoverTimeIterator.html" title="type parameter in SlowDFSDiscoverTimeIterator">T</a>&gt;&nbsp;getPendingChildren&#8203;(java.lang.Object&nbsp;n)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="DFSDiscoverTimeIterator.html#getPendingChildren(T)">getPendingChildren</a></code>&nbsp;in class&nbsp;<code><a href="DFSDiscoverTimeIterator.html" title="class in com.ibm.wala.util.graph.traverse">DFSDiscoverTimeIterator</a>&lt;<a href="SlowDFSDiscoverTimeIterator.html" title="type parameter in SlowDFSDiscoverTimeIterator">T</a>&gt;</code></dd>
@@ -495,7 +495,8 @@ extends <a href="DFSDiscoverTimeIterator.html" title="class in com.ibm.wala.util
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getConnected</h4>
-<pre class="methodSignature">protected&nbsp;java.util.Iterator&lt;? extends T&gt;&nbsp;getConnected&#8203;(T&nbsp;n)</pre>
+<pre class="methodSignature">@NullUnmarked
+protected&nbsp;java.util.Iterator&lt;? extends T&gt;&nbsp;getConnected&#8203;(T&nbsp;n)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="DFSDiscoverTimeIterator.html#getConnected(T)">DFSDiscoverTimeIterator</a></code></span></div>
 <div class="block">get the out edges of a given node</div>
 <dl>

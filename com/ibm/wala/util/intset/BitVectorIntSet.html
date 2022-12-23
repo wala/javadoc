@@ -169,11 +169,11 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ibm.wala.util.intset.BitVector)">BitVectorIntSet</a></span>&#8203;(<a href="BitVector.html" title="class in com.ibm.wala.util.intset">BitVector</a>&nbsp;v)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ibm.wala.util.intset.IntSet)">BitVectorIntSet</a></span>&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;S)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ibm.wala.util.intset.IntSet)">BitVectorIntSet</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;S)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ibm.wala.util.intset.BitVector)">BitVectorIntSet</a></span>&#8203;(<a href="BitVector.html" title="class in com.ibm.wala.util.intset">BitVector</a>&nbsp;v)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -203,7 +203,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(com.ibm.wala.util.intset.IntSet)">addAll</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(com.ibm.wala.util.intset.IntSet)">addAll</a></span>&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</code></th>
 <td class="colLast">
 <div class="block">Add all members of set to this.</div>
 </td>
@@ -299,7 +299,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSubset(com.ibm.wala.util.intset.IntSet)">isSubset</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSubset(com.ibm.wala.util.intset.IntSet)">isSubset</a></span>&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
@@ -331,7 +331,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sameValue(com.ibm.wala.util.intset.IntSet)">sameValue</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sameValue(com.ibm.wala.util.intset.IntSet)">sameValue</a></span>&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
@@ -406,7 +406,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BitVectorIntSet</h4>
-<pre>public&nbsp;BitVectorIntSet&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;S)
+<pre>public&nbsp;BitVectorIntSet&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;S)
                 throws java.lang.IllegalArgumentException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -463,7 +463,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="MutableIntSet.html#addAll(com.ibm.wala.util.intset.IntSet)">MutableIntSet</a></code></span></div>
 <div class="block">Add all members of set to this.</div>
 <dl>
@@ -737,7 +737,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockList">
 <li class="blockList">
 <h4>sameValue</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;sameValue&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)
+<pre class="methodSignature">public&nbsp;boolean&nbsp;sameValue&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)
                   throws java.lang.IllegalArgumentException,
                          <a href="../debug/UnimplementedError.html" title="class in com.ibm.wala.util.debug">UnimplementedError</a></pre>
 <dl>
@@ -759,7 +759,8 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockList">
 <li class="blockList">
 <h4>isSubset</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isSubset&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</pre>
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;boolean&nbsp;isSubset&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="IntSet.html#isSubset(com.ibm.wala.util.intset.IntSet)">isSubset</a></code>&nbsp;in interface&nbsp;<code><a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></dd>

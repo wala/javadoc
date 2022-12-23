@@ -268,7 +268,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></td>
+<td class="colFirst"><code>@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersection(com.ibm.wala.util.intset.IntSet)">intersection</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</code></th>
 <td class="colLast">
 <div class="block">This implementation must not despoil the original value of "this"</div>
@@ -535,8 +535,9 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockList">
 <li class="blockList">
 <h4>intersection</h4>
-<pre class="methodSignature">public&nbsp;<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;intersection&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)
-                    throws <a href="../debug/UnimplementedError.html" title="class in com.ibm.wala.util.debug">UnimplementedError</a></pre>
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;intersection&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)
+                              throws <a href="../debug/UnimplementedError.html" title="class in com.ibm.wala.util.debug">UnimplementedError</a></pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="IntSet.html#intersection(com.ibm.wala.util.intset.IntSet)">IntSet</a></code></span></div>
 <div class="block">This implementation must not despoil the original value of "this"</div>
 <dl>

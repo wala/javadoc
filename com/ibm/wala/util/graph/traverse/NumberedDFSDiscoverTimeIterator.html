@@ -224,7 +224,7 @@ extends <a href="DFSDiscoverTimeIterator.html" title="class in com.ibm.wala.util
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ibm.wala.util.graph.NumberedGraph,java.util.Iterator)">NumberedDFSDiscoverTimeIterator</a></span>&#8203;(<a href="../NumberedGraph.html" title="interface in com.ibm.wala.util.graph">NumberedGraph</a>&lt;<a href="NumberedDFSDiscoverTimeIterator.html" title="type parameter in NumberedDFSDiscoverTimeIterator">T</a>&gt;&nbsp;G,
-                               java.util.Iterator&lt;? extends <a href="NumberedDFSDiscoverTimeIterator.html" title="type parameter in NumberedDFSDiscoverTimeIterator">T</a>&gt;&nbsp;nodes)</code></th>
+                               @Nullable java.util.Iterator&lt;? extends <a href="NumberedDFSDiscoverTimeIterator.html" title="type parameter in NumberedDFSDiscoverTimeIterator">T</a>&gt;&nbsp;nodes)</code></th>
 <td class="colLast">
 <div class="block">Construct a depth-first enumerator across the (possibly improper) subset of nodes reachable
  from the nodes in the given enumeration.</div>
@@ -395,7 +395,7 @@ extends <a href="DFSDiscoverTimeIterator.html" title="class in com.ibm.wala.util
 <li class="blockList">
 <h4>NumberedDFSDiscoverTimeIterator</h4>
 <pre>public&nbsp;NumberedDFSDiscoverTimeIterator&#8203;(<a href="../NumberedGraph.html" title="interface in com.ibm.wala.util.graph">NumberedGraph</a>&lt;<a href="NumberedDFSDiscoverTimeIterator.html" title="type parameter in NumberedDFSDiscoverTimeIterator">T</a>&gt;&nbsp;G,
-                                       java.util.Iterator&lt;? extends <a href="NumberedDFSDiscoverTimeIterator.html" title="type parameter in NumberedDFSDiscoverTimeIterator">T</a>&gt;&nbsp;nodes)
+                                       @Nullable java.util.Iterator&lt;? extends <a href="NumberedDFSDiscoverTimeIterator.html" title="type parameter in NumberedDFSDiscoverTimeIterator">T</a>&gt;&nbsp;nodes)
                                 throws java.lang.IllegalArgumentException</pre>
 <div class="block">Construct a depth-first enumerator across the (possibly improper) subset of nodes reachable
  from the nodes in the given enumeration.</div>
@@ -487,7 +487,8 @@ extends <a href="DFSDiscoverTimeIterator.html" title="class in com.ibm.wala.util
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getConnected</h4>
-<pre class="methodSignature">protected&nbsp;java.util.Iterator&lt;? extends T&gt;&nbsp;getConnected&#8203;(T&nbsp;n)</pre>
+<pre class="methodSignature">@NullUnmarked
+protected&nbsp;java.util.Iterator&lt;? extends T&gt;&nbsp;getConnected&#8203;(T&nbsp;n)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="DFSDiscoverTimeIterator.html#getConnected(T)">DFSDiscoverTimeIterator</a></code></span></div>
 <div class="block">get the out edges of a given node</div>
 <dl>

@@ -206,8 +206,9 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dotify(com.ibm.wala.util.graph.Graph,com.ibm.wala.util.viz.NodeDecorator,java.lang.String,java.lang.String,java.lang.String)">dotify</a></span>&#8203;(<a href="../graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;g,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dotify(com.ibm.wala.util.graph.Graph,com.ibm.wala.util.viz.NodeDecorator,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">dotify</a></span>&#8203;(<a href="../graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;g,
       <a href="NodeDecorator.html" title="interface in com.ibm.wala.util.viz">NodeDecorator</a>&lt;T&gt;&nbsp;labels,
+      @Nullable java.lang.String&nbsp;title,
       java.lang.String&nbsp;dotFile,
       java.lang.String&nbsp;outputFile,
       java.lang.String&nbsp;dotExe)</code></th>
@@ -215,9 +216,8 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dotify(com.ibm.wala.util.graph.Graph,com.ibm.wala.util.viz.NodeDecorator,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">dotify</a></span>&#8203;(<a href="../graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;g,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dotify(com.ibm.wala.util.graph.Graph,com.ibm.wala.util.viz.NodeDecorator,java.lang.String,java.lang.String,java.lang.String)">dotify</a></span>&#8203;(<a href="../graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;g,
       <a href="NodeDecorator.html" title="interface in com.ibm.wala.util.viz">NodeDecorator</a>&lt;T&gt;&nbsp;labels,
-      java.lang.String&nbsp;title,
       java.lang.String&nbsp;dotFile,
       java.lang.String&nbsp;outputFile,
       java.lang.String&nbsp;dotExe)</code></th>
@@ -227,7 +227,7 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.lang.StringBuilder</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dotOutput(com.ibm.wala.util.graph.Graph,com.ibm.wala.util.viz.NodeDecorator,java.lang.String)">dotOutput</a></span>&#8203;(<a href="../graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;g,
          <a href="NodeDecorator.html" title="interface in com.ibm.wala.util.viz">NodeDecorator</a>&lt;T&gt;&nbsp;labels,
-         java.lang.String&nbsp;title)</code></th>
+         @Nullable java.lang.String&nbsp;title)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -261,7 +261,7 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;java.io.File</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeDotFile(com.ibm.wala.util.graph.Graph,com.ibm.wala.util.viz.NodeDecorator,java.lang.String,java.lang.String)">writeDotFile</a></span>&#8203;(<a href="../graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;g,
             <a href="NodeDecorator.html" title="interface in com.ibm.wala.util.viz">NodeDecorator</a>&lt;T&gt;&nbsp;labels,
-            java.lang.String&nbsp;title,
+            @Nullable java.lang.String&nbsp;title,
             java.lang.String&nbsp;dotfile)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -354,7 +354,7 @@ extends java.lang.Object</pre>
 <h4>dotify</h4>
 <pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;void&nbsp;dotify&#8203;(<a href="../graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;g,
                               <a href="NodeDecorator.html" title="interface in com.ibm.wala.util.viz">NodeDecorator</a>&lt;T&gt;&nbsp;labels,
-                              java.lang.String&nbsp;title,
+                              @Nullable java.lang.String&nbsp;title,
                               java.lang.String&nbsp;dotFile,
                               java.lang.String&nbsp;outputFile,
                               java.lang.String&nbsp;dotExe)
@@ -391,7 +391,7 @@ extends java.lang.Object</pre>
 <h4>writeDotFile</h4>
 <pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.io.File&nbsp;writeDotFile&#8203;(<a href="../graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;g,
                                             <a href="NodeDecorator.html" title="interface in com.ibm.wala.util.viz">NodeDecorator</a>&lt;T&gt;&nbsp;labels,
-                                            java.lang.String&nbsp;title,
+                                            @Nullable java.lang.String&nbsp;title,
                                             java.lang.String&nbsp;dotfile)
                                      throws <a href="../WalaException.html" title="class in com.ibm.wala.util">WalaException</a></pre>
 <dl>
@@ -408,7 +408,7 @@ extends java.lang.Object</pre>
 <h4>dotOutput</h4>
 <pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;java.lang.StringBuilder&nbsp;dotOutput&#8203;(<a href="../graph/Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;T&gt;&nbsp;g,
                                                     <a href="NodeDecorator.html" title="interface in com.ibm.wala.util.viz">NodeDecorator</a>&lt;T&gt;&nbsp;labels,
-                                                    java.lang.String&nbsp;title)
+                                                    @Nullable java.lang.String&nbsp;title)
                                              throws <a href="../WalaException.html" title="class in com.ibm.wala.util">WalaException</a></pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

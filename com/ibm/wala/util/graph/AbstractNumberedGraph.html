@@ -211,17 +211,17 @@ implements <a href="NumberedGraph.html" title="interface in com.ibm.wala.util.gr
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNumber(T)">getNumber</a></span>&#8203;(<a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;N)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNumber(T)">getNumber</a></span>&#8203;(@Nullable <a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;N)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPredNodeNumbers(T)">getPredNodeNumbers</a></span>&#8203;(<a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;node)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPredNodeNumbers(T)">getPredNodeNumbers</a></span>&#8203;(@Nullable <a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;node)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuccNodeNumbers(T)">getSuccNodeNumbers</a></span>&#8203;(<a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;node)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuccNodeNumbers(T)">getSuccNodeNumbers</a></span>&#8203;(@Nullable <a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;node)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -375,7 +375,7 @@ implements <a href="NumberedGraph.html" title="interface in com.ibm.wala.util.gr
 <ul class="blockList">
 <li class="blockList">
 <h4>getNumber</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;getNumber&#8203;(<a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;N)</pre>
+<pre class="methodSignature">public&nbsp;int&nbsp;getNumber&#8203;(@Nullable <a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;N)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="NumberedNodeManager.html#getNumber(T)">getNumber</a></code>&nbsp;in interface&nbsp;<code><a href="NumberedNodeManager.html" title="interface in com.ibm.wala.util.graph">NumberedNodeManager</a>&lt;<a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&gt;</code></dd>
@@ -409,7 +409,7 @@ implements <a href="NumberedGraph.html" title="interface in com.ibm.wala.util.gr
 <ul class="blockList">
 <li class="blockList">
 <h4>getPredNodeNumbers</h4>
-<pre class="methodSignature">public&nbsp;<a href="../intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;getPredNodeNumbers&#8203;(<a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;node)
+<pre class="methodSignature">public&nbsp;<a href="../intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;getPredNodeNumbers&#8203;(@Nullable <a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;node)
                           throws java.lang.IllegalArgumentException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -431,7 +431,7 @@ implements <a href="NumberedGraph.html" title="interface in com.ibm.wala.util.gr
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getSuccNodeNumbers</h4>
-<pre class="methodSignature">public&nbsp;<a href="../intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;getSuccNodeNumbers&#8203;(<a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;node)
+<pre class="methodSignature">public&nbsp;<a href="../intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;getSuccNodeNumbers&#8203;(@Nullable <a href="AbstractNumberedGraph.html" title="type parameter in AbstractNumberedGraph">T</a>&nbsp;node)
                           throws java.lang.IllegalArgumentException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

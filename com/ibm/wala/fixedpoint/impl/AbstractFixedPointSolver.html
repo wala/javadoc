@@ -380,6 +380,17 @@ implements <a href="../../fixpoint/IFixedPointSolver.html" title="interface in c
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newStatement(T,com.ibm.wala.fixpoint.UnaryOperator,T,boolean,boolean)">newStatement</a></span>&#8203;(@Nullable <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
+            <a href="../../fixpoint/UnaryOperator.html" title="class in com.ibm.wala.fixpoint">UnaryOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
+            <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;rhs,
+            boolean&nbsp;toWorkList,
+            boolean&nbsp;eager)</code></th>
+<td class="colLast">
+<div class="block">Add a step with one operand on the right-hand side.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newStatement(T,com.ibm.wala.fixedpoint.impl.NullaryOperator,boolean,boolean)">newStatement</a></span>&#8203;(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
             <a href="NullaryOperator.html" title="class in com.ibm.wala.fixedpoint.impl">NullaryOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
             boolean&nbsp;toWorkList,
@@ -388,7 +399,7 @@ implements <a href="../../fixpoint/IFixedPointSolver.html" title="interface in c
 <div class="block">Add a step with zero operands on the right-hand side.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T%5B%5D,boolean,boolean)">newStatement</a></span>&#8203;(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
             <a href="../../fixpoint/AbstractOperator.html" title="class in com.ibm.wala.fixpoint">AbstractOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
@@ -399,7 +410,7 @@ implements <a href="../../fixpoint/IFixedPointSolver.html" title="interface in c
 <div class="block">Add a step to the system with an arbitrary number of operands on the right-hand side.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T,T,boolean,boolean)">newStatement</a></span>&#8203;(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
             <a href="../../fixpoint/AbstractOperator.html" title="class in com.ibm.wala.fixpoint">AbstractOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
@@ -411,7 +422,7 @@ implements <a href="../../fixpoint/IFixedPointSolver.html" title="interface in c
 <div class="block">Add an equation with two operands on the right-hand side.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T,T,T,boolean,boolean)">newStatement</a></span>&#8203;(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
             <a href="../../fixpoint/AbstractOperator.html" title="class in com.ibm.wala.fixpoint">AbstractOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
@@ -422,17 +433,6 @@ implements <a href="../../fixpoint/IFixedPointSolver.html" title="interface in c
             boolean&nbsp;eager)</code></th>
 <td class="colLast">
 <div class="block">Add a step with three operands on the right-hand side.</div>
-</td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newStatement(T,com.ibm.wala.fixpoint.UnaryOperator,T,boolean,boolean)">newStatement</a></span>&#8203;(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
-            <a href="../../fixpoint/UnaryOperator.html" title="class in com.ibm.wala.fixpoint">UnaryOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
-            <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;rhs,
-            boolean&nbsp;toWorkList,
-            boolean&nbsp;eager)</code></th>
-<td class="colLast">
-<div class="block">Add a step with one operand on the right-hand side.</div>
 </td>
 </tr>
 <tr id="i25" class="rowColor">
@@ -774,7 +774,7 @@ implements <a href="../../fixpoint/IFixedPointSolver.html" title="interface in c
 <ul class="blockList">
 <li class="blockList">
 <h4>newStatement</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;newStatement&#8203;(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
+<pre class="methodSignature">public&nbsp;boolean&nbsp;newStatement&#8203;(@Nullable <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
                             <a href="../../fixpoint/UnaryOperator.html" title="class in com.ibm.wala.fixpoint">UnaryOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
                             <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;rhs,
                             boolean&nbsp;toWorkList,

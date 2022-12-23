@@ -299,7 +299,7 @@ implements <a href="LongSet.html" title="interface in com.ibm.wala.util.intset">
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="LongSet.html" title="interface in com.ibm.wala.util.intset">LongSet</a></code></td>
+<td class="colFirst"><code>@Nullable <a href="LongSet.html" title="interface in com.ibm.wala.util.intset">LongSet</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersection(com.ibm.wala.util.intset.LongSet)">intersection</a></span>&#8203;(<a href="LongSet.html" title="interface in com.ibm.wala.util.intset">LongSet</a>&nbsp;that)</code></th>
 <td class="colLast">
 <div class="block">This implementation must not despoil the original value of "this"</div>
@@ -438,7 +438,8 @@ implements <a href="LongSet.html" title="interface in com.ibm.wala.util.intset">
 <ul class="blockList">
 <li class="blockList">
 <h4>SparseLongSet</h4>
-<pre>public&nbsp;SparseLongSet()</pre>
+<pre>@NullUnmarked
+public&nbsp;SparseLongSet()</pre>
 <div class="block">Subclasses should use this with extreme care.</div>
 </li>
 </ul>
@@ -640,9 +641,9 @@ implements <a href="LongSet.html" title="interface in com.ibm.wala.util.intset">
 <ul class="blockList">
 <li class="blockList">
 <h4>intersection</h4>
-<pre class="methodSignature">public&nbsp;<a href="LongSet.html" title="interface in com.ibm.wala.util.intset">LongSet</a>&nbsp;intersection&#8203;(<a href="LongSet.html" title="interface in com.ibm.wala.util.intset">LongSet</a>&nbsp;that)
-                     throws java.lang.IllegalArgumentException,
-                            <a href="../debug/UnimplementedError.html" title="class in com.ibm.wala.util.debug">UnimplementedError</a></pre>
+<pre class="methodSignature">public&nbsp;@Nullable <a href="LongSet.html" title="interface in com.ibm.wala.util.intset">LongSet</a>&nbsp;intersection&#8203;(<a href="LongSet.html" title="interface in com.ibm.wala.util.intset">LongSet</a>&nbsp;that)
+                               throws java.lang.IllegalArgumentException,
+                                      <a href="../debug/UnimplementedError.html" title="class in com.ibm.wala.util.debug">UnimplementedError</a></pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="LongSet.html#intersection(com.ibm.wala.util.intset.LongSet)">LongSet</a></code></span></div>
 <div class="block">This implementation must not despoil the original value of "this"</div>
 <dl>

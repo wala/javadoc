@@ -159,8 +159,8 @@ implements java.lang.Iterable&lt;T&gt;</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ibm.wala.util.intset.IntSet,com.ibm.wala.util.intset.OrdinalSetMapping)">OrdinalSet</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;S,
-          <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="OrdinalSet.html" title="type parameter in OrdinalSet">T</a>&gt;&nbsp;mapping)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ibm.wala.util.intset.IntSet,com.ibm.wala.util.intset.OrdinalSetMapping)">OrdinalSet</a></span>&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;S,
+          @Nullable <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="OrdinalSet.html" title="type parameter in OrdinalSet">T</a>&gt;&nbsp;mapping)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -203,14 +203,14 @@ implements java.lang.Iterable&lt;T&gt;</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></td>
+<td class="colFirst"><code>@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBackingSet()">getBackingSet</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Dangerous.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="OrdinalSet.html" title="type parameter in OrdinalSet">T</a>&gt;</code></td>
+<td class="colFirst"><code>@Nullable <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="OrdinalSet.html" title="type parameter in OrdinalSet">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMapping()">getMapping</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -304,8 +304,8 @@ implements java.lang.Iterable&lt;T&gt;</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>OrdinalSet</h4>
-<pre>public&nbsp;OrdinalSet&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;S,
-                  <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="OrdinalSet.html" title="type parameter in OrdinalSet">T</a>&gt;&nbsp;mapping)</pre>
+<pre>public&nbsp;OrdinalSet&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;S,
+                  @Nullable <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="OrdinalSet.html" title="type parameter in OrdinalSet">T</a>&gt;&nbsp;mapping)</pre>
 </li>
 </ul>
 </li>
@@ -436,7 +436,7 @@ implements java.lang.Iterable&lt;T&gt;</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getBackingSet</h4>
-<pre class="methodSignature">public&nbsp;<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;getBackingSet()</pre>
+<pre class="methodSignature">public&nbsp;@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;getBackingSet()</pre>
 <div class="block">Dangerous. Added for performance reasons. Use this only if you really know what you are doing.</div>
 </li>
 </ul>
@@ -448,7 +448,8 @@ implements java.lang.Iterable&lt;T&gt;</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;contains&#8203;(<a href="OrdinalSet.html" title="type parameter in OrdinalSet">T</a>&nbsp;object)</pre>
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;boolean&nbsp;contains&#8203;(<a href="OrdinalSet.html" title="type parameter in OrdinalSet">T</a>&nbsp;object)</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true iff this set contains object</dd>
@@ -499,7 +500,7 @@ implements java.lang.Iterable&lt;T&gt;</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getMapping</h4>
-<pre class="methodSignature">public&nbsp;<a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="OrdinalSet.html" title="type parameter in OrdinalSet">T</a>&gt;&nbsp;getMapping()</pre>
+<pre class="methodSignature">public&nbsp;@Nullable <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="OrdinalSet.html" title="type parameter in OrdinalSet">T</a>&gt;&nbsp;getMapping()</pre>
 </li>
 </ul>
 </li>

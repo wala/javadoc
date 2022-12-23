@@ -241,12 +241,12 @@ extends <a href="../../fixedpoint/impl/DefaultFixedPointSolver.html" title="clas
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a></code></td>
+<td class="colFirst"><code>@Nullable <a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEdge(java.lang.Object)">getEdge</a></span>&#8203;(java.lang.Object&nbsp;key)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a></code></td>
+<td class="colFirst"><code>@Nullable <a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEdge(java.lang.Object,java.lang.Object)">getEdge</a></span>&#8203;(java.lang.Object&nbsp;src,
        java.lang.Object&nbsp;dst)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -305,7 +305,7 @@ extends <a href="../../fixedpoint/impl/DefaultFixedPointSolver.html" title="clas
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.ibm.wala.fixedpoint.impl.<a href="../../fixedpoint/impl/AbstractFixedPointSolver.html" title="class in com.ibm.wala.fixedpoint.impl">AbstractFixedPointSolver</a></h3>
-<code><a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#addAllStatementsToWorkList()">addAllStatementsToWorkList</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#addToWorkList(com.ibm.wala.fixpoint.AbstractStatement)">addToWorkList</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#changedVariable(T)">changedVariable</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#emptyWorkList()">emptyWorkList</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getMaxEvalBetweenTopo()">getMaxEvalBetweenTopo</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getMinSizeForTopSort()">getMinSizeForTopSort</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getNumberOfEvaluations()">getNumberOfEvaluations</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getPeriodicMaintainInterval()">getPeriodicMaintainInterval</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getStatements()">getStatements</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getTopologicalGrowthFactor()">getTopologicalGrowthFactor</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getVerboseInterval()">getVerboseInterval</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#incNumberOfEvaluations()">incNumberOfEvaluations</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#initForFirstSolve()">initForFirstSolve</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#isChanged(byte)">isChanged</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#isFixed(byte)">isFixed</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#isSideEffect(byte)">isSideEffect</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#lineBreak(java.lang.String,int)">lineBreak</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#makeStmtRHS(int)">makeStmtRHS</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#newStatement(T,com.ibm.wala.fixedpoint.impl.NullaryOperator,boolean,boolean)">newStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T%5B%5D,boolean,boolean)">newStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T,T,boolean,boolean)">newStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T,T,T,boolean,boolean)">newStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#newStatement(T,com.ibm.wala.fixpoint.UnaryOperator,T,boolean,boolean)">newStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#orderStatements()">orderStatements</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#performVerboseAction()">performVerboseAction</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#periodicMaintenance()">periodicMaintenance</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#removeStatement(com.ibm.wala.fixpoint.AbstractStatement)">removeStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#setMaxEvalBetweenTopo(int)">setMaxEvalBetweenTopo</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#setMinEquationsForTopSort(int)">setMinEquationsForTopSort</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#setTopologicalGrowthFactor(double)">setTopologicalGrowthFactor</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#solve(com.ibm.wala.util.MonitorUtil.IProgressMonitor)">solve</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#toString()">toString</a></code></li>
+<code><a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#addAllStatementsToWorkList()">addAllStatementsToWorkList</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#addToWorkList(com.ibm.wala.fixpoint.AbstractStatement)">addToWorkList</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#changedVariable(T)">changedVariable</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#emptyWorkList()">emptyWorkList</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getMaxEvalBetweenTopo()">getMaxEvalBetweenTopo</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getMinSizeForTopSort()">getMinSizeForTopSort</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getNumberOfEvaluations()">getNumberOfEvaluations</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getPeriodicMaintainInterval()">getPeriodicMaintainInterval</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getStatements()">getStatements</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getTopologicalGrowthFactor()">getTopologicalGrowthFactor</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#getVerboseInterval()">getVerboseInterval</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#incNumberOfEvaluations()">incNumberOfEvaluations</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#initForFirstSolve()">initForFirstSolve</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#isChanged(byte)">isChanged</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#isFixed(byte)">isFixed</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#isSideEffect(byte)">isSideEffect</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#lineBreak(java.lang.String,int)">lineBreak</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#makeStmtRHS(int)">makeStmtRHS</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#newStatement(T,com.ibm.wala.fixpoint.UnaryOperator,T,boolean,boolean)">newStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#newStatement(T,com.ibm.wala.fixedpoint.impl.NullaryOperator,boolean,boolean)">newStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T%5B%5D,boolean,boolean)">newStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T,T,boolean,boolean)">newStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T,T,T,boolean,boolean)">newStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#orderStatements()">orderStatements</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#performVerboseAction()">performVerboseAction</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#periodicMaintenance()">periodicMaintenance</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#removeStatement(com.ibm.wala.fixpoint.AbstractStatement)">removeStatement</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#setMaxEvalBetweenTopo(int)">setMaxEvalBetweenTopo</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#setMinEquationsForTopSort(int)">setMinEquationsForTopSort</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#setTopologicalGrowthFactor(double)">setTopologicalGrowthFactor</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#solve(com.ibm.wala.util.MonitorUtil.IProgressMonitor)">solve</a>, <a href="../../fixedpoint/impl/AbstractFixedPointSolver.html#toString()">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -415,7 +415,8 @@ extends <a href="../../fixedpoint/impl/DefaultFixedPointSolver.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>getOut</h4>
-<pre class="methodSignature">public&nbsp;<a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a>&nbsp;getOut&#8203;(java.lang.Object&nbsp;node)</pre>
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;<a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a>&nbsp;getOut&#8203;(java.lang.Object&nbsp;node)</pre>
 </li>
 </ul>
 <a id="getIn(java.lang.Object)">
@@ -424,7 +425,8 @@ extends <a href="../../fixedpoint/impl/DefaultFixedPointSolver.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>getIn</h4>
-<pre class="methodSignature">public&nbsp;<a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a>&nbsp;getIn&#8203;(java.lang.Object&nbsp;node)</pre>
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;<a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a>&nbsp;getIn&#8203;(java.lang.Object&nbsp;node)</pre>
 </li>
 </ul>
 <a id="getEdge(java.lang.Object)">
@@ -433,7 +435,7 @@ extends <a href="../../fixedpoint/impl/DefaultFixedPointSolver.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>getEdge</h4>
-<pre class="methodSignature">public&nbsp;<a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a>&nbsp;getEdge&#8203;(java.lang.Object&nbsp;key)</pre>
+<pre class="methodSignature">public&nbsp;@Nullable <a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a>&nbsp;getEdge&#8203;(java.lang.Object&nbsp;key)</pre>
 </li>
 </ul>
 <a id="getEdge(java.lang.Object,java.lang.Object)">
@@ -442,8 +444,8 @@ extends <a href="../../fixedpoint/impl/DefaultFixedPointSolver.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>getEdge</h4>
-<pre class="methodSignature">public&nbsp;<a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a>&nbsp;getEdge&#8203;(java.lang.Object&nbsp;src,
-                 java.lang.Object&nbsp;dst)</pre>
+<pre class="methodSignature">public&nbsp;@Nullable <a href="DataflowSolver.html" title="type parameter in DataflowSolver">V</a>&nbsp;getEdge&#8203;(java.lang.Object&nbsp;src,
+                           java.lang.Object&nbsp;dst)</pre>
 </li>
 </ul>
 <a id="buildEquations(boolean,boolean)">

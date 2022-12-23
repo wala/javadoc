@@ -230,7 +230,7 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;@Nullable T</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#find(java.util.Collection,java.util.function.Predicate)">find</a></span>&#8203;(java.util.Collection&lt;T&gt;&nbsp;c,
     java.util.function.Predicate&lt;T&gt;&nbsp;p)</code></th>
 <td class="colLast">
@@ -296,7 +296,7 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colFirst"><code>static @Nullable java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removePackageName(java.lang.String)">removePackageName</a></span>&#8203;(java.lang.String&nbsp;fully_qualified_name_)</code></th>
 <td class="colLast">
 <div class="block">Remove the package name from a fully qualified class name</div>
@@ -441,9 +441,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>find</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;find&#8203;(java.util.Collection&lt;T&gt;&nbsp;c,
-                         java.util.function.Predicate&lt;T&gt;&nbsp;p)
-                  throws java.lang.IllegalArgumentException</pre>
+<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;@Nullable T&nbsp;find&#8203;(java.util.Collection&lt;T&gt;&nbsp;c,
+                                   java.util.function.Predicate&lt;T&gt;&nbsp;p)
+                            throws java.lang.IllegalArgumentException</pre>
 <div class="block">Test whether <em>some</em> element of the given <code>Collection</code> satisfies the given <code>Predicate</code>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -560,7 +560,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>removePackageName</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;removePackageName&#8203;(java.lang.String&nbsp;fully_qualified_name_)</pre>
+<pre class="methodSignature">public static&nbsp;@Nullable java.lang.String&nbsp;removePackageName&#8203;(java.lang.String&nbsp;fully_qualified_name_)</pre>
 <div class="block">Remove the package name from a fully qualified class name</div>
 </li>
 </ul>

@@ -236,7 +236,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;V&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(K)">get</a></span>&#8203;(K&nbsp;key)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(K)">get</a></span>&#8203;(@Nullable K&nbsp;key)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -257,7 +257,7 @@ extends java.lang.Object</pre>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#put(K,V)">put</a></span>&#8203;(K&nbsp;key,
-   V&nbsp;val)</code></th>
+   @Nullable V&nbsp;val)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -402,7 +402,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre class="methodSignature">public&nbsp;java.util.Set&lt;V&gt;&nbsp;get&#8203;(K&nbsp;key)</pre>
+<pre class="methodSignature">public&nbsp;java.util.Set&lt;V&gt;&nbsp;get&#8203;(@Nullable K&nbsp;key)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="MultiMap.html#get(K)">get</a></code>&nbsp;in interface&nbsp;<code><a href="MultiMap.html" title="interface in com.ibm.wala.util.collections">MultiMap</a>&lt;K,&#8203;V&gt;</code></dd>
@@ -418,7 +418,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>put</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;put&#8203;(K&nbsp;key,
-                   V&nbsp;val)</pre>
+                   @Nullable V&nbsp;val)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="MultiMap.html#put(K,V)">put</a></code>&nbsp;in interface&nbsp;<code><a href="MultiMap.html" title="interface in com.ibm.wala.util.collections">MultiMap</a>&lt;K,&#8203;V&gt;</code></dd>

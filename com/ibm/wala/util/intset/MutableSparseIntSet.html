@@ -206,7 +206,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ibm.wala.util.intset.IntSet)">MutableSparseIntSet</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ibm.wala.util.intset.IntSet)">MutableSparseIntSet</a></span>&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -236,14 +236,14 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(com.ibm.wala.util.intset.IntSet)">addAll</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(com.ibm.wala.util.intset.SparseIntSet)">addAll</a></span>&#8203;(@Nullable <a href="SparseIntSet.html" title="class in com.ibm.wala.util.intset">SparseIntSet</a>&nbsp;that)</code></th>
 <td class="colLast">
 <div class="block">Add all elements from another int set.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(com.ibm.wala.util.intset.SparseIntSet)">addAll</a></span>&#8203;(<a href="SparseIntSet.html" title="class in com.ibm.wala.util.intset">SparseIntSet</a>&nbsp;that)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(com.ibm.wala.util.intset.IntSet)">addAll</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</code></th>
 <td class="colLast">
 <div class="block">Add all elements from another int set.</div>
 </td>
@@ -263,7 +263,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copySet(com.ibm.wala.util.intset.IntSet)">copySet</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copySet(com.ibm.wala.util.intset.IntSet)">copySet</a></span>&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)</code></th>
 <td class="colLast">
 <div class="block">Set the value of this to be the same as the value of set</div>
 </td>
@@ -303,7 +303,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="MutableSparseIntSet.html" title="class in com.ibm.wala.util.intset">MutableSparseIntSet</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#make(com.ibm.wala.util.intset.IntSet)">make</a></span>&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#make(com.ibm.wala.util.intset.IntSet)">make</a></span>&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
@@ -379,7 +379,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockList">
 <li class="blockList">
 <h4>MutableSparseIntSet</h4>
-<pre>protected&nbsp;MutableSparseIntSet&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</pre>
+<pre>protected&nbsp;MutableSparseIntSet&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(int[])">
@@ -431,7 +431,8 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockList">
 <li class="blockList">
 <h4>remove</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;remove&#8203;(int&nbsp;value)</pre>
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;boolean&nbsp;remove&#8203;(int&nbsp;value)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="MutableIntSet.html#remove(int)">MutableIntSet</a></code></span></div>
 <div class="block">Remove an integer from this set.</div>
 <dl>
@@ -487,7 +488,8 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockList">
 <li class="blockList">
 <h4>copySet</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;copySet&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;void&nbsp;copySet&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;that)
              throws java.lang.IllegalArgumentException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="MutableIntSet.html#copySet(com.ibm.wala.util.intset.IntSet)">MutableIntSet</a></code></span></div>
 <div class="block">Set the value of this to be the same as the value of set</div>
@@ -520,7 +522,8 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockList">
 <li class="blockList">
 <h4>intersectWith</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;intersectWith&#8203;(<a href="SparseIntSet.html" title="class in com.ibm.wala.util.intset">SparseIntSet</a>&nbsp;set)</pre>
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;void&nbsp;intersectWith&#8203;(<a href="SparseIntSet.html" title="class in com.ibm.wala.util.intset">SparseIntSet</a>&nbsp;set)</pre>
 </li>
 </ul>
 <a id="addAll(com.ibm.wala.util.intset.IntSet)">
@@ -548,7 +551,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="SparseIntSet.html" title="class in com.ibm.wala.util.intset">SparseIntSet</a>&nbsp;that)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(@Nullable <a href="SparseIntSet.html" title="class in com.ibm.wala.util.intset">SparseIntSet</a>&nbsp;that)</pre>
 <div class="block">Add all elements from another int set.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -620,7 +623,7 @@ implements <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.in
 <ul class="blockList">
 <li class="blockList">
 <h4>make</h4>
-<pre class="methodSignature">public static&nbsp;<a href="MutableSparseIntSet.html" title="class in com.ibm.wala.util.intset">MutableSparseIntSet</a>&nbsp;make&#8203;(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="MutableSparseIntSet.html" title="class in com.ibm.wala.util.intset">MutableSparseIntSet</a>&nbsp;make&#8203;(@Nullable <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</pre>
 </li>
 </ul>
 <a id="makeEmpty()">

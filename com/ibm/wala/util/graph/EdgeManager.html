@@ -172,7 +172,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPredNodes(T)">getPredNodes</a></span>&#8203;(<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;n)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPredNodes(T)">getPredNodes</a></span>&#8203;(@Nullable <a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;n)</code></th>
 <td class="colLast">
 <div class="block">Return an <code>Iterator</code> over the immediate predecessor nodes of n</div>
 </td>
@@ -186,15 +186,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuccNodes(T)">getSuccNodes</a></span>&#8203;(<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;n)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuccNodes(T)">getSuccNodes</a></span>&#8203;(@Nullable <a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;n)</code></th>
 <td class="colLast">
 <div class="block">Return an Iterator over the immediate successor nodes of n</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasEdge(T,T)">hasEdge</a></span>&#8203;(<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;src,
-       <a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;dst)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasEdge(T,T)">hasEdge</a></span>&#8203;(@Nullable <a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;src,
+       @Nullable <a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;dst)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -243,7 +243,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getPredNodes</h4>
-<pre class="methodSignature">java.util.Iterator&lt;<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&gt;&nbsp;getPredNodes&#8203;(<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;n)</pre>
+<pre class="methodSignature">java.util.Iterator&lt;<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&gt;&nbsp;getPredNodes&#8203;(@Nullable <a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;n)</pre>
 <div class="block">Return an <code>Iterator</code> over the immediate predecessor nodes of n
 
  <p>This method never returns <code>null</code>.</div>
@@ -277,7 +277,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getSuccNodes</h4>
-<pre class="methodSignature">java.util.Iterator&lt;<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&gt;&nbsp;getSuccNodes&#8203;(<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;n)</pre>
+<pre class="methodSignature">java.util.Iterator&lt;<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&gt;&nbsp;getSuccNodes&#8203;(@Nullable <a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;n)</pre>
 <div class="block">Return an Iterator over the immediate successor nodes of n
 
  <p>This method never returns <code>null</code>.</div>
@@ -388,8 +388,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>hasEdge</h4>
-<pre class="methodSignature">boolean&nbsp;hasEdge&#8203;(<a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;src,
-                <a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;dst)</pre>
+<pre class="methodSignature">boolean&nbsp;hasEdge&#8203;(@Nullable <a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;src,
+                @Nullable <a href="EdgeManager.html" title="type parameter in EdgeManager">T</a>&nbsp;dst)</pre>
 </li>
 </ul>
 </li>

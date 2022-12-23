@@ -207,7 +207,7 @@ extends <a href="AbstractOperator.html" title="class in com.ibm.wala.fixpoint">A
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>abstract byte</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#evaluate(T,T)">evaluate</a></span>&#8203;(<a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;lhs,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#evaluate(T,T)">evaluate</a></span>&#8203;(@Nullable <a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;lhs,
         <a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;rhs)</code></th>
 <td class="colLast">
 <div class="block">Evaluate this equation, setting a new value for the left-hand side.</div>
@@ -228,7 +228,7 @@ extends <a href="AbstractOperator.html" title="class in com.ibm.wala.fixpoint">A
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="UnaryStatement.html" title="class in com.ibm.wala.fixpoint">UnaryStatement</a>&lt;<a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeEquation(T,T)">makeEquation</a></span>&#8203;(<a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;lhs,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeEquation(T,T)">makeEquation</a></span>&#8203;(@Nullable <a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;lhs,
             <a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;rhs)</code></th>
 <td class="colLast">
 <div class="block">Create an equation which uses this operator Override in subclasses for efficiency.</div>
@@ -292,7 +292,7 @@ extends <a href="AbstractOperator.html" title="class in com.ibm.wala.fixpoint">A
 <ul class="blockList">
 <li class="blockList">
 <h4>evaluate</h4>
-<pre class="methodSignature">public abstract&nbsp;byte&nbsp;evaluate&#8203;(<a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;lhs,
+<pre class="methodSignature">public abstract&nbsp;byte&nbsp;evaluate&#8203;(@Nullable <a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;lhs,
                               <a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;rhs)</pre>
 <div class="block">Evaluate this equation, setting a new value for the left-hand side.</div>
 <dl>
@@ -309,7 +309,7 @@ extends <a href="AbstractOperator.html" title="class in com.ibm.wala.fixpoint">A
 <ul class="blockList">
 <li class="blockList">
 <h4>makeEquation</h4>
-<pre class="methodSignature">public&nbsp;<a href="UnaryStatement.html" title="class in com.ibm.wala.fixpoint">UnaryStatement</a>&lt;<a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&gt;&nbsp;makeEquation&#8203;(<a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;lhs,
+<pre class="methodSignature">public&nbsp;<a href="UnaryStatement.html" title="class in com.ibm.wala.fixpoint">UnaryStatement</a>&lt;<a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&gt;&nbsp;makeEquation&#8203;(@Nullable <a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;lhs,
                                       <a href="UnaryOperator.html" title="type parameter in UnaryOperator">T</a>&nbsp;rhs)</pre>
 <div class="block">Create an equation which uses this operator Override in subclasses for efficiency.</div>
 </li>

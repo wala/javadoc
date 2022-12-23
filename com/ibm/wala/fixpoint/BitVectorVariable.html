@@ -210,7 +210,7 @@ extends <a href="AbstractVariable.html" title="class in com.ibm.wala.fixpoint">A
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyState(com.ibm.wala.fixpoint.BitVectorVariable)">copyState</a></span>&#8203;(<a href="BitVectorVariable.html" title="class in com.ibm.wala.fixpoint">BitVectorVariable</a>&nbsp;other)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyState(com.ibm.wala.fixpoint.BitVectorVariable)">copyState</a></span>&#8203;(@Nullable <a href="BitVectorVariable.html" title="class in com.ibm.wala.fixpoint">BitVectorVariable</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Set this variable to have the same state as another one</div>
 </td>
@@ -228,7 +228,7 @@ extends <a href="AbstractVariable.html" title="class in com.ibm.wala.fixpoint">A
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></td>
+<td class="colFirst"><code>@Nullable <a href="../util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValue()">getValue</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -326,7 +326,7 @@ extends <a href="AbstractVariable.html" title="class in com.ibm.wala.fixpoint">A
 <ul class="blockList">
 <li class="blockList">
 <h4>copyState</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;copyState&#8203;(<a href="BitVectorVariable.html" title="class in com.ibm.wala.fixpoint">BitVectorVariable</a>&nbsp;other)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;copyState&#8203;(@Nullable <a href="BitVectorVariable.html" title="class in com.ibm.wala.fixpoint">BitVectorVariable</a>&nbsp;other)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="IVariable.html#copyState(T)">IVariable</a></code></span></div>
 <div class="block">Set this variable to have the same state as another one</div>
 <dl>
@@ -412,7 +412,7 @@ extends <a href="AbstractVariable.html" title="class in com.ibm.wala.fixpoint">A
 <ul class="blockList">
 <li class="blockList">
 <h4>getValue</h4>
-<pre class="methodSignature">public&nbsp;<a href="../util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;getValue()</pre>
+<pre class="methodSignature">public&nbsp;@Nullable <a href="../util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;getValue()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value of this variable as a bit vector ... null if the bit vector is empty.</dd>

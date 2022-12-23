@@ -173,7 +173,7 @@ extends <a href="AbstractStatement.html" title="class in com.ibm.wala.fixpoint">
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a></code></td>
+<td class="colFirst"><code>protected @Nullable <a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#lhs">lhs</a></span></code></th>
 <td class="colLast">
 <div class="block">The operands</div>
@@ -204,7 +204,7 @@ extends <a href="AbstractStatement.html" title="class in com.ibm.wala.fixpoint">
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(T,T)">UnaryStatement</a></span>&#8203;(<a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a>&nbsp;lhs,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(T,T)">UnaryStatement</a></span>&#8203;(@Nullable <a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a>&nbsp;lhs,
               <a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a>&nbsp;rhs)</code></th>
 <td class="colLast">
 <div class="block">Constructor for case of one operand on the right-hand side.</div>
@@ -241,7 +241,7 @@ extends <a href="AbstractStatement.html" title="class in com.ibm.wala.fixpoint">
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a></code></td>
+<td class="colFirst"><code>@Nullable <a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLHS()">getLHS</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return the left-hand side of this equation.</div>
@@ -338,7 +338,7 @@ extends <a href="AbstractStatement.html" title="class in com.ibm.wala.fixpoint">
 <ul class="blockList">
 <li class="blockList">
 <h4>lhs</h4>
-<pre>protected final&nbsp;<a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a> extends <a href="IVariable.html" title="interface in com.ibm.wala.fixpoint">IVariable</a>&lt;<a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a>&gt; lhs</pre>
+<pre>protected final&nbsp;@Nullable <a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a> extends <a href="IVariable.html" title="interface in com.ibm.wala.fixpoint">IVariable</a>&lt;<a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a>&gt; lhs</pre>
 <div class="block">The operands</div>
 </li>
 </ul>
@@ -369,7 +369,7 @@ extends <a href="AbstractStatement.html" title="class in com.ibm.wala.fixpoint">
 <ul class="blockListLast">
 <li class="blockList">
 <h4>UnaryStatement</h4>
-<pre>protected&nbsp;UnaryStatement&#8203;(<a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a>&nbsp;lhs,
+<pre>protected&nbsp;UnaryStatement&#8203;(@Nullable <a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a>&nbsp;lhs,
                          <a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a>&nbsp;rhs)</pre>
 <div class="block">Constructor for case of one operand on the right-hand side.</div>
 <dl>
@@ -409,7 +409,7 @@ extends <a href="AbstractStatement.html" title="class in com.ibm.wala.fixpoint">
 <ul class="blockList">
 <li class="blockList">
 <h4>getLHS</h4>
-<pre class="methodSignature">public&nbsp;<a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a>&nbsp;getLHS()</pre>
+<pre class="methodSignature">public&nbsp;@Nullable <a href="UnaryStatement.html" title="type parameter in UnaryStatement">T</a>&nbsp;getLHS()</pre>
 <div class="block">Return the left-hand side of this equation.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

@@ -184,22 +184,22 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;</code></td>
+<td class="colFirst"><code>protected @Nullable java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#env">env</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected byte[]</code></td>
+<td class="colFirst"><code>protected @org.jspecify.annotations.Nullable byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stdErr">stdErr</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected byte[]</code></td>
+<td class="colFirst"><code>protected @org.jspecify.annotations.Nullable byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stdOut">stdOut</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected java.io.File</code></td>
+<td class="colFirst"><code>protected @Nullable java.io.File</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#workingDir">workingDir</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -272,27 +272,27 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;</code></td>
+<td class="colFirst"><code>@Nullable java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEnv()">getEnv</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>byte[]</code></td>
+<td class="colFirst"><code>@org.jspecify.annotations.Nullable byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInput()">getInput</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>byte[]</code></td>
+<td class="colFirst"><code>@org.jspecify.annotations.Nullable byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStderr()">getStderr</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>byte[]</code></td>
+<td class="colFirst"><code>@org.jspecify.annotations.Nullable byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStdOut()">getStdOut</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>java.io.File</code></td>
+<td class="colFirst"><code>@Nullable java.io.File</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWorkingDir()">getWorkingDir</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -335,7 +335,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>protected java.lang.Process</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#spawnProcess(java.lang.String)">spawnProcess</a></span>&#8203;(java.lang.String&nbsp;cmd)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#spawnProcess(java.lang.String)">spawnProcess</a></span>&#8203;(@Nullable java.lang.String&nbsp;cmd)</code></th>
 <td class="colLast">
 <div class="block">Spawn a process to execute the given command</div>
 </td>
@@ -382,7 +382,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>workingDir</h4>
-<pre>protected&nbsp;java.io.File workingDir</pre>
+<pre>protected&nbsp;@Nullable java.io.File workingDir</pre>
 </li>
 </ul>
 <a id="env">
@@ -391,7 +391,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>env</h4>
-<pre>protected&nbsp;java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt; env</pre>
+<pre>protected&nbsp;@Nullable java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt; env</pre>
 </li>
 </ul>
 <a id="stdOut">
@@ -400,7 +400,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stdOut</h4>
-<pre>protected&nbsp;byte[] stdOut</pre>
+<pre>protected&nbsp;@org.jspecify.annotations.Nullable byte[] stdOut</pre>
 </li>
 </ul>
 <a id="stdErr">
@@ -409,7 +409,7 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>stdErr</h4>
-<pre>protected&nbsp;byte[] stdErr</pre>
+<pre>protected&nbsp;@org.jspecify.annotations.Nullable byte[] stdErr</pre>
 </li>
 </ul>
 </li>
@@ -458,7 +458,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getWorkingDir</h4>
-<pre class="methodSignature">public&nbsp;java.io.File&nbsp;getWorkingDir()</pre>
+<pre class="methodSignature">public&nbsp;@Nullable java.io.File&nbsp;getWorkingDir()</pre>
 </li>
 </ul>
 <a id="setWorkingDir(java.io.File)">
@@ -476,7 +476,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getEnv</h4>
-<pre class="methodSignature">public&nbsp;java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;&nbsp;getEnv()</pre>
+<pre class="methodSignature">public&nbsp;@Nullable java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;&nbsp;getEnv()</pre>
 </li>
 </ul>
 <a id="setEnv(java.util.Map)">
@@ -507,7 +507,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>spawnProcess</h4>
-<pre class="methodSignature">protected&nbsp;java.lang.Process&nbsp;spawnProcess&#8203;(java.lang.String&nbsp;cmd)
+<pre class="methodSignature">protected&nbsp;java.lang.Process&nbsp;spawnProcess&#8203;(@Nullable java.lang.String&nbsp;cmd)
                                   throws java.lang.IllegalArgumentException,
                                          java.io.IOException</pre>
 <div class="block">Spawn a process to execute the given command</div>
@@ -599,7 +599,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getStdOut</h4>
-<pre class="methodSignature">public&nbsp;byte[]&nbsp;getStdOut()</pre>
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;@org.jspecify.annotations.Nullable byte[]&nbsp;getStdOut()</pre>
 </li>
 </ul>
 <a id="getStderr()">
@@ -608,7 +609,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getStderr</h4>
-<pre class="methodSignature">public&nbsp;byte[]&nbsp;getStderr()</pre>
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;@org.jspecify.annotations.Nullable byte[]&nbsp;getStderr()</pre>
 </li>
 </ul>
 <a id="setStdOut(byte[])">
@@ -635,7 +637,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getInput</h4>
-<pre class="methodSignature">public&nbsp;byte[]&nbsp;getInput()</pre>
+<pre class="methodSignature">@NullUnmarked
+public&nbsp;@org.jspecify.annotations.Nullable byte[]&nbsp;getInput()</pre>
 </li>
 </ul>
 <a id="setInput(byte[])">
