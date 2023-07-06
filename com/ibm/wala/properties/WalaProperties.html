@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":41,"i4":9,"i5":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":41,"i5":9,"i6":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -270,6 +270,13 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>static java.lang.String[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJDKLibraryFiles(boolean)">getJDKLibraryFiles</a></span>&#8203;(boolean&nbsp;justBase)</code></th>
+<td class="colLast">
+<div class="block">Determine the classpath noted in wala.properties for J2SE standard libraries</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWalaHomeDir()">getWalaHomeDir</a></span>()</code></th>
 <td class="colLast">
@@ -278,12 +285,12 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static java.util.Properties</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#loadProperties()">loadProperties</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static java.util.Properties</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#loadPropertiesFromFile(java.lang.ClassLoader,java.lang.String)">loadPropertiesFromFile</a></span>&#8203;(java.lang.ClassLoader&nbsp;loader,
                       java.lang.String&nbsp;fileName)</code></th>
@@ -507,12 +514,32 @@ extends java.lang.Object</pre>
 <pre class="methodSignature">public static&nbsp;java.lang.String[]&nbsp;getJ2SEJarFiles()</pre>
 <div class="block">Determine the classpath noted in wala.properties for J2SE standard libraries
 
- <p>If wala.properties cannot be loaded, returns jar files in boot classpath.</div>
+ <p>If wala.properties cannot be loaded, returns library files in boot classpath.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if jar files cannot be discovered</dd>
+<dd><code>java.lang.IllegalStateException</code> - if library files cannot be discovered</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../util/PlatformUtil.html#getBootClassPathJars()"><code>PlatformUtil.getBootClassPathJars()</code></a></dd>
+<dd><a href="../util/PlatformUtil.html#getJDKModules(boolean)"><code>PlatformUtil.getJDKModules(boolean)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getJDKLibraryFiles(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getJDKLibraryFiles</h4>
+<pre class="methodSignature">public static&nbsp;java.lang.String[]&nbsp;getJDKLibraryFiles&#8203;(boolean&nbsp;justBase)</pre>
+<div class="block">Determine the classpath noted in wala.properties for J2SE standard libraries
+
+ <p>If wala.properties cannot be loaded, returns library files in boot classpath.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>justBase</code> - Only relevant if wala.properties cannot be loaded. If <code>true</code>, only
+     returns the <code>java.base</code> library from boot classpath. Otherwise, returns all library
+     modules from boot classpath.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../util/PlatformUtil.html#getJDKModules(boolean)"><code>PlatformUtil.getJDKModules(boolean)</code></a></dd>
 </dl>
 </li>
 </ul>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -238,23 +238,32 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeBasePrimordialScope(java.io.File)">makeBasePrimordialScope</a></span>&#8203;(java.io.File&nbsp;exclusionsFile)</code></th>
+<td class="colLast">
+<div class="block">Creates an AnalysisScope containing only the JDK standard libraries.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeJavaBinaryAnalysisScope(java.lang.String,java.io.File)">makeJavaBinaryAnalysisScope</a></span>&#8203;(java.lang.String&nbsp;classPath,
                            java.io.File&nbsp;exclusionsFile)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makePrimordialScope(java.io.File)">makePrimordialScope</a></span>&#8203;(java.io.File&nbsp;exclusionsFile)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Creates an AnalysisScope containing only the JDK standard libraries.</div>
+</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#processScopeDefLine(com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,java.lang.String)">processScopeDefLine</a></span>&#8203;(<a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
                    java.lang.ClassLoader&nbsp;javaLoader,
                    java.lang.String&nbsp;line)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.String,java.io.File,java.lang.ClassLoader)">read</a></span>&#8203;(<a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
     java.lang.String&nbsp;scopeFileName,
@@ -262,7 +271,7 @@ extends java.lang.Object</pre>
     java.lang.ClassLoader&nbsp;javaLoader)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(com.ibm.wala.ipa.callgraph.AnalysisScope,java.net.URI,java.io.File,java.lang.ClassLoader)">read</a></span>&#8203;(<a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
     java.net.URI&nbsp;scopeFileURI,
@@ -270,7 +279,7 @@ extends java.lang.Object</pre>
     java.lang.ClassLoader&nbsp;javaLoader)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readJavaScope(java.lang.String,java.io.File,java.lang.ClassLoader)">readJavaScope</a></span>&#8203;(java.lang.String&nbsp;scopeFileName,
              java.io.File&nbsp;exclusionsFile,
@@ -279,7 +288,7 @@ extends java.lang.Object</pre>
 <div class="block">read in an analysis scope for a Java application from a text file</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setScopeReader(com.ibm.wala.core.util.config.AnalysisScopeReader)">setScopeReader</a></span>&#8203;(<a href="AnalysisScopeReader.html" title="class in com.ibm.wala.core.util.config">AnalysisScopeReader</a>&nbsp;reader)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -478,6 +487,29 @@ extends java.lang.Object</pre>
 <h4>makePrimordialScope</h4>
 <pre class="methodSignature">public&nbsp;<a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;makePrimordialScope&#8203;(java.io.File&nbsp;exclusionsFile)
                                   throws java.io.IOException</pre>
+<div class="block">Creates an AnalysisScope containing only the JDK standard libraries. If no explicit JDK library
+ paths are given in the WALA properties file, the scope contains all library modules for the
+ running JVM.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>exclusionsFile</code> - file holding class hierarchy exclusions. may be null</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - if there are problmes reading wala properties</dd>
+<dd><code>java.io.IOException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="makeBasePrimordialScope(java.io.File)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeBasePrimordialScope</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;makeBasePrimordialScope&#8203;(java.io.File&nbsp;exclusionsFile)
+                                      throws java.io.IOException</pre>
+<div class="block">Creates an AnalysisScope containing only the JDK standard libraries. If no explicit JDK library
+ paths are given in the WALA properties file, the scope contains only the <code>java.base</code>
+ module for the running JVM.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>exclusionsFile</code> - file holding class hierarchy exclusions. may be null</dd>

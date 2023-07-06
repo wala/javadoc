@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -176,39 +176,46 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static java.lang.String[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBootClassPathJars()">getBootClassPathJars</a></span>()</code></th>
-<td class="colLast">
-<div class="block">get the jars in the boot classpath.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJavaRuntimeVersion()">getJavaRuntimeVersion</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static java.lang.String[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJDKModules(boolean)">getJDKModules</a></span>&#8203;(boolean&nbsp;justBase)</code></th>
+<td class="colLast">
+<div class="block">Gets the standard JDK modules shipped with the running JDK</div>
+</td>
+</tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>static java.nio.file.Path</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPathForJDKModule(java.lang.String)">getPathForJDKModule</a></span>&#8203;(java.lang.String&nbsp;moduleName)</code></th>
+<td class="colLast">
+<div class="block">Returns the filesystem path for a JDK module from the running JVM</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onIKVM()">onIKVM</a></span>()</code></th>
 <td class="colLast">
 <div class="block">are we running on <a href="http://www.ikvm.net">IKVM</a>?</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onLinux()">onLinux</a></span>()</code></th>
 <td class="colLast">
 <div class="block">are we running on Linux?</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onMacOSX()">onMacOSX</a></span>()</code></th>
 <td class="colLast">
 <div class="block">are we running on Mac OS X?</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onWindows()">onWindows</a></span>()</code></th>
 <td class="colLast">
@@ -298,17 +305,38 @@ extends java.lang.Object</pre>
 <div class="block">are we running on <a href="http://www.ikvm.net">IKVM</a>?</div>
 </li>
 </ul>
-<a id="getBootClassPathJars()">
+<a id="getJDKModules(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getBootClassPathJars</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.String[]&nbsp;getBootClassPathJars()</pre>
-<div class="block">get the jars in the boot classpath. TODO test on more JVMs</div>
+<h4>getJDKModules</h4>
+<pre class="methodSignature">public static&nbsp;java.lang.String[]&nbsp;getJDKModules&#8203;(boolean&nbsp;justBase)</pre>
+<div class="block">Gets the standard JDK modules shipped with the running JDK</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>justBase</code> - if <code>true</code>, only include the file corresponding to the <code>java.base</code>
+     module</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>array of <code>.jmod</code> module files</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if boot classpath cannot be found</dd>
+<dd><code>java.lang.IllegalStateException</code> - if modules cannot be found</dd>
+</dl>
+</li>
+</ul>
+<a id="getPathForJDKModule(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPathForJDKModule</h4>
+<pre class="methodSignature">public static&nbsp;java.nio.file.Path&nbsp;getPathForJDKModule&#8203;(java.lang.String&nbsp;moduleName)</pre>
+<div class="block">Returns the filesystem path for a JDK module from the running JVM</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>moduleName</code> - name of the module, e.g., <code>"java.sql"</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>path to the module</dd>
 </dl>
 </li>
 </ul>
