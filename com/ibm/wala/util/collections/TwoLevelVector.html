@@ -69,7 +69,7 @@ loadScripts(document, 'script');</script>
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">com.ibm.wala.util.collections</a></div>
-<h1 title="Class TwoLevelVector" class="title">Class TwoLevelVector&lt;T&gt;</h1>
+<h1 title="Class TwoLevelVector" class="title">Class TwoLevelVector&lt;T extends @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
 <div class="inheritance">com.ibm.wala.util.collections.TwoLevelVector&lt;T&gt;</div>
@@ -80,7 +80,7 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;T&gt;</code>, <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></code>, <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;T&gt;</code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">TwoLevelVector&lt;T&gt;</span>
+<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">TwoLevelVector&lt;T extends @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;T&gt;, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></span></div>
 <div class="block">An <a href="IVector.html" title="interface in com.ibm.wala.util.collections"><code>IVector</code></a> implementation which delegates to pages of int vectors.</div>
@@ -133,7 +133,7 @@ implements <a href="IVector.html" title="interface in com.ibm.wala.util.collecti
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#set(int,T)" class="member-name-link">set</a><wbr>(int&nbsp;x,
- @Nullable <a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&nbsp;value)</code></div>
+ <a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&nbsp;value)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">TODO: this can be optimized</div>
 </div>
@@ -178,7 +178,7 @@ implements <a href="IVector.html" title="interface in com.ibm.wala.util.collecti
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type">@Nullable <a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a></span>&nbsp;<span class="element-name">get</span><wbr><span class="parameters">(int&nbsp;x)</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="IVector.html#get(int)">get</a></code>&nbsp;in interface&nbsp;<code><a href="IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&gt;</code></dd>
+<dd><code><a href="IVector.html#get(int)">get</a></code>&nbsp;in interface&nbsp;<code><a href="IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="see-list">
@@ -192,12 +192,12 @@ implements <a href="IVector.html" title="interface in com.ibm.wala.util.collecti
 <section class="detail" id="set(int,T)">
 <h3 id="set(int,java.lang.Object)">set</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(int&nbsp;x,
- @Nullable <a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&nbsp;value)</span></div>
+ <a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&nbsp;value)</span></div>
 <div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="IVector.html#set(int,T)">IVector</a></code></span></div>
 <div class="block">TODO: this can be optimized</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="IVector.html#set(int,T)">set</a></code>&nbsp;in interface&nbsp;<code><a href="IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&gt;</code></dd>
+<dd><code><a href="IVector.html#set(int,T)">set</a></code>&nbsp;in interface&nbsp;<code><a href="IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="see-list-long">
@@ -213,7 +213,7 @@ implements <a href="IVector.html" title="interface in com.ibm.wala.util.collecti
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">performVerboseAction</span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="IVector.html#performVerboseAction()">performVerboseAction</a></code>&nbsp;in interface&nbsp;<code><a href="IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&gt;</code></dd>
+<dd><code><a href="IVector.html#performVerboseAction()">performVerboseAction</a></code>&nbsp;in interface&nbsp;<code><a href="IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="see-list-long">
@@ -229,7 +229,7 @@ implements <a href="IVector.html" title="interface in com.ibm.wala.util.collecti
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Iterator.html" title="class or interface in java.util" class="external-link">Iterator</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&gt;</span>&nbsp;<span class="element-name">iterator</span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html#iterator()" title="class or interface in java.lang" class="external-link">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html#iterator()" title="class or interface in java.lang" class="external-link">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="see-list">
@@ -245,7 +245,7 @@ implements <a href="IVector.html" title="interface in com.ibm.wala.util.collecti
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getMaxIndex</span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="IVector.html#getMaxIndex()">getMaxIndex</a></code>&nbsp;in interface&nbsp;<code><a href="IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&gt;</code></dd>
+<dd><code><a href="IVector.html#getMaxIndex()">getMaxIndex</a></code>&nbsp;in interface&nbsp;<code><a href="IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;<a href="TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>max i s.t get(i) != null</dd>
 </dl>

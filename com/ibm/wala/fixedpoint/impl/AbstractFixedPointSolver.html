@@ -244,51 +244,51 @@ implements <a href="../../fixpoint/IFixedPointSolver.html" title="interface in c
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#makeStmtRHS(int)" class="member-name-link">makeStmtRHS</a><wbr>(int&nbsp;size)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newStatement(T,com.ibm.wala.fixpoint.UnaryOperator,T,boolean,boolean)" class="member-name-link">newStatement</a><wbr>(@Nullable <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
- <a href="../../fixpoint/UnaryOperator.html" title="class in com.ibm.wala.fixpoint">UnaryOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
- <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;rhs,
- boolean&nbsp;toWorkList,
- boolean&nbsp;eager)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Add a step with one operand on the right-hand side.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newStatement(T,com.ibm.wala.fixedpoint.impl.NullaryOperator,boolean,boolean)" class="member-name-link">newStatement</a><wbr>(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newStatement(T,com.ibm.wala.fixedpoint.impl.NullaryOperator,boolean,boolean)" class="member-name-link">newStatement</a><wbr>(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
  <a href="NullaryOperator.html" title="class in com.ibm.wala.fixedpoint.impl">NullaryOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
  boolean&nbsp;toWorkList,
  boolean&nbsp;eager)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Add a step with zero operands on the right-hand side.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T%5B%5D,boolean,boolean)" class="member-name-link">newStatement</a><wbr>(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T%5B%5D,boolean,boolean)" class="member-name-link">newStatement</a><wbr>(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
  <a href="../../fixpoint/AbstractOperator.html" title="class in com.ibm.wala.fixpoint">AbstractOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
  <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>[]&nbsp;rhs,
  boolean&nbsp;toWorkList,
  boolean&nbsp;eager)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Add a step to the system with an arbitrary number of operands on the right-hand side.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T,T,boolean,boolean)" class="member-name-link">newStatement</a><wbr>(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T,T,boolean,boolean)" class="member-name-link">newStatement</a><wbr>(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
  <a href="../../fixpoint/AbstractOperator.html" title="class in com.ibm.wala.fixpoint">AbstractOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
  <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;op1,
  <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;op2,
  boolean&nbsp;toWorkList,
  boolean&nbsp;eager)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Add an equation with two operands on the right-hand side.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T,T,T,boolean,boolean)" class="member-name-link">newStatement</a><wbr>(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newStatement(T,com.ibm.wala.fixpoint.AbstractOperator,T,T,T,boolean,boolean)" class="member-name-link">newStatement</a><wbr>(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
  <a href="../../fixpoint/AbstractOperator.html" title="class in com.ibm.wala.fixpoint">AbstractOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
  <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;op1,
  <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;op2,
  <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;op3,
  boolean&nbsp;toWorkList,
  boolean&nbsp;eager)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Add a step with three operands on the right-hand side.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newStatement(T,com.ibm.wala.fixpoint.UnaryOperator,T,boolean,boolean)" class="member-name-link">newStatement</a><wbr>(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
+ <a href="../../fixpoint/UnaryOperator.html" title="class in com.ibm.wala.fixpoint">UnaryOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
+ <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;rhs,
+ boolean&nbsp;toWorkList,
+ boolean&nbsp;eager)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Add a step with one operand on the right-hand side.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#orderStatements()" class="member-name-link">orderStatements</a>()</code></div>
@@ -541,7 +541,7 @@ implements <a href="../../fixpoint/IFixedPointSolver.html" title="interface in c
 <li>
 <section class="detail" id="newStatement(T,com.ibm.wala.fixpoint.UnaryOperator,T,boolean,boolean)">
 <h3 id="newStatement(com.ibm.wala.fixpoint.IVariable,com.ibm.wala.fixpoint.UnaryOperator,com.ibm.wala.fixpoint.IVariable,boolean,boolean)">newStatement</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">newStatement</span><wbr><span class="parameters">(@Nullable <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">newStatement</span><wbr><span class="parameters">(<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;lhs,
  <a href="../../fixpoint/UnaryOperator.html" title="class in com.ibm.wala.fixpoint">UnaryOperator</a>&lt;<a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&gt;&nbsp;operator,
  <a href="AbstractFixedPointSolver.html" title="type parameter in AbstractFixedPointSolver">T</a>&nbsp;rhs,
  boolean&nbsp;toWorkList,

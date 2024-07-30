@@ -1478,7 +1478,7 @@ loadScripts(document, 'script');</script>
 <ul class="block-list">
 <li class="block-list">
 <h5>data</h5>
-<pre><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>[] data</pre>
+<pre><a href="com/ibm/wala/util/collections/SparseVector.html" title="type parameter in SparseVector">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>[] data</pre>
 </li>
 <li class="block-list">
 <h5>indices</h5>
@@ -1506,7 +1506,7 @@ loadScripts(document, 'script');</script>
 <ul class="block-list">
 <li class="block-list">
 <h5>data</h5>
-<pre><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Vector.html" title="class or interface in java.util" class="external-link">Vector</a>&lt;<a href="com/ibm/wala/util/collections/SparseVector.html" title="class in com.ibm.wala.util.collections">SparseVector</a>&lt;<a href="com/ibm/wala/util/collections/TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a>&gt;&gt; data</pre>
+<pre><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Vector.html" title="class or interface in java.util" class="external-link">Vector</a>&lt;<a href="com/ibm/wala/util/collections/SparseVector.html" title="class in com.ibm.wala.util.collections">SparseVector</a>&lt;<a href="com/ibm/wala/util/collections/TwoLevelVector.html" title="type parameter in TwoLevelVector">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&gt; data</pre>
 <div class="block">Array of IVector: data.get(i) holds data[i*PAGE_SIZE] ... data[(i+1)*PAGESIZE - 1]</div>
 </li>
 <li class="block-list">
@@ -2060,7 +2060,7 @@ loadScripts(document, 'script');</script>
 <ul class="block-list">
 <li class="block-list">
 <h5>delegateStore</h5>
-<pre><a href="com/ibm/wala/util/collections/IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;<a href="com/ibm/wala/util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&gt; delegateStore</pre>
+<pre><a href="com/ibm/wala/util/collections/IVector.html" title="interface in com.ibm.wala.util.collections">IVector</a>&lt;@Nullable <a href="com/ibm/wala/util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&gt; delegateStore</pre>
 <div class="block">delegateStore[x] holds an int set of the y's s.t. R(x,y)</div>
 </li>
 <li class="block-list">
@@ -2222,7 +2222,7 @@ loadScripts(document, 'script');</script>
 <ul class="block-list">
 <li class="block-list">
 <h5>array</h5>
-<pre><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>[] array</pre>
+<pre>@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>[] array</pre>
 </li>
 <li class="block-list">
 <h5>map</h5>
@@ -2510,6 +2510,23 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 </ul>
+</section>
+</li>
+</ul>
+</section>
+</li>
+<li>
+<section class="serialized-package-container">
+<h2 title="Package">Package&nbsp;<a href="com/ibm/wala/util/nullability/package-summary.html">com.ibm.wala.util.nullability</a></h2>
+<ul class="block-list">
+<li>
+<section class="serialized-class-details" id="com.ibm.wala.util.nullability.NullabilityUtil.CastToNonNullFailedException">
+<h3>Exception&nbsp;<a href="com/ibm/wala/util/nullability/NullabilityUtil.CastToNonNullFailedException.html" title="class in com.ibm.wala.util.nullability">com.ibm.wala.util.nullability.NullabilityUtil.CastToNonNullFailedException</a></h3>
+<div class="type-signature">class CastToNonNullFailedException extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html" title="class or interface in java.lang" class="external-link">RuntimeException</a> implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></div>
+<dl class="name-value">
+<dt>serialVersionUID:</dt>
+<dd>-4118612881206393972L</dd>
+</dl>
 </section>
 </li>
 </ul>
