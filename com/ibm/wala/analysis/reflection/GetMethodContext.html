@@ -94,15 +94,17 @@ implements <a href="../../ipa/callgraph/Context.html" title="interface in com.ib
 
  In the special case described above, <a href="GetMethodContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContextInterpreter</code></a> and <a href="GetMethodContextSelector.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContextSelector</code></a> should be preferred over <a href="JavaLangClassContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection"><code>JavaLangClassContextInterpreter</code></a> and
  <code>JavaLangClassContextSelector</code>, as <a href="GetMethodContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContextInterpreter</code></a> and <a href="GetMethodContextSelector.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContextSelector</code></a> drastically reduce the number of methods returned increasing the
- precision of the analysis. Thus, <a href="GetMethodContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContextInterpreter</code></a> and <a href="GetMethodContextSelector.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContextSelector</code></a> should be placed in be placed in front of <a href="JavaLangClassContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection"><code>JavaLangClassContextInterpreter</code></a> and <code>JavaLangClassContextSelector</code> .</div>
+ precision of the analysis. Thus, <a href="GetMethodContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContextInterpreter</code></a> and <a href="GetMethodContextSelector.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContextSelector</code></a> should be placed in be placed in front of <a href="JavaLangClassContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection"><code>JavaLangClassContextInterpreter</code></a> and <code>JavaLangClassContextSelector</code> .
+
+ <p>TODO Do the same for <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html#getField(java.lang.String)" title="class or interface in java.lang" class="external-link"><code>Class.getField(String)</code></a> and <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)" title="class or interface in java.lang" class="external-link"><code>Class.getDeclaredField(String)</code></a>.</div>
 <dl class="notes">
 <dt>Author:</dt>
 <dd>Michael Heilmann</dd>
 <dt>See Also:</dt>
 <dd>
-<ul class="see-list-long">
+<ul class="see-list">
 <li><a href="GetMethodContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContextInterpreter</code></a></li>
-<li><a href="GetMethodContextSelector.html" title="class in com.ibm.wala.analysis.reflection"><code>TODO Do the same for Class#getField(String) and Class#getDeclaredField(String).</code></a></li>
+<li><a href="GetMethodContextSelector.html" title="class in com.ibm.wala.analysis.reflection"><code>GetMethodContextSelector</code></a></li>
 </ul>
 </dd>
 </dl>
