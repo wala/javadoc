@@ -71,6 +71,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#getCalleeTarget(com.ibm.wala.ipa.callgraph.CGNode,com.ibm.wala.classLoader.CallSiteReference,com.ibm.wala.classLoader.IClass)" tabindex="0">getCalleeTarget(CGNode, CallSiteReference, IClass)</a></li>
+<li><a href="#getLambdaSummaryClass(com.ibm.wala.ipa.callgraph.CGNode,com.ibm.wala.classLoader.CallSiteReference)" tabindex="0">getLambdaSummaryClass(CGNode, CallSiteReference)</a></li>
 </ol>
 </li>
 </ol>
@@ -138,6 +139,12 @@ implements <a href="../callgraph/MethodTargetSelector.html" title="interface in 
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Return a synthetic method target for invokedynamic calls corresponding to Java lambdas</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="LambdaSummaryClass.html" title="class in com.ibm.wala.ipa.summaries">LambdaSummaryClass</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLambdaSummaryClass(com.ibm.wala.ipa.callgraph.CGNode,com.ibm.wala.classLoader.CallSiteReference)" class="member-name-link">getLambdaSummaryClass</a><wbr>(<a href="../callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;caller,
+ <a href="../../classLoader/CallSiteReference.html" title="class in com.ibm.wala.classLoader">CallSiteReference</a>&nbsp;site)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the summary class for a lambda factory, if it has already been created.</div>
+</div>
 </div>
 </div>
 </div>
@@ -189,6 +196,23 @@ implements <a href="../callgraph/MethodTargetSelector.html" title="interface in 
 <dt>Returns:</dt>
 <dd>a synthetic method if the call is an invokedynamic for Java lambdas; the callee target
      from the base selector otherwise</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getLambdaSummaryClass(com.ibm.wala.ipa.callgraph.CGNode,com.ibm.wala.classLoader.CallSiteReference)">
+<h3>getLambdaSummaryClass</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="LambdaSummaryClass.html" title="class in com.ibm.wala.ipa.summaries">LambdaSummaryClass</a></span>&nbsp;<span class="element-name">getLambdaSummaryClass</span><wbr><span class="parameters">(<a href="../callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;caller,
+ <a href="../../classLoader/CallSiteReference.html" title="class in com.ibm.wala.classLoader">CallSiteReference</a>&nbsp;site)</span></div>
+<div class="block">Gets the summary class for a lambda factory, if it has already been created.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>caller</code> - the caller node</dd>
+<dd><code>site</code> - the call site reference</dd>
+<dt>Returns:</dt>
+<dd>the summary class for the lambda factory, or <code>null</code> if it has not been created</dd>
 </dl>
 </div>
 </section>

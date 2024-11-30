@@ -65,6 +65,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
+<li><a href="#clearCaches()" tabindex="0">clearCaches()</a></li>
 <li><a href="#addClass(com.ibm.wala.classLoader.IClass)" tabindex="0">addClass(IClass)</a></li>
 <li><a href="#getPossibleTargets(com.ibm.wala.types.MethodReference)" tabindex="0">getPossibleTargets(MethodReference)</a></li>
 <li><a href="#getPossibleTargets(com.ibm.wala.classLoader.IClass,com.ibm.wala.types.MethodReference)" tabindex="0">getPossibleTargets(IClass, MethodReference)</a></li>
@@ -156,134 +157,140 @@ implements <a href="IClassHierarchy.html" title="interface in com.ibm.wala.ipa.c
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addClass(com.ibm.wala.classLoader.IClass)" class="member-name-link">addClass</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#computeSubClasses(com.ibm.wala.types.TypeReference)" class="member-name-link">computeSubClasses</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;type)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#clearCaches()" class="member-name-link">clearCaches</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Clear internal caches that may be invalidated by addition of new classes, e.g., a cache of the
+ results of <a href="IClassHierarchy.html#getPossibleTargets(com.ibm.wala.types.MethodReference)"><code>IClassHierarchy.getPossibleTargets(MethodReference)</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#computeSubClasses(com.ibm.wala.types.TypeReference)" class="member-name-link">computeSubClasses</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;type)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Return set of all subclasses of type in the Class Hierarchy TODO: Tune this implementation.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/ClassLoaderFactory.html" title="interface in com.ibm.wala.classLoader">ClassLoaderFactory</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getFactory()" class="member-name-link">getFactory</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getImmediateSubclasses(com.ibm.wala.classLoader.IClass)" class="member-name-link">getImmediateSubclasses</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/ClassLoaderFactory.html" title="interface in com.ibm.wala.classLoader">ClassLoaderFactory</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getFactory()" class="member-name-link">getFactory</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getImplementors(com.ibm.wala.types.TypeReference)" class="member-name-link">getImplementors</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;type)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getImmediateSubclasses(com.ibm.wala.classLoader.IClass)" class="member-name-link">getImmediateSubclasses</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getImplementors(com.ibm.wala.types.TypeReference)" class="member-name-link">getImplementors</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;type)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">TODO: tune this if necessary</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getJavaLangErrorTypes()" class="member-name-link">getJavaLangErrorTypes</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getJavaLangErrorTypes()" class="member-name-link">getJavaLangErrorTypes</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Solely for optimization; return a Collection&lt;TypeReference&gt; representing the subclasses
  of Error</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getJavaLangRuntimeExceptionTypes()" class="member-name-link">getJavaLangRuntimeExceptionTypes</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getJavaLangRuntimeExceptionTypes()" class="member-name-link">getJavaLangRuntimeExceptionTypes</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Solely for optimization; return a Collection&lt;TypeReference&gt; representing the subclasses
  of RuntimeException</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLeastCommonSuperclass(com.ibm.wala.classLoader.IClass,com.ibm.wala.classLoader.IClass)" class="member-name-link">getLeastCommonSuperclass</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;a,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLeastCommonSuperclass(com.ibm.wala.classLoader.IClass,com.ibm.wala.classLoader.IClass)" class="member-name-link">getLeastCommonSuperclass</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;a,
  <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;b)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLeastCommonSuperclass(com.ibm.wala.types.TypeReference,com.ibm.wala.types.TypeReference)" class="member-name-link">getLeastCommonSuperclass</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;a,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLeastCommonSuperclass(com.ibm.wala.types.TypeReference,com.ibm.wala.types.TypeReference)" class="member-name-link">getLeastCommonSuperclass</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;a,
  <a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;b)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLoader(com.ibm.wala.types.ClassLoaderReference)" class="member-name-link">getLoader</a><wbr>(<a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loaderRef)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>[]</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLoaders()" class="member-name-link">getLoaders</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLoader(com.ibm.wala.types.ClassLoaderReference)" class="member-name-link">getLoader</a><wbr>(<a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loaderRef)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumber(com.ibm.wala.classLoader.IClass)" class="member-name-link">getNumber</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>[]</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLoaders()" class="member-name-link">getLoaders</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumberOfClasses()" class="member-name-link">getNumberOfClasses</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumber(com.ibm.wala.classLoader.IClass)" class="member-name-link">getNumber</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumberOfImmediateSubclasses(com.ibm.wala.classLoader.IClass)" class="member-name-link">getNumberOfImmediateSubclasses</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumberOfClasses()" class="member-name-link">getNumberOfClasses</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPossibleTargets(com.ibm.wala.classLoader.IClass,com.ibm.wala.types.MethodReference)" class="member-name-link">getPossibleTargets</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;declaredClass,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumberOfImmediateSubclasses(com.ibm.wala.classLoader.IClass)" class="member-name-link">getNumberOfImmediateSubclasses</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPossibleTargets(com.ibm.wala.classLoader.IClass,com.ibm.wala.types.MethodReference)" class="member-name-link">getPossibleTargets</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;declaredClass,
  <a href="../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;ref)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Find the possible receivers of a call to a method reference</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPossibleTargets(com.ibm.wala.types.MethodReference)" class="member-name-link">getPossibleTargets</a><wbr>(<a href="../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;ref)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPossibleTargets(com.ibm.wala.types.MethodReference)" class="member-name-link">getPossibleTargets</a><wbr>(<a href="../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;ref)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Find the possible targets of a call to a method reference.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRootClass()" class="member-name-link">getRootClass</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getScope()" class="member-name-link">getScope</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRootClass()" class="member-name-link">getRootClass</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ClassHierarchy.MissingSuperClassHandling.html" title="enum class in com.ibm.wala.ipa.cha">ClassHierarchy.MissingSuperClassHandling</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSuperClassHandling()" class="member-name-link">getSuperClassHandling</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getScope()" class="member-name-link">getScope</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUnresolvedClasses()" class="member-name-link">getUnresolvedClasses</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ClassHierarchy.MissingSuperClassHandling.html" title="enum class in com.ibm.wala.ipa.cha">ClassHierarchy.MissingSuperClassHandling</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSuperClassHandling()" class="member-name-link">getSuperClassHandling</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#implementsInterface(com.ibm.wala.classLoader.IClass,com.ibm.wala.classLoader.IClass)" class="member-name-link">implementsInterface</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUnresolvedClasses()" class="member-name-link">getUnresolvedClasses</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#implementsInterface(com.ibm.wala.classLoader.IClass,com.ibm.wala.classLoader.IClass)" class="member-name-link">implementsInterface</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c,
  <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;i)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Does c implement i?</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isAssignableFrom(com.ibm.wala.classLoader.IClass,com.ibm.wala.classLoader.IClass)" class="member-name-link">isAssignableFrom</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c1,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isAssignableFrom(com.ibm.wala.classLoader.IClass,com.ibm.wala.classLoader.IClass)" class="member-name-link">isAssignableFrom</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c1,
  <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c2)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Does an expression c1 x := c2 y typecheck?</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isInterface(com.ibm.wala.types.TypeReference)" class="member-name-link">isInterface</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;type)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isInterface(com.ibm.wala.types.TypeReference)" class="member-name-link">isInterface</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;type)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRootClass(com.ibm.wala.classLoader.IClass)" class="member-name-link">isRootClass</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRootClass(com.ibm.wala.classLoader.IClass)" class="member-name-link">isRootClass</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSubclassOf(com.ibm.wala.classLoader.IClass,com.ibm.wala.classLoader.IClass)" class="member-name-link">isSubclassOf</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSubclassOf(com.ibm.wala.classLoader.IClass,com.ibm.wala.classLoader.IClass)" class="member-name-link">isSubclassOf</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;c,
  <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;t)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Is c a subclass of T?</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Iterator.html" title="class or interface in java.util" class="external-link">Iterator</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#iterator()" class="member-name-link">iterator</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#lookupClass(com.ibm.wala.types.TypeReference)" class="member-name-link">lookupClass</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;a)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Iterator.html" title="class or interface in java.util" class="external-link">Iterator</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#iterator()" class="member-name-link">iterator</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#lookupClass(com.ibm.wala.types.TypeReference)" class="member-name-link">lookupClass</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;a)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Find a class in this class hierarchy.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resolveField(com.ibm.wala.classLoader.IClass,com.ibm.wala.types.FieldReference)" class="member-name-link">resolveField</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass,
- <a href="../../types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&nbsp;f)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resolveField(com.ibm.wala.types.FieldReference)" class="member-name-link">resolveField</a><wbr>(<a href="../../types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&nbsp;f)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resolveField(com.ibm.wala.classLoader.IClass,com.ibm.wala.types.FieldReference)" class="member-name-link">resolveField</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass,
+ <a href="../../types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&nbsp;f)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resolveMethod(com.ibm.wala.classLoader.IClass,com.ibm.wala.types.Selector)" class="member-name-link">resolveMethod</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;receiverClass,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resolveField(com.ibm.wala.types.FieldReference)" class="member-name-link">resolveField</a><wbr>(<a href="../../types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&nbsp;f)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resolveMethod(com.ibm.wala.classLoader.IClass,com.ibm.wala.types.Selector)" class="member-name-link">resolveMethod</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;receiverClass,
  <a href="../../types/Selector.html" title="class in com.ibm.wala.types">Selector</a>&nbsp;selector)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Return the unique target of an invocation of method on an object of type receiverClass</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resolveMethod(com.ibm.wala.types.MethodReference)" class="member-name-link">resolveMethod</a><wbr>(<a href="../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;m)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resolveMethod(com.ibm.wala.types.MethodReference)" class="member-name-link">resolveMethod</a><wbr>(<a href="../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;m)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Return the unique receiver of an invocation of method on an object of type <code>
  m.getDeclaredClass()</code>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -304,6 +311,21 @@ implements <a href="IClassHierarchy.html" title="interface in com.ibm.wala.ipa.c
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="clearCaches()">
+<h3>clearCaches</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">clearCaches</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="IClassHierarchy.html#clearCaches()">IClassHierarchy</a></code></span></div>
+<div class="block">Clear internal caches that may be invalidated by addition of new classes, e.g., a cache of the
+ results of <a href="IClassHierarchy.html#getPossibleTargets(com.ibm.wala.types.MethodReference)"><code>IClassHierarchy.getPossibleTargets(MethodReference)</code></a>.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="IClassHierarchy.html#clearCaches()">clearCaches</a></code>&nbsp;in interface&nbsp;<code><a href="IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
 <li>
 <section class="detail" id="addClass(com.ibm.wala.classLoader.IClass)">
 <h3>addClass</h3>
