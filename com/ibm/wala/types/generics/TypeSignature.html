@@ -69,6 +69,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#isClassTypeSignature()" tabindex="0">isClassTypeSignature()</a></li>
 <li><a href="#isArrayTypeSignature()" tabindex="0">isArrayTypeSignature()</a></li>
 <li><a href="#isBaseType()" tabindex="0">isBaseType()</a></li>
+<li><a href="#parseForTypeSignatures(java.lang.String)" tabindex="0">parseForTypeSignatures(String)</a></li>
 </ol>
 </li>
 </ol>
@@ -135,6 +136,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TypeSignature.html" title="class in com.ibm.wala.types.generics">TypeSignature</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#make(java.lang.String)" class="member-name-link">make</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;s)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#parseForTypeSignatures(java.lang.String)" class="member-name-link">parseForTypeSignatures</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;typeSigs)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Split a string of consecutive type signatures (TypeSignature*) into its top-level type
+ signatures.</div>
+</div>
 </div>
 </div>
 </div>
@@ -197,6 +204,26 @@ loadScripts(document, 'script');</script>
 <h3>isBaseType</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isBaseType</span>()</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="parseForTypeSignatures(java.lang.String)">
+<h3>parseForTypeSignatures</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]</span>&nbsp;<span class="element-name">parseForTypeSignatures</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;typeSigs)</span>
+                                       throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></span></div>
+<div class="block">Split a string of consecutive type signatures (TypeSignature*) into its top-level type
+ signatures. The string should start with either <code>(</code> or <code>&lt;</code> and have a respective
+ matching <code>)</code> or <code>&gt;</code>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>typeSigs</code> - a string of consecutive type signatures</dd>
+<dt>Returns:</dt>
+<dd>an array of top-level type signatures</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code></dd>
+</dl>
 </div>
 </section>
 </li>
