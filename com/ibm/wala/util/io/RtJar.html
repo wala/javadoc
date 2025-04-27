@@ -61,13 +61,7 @@ loadScripts(document, 'script');</script>
 <button class="hide-sidebar"><span>Hide sidebar&nbsp;</span>&#10094;</button><button class="show-sidebar">&#10095;<span>&nbsp;Show sidebar</span></button>
 <ol class="toc-list">
 <li><a href="#" tabindex="0">Description</a></li>
-<li><a href="#constructor-summary" tabindex="0">Constructor Summary</a></li>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
-<li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
-<ol class="toc-list">
-<li><a href="#%3Cinit%3E()" tabindex="0">RtJar()</a></li>
-</ol>
-</li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#getRtJar(java.util.Iterator)" tabindex="0">getRtJar(Iterator)</a></li>
@@ -89,23 +83,11 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">RtJar</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Utility class to find the file holding the classes for the core Java standard library.</div>
 </div>
 </section>
 <section class="summary">
 <ul class="summary-list">
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<li>
-<section class="constructor-summary" id="constructor-summary">
-<h2>Constructor Summary</h2>
-<div class="caption"><span>Constructors</span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Constructor</div>
-<div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">RtJar</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
@@ -117,9 +99,12 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/JarFile.html" title="class or interface in java.util.jar" class="external-link">JarFile</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/JarFile.html" title="class or interface in java.util.jar" class="external-link">JarFile</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getRtJar(java.util.Iterator)" class="member-name-link">getRtJar</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html" title="class or interface in java.util" class="external-link">Iterator</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/JarFile.html" title="class or interface in java.util.jar" class="external-link">JarFile</a>&gt;&nbsp;x)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns the file holding the classes for the core Java standard library from the provided jar
+ files.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#main(java.lang.String%5B%5D)" class="member-name-link">main</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]&nbsp;args)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
@@ -135,22 +120,6 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="details">
 <ul class="details-list">
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<li>
-<section class="constructor-details" id="constructor-detail">
-<h2>Constructor Details</h2>
-<ul class="member-list">
-<li>
-<section class="detail" id="&lt;init&gt;()">
-<h3>RtJar</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RtJar</span>()</div>
-</div>
-</section>
-</li>
-</ul>
-</section>
-</li>
 <!-- ============ METHOD DETAIL ========== -->
 <li>
 <section class="method-details" id="method-detail">
@@ -160,8 +129,15 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getRtJar(java.util.Iterator)">
 <h3>getRtJar</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@NullUnmarked
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/JarFile.html" title="class or interface in java.util.jar" class="external-link">JarFile</a></span>&nbsp;<span class="element-name">getRtJar</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html" title="class or interface in java.util" class="external-link">Iterator</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/JarFile.html" title="class or interface in java.util.jar" class="external-link">JarFile</a>&gt;&nbsp;x)</span></div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">@Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/JarFile.html" title="class or interface in java.util.jar" class="external-link">JarFile</a></span>&nbsp;<span class="element-name">getRtJar</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html" title="class or interface in java.util" class="external-link">Iterator</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/JarFile.html" title="class or interface in java.util.jar" class="external-link">JarFile</a>&gt;&nbsp;x)</span></div>
+<div class="block">Returns the file holding the classes for the core Java standard library from the provided jar
+ files. The file may be a jar file or a jmod file.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>x</code> - an iterator over jar files</dd>
+<dt>Returns:</dt>
+<dd>the file holding the classes for the core Java standard library, or null if not found</dd>
+</dl>
 </div>
 </section>
 </li>
