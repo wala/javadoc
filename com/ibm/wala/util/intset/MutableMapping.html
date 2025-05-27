@@ -93,7 +93,7 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<h1 title="Class MutableMapping" class="title">Class MutableMapping&lt;<span id="type-param-T">T</span>&gt;</h1>
+<h1 title="Class MutableMapping" class="title">Class MutableMapping&lt;<span id="type-param-T">T extends @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span>&gt;</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
 <div class="inheritance">com.ibm.wala.util.intset.MutableMapping&lt;T&gt;</div>
@@ -109,7 +109,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="horizontal-scroll">
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">MutableMapping&lt;T&gt;</span>
+<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">MutableMapping&lt;T extends @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;T&gt;, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></span></div>
 <div class="block">A bit set mapping based on an object array. This is not terribly efficient, but is useful for
@@ -273,7 +273,7 @@ implements <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.uti
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="#type-param-T" title="type parameter in MutableMapping">T</a></span>&nbsp;<span class="element-name">getMappedObject</span><wbr><span class="parameters">(int&nbsp;n)</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="OrdinalSetMapping.html#getMappedObject(int)">getMappedObject</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a>&gt;</code></dd>
+<dd><code><a href="OrdinalSetMapping.html#getMappedObject(int)">getMappedObject</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>the object numbered n.</dd>
 </dl>
@@ -287,7 +287,7 @@ implements <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.uti
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getMappedIndex</span><wbr><span class="parameters">(@Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="OrdinalSetMapping.html#getMappedIndex(java.lang.Object)">getMappedIndex</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a>&gt;</code></dd>
+<dd><code><a href="OrdinalSetMapping.html#getMappedIndex(java.lang.Object)">getMappedIndex</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>the number of a given object, or -1 if the object is not currently in the range.</dd>
 </dl>
@@ -301,7 +301,7 @@ implements <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.uti
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasMappedIndex</span><wbr><span class="parameters">(<a href="#type-param-T" title="type parameter in MutableMapping">T</a>&nbsp;o)</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="OrdinalSetMapping.html#hasMappedIndex(T)">hasMappedIndex</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a>&gt;</code></dd>
+<dd><code><a href="OrdinalSetMapping.html#hasMappedIndex(T)">hasMappedIndex</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>whether the given object is mapped by this mapping</dd>
 </dl>
@@ -316,7 +316,7 @@ implements <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.uti
 <div class="block">Add an object to the set of mapped objects.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="OrdinalSetMapping.html#add(T)">add</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a>&gt;</code></dd>
+<dd><code><a href="OrdinalSetMapping.html#add(T)">add</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>the integer to which the object is mapped.</dd>
 </dl>
@@ -342,7 +342,7 @@ implements <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.uti
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html" title="class or interface in java.util" class="external-link">Iterator</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a>&gt;</span>&nbsp;<span class="element-name">iterator</span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html#iterator()" title="class or interface in java.lang" class="external-link">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html#iterator()" title="class or interface in java.lang" class="external-link">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
@@ -362,7 +362,7 @@ implements <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.uti
 <div class="block">Stream over mapped objects.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="OrdinalSetMapping.html#stream()">stream</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a>&gt;</code></dd>
+<dd><code><a href="OrdinalSetMapping.html#stream()">stream</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>a stream over the mapped objects</dd>
 </dl>
@@ -433,7 +433,7 @@ implements <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.uti
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getMaximumIndex</span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="OrdinalSetMapping.html#getMaximumIndex()">getMaximumIndex</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a>&gt;</code></dd>
+<dd><code><a href="OrdinalSetMapping.html#getMaximumIndex()">getMaximumIndex</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>the maximum integer mapped to an object</dd>
 </dl>
@@ -447,7 +447,7 @@ implements <a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.uti
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getSize</span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="OrdinalSetMapping.html#getSize()">getSize</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a>&gt;</code></dd>
+<dd><code><a href="OrdinalSetMapping.html#getSize()">getSize</a></code>&nbsp;in interface&nbsp;<code><a href="OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset">OrdinalSetMapping</a>&lt;<a href="#type-param-T" title="type parameter in MutableMapping">T</a> extends @Nullable <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>the current size of the bijection</dd>
 </dl>
