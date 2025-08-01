@@ -95,8 +95,6 @@ loadScripts(document, 'script');</script>
 <li><a href="#getAllFields()" tabindex="0">getAllFields()</a></li>
 <li><a href="#isPublic()" tabindex="0">isPublic()</a></li>
 <li><a href="#isPrivate()" tabindex="0">isPrivate()</a></li>
-<li><a href="#getSource()" tabindex="0">getSource()</a></li>
-<li><a href="#getAnnotations()" tabindex="0">getAnnotations()</a></li>
 </ol>
 </li>
 </ol>
@@ -177,56 +175,48 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Compute the static fields declared by this class or any of its superclasses.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getAnnotations()" class="member-name-link">getAnnotations</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">get annotations, if any</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getClassInitializer()" class="member-name-link">getClassInitializer</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getClassLoader()" class="member-name-link">getClassLoader</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getClassInitializer()" class="member-name-link">getClassInitializer</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getClassLoader()" class="member-name-link">getClassLoader</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">By default, a synthetic class is "loaded" by the primordial loader.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeclaredInstanceFields()" class="member-name-link">getDeclaredInstanceFields</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeclaredInstanceFields()" class="member-name-link">getDeclaredInstanceFields</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Compute the instance fields declared by this class.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;? extends <a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeclaredMethods()" class="member-name-link">getDeclaredMethods</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeclaredStaticFields()" class="member-name-link">getDeclaredStaticFields</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;? extends <a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeclaredMethods()" class="member-name-link">getDeclaredMethods</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDirectInterfaces()" class="member-name-link">getDirectInterfaces</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeclaredStaticFields()" class="member-name-link">getDeclaredStaticFields</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getField(com.ibm.wala.core.util.strings.Atom)" class="member-name-link">getField</a><wbr>(<a href="../../core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;name)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDirectInterfaces()" class="member-name-link">getDirectInterfaces</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getField(com.ibm.wala.core.util.strings.Atom)" class="member-name-link">getField</a><wbr>(<a href="../../core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;name)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Finds a field.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMethod(com.ibm.wala.types.Selector)" class="member-name-link">getMethod</a><wbr>(<a href="../../types/Selector.html" title="class in com.ibm.wala.types">Selector</a>&nbsp;selector)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMethod(com.ibm.wala.types.Selector)" class="member-name-link">getMethod</a><wbr>(<a href="../../types/Selector.html" title="class in com.ibm.wala.types">Selector</a>&nbsp;selector)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Finds method matching signature.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getModifiers()" class="member-name-link">getModifiers</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getModifiers()" class="member-name-link">getModifiers</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Return the integer that encodes the class's modifiers, as defined by the JVM specification</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getName(com.ibm.wala.types.TypeReference)" class="member-name-link">getName</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;T)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRealType()" class="member-name-link">getRealType</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html" title="class or interface in java.io" class="external-link">Reader</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSource()" class="member-name-link">getSource</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getName(com.ibm.wala.types.TypeReference)" class="member-name-link">getName</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;T)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRealType()" class="member-name-link">getRealType</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSourceFileName()" class="member-name-link">getSourceFileName</a>()</code></div>
@@ -259,7 +249,7 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-com.ibm.wala.classLoader.SyntheticClass">Methods inherited from class&nbsp;com.ibm.wala.classLoader.<a href="../../classLoader/SyntheticClass.html" title="class in com.ibm.wala.classLoader">SyntheticClass</a></h3>
-<code><a href="../../classLoader/SyntheticClass.html#getClassHierarchy()">getClassHierarchy</a>, <a href="../../classLoader/SyntheticClass.html#getField(com.ibm.wala.core.util.strings.Atom,com.ibm.wala.types.TypeName)">getField</a>, <a href="../../classLoader/SyntheticClass.html#getName()">getName</a>, <a href="../../classLoader/SyntheticClass.html#getReference()">getReference</a>, <a href="../../classLoader/SyntheticClass.html#isAbstract()">isAbstract</a>, <a href="../../classLoader/SyntheticClass.html#isArrayClass()">isArrayClass</a>, <a href="../../classLoader/SyntheticClass.html#isInterface()">isInterface</a>, <a href="../../classLoader/SyntheticClass.html#isSynthetic()">isSynthetic</a></code></div>
+<code><a href="../../classLoader/SyntheticClass.html#getAnnotations()">getAnnotations</a>, <a href="../../classLoader/SyntheticClass.html#getClassHierarchy()">getClassHierarchy</a>, <a href="../../classLoader/SyntheticClass.html#getField(com.ibm.wala.core.util.strings.Atom,com.ibm.wala.types.TypeName)">getField</a>, <a href="../../classLoader/SyntheticClass.html#getName()">getName</a>, <a href="../../classLoader/SyntheticClass.html#getReference()">getReference</a>, <a href="../../classLoader/SyntheticClass.html#getSource()">getSource</a>, <a href="../../classLoader/SyntheticClass.html#isAbstract()">isAbstract</a>, <a href="../../classLoader/SyntheticClass.html#isArrayClass()">isArrayClass</a>, <a href="../../classLoader/SyntheticClass.html#isInterface()">isInterface</a>, <a href="../../classLoader/SyntheticClass.html#isSynthetic()">isSynthetic</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
@@ -730,38 +720,6 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>true iff this class is private</dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="getSource()">
-<h3>getSource</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html" title="class or interface in java.io" class="external-link">Reader</a></span>&nbsp;<span class="element-name">getSource</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="../../classLoader/IClass.html#getSource()">getSource</a></code>&nbsp;in interface&nbsp;<code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></dd>
-<dt>Overrides:</dt>
-<dd><code><a href="../../classLoader/SyntheticClass.html#getSource()">getSource</a></code>&nbsp;in class&nbsp;<code><a href="../../classLoader/SyntheticClass.html" title="class in com.ibm.wala.classLoader">SyntheticClass</a></code></dd>
-<dt>Returns:</dt>
-<dd>String representing the source file holding this class, or null if not found</dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="getAnnotations()">
-<h3>getAnnotations</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../../types/annotations/Annotation.html" title="class in com.ibm.wala.types.annotations">Annotation</a>&gt;</span>&nbsp;<span class="element-name">getAnnotations</span>()</div>
-<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../classLoader/IClass.html#getAnnotations()">IClass</a></code></span></div>
-<div class="block">get annotations, if any</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="../../classLoader/IClass.html#getAnnotations()">getAnnotations</a></code>&nbsp;in interface&nbsp;<code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></dd>
-<dt>Overrides:</dt>
-<dd><code><a href="../../classLoader/SyntheticClass.html#getAnnotations()">getAnnotations</a></code>&nbsp;in class&nbsp;<code><a href="../../classLoader/SyntheticClass.html" title="class in com.ibm.wala.classLoader">SyntheticClass</a></code></dd>
 </dl>
 </div>
 </section>
