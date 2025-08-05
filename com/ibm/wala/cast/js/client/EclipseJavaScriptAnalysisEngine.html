@@ -75,7 +75,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#getDefaultOptions(java.lang.Iterable)" tabindex="0">getDefaultOptions(Iterable)</a></li>
 <li><a href="#getExclusionsFile()" tabindex="0">getExclusionsFile()</a></li>
 <li><a href="#makeDefaultEntrypoints(com.ibm.wala.ipa.cha.IClassHierarchy)" tabindex="0">makeDefaultEntrypoints(IClassHierarchy)</a></li>
-<li><a href="#makeClassLoaderFactory(com.ibm.wala.util.config.SetOfClasses)" tabindex="0">makeClassLoaderFactory(SetOfClasses)</a></li>
+<li><a href="#makeClassLoaderFactory(com.ibm.wala.util.config.StringFilter)" tabindex="0">makeClassLoaderFactory(StringFilter)</a></li>
 <li><a href="#makeAnalysisScope()" tabindex="0">makeAnalysisScope()</a></li>
 <li><a href="#createProjectPath(org.eclipse.wst.jsdt.core.IJavaScriptProject)" tabindex="0">createProjectPath(IJavaScriptProject)</a></li>
 <li><a href="#getSourceLoader()" tabindex="0">getSourceLoader()</a></li>
@@ -209,7 +209,7 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeAnalysisScope()" class="member-name-link">makeAnalysisScope</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="../../../classLoader/ClassLoaderFactory.html" title="interface in com.ibm.wala.classLoader">ClassLoaderFactory</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeClassLoaderFactory(com.ibm.wala.util.config.SetOfClasses)" class="member-name-link">makeClassLoaderFactory</a><wbr>(<a href="../../../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a>&nbsp;exclusions)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeClassLoaderFactory(com.ibm.wala.util.config.StringFilter)" class="member-name-link">makeClassLoaderFactory</a><wbr>(<a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeDefaultCache()" class="member-name-link">makeDefaultCache</a>()</code></div>
@@ -301,13 +301,13 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="makeClassLoaderFactory(com.ibm.wala.util.config.SetOfClasses)">
+<section class="detail" id="makeClassLoaderFactory(com.ibm.wala.util.config.StringFilter)">
 <h3>makeClassLoaderFactory</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="../../../classLoader/ClassLoaderFactory.html" title="interface in com.ibm.wala.classLoader">ClassLoaderFactory</a></span>&nbsp;<span class="element-name">makeClassLoaderFactory</span><wbr><span class="parameters">(<a href="../../../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a>&nbsp;exclusions)</span></div>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="../../../classLoader/ClassLoaderFactory.html" title="interface in com.ibm.wala.classLoader">ClassLoaderFactory</a></span>&nbsp;<span class="element-name">makeClassLoaderFactory</span><wbr><span class="parameters">(<a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</span></div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code><a href="../../../client/AbstractAnalysisEngine.html#makeClassLoaderFactory(com.ibm.wala.util.config.SetOfClasses)">makeClassLoaderFactory</a></code>&nbsp;in class&nbsp;<code><a href="../../../client/AbstractAnalysisEngine.html" title="class in com.ibm.wala.client">AbstractAnalysisEngine</a>&lt;<a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>, <a href="../../../ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraphBuilder</a>&lt;<a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</code></dd>
+<dd><code><a href="../../../client/AbstractAnalysisEngine.html#makeClassLoaderFactory(com.ibm.wala.util.config.StringFilter)">makeClassLoaderFactory</a></code>&nbsp;in class&nbsp;<code><a href="../../../client/AbstractAnalysisEngine.html" title="class in com.ibm.wala.client">AbstractAnalysisEngine</a>&lt;<a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>, <a href="../../../ipa/callgraph/CallGraphBuilder.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraphBuilder</a>&lt;<a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&gt;, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</code></dd>
 </dl>
 </div>
 </section>

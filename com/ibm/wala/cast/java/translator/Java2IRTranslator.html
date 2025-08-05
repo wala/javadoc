@@ -72,9 +72,9 @@ loadScripts(document, 'script');</script>
 </li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.util.config.SetOfClasses)" tabindex="0">Java2IRTranslator(JavaSourceLoaderImpl, SetOfClasses)</a></li>
-<li><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,com.ibm.wala.util.config.SetOfClasses)" tabindex="0">Java2IRTranslator(JavaSourceLoaderImpl, CAstRewriterFactory, SetOfClasses)</a></li>
-<li><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,boolean,com.ibm.wala.util.config.SetOfClasses)" tabindex="0">Java2IRTranslator(JavaSourceLoaderImpl, CAstRewriterFactory, boolean, SetOfClasses)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.util.config.StringFilter)" tabindex="0">Java2IRTranslator(JavaSourceLoaderImpl, StringFilter)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,com.ibm.wala.util.config.StringFilter)" tabindex="0">Java2IRTranslator(JavaSourceLoaderImpl, CAstRewriterFactory, StringFilter)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,boolean,com.ibm.wala.util.config.StringFilter)" tabindex="0">Java2IRTranslator(JavaSourceLoaderImpl, CAstRewriterFactory, boolean, StringFilter)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -110,7 +110,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected final <a href="../../../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a></code></div>
+<div class="col-first even-row-color"><code>protected final <a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a></code></div>
 <div class="col-second even-row-color"><code><a href="#exclusions" class="member-name-link">exclusions</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>protected final <a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a></code></div>
@@ -127,17 +127,17 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,boolean,com.ibm.wala.util.config.SetOfClasses)" class="member-name-link">Java2IRTranslator</a><wbr>(<a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;srcLoader,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,boolean,com.ibm.wala.util.config.StringFilter)" class="member-name-link">Java2IRTranslator</a><wbr>(<a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;srcLoader,
  <a href="../../tree/rewrite/CAstRewriterFactory.html" title="interface in com.ibm.wala.cast.tree.rewrite">CAstRewriterFactory</a>&lt;?,<wbr>?&gt;&nbsp;castRewriterFactory,
  boolean&nbsp;debug,
- <a href="../../../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a>&nbsp;exclusions)</code></div>
+ <a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,com.ibm.wala.util.config.SetOfClasses)" class="member-name-link">Java2IRTranslator</a><wbr>(<a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;srcLoader,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,com.ibm.wala.util.config.StringFilter)" class="member-name-link">Java2IRTranslator</a><wbr>(<a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;srcLoader,
  <a href="../../tree/rewrite/CAstRewriterFactory.html" title="interface in com.ibm.wala.cast.tree.rewrite">CAstRewriterFactory</a>&lt;?,<wbr>?&gt;&nbsp;castRewriterFactory,
- <a href="../../../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a>&nbsp;exclusions)</code></div>
+ <a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.util.config.SetOfClasses)" class="member-name-link">Java2IRTranslator</a><wbr>(<a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;srcLoader,
- <a href="../../../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a>&nbsp;exclusions)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.util.config.StringFilter)" class="member-name-link">Java2IRTranslator</a><wbr>(<a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;srcLoader,
+ <a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -186,7 +186,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="exclusions">
 <h3>exclusions</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="../../../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a></span>&nbsp;<span class="element-name">exclusions</span></div>
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a></span>&nbsp;<span class="element-name">exclusions</span></div>
 </div>
 </section>
 </li>
@@ -199,32 +199,32 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.util.config.SetOfClasses)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.util.config.StringFilter)">
 <h3>Java2IRTranslator</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Java2IRTranslator</span><wbr><span class="parameters">(<a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;srcLoader,
- <a href="../../../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a>&nbsp;exclusions)</span></div>
+ <a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</span></div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,com.ibm.wala.util.config.SetOfClasses)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,com.ibm.wala.util.config.StringFilter)">
 <h3>Java2IRTranslator</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Java2IRTranslator</span><wbr><span class="parameters">(<a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;srcLoader,
  <a href="../../tree/rewrite/CAstRewriterFactory.html" title="interface in com.ibm.wala.cast.tree.rewrite">CAstRewriterFactory</a>&lt;?,<wbr>?&gt;&nbsp;castRewriterFactory,
- <a href="../../../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a>&nbsp;exclusions)</span></div>
+ <a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</span></div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,boolean,com.ibm.wala.util.config.SetOfClasses)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,boolean,com.ibm.wala.util.config.StringFilter)">
 <h3>Java2IRTranslator</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Java2IRTranslator</span><wbr><span class="parameters">(<a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;srcLoader,
  <a href="../../tree/rewrite/CAstRewriterFactory.html" title="interface in com.ibm.wala.cast.tree.rewrite">CAstRewriterFactory</a>&lt;?,<wbr>?&gt;&nbsp;castRewriterFactory,
  boolean&nbsp;debug,
- <a href="../../../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a>&nbsp;exclusions)</span></div>
+ <a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</span></div>
 </div>
 </section>
 </li>

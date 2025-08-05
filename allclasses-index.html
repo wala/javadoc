@@ -2617,8 +2617,8 @@ loadScripts(document, 'script');</script>
 <div class="block">A module which is a wrapper around a file in the filesystem</div>
 </div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/config/FileOfClasses.html" title="class in com.ibm.wala.util.config">FileOfClasses</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
-<div class="block">An object which represents a set of classes read from a text file.</div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">Deprecated, for removal: This API element is subject to removal in a future version.
+<div class="deprecation-comment">Use <a href="com/ibm/wala/util/config/PatternsFilter.html" title="class in com.ibm.wala.util.config"><code>PatternsFilter</code></a> instead.</div>
 </div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/io/FileProvider.html" title="class in com.ibm.wala.core.util.io">FileProvider</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
@@ -4618,6 +4618,14 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/tree/rewrite/PatternBasedRewriter.html" title="class in com.ibm.wala.cast.tree.rewrite">PatternBasedRewriter</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/config/PatternsFilter.html" title="class in com.ibm.wala.util.config">PatternsFilter</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="block">A filter that accepts any <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a> that matches any of a sequence of <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/regex/Pattern.html" title="class or interface in java.util.regex" class="external-link"><code>Pattern</code></a>s.</div>
+</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/config/PatternsFilter.Builder.html" title="class in com.ibm.wala.util.config">PatternsFilter.Builder</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="block">Helper for collecting regular expressions to form a <a href="com/ibm/wala/util/config/PatternsFilter.html" title="class in com.ibm.wala.util.config"><code>PatternsFilter</code></a>.</div>
+</div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/examples/drivers/PDFCallGraph.html" title="class in com.ibm.wala.examples.drivers">PDFCallGraph</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This simple example WALA application builds a call graph and fires off ghostview to visualize a
@@ -5048,8 +5056,8 @@ loadScripts(document, 'script');</script>
 <div class="block">Hardcoded EntryPoint-specifications for an Android-Service.</div>
 </div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
-<div class="block">Logically, a set of <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link"><code>Class</code></a>.</div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">Deprecated, for removal: This API element is subject to removal in a future version.
+<div class="deprecation-comment">Use <a href="com/ibm/wala/util/config/StringFilter.html" title="interface in com.ibm.wala.util.config"><code>StringFilter</code></a> instead.</div>
 </div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/ssa/SetPrototype.html" title="class in com.ibm.wala.cast.js.ssa">SetPrototype</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
@@ -5647,575 +5655,579 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">An <a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>InstanceKey</code></a> which represents the constant char[] contents of a string constant object.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/strings/StringStuff.html" title="class in com.ibm.wala.core.util.strings">StringStuff</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="block">A serializable filter that accepts or rejects <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a>s.</div>
+</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/strings/StringStuff.html" title="class in com.ibm.wala.core.util.strings">StringStuff</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Some simple utilities used to manipulate Strings</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/tables/StringTable.html" title="class in com.ibm.wala.util.tables">StringTable</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/prefixtransfer/modeledAllocations/StringToLower.html" title="class in org.scandroid.prefixtransfer.modeledAllocations">StringToLower</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/tables/StringTable.html" title="class in com.ibm.wala.util.tables">StringTable</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/tree/pattern/SubtreeOfKind.html" title="class in com.ibm.wala.cast.tree.pattern">SubtreeOfKind</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/prefixtransfer/modeledAllocations/StringToLower.html" title="class in org.scandroid.prefixtransfer.modeledAllocations">StringToLower</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/tree/pattern/SubtreeOfKind.html" title="class in com.ibm.wala.cast.tree.pattern">SubtreeOfKind</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A node pattern matching a node of a given kind, without regard to its children.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/impl/SubtypesEntrypoint.html" title="class in com.ibm.wala.ipa.callgraph.impl">SubtypesEntrypoint</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/impl/SubtypesEntrypoint.html" title="class in com.ibm.wala.ipa.callgraph.impl">SubtypesEntrypoint</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">An entrypoint whose parameter types are cones based on declared types.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SummarizedMethod.html" title="class in com.ibm.wala.ipa.summaries">SummarizedMethod</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SummarizedMethod.html" title="class in com.ibm.wala.ipa.summaries">SummarizedMethod</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A <a href="com/ibm/wala/classLoader/SyntheticMethod.html" title="class in com.ibm.wala.classLoader"><code>SyntheticMethod</code></a> representing the semantics encoded in a <a href="com/ibm/wala/ipa/summaries/MethodSummary.html" title="class in com.ibm.wala.ipa.summaries"><code>MethodSummary</code></a></div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SummarizedMethodWithNames.html" title="class in com.ibm.wala.ipa.summaries">SummarizedMethodWithNames</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SummarizedMethodWithNames.html" title="class in com.ibm.wala.ipa.summaries">SummarizedMethodWithNames</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A SummarizedMethod (for synthetic functions) with variable names.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SummarizedMethodWithNames.SyntheticIRWithNames.html" title="class in com.ibm.wala.ipa.summaries">SummarizedMethodWithNames.SyntheticIRWithNames</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SummarizedMethodWithNames.SyntheticIRWithNames.SyntheticSSA2LocalMap.html" title="class in com.ibm.wala.ipa.summaries">SummarizedMethodWithNames.SyntheticIRWithNames.SyntheticSSA2LocalMap</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SummarizedMethodWithNames.SyntheticIRWithNames.html" title="class in com.ibm.wala.ipa.summaries">SummarizedMethodWithNames.SyntheticIRWithNames</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/SwapInstruction.html" title="class in com.ibm.wala.shrike.shrikeBT">SwapInstruction</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SummarizedMethodWithNames.SyntheticIRWithNames.SyntheticSSA2LocalMap.html" title="class in com.ibm.wala.ipa.summaries">SummarizedMethodWithNames.SyntheticIRWithNames.SyntheticSSA2LocalMap</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/SwapInstruction.html" title="class in com.ibm.wala.shrike.shrikeBT">SwapInstruction</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This instruction represents the swap instruction, which swaps the two values on top of the
  working stack.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/dex/instructions/Switch.html" title="class in com.ibm.wala.dalvik.dex.instructions">Switch</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/SwitchInstruction.html" title="class in com.ibm.wala.shrike.shrikeBT">SwitchInstruction</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/dex/instructions/Switch.html" title="class in com.ibm.wala.dalvik.dex.instructions">Switch</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/SwitchInstruction.html" title="class in com.ibm.wala.shrike.shrikeBT">SwitchInstruction</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This instruction represents all forms of switch instructions.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/dalvik/dex/instructions/SwitchPad.html" title="interface in com.ibm.wala.dalvik.dex.instructions">SwitchPad</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ide/ui/SWTTreeViewer.html" title="class in com.ibm.wala.ide.ui">SWTTreeViewer&lt;T&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/dalvik/dex/instructions/SwitchPad.html" title="interface in com.ibm.wala.dalvik.dex.instructions">SwitchPad</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ide/ui/SWTTreeViewer.html" title="class in com.ibm.wala.ide.ui">SWTTreeViewer&lt;T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A class to view a WALA <a href="com/ibm/wala/util/graph/Graph.html" title="interface in com.ibm.wala.util.graph"><code>Graph</code></a> with an SWT <code>TreeViewer</code></div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ssa/SymbolTable.html" title="class in com.ibm.wala.ssa">SymbolTable</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ssa/SymbolTable.html" title="class in com.ibm.wala.ssa">SymbolTable</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A symbol table which associates information with each variable (value number) in an SSA IR.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/java/examples/ast/SynchronizedBlockDuplicator.html" title="class in com.ibm.wala.cast.java.examples.ast">SynchronizedBlockDuplicator</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/java/examples/ast/SynchronizedBlockDuplicator.html" title="class in com.ibm.wala.cast.java.examples.ast">SynchronizedBlockDuplicator</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">transforms each synchronized block to execute under a conditional test calling some method m(),
  where the block is duplicated in both the if and else branches.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/classLoader/SyntheticClass.html" title="class in com.ibm.wala.classLoader">SyntheticClass</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/classLoader/SyntheticClass.html" title="class in com.ibm.wala.classLoader">SyntheticClass</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">An <a href="com/ibm/wala/classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> that exists nowhere in bytecode.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/model/SyntheticFactory.html" title="class in com.ibm.wala.model">SyntheticFactory</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/model/SyntheticFactory.html" title="class in com.ibm.wala.model">SyntheticFactory</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A bogus class to support returning "unknown" objects</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SyntheticIR.html" title="class in com.ibm.wala.ipa.summaries">SyntheticIR</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SyntheticIRFactory.html" title="class in com.ibm.wala.ipa.summaries">SyntheticIRFactory</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SyntheticIR.html" title="class in com.ibm.wala.ipa.summaries">SyntheticIR</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/classLoader/SyntheticMethod.html" title="class in com.ibm.wala.classLoader">SyntheticMethod</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/SyntheticIRFactory.html" title="class in com.ibm.wala.ipa.summaries">SyntheticIRFactory</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/classLoader/SyntheticMethod.html" title="class in com.ibm.wala.classLoader">SyntheticMethod</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">An implementation of <a href="com/ibm/wala/classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader"><code>IMethod</code></a>, usually for a synthesized method that is not read directly
  from any source <a href="com/ibm/wala/classLoader/Module.html" title="interface in com.ibm.wala.classLoader"><code>Module</code></a>.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/model/java/lang/System.html" title="class in com.ibm.wala.model.java.lang">System</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/model/java/lang/System.html" title="class in com.ibm.wala.model.java.lang">System</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A synthetic model of java.lang.System native methods.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/ipa/callgraph/androidModel/stubs/SystemServiceModel.html" title="class in com.ibm.wala.dalvik.ipa.callgraph.androidModel.stubs">SystemServiceModel</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/ipa/callgraph/androidModel/stubs/SystemServiceModel.html" title="class in com.ibm.wala.dalvik.ipa.callgraph.androidModel.stubs">SystemServiceModel</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This is generates a dummy for the call to an external Activity.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/tables/Table.html" title="class in com.ibm.wala.util.tables">Table&lt;T&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab5"><a href="com/ibm/wala/dataflow/IFDS/TabulationCancelException.html" title="class in com.ibm.wala.dataflow.IFDS">TabulationCancelException</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab5">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/tables/Table.html" title="class in com.ibm.wala.util.tables">Table&lt;T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab5"><a href="com/ibm/wala/dataflow/IFDS/TabulationCancelException.html" title="class in com.ibm.wala.dataflow.IFDS">TabulationCancelException</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab5">
 <div class="block">A <a href="com/ibm/wala/util/CancelException.html" title="class in com.ibm.wala.util"><code>CancelException</code></a> thrown during tabulation; holds a pointer to a partial <a href="com/ibm/wala/dataflow/IFDS/TabulationSolver.Result.html" title="class in com.ibm.wala.dataflow.IFDS"><code>TabulationSolver.Result</code></a>.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/dataflow/IFDS/TabulationDomain.html" title="interface in com.ibm.wala.dataflow.IFDS">TabulationDomain&lt;F,<wbr>T&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/dataflow/IFDS/TabulationDomain.html" title="interface in com.ibm.wala.dataflow.IFDS">TabulationDomain&lt;F,<wbr>T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Domain of facts for tabulation.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/dataflow/IFDS/TabulationProblem.html" title="interface in com.ibm.wala.dataflow.IFDS">TabulationProblem&lt;T,<wbr>P,<wbr>F&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/dataflow/IFDS/TabulationProblem.html" title="interface in com.ibm.wala.dataflow.IFDS">TabulationProblem&lt;T,<wbr>P,<wbr>F&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Representation of a Dyck-language graph reachability problem for the tabulation solver.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/dataflow/IFDS/TabulationResult.html" title="interface in com.ibm.wala.dataflow.IFDS">TabulationResult&lt;T,<wbr>P,<wbr>F&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/dataflow/IFDS/TabulationResult.html" title="interface in com.ibm.wala.dataflow.IFDS">TabulationResult&lt;T,<wbr>P,<wbr>F&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">The solution of a tabulation problem: a mapping from supergraph node -&gt; bit vector
  representing the dataflow facts that hold at the entry to the supergraph node.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dataflow/IFDS/TabulationSolver.html" title="class in com.ibm.wala.dataflow.IFDS">TabulationSolver&lt;T,<wbr>P,<wbr>F&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dataflow/IFDS/TabulationSolver.html" title="class in com.ibm.wala.dataflow.IFDS">TabulationSolver&lt;T,<wbr>P,<wbr>F&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A precise interprocedural tabulation solver.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/flow/functions/TaintTransferFunctions.html" title="class in org.scandroid.flow.functions">TaintTransferFunctions&lt;E&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/cast/util/TargetLanguageSelector.html" title="interface in com.ibm.wala.cast.util">TargetLanguageSelector&lt;T,<wbr>C&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/TargetMethodContextSelector.html" title="class in com.ibm.wala.ipa.callgraph.propagation">TargetMethodContextSelector</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/flow/functions/TaintTransferFunctions.html" title="class in org.scandroid.flow.functions">TaintTransferFunctions&lt;E&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/cast/util/TargetLanguageSelector.html" title="interface in com.ibm.wala.cast.util">TargetLanguageSelector&lt;T,<wbr>C&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/TargetMethodContextSelector.html" title="class in com.ibm.wala.ipa.callgraph.propagation">TargetMethodContextSelector</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This context selector selects a context based on whether the receiver type dispatches to a given
  method.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/io/TemporaryFile.html" title="class in com.ibm.wala.util.io">TemporaryFile</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/core/tests/util/TestConstants.html" title="interface in com.ibm.wala.core.tests.util">TestConstants</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/slicer/thin/ThinSlicer.html" title="class in com.ibm.wala.ipa.slicer.thin">ThinSlicer</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/io/TemporaryFile.html" title="class in com.ibm.wala.util.io">TemporaryFile</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/core/tests/util/TestConstants.html" title="interface in com.ibm.wala.core.tests.util">TestConstants</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/slicer/thin/ThinSlicer.html" title="class in com.ibm.wala.ipa.slicer.thin">ThinSlicer</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A cheap, context-insensitive thin slicer based on reachability over a custom SDG.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/info/ThisAssignmentChecker.html" title="class in com.ibm.wala.shrike.shrikeBT.info">ThisAssignmentChecker</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/info/ThisAssignmentChecker.html" title="class in com.ibm.wala.shrike.shrikeBT.info">ThisAssignmentChecker</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This method annotation checks to see whether "this" is assigned to by the method.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/model/java/lang/Thread.html" title="class in com.ibm.wala.model.java.lang">Thread</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/model/java/lang/Thread.html" title="class in com.ibm.wala.model.java.lang">Thread</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A synthetic model of single-threaded behavior</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/dex/instructions/Throw.html" title="class in com.ibm.wala.dalvik.dex.instructions">Throw</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/util/ThrowingSSAInstructionVisitor.html" title="class in org.scandroid.util">ThrowingSSAInstructionVisitor</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/dex/instructions/Throw.html" title="class in com.ibm.wala.dalvik.dex.instructions">Throw</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/ThrowInstruction.html" title="class in com.ibm.wala.shrike.shrikeBT">ThrowInstruction</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/util/ThrowingSSAInstructionVisitor.html" title="class in org.scandroid.util">ThrowingSSAInstructionVisitor</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/ThrowInstruction.html" title="class in com.ibm.wala.shrike.shrikeBT">ThrowInstruction</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This class represents the athrow instruction.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/graph/traverse/Topological.html" title="class in com.ibm.wala.util.graph.traverse">Topological</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/graph/traverse/Topological.html" title="class in com.ibm.wala.util.graph.traverse">Topological</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Utilities for iterating over graphs in topological order.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/collections/ToStringComparator.html" title="class in com.ibm.wala.util.collections">ToStringComparator&lt;T&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/collections/ToStringComparator.html" title="class in com.ibm.wala.util.collections">ToStringComparator&lt;T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A comparator based on lexicographical ordering of toString()</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/flow/functions/TracingFlowFunction.html" title="class in org.scandroid.flow.functions">TracingFlowFunction</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/flow/functions/TracingFlowFunction.html" title="class in org.scandroid.flow.functions">TracingFlowFunction</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/ipa/callgraph/TransitivePrototypeKey.html" title="class in com.ibm.wala.cast.js.ipa.callgraph">TransitivePrototypeKey</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/ipa/callgraph/TransitivePrototypeKey.html" title="class in com.ibm.wala.cast.js.ipa.callgraph">TransitivePrototypeKey</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToCAst</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.BreakContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.BreakContext&lt;C,<wbr>T&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.DelegatingContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.DelegatingContext&lt;C,<wbr>T&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.DoLoopTranslator.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.DoLoopTranslator</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab5"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.Error.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.Error</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab5">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.FunctionContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.FunctionContext&lt;C,<wbr>T&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.LoopContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.LoopContext&lt;C,<wbr>T&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.RootContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.RootContext&lt;C,<wbr>T&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.TryCatchContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.TryCatchContext&lt;C,<wbr>T&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToCAst.WalkContext&lt;C,<wbr>T&gt;</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToCAst</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/cast/ir/translator/TranslatorToIR.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToIR</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.BreakContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.BreakContext&lt;C,<wbr>T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.DelegatingContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.DelegatingContext&lt;C,<wbr>T&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.DoLoopTranslator.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.DoLoopTranslator</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab5"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.Error.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.Error</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.FunctionContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.FunctionContext&lt;C,<wbr>T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.LoopContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.LoopContext&lt;C,<wbr>T&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.RootContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.RootContext&lt;C,<wbr>T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.TryCatchContext.html" title="class in com.ibm.wala.cast.ir.translator">TranslatorToCAst.TryCatchContext&lt;C,<wbr>T&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/cast/ir/translator/TranslatorToCAst.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToCAst.WalkContext&lt;C,<wbr>T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/cast/ir/translator/TranslatorToIR.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToIR</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Type that performs the translation from the CAst to WALA IR (as extended for the language).</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/escape/TrivialMethodEscape.html" title="class in com.ibm.wala.escape">TrivialMethodEscape</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/escape/TrivialMethodEscape.html" title="class in com.ibm.wala.escape">TrivialMethodEscape</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Trivial method-level escape analysis.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/fixpoint/TrueOperator.html" title="class in com.ibm.wala.fixpoint">TrueOperator</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/fixpoint/TrueOperator.html" title="class in com.ibm.wala.fixpoint">TrueOperator</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Operator U(n) = true</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/demandpa/alg/refinepolicy/TunedFieldRefinementPolicy.html" title="class in com.ibm.wala.demandpa.alg.refinepolicy">TunedFieldRefinementPolicy</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/intset/TunedMutableSparseIntSet.html" title="class in com.ibm.wala.util.intset">TunedMutableSparseIntSet</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/demandpa/alg/refinepolicy/TunedFieldRefinementPolicy.html" title="class in com.ibm.wala.demandpa.alg.refinepolicy">TunedFieldRefinementPolicy</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/intset/TunedMutableSparseIntSet.html" title="class in com.ibm.wala.util.intset">TunedMutableSparseIntSet</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A <a href="com/ibm/wala/util/intset/MutableSparseIntSet.html" title="class in com.ibm.wala.util.intset"><code>MutableSparseIntSet</code></a> that allows for tuning of its initial size and expansion factor.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/demandpa/alg/refinepolicy/TunedRefinementPolicy.html" title="class in com.ibm.wala.demandpa.alg.refinepolicy">TunedRefinementPolicy</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/demandpa/alg/refinepolicy/TunedRefinementPolicy.html" title="class in com.ibm.wala.demandpa.alg.refinepolicy">TunedRefinementPolicy</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A refinement policy that iteratively adds more types to refine, based on which type was
  encountered first in each analysis pass.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/demandpa/alg/refinepolicy/TunedRefinementPolicy.Factory.html" title="class in com.ibm.wala.demandpa.alg.refinepolicy">TunedRefinementPolicy.Factory</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/intset/TunedSimpleIntVector.html" title="class in com.ibm.wala.util.intset">TunedSimpleIntVector</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/demandpa/alg/refinepolicy/TunedRefinementPolicy.Factory.html" title="class in com.ibm.wala.demandpa.alg.refinepolicy">TunedRefinementPolicy.Factory</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/intset/TunedSimpleIntVector.html" title="class in com.ibm.wala.util.intset">TunedSimpleIntVector</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">a simple implementation of int vector that can be tuned to control space usage</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/ipa/callgraph/correlations/extraction/TwoLevelExtractionRegion.html" title="class in com.ibm.wala.cast.js.ipa.callgraph.correlations.extraction">TwoLevelExtractionRegion</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/intset/TwoLevelIntVector.html" title="class in com.ibm.wala.util.intset">TwoLevelIntVector</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/ipa/callgraph/correlations/extraction/TwoLevelExtractionRegion.html" title="class in com.ibm.wala.cast.js.ipa.callgraph.correlations.extraction">TwoLevelExtractionRegion</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/intset/TwoLevelIntVector.html" title="class in com.ibm.wala.util.intset">TwoLevelIntVector</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">an int vector implementation which delegates to pages of int vectors.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/collections/TwoLevelVector.html" title="class in com.ibm.wala.util.collections">TwoLevelVector&lt;T&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/collections/TwoLevelVector.html" title="class in com.ibm.wala.util.collections">TwoLevelVector&lt;T&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">An <a href="com/ibm/wala/util/collections/IVector.html" title="interface in com.ibm.wala.util.collections"><code>IVector</code></a> implementation which delegates to pages of int vectors.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/typeInference/TypeAbstraction.html" title="class in com.ibm.wala.analysis.typeInference">TypeAbstraction</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/typeInference/TypeAbstraction.html" title="class in com.ibm.wala.analysis.typeInference">TypeAbstraction</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Abstraction of a Java type.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A <a href="com/ibm/wala/types/annotations/TypeAnnotation.html" title="class in com.ibm.wala.types.annotations"><code>TypeAnnotation</code></a> represents a JSR 308 Java Type Annotation.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.CatchTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.CatchTarget</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.EmptyTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.EmptyTarget</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.CatchTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.CatchTarget</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.FormalParameterTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.FormalParameterTarget</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.EmptyTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.EmptyTarget</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.LocalVarTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.LocalVarTarget</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.FormalParameterTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.FormalParameterTarget</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.OffsetTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.OffsetTarget</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.LocalVarTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.LocalVarTarget</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.SuperTypeTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.SuperTypeTarget</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.OffsetTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.OffsetTarget</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.ThrowsTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.ThrowsTarget</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.SuperTypeTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.SuperTypeTarget</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTarget</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.ThrowsTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.ThrowsTarget</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTarget</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A <a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTarget.html" title="class in com.ibm.wala.types.annotations"><code>TypeAnnotation.TypeAnnotationTarget</code></a> represents the "target" of a Type Annotation.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTargetConverter.html" title="interface in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTargetConverter</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTargetConverter.html" title="interface in com.ibm.wala.types.annotations">TypeAnnotation.TypeAnnotationTargetConverter</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">A @{TypeAnnotationTargetConverter} takes "unresolved" instances of <a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationTarget.html" title="class in com.ibm.wala.shrike.shrikeCT"><code>TypeAnnotationsReader.TypeAnnotationTarget</code></a>, resolves some
  byte-code specific data, and returns instances of the corresponding <a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeAnnotationTarget.html" title="class in com.ibm.wala.types.annotations"><code>TypeAnnotation.TypeAnnotationTarget</code></a> subclass.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeArgumentTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeArgumentTarget</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeParameterBoundTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeParameterBoundTarget</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeArgumentTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeArgumentTarget</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeParameterTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeParameterTarget</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeParameterBoundTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeParameterBoundTarget</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/annotations/TypeAnnotation.TypeParameterTarget.html" title="class in com.ibm.wala.types.annotations">TypeAnnotation.TypeParameterTarget</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This class reads TypeAnnotations attributes, i.e.: RuntimeInvisibleTypeAnnotations and
  RuntimeVisibleTypeAnnotations</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.AnnotationType.html" title="enum class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.AnnotationType</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.CatchTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.CatchTarget</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.EmptyTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.EmptyTarget</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.AnnotationType.html" title="enum class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.AnnotationType</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.CatchTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.CatchTarget</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.FormalParameterTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.FormalParameterTarget</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.EmptyTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.EmptyTarget</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.LocalVarTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.LocalVarTarget</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.FormalParameterTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.FormalParameterTarget</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.OffsetTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.OffsetTarget</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.LocalVarTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.LocalVarTarget</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.SuperTypeTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.SuperTypeTarget</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.OffsetTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.OffsetTarget</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetInfo.html" title="enum class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TargetInfo</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab3">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.SuperTypeTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.SuperTypeTarget</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetInfo.html" title="enum class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TargetInfo</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
 <div class="block">Possible target_type items.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TargetType</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TargetType.html" title="enum class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TargetType</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab3">
 <div class="block">Known target_types for JSR 308 Type-Annotation.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.ThrowsTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.ThrowsTarget</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationAttribute.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeAnnotationAttribute</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.ThrowsTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.ThrowsTarget</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationLocation.html" title="enum class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeAnnotationLocation</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab3">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationAttribute.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeAnnotationAttribute</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationLocation.html" title="enum class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeAnnotationLocation</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
 <div class="block">Enumeration of those Bytecode locations where type annotation may appear (in the corresponding
  attribute table).</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeAnnotationTarget</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeAnnotationTarget</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A <a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationTarget.html" title="class in com.ibm.wala.shrike.shrikeCT"><code>TypeAnnotationsReader.TypeAnnotationTarget</code></a> represents one of the possible target_info structure</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationTargetVisitor.html" title="interface in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeAnnotationTargetVisitor&lt;R&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeArgumentTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeArgumentTarget</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeParameterBoundTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeParameterBoundTarget</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeAnnotationTargetVisitor.html" title="interface in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeAnnotationTargetVisitor&lt;R&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeArgumentTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeArgumentTarget</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeParameterTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeParameterTarget</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeParameterBoundTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeParameterBoundTarget</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypePathKind.html" title="enum class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypePathKind</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/generics/TypeArgument.html" title="class in com.ibm.wala.types.generics">TypeArgument</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypeParameterTarget.html" title="class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypeParameterTarget</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/shrike/shrikeCT/TypeAnnotationsReader.TypePathKind.html" title="enum class in com.ibm.wala.shrike.shrikeCT">TypeAnnotationsReader.TypePathKind</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/generics/TypeArgument.html" title="class in com.ibm.wala.types.generics">TypeArgument</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">UNDER CONSTRUCTION</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/rta/TypeBasedHeapModel.html" title="class in com.ibm.wala.ipa.callgraph.propagation.rta">TypeBasedHeapModel</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/rta/TypeBasedHeapModel.html" title="class in com.ibm.wala.ipa.callgraph.propagation.rta">TypeBasedHeapModel</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A trivial field-based heap model, which only uses the information of which types (classes) are
  live.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/rta/TypeBasedPointerAnalysis.html" title="class in com.ibm.wala.ipa.callgraph.propagation.rta">TypeBasedPointerAnalysis</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/rta/TypeBasedPointerAnalysis.html" title="class in com.ibm.wala.ipa.callgraph.propagation.rta">TypeBasedPointerAnalysis</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A trivial field-based pointer analysis solution, which only uses the information of which types
  (classes) are live.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/translator/TypedNodeVisitor.html" title="class in com.ibm.wala.cast.js.translator">TypedNodeVisitor&lt;R,<wbr>A&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/typeInference/TypeInference.html" title="class in com.ibm.wala.analysis.typeInference">TypeInference</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/translator/TypedNodeVisitor.html" title="class in com.ibm.wala.cast.js.translator">TypedNodeVisitor&lt;R,<wbr>A&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/typeInference/TypeInference.html" title="class in com.ibm.wala.analysis.typeInference">TypeInference</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This class performs intraprocedural type propagation on an SSA IR.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/typeInference/TypeInference.DeclaredTypeOperator.html" title="class in com.ibm.wala.analysis.typeInference">TypeInference.DeclaredTypeOperator</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/typeInference/TypeInference.DeclaredTypeOperator.html" title="class in com.ibm.wala.analysis.typeInference">TypeInference.DeclaredTypeOperator</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">An operator which initializes a type to a declared type.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/typeInference/TypeInference.PrimitivePropagateOperator.html" title="class in com.ibm.wala.analysis.typeInference">TypeInference.PrimitivePropagateOperator</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/typeInference/TypeInference.PrimitivePropagateOperator.html" title="class in com.ibm.wala.analysis.typeInference">TypeInference.PrimitivePropagateOperator</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">We've introduced this class to canonicalize Atoms that represent package names.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A class to represent the reference in a class file to some type (class, primitive or array).</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/ssa/TypeSafeInstructionFactory.html" title="class in com.ibm.wala.core.util.ssa">TypeSafeInstructionFactory</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/ssa/TypeSafeInstructionFactory.html" title="class in com.ibm.wala.core.util.ssa">TypeSafeInstructionFactory</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Intended for SyntheticMethods, uses JavaInstructionFactory.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/generics/TypeSignature.html" title="class in com.ibm.wala.types.generics">TypeSignature</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/generics/TypeSignature.html" title="class in com.ibm.wala.types.generics">TypeSignature</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">UNDER CONSTRUCTION.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/typeInference/TypeVariable.html" title="class in com.ibm.wala.analysis.typeInference">TypeVariable</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/typeInference/TypeVariable.html" title="class in com.ibm.wala.analysis.typeInference">TypeVariable</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A type variable in the dataflow system for type inference.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/generics/TypeVariableSignature.html" title="class in com.ibm.wala.types.generics">TypeVariableSignature</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/types/generics/TypeVariableSignature.html" title="class in com.ibm.wala.types.generics">TypeVariableSignature</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">TypeVariableSignature: T identifier ;</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dataflow/graph/UnaryBitVectorUnion.html" title="class in com.ibm.wala.dataflow.graph">UnaryBitVectorUnion</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dataflow/graph/UnaryBitVectorUnion.html" title="class in com.ibm.wala.dataflow.graph">UnaryBitVectorUnion</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Operator U(n) = U(n) U U(j)</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/dex/instructions/UnaryOperation.html" title="class in com.ibm.wala.dalvik.dex.instructions">UnaryOperation</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/dalvik/dex/instructions/UnaryOperation.DalvikUnaryOp.html" title="enum class in com.ibm.wala.dalvik.dex.instructions">UnaryOperation.DalvikUnaryOp</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab3">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/dex/instructions/UnaryOperation.html" title="class in com.ibm.wala.dalvik.dex.instructions">UnaryOperation</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/dalvik/dex/instructions/UnaryOperation.DalvikUnaryOp.html" title="enum class in com.ibm.wala.dalvik.dex.instructions">UnaryOperation.DalvikUnaryOp</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
 <div class="block">for unary ops not defined in JVML</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/dalvik/dex/instructions/UnaryOperation.OpID.html" title="enum class in com.ibm.wala.dalvik.dex.instructions">UnaryOperation.OpID</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/fixpoint/UnaryOperator.html" title="class in com.ibm.wala.fixpoint">UnaryOperator&lt;T&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/dalvik/dex/instructions/UnaryOperation.OpID.html" title="enum class in com.ibm.wala.dalvik.dex.instructions">UnaryOperation.OpID</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/fixpoint/UnaryOperator.html" title="class in com.ibm.wala.fixpoint">UnaryOperator&lt;T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">An operator of the form lhs = op (rhs)</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/UnaryOpInstruction.html" title="class in com.ibm.wala.shrike.shrikeBT">UnaryOpInstruction</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/UnaryOpInstruction.html" title="class in com.ibm.wala.shrike.shrikeBT">UnaryOpInstruction</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This class represents unary operators where the result is the same type as the operand.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/fixpoint/UnaryOr.html" title="class in com.ibm.wala.fixpoint">UnaryOr</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/fixpoint/UnaryOr.html" title="class in com.ibm.wala.fixpoint">UnaryOr</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Operator U(n) = U(n) | U(j)</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/UnarySideEffect.html" title="class in com.ibm.wala.ipa.callgraph.propagation">UnarySideEffect</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/UnarySideEffect.html" title="class in com.ibm.wala.ipa.callgraph.propagation">UnarySideEffect</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A SideEffect is a constraint which carries a points-to-set which is def'fed or used in created
  constraints.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/fixpoint/UnaryStatement.html" title="class in com.ibm.wala.fixpoint">UnaryStatement&lt;T&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/fixpoint/UnaryStatement.html" title="class in com.ibm.wala.fixpoint">UnaryStatement&lt;T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Represents a single step, restricted to a unary operator.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab5"><a href="com/ibm/wala/util/debug/UnimplementedError.html" title="class in com.ibm.wala.util.debug">UnimplementedError</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab5">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab5"><a href="com/ibm/wala/util/debug/UnimplementedError.html" title="class in com.ibm.wala.util.debug">UnimplementedError</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab5">
 <div class="block">Something that's not implemented yet.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/impl/UnionContextSelector.html" title="class in com.ibm.wala.ipa.callgraph.impl">UnionContextSelector</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/impl/UnionContextSelector.html" title="class in com.ibm.wala.ipa.callgraph.impl">UnionContextSelector</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Checks ContextSelectors A and B, then returns the union of their findings.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/ipa/callgraph/androidModel/stubs/UnknownTargetModel.html" title="class in com.ibm.wala.dalvik.ipa.callgraph.androidModel.stubs">UnknownTargetModel</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/ipa/callgraph/androidModel/stubs/UnknownTargetModel.html" title="class in com.ibm.wala.dalvik.ipa.callgraph.androidModel.stubs">UnknownTargetModel</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This Model is used to start an Android-Component of unknown Target.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/UnknownVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">UnknownVertex</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/UnknownVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">UnknownVertex</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">The unknown vertex is used to model complicated data flow.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dataflow/IFDS/UnorderedDomain.html" title="class in com.ibm.wala.dataflow.IFDS">UnorderedDomain&lt;T,<wbr>U&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dataflow/IFDS/UnorderedDomain.html" title="class in com.ibm.wala.dataflow.IFDS">UnorderedDomain&lt;T,<wbr>U&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A <a href="com/ibm/wala/dataflow/IFDS/TabulationDomain.html" title="interface in com.ibm.wala.dataflow.IFDS"><code>TabulationDomain</code></a> with no build-in partial order defining priority.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/prefixtransfer/modeledAllocations/UriAppendString.html" title="class in org.scandroid.prefixtransfer.modeledAllocations">UriAppendString</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/prefixtransfer/modeledAllocations/UriParseString.html" title="class in org.scandroid.prefixtransfer.modeledAllocations">UriParseString</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/prefixtransfer/modeledAllocations/UriAppendString.html" title="class in org.scandroid.prefixtransfer.modeledAllocations">UriAppendString</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/prefixtransfer/UriPrefixContextSelector.html" title="class in org.scandroid.prefixtransfer">UriPrefixContextSelector</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/prefixtransfer/modeledAllocations/UriParseString.html" title="class in org.scandroid.prefixtransfer.modeledAllocations">UriParseString</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/prefixtransfer/UriPrefixTransferGraph.html" title="class in org.scandroid.prefixtransfer">UriPrefixTransferGraph</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/prefixtransfer/UriPrefixContextSelector.html" title="class in org.scandroid.prefixtransfer">UriPrefixContextSelector</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/html/UrlManipulator.html" title="class in com.ibm.wala.cast.js.html">UrlManipulator</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/prefixtransfer/UriPrefixTransferGraph.html" title="class in org.scandroid.prefixtransfer">UriPrefixTransferGraph</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/strings/UTF8Convert.html" title="class in com.ibm.wala.core.util.strings">UTF8Convert</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/html/UrlManipulator.html" title="class in com.ibm.wala.cast.js.html">UrlManipulator</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/strings/UTF8Convert.html" title="class in com.ibm.wala.core.util.strings">UTF8Convert</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Abstract class that contains conversion routines to/from utf8 and/or pseudo-utf8.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/cfg/Util.html" title="class in com.ibm.wala.cast.ir.cfg">Util</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/java/loader/Util.html" title="class in com.ibm.wala.cast.java.loader">Util</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/cfg/Util.html" title="class in com.ibm.wala.cast.ir.cfg">Util</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/util/Util.html" title="class in com.ibm.wala.cast.js.util">Util</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/java/loader/Util.html" title="class in com.ibm.wala.cast.java.loader">Util</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/util/Util.html" title="class in com.ibm.wala.cast.util">Util</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/util/Util.html" title="class in com.ibm.wala.cast.js.util">Util</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cfg/Util.html" title="class in com.ibm.wala.cfg">Util</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/util/Util.html" title="class in com.ibm.wala.cast.util">Util</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cfg/Util.html" title="class in com.ibm.wala.cfg">Util</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Convenience methods for navigating a <a href="com/ibm/wala/cfg/ControlFlowGraph.html" title="interface in com.ibm.wala.cfg"><code>ControlFlowGraph</code></a>.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html" title="class in com.ibm.wala.ipa.callgraph.impl">Util</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html" title="class in com.ibm.wala.ipa.callgraph.impl">Util</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Call graph utilities</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/Util.html" title="class in com.ibm.wala.shrike.shrikeBT">Util</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/Util.html" title="class in com.ibm.wala.shrike.shrikeBT">Util</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This class contains miscellaneous useful functions.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/collections/Util.html" title="class in com.ibm.wala.util.collections">Util</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/collections/Util.html" title="class in com.ibm.wala.util.collections">Util</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Miscellaneous utility functions.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/ssa/Value.html" title="interface in com.ibm.wala.ssa">Value</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/ssa/Value.html" title="interface in com.ibm.wala.ssa">Value</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Representation of a particular value which appears in an SSA IR.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/ipa/slicer/ValueNumberCarrier.html" title="interface in com.ibm.wala.ipa.slicer">ValueNumberCarrier</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VarVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VarVertex</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/ipa/slicer/ValueNumberCarrier.html" title="interface in com.ibm.wala.ipa.slicer">ValueNumberCarrier</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VarVertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VarVertex</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A variable vertex represents an SSA variable inside a given function.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dataflow/IFDS/VectorGenFlowFunction.html" title="class in com.ibm.wala.dataflow.IFDS">VectorGenFlowFunction</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dataflow/IFDS/VectorGenFlowFunction.html" title="class in com.ibm.wala.dataflow.IFDS">VectorGenFlowFunction</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A function which gens a vector of outgoing dataflow facts.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dataflow/IFDS/VectorKillFlowFunction.html" title="class in com.ibm.wala.dataflow.IFDS">VectorKillFlowFunction</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dataflow/IFDS/VectorKillFlowFunction.html" title="class in com.ibm.wala.dataflow.IFDS">VectorKillFlowFunction</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A function which kills a vector of incoming dataflow facts</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/util/debug/VerboseAction.html" title="interface in com.ibm.wala.util.debug">VerboseAction</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/util/debug/VerboseAction.html" title="interface in com.ibm.wala.util.debug">VerboseAction</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">An optional interface for data structures that provide a verbose option for debugging purposes.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/analysis/Verifier.html" title="class in com.ibm.wala.shrike.shrikeBT.analysis">Verifier</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/shrike/shrikeBT/analysis/Verifier.html" title="class in com.ibm.wala.shrike.shrikeBT.analysis">Verifier</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This class typechecks intermediate code.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/Vertex.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">Vertex</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Class representing a flow graph vertex.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VertexFactory.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VertexFactory</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VertexFactory.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VertexFactory</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A vertex factory is associated with a flow graph.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VertexVisitor.html" title="interface in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VertexVisitor&lt;T&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ide/ui/ViewIFDSLocalAction.html" title="class in com.ibm.wala.ide.ui">ViewIFDSLocalAction&lt;T,<wbr>P,<wbr>F&gt;</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/flowgraph/vertices/VertexVisitor.html" title="interface in com.ibm.wala.cast.js.callgraph.fieldbased.flowgraph.vertices">VertexVisitor&lt;T&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ide/ui/ViewIFDSLocalAction.html" title="class in com.ibm.wala.ide.ui">ViewIFDSLocalAction&lt;T,<wbr>P,<wbr>F&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">An SWT action that spawns spawns a ghostview to see the local supergraph for a procedure node
  which is the current selection in a tree viewer.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ide/ui/ViewIRAction.html" title="class in com.ibm.wala.ide.ui">ViewIRAction&lt;P&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ide/ui/ViewIRAction.html" title="class in com.ibm.wala.ide.ui">ViewIRAction&lt;P&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">An SWT action that spawns spawns a ghostview to see the IR for a call graph node which is the
  current selection in a tree viewer.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/VolatileMethodSummary.html" title="class in com.ibm.wala.ipa.summaries">VolatileMethodSummary</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/VolatileMethodSummary.html" title="class in com.ibm.wala.ipa.summaries">VolatileMethodSummary</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Instructions can be added in a non-ascending manner.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/examples/properties/WalaExamplesProperties.html" title="class in com.ibm.wala.examples.properties">WalaExamplesProperties</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab5"><a href="com/ibm/wala/util/WalaException.html" title="class in com.ibm.wala.util">WalaException</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab5">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/examples/properties/WalaExamplesProperties.html" title="class in com.ibm.wala.examples.properties">WalaExamplesProperties</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab5"><a href="com/ibm/wala/util/WalaException.html" title="class in com.ibm.wala.util">WalaException</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab5">
 <div class="block">An exception to raise for some WALA failure</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/properties/WalaProperties.html" title="class in com.ibm.wala.properties">WalaProperties</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab5"><a href="com/ibm/wala/util/WalaRuntimeException.html" title="class in com.ibm.wala.util">WalaRuntimeException</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab5">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/properties/WalaProperties.html" title="class in com.ibm.wala.properties">WalaProperties</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab5"><a href="com/ibm/wala/util/WalaRuntimeException.html" title="class in com.ibm.wala.util">WalaRuntimeException</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab5">
 <div class="block">Runtime exception for some WALA failure.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/viz/viewer/WalaViewer.html" title="class in com.ibm.wala.core.viz.viewer">WalaViewer</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/viz/viewer/WalaViewer.html" title="class in com.ibm.wala.core.viz.viewer">WalaViewer</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Viewer for ClassHeirarcy, CallGraph and Pointer Analysis results.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/warnings/Warning.html" title="class in com.ibm.wala.core.util.warnings">Warning</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/warnings/Warning.html" title="class in com.ibm.wala.core.util.warnings">Warning</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A warning message.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/warnings/Warnings.html" title="class in com.ibm.wala.core.util.warnings">Warnings</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/warnings/Warnings.html" title="class in com.ibm.wala.core.util.warnings">Warnings</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A global, static dictionary of warnings</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/classLoader/WDexClassLoaderImpl.html" title="class in com.ibm.wala.dalvik.classLoader">WDexClassLoaderImpl</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/dalvik/classLoader/WDexClassLoaderImpl.html" title="class in com.ibm.wala.dalvik.classLoader">WDexClassLoaderImpl</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">ClassLoader for Java &amp; Dalvik.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/html/WebPageLoaderFactory.html" title="class in com.ibm.wala.cast.js.html">WebPageLoaderFactory</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/html/WebUtil.html" title="class in com.ibm.wala.cast.js.html">WebUtil</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/html/WebPageLoaderFactory.html" title="class in com.ibm.wala.cast.js.html">WebPageLoaderFactory</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/arraybounds/hypergraph/weight/Weight.html" title="class in com.ibm.wala.analysis.arraybounds.hypergraph.weight">Weight</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/html/WebUtil.html" title="class in com.ibm.wala.cast.js.html">WebUtil</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/arraybounds/hypergraph/weight/Weight.html" title="class in com.ibm.wala.analysis.arraybounds.hypergraph.weight">Weight</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A weight may be not set, a number or unlimited, note that the meaning of unlimited is given by
  the chosen order (see <a href="com/ibm/wala/analysis/arraybounds/hypergraph/weight/NormalOrder.html" title="class in com.ibm.wala.analysis.arraybounds.hypergraph.weight"><code>NormalOrder</code></a> and <a href="com/ibm/wala/analysis/arraybounds/hypergraph/weight/ReverseOrder.html" title="class in com.ibm.wala.analysis.arraybounds.hypergraph.weight"><code>ReverseOrder</code></a>).</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/analysis/arraybounds/hypergraph/weight/Weight.Type.html" title="enum class in com.ibm.wala.analysis.arraybounds.hypergraph.weight">Weight.Type</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/graph/traverse/WelshPowell.html" title="class in com.ibm.wala.util.graph.traverse">WelshPowell&lt;T&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html" title="class in com.ibm.wala.util.graph.traverse">WelshPowell.ColoredVertices&lt;T&gt;</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/analysis/arraybounds/hypergraph/weight/Weight.Type.html" title="enum class in com.ibm.wala.analysis.arraybounds.hypergraph.weight">Weight.Type</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/graph/traverse/WelshPowell.html" title="class in com.ibm.wala.util.graph.traverse">WelshPowell&lt;T&gt;</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/demandpa/alg/WithState.html" title="class in com.ibm.wala.demandpa.alg">WithState&lt;T&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html" title="class in com.ibm.wala.util.graph.traverse">WelshPowell.ColoredVertices&lt;T&gt;</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/demandpa/alg/WithState.html" title="class in com.ibm.wala.demandpa.alg">WithState&lt;T&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Simple abstraction for pairing some type with a <a href="com/ibm/wala/demandpa/alg/statemachine/StateMachine.State.html" title="interface in com.ibm.wala.demandpa.alg.statemachine"><code>StateMachine.State</code></a>.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/fixedpoint/impl/Worklist.html" title="class in com.ibm.wala.fixedpoint.impl">Worklist</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/fixedpoint/impl/Worklist.html" title="class in com.ibm.wala.fixedpoint.impl">Worklist</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Worklist for fixed-point solver implementation</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/WorklistBasedOptimisticCallgraphBuilder.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased">WorklistBasedOptimisticCallgraphBuilder</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/callgraph/fieldbased/WorklistBasedOptimisticCallgraphBuilder.html" title="class in com.ibm.wala.cast.js.callgraph.fieldbased">WorklistBasedOptimisticCallgraphBuilder</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Optimistic call graph builder that propagates inter-procedural data flow iteratively as call
  edges are discovered.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/XMLMethodSummaryReader.html" title="class in com.ibm.wala.ipa.summaries">XMLMethodSummaryReader</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/summaries/XMLMethodSummaryReader.html" title="class in com.ibm.wala.ipa.summaries">XMLMethodSummaryReader</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This class reads method summaries from an XML Stream.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/synthmethod/XMLSummaryWriter.html" title="class in org.scandroid.synthmethod">XMLSummaryWriter</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/java/client/impl/ZeroCFABuilderFactory.html" title="class in com.ibm.wala.cast.java.client.impl">ZeroCFABuilderFactory</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/scandroid/synthmethod/XMLSummaryWriter.html" title="class in org.scandroid.synthmethod">XMLSummaryWriter</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/client/impl/ZeroCFABuilderFactory.html" title="class in com.ibm.wala.cast.js.client.impl">ZeroCFABuilderFactory</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/java/client/impl/ZeroCFABuilderFactory.html" title="class in com.ibm.wala.cast.java.client.impl">ZeroCFABuilderFactory</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/ZeroLengthArrayInNode.html" title="class in com.ibm.wala.ipa.callgraph.propagation">ZeroLengthArrayInNode</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/client/impl/ZeroCFABuilderFactory.html" title="class in com.ibm.wala.cast.js.client.impl">ZeroCFABuilderFactory</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/ZeroLengthArrayInNode.html" title="class in com.ibm.wala.ipa.callgraph.propagation">ZeroLengthArrayInNode</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Represents an array with length zero.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/java/client/impl/ZeroOneCFABuilderFactory.html" title="class in com.ibm.wala.cast.java.client.impl">ZeroOneCFABuilderFactory</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/java/client/impl/ZeroOneContainerCFABuilderFactory.html" title="class in com.ibm.wala.cast.java.client.impl">ZeroOneContainerCFABuilderFactory</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/java/client/impl/ZeroOneCFABuilderFactory.html" title="class in com.ibm.wala.cast.java.client.impl">ZeroOneCFABuilderFactory</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/cfa/ZeroXCFABuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation.cfa">ZeroXCFABuilder</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/java/client/impl/ZeroOneContainerCFABuilderFactory.html" title="class in com.ibm.wala.cast.java.client.impl">ZeroOneContainerCFABuilderFactory</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/cfa/ZeroXCFABuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation.cfa">ZeroXCFABuilder</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">0-1-CFA Call graph builder, optimized to not disambiguate instances of "uninteresting" types.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/cfa/ZeroXContainerCFABuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation.cfa">ZeroXContainerCFABuilder</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/cfa/ZeroXContainerCFABuilder.html" title="class in com.ibm.wala.ipa.callgraph.propagation.cfa">ZeroXContainerCFABuilder</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">0-X-CFA Call graph builder which analyzes calls to "container methods" in a context which is
  defined by the receiver instance.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/cfa/ZeroXInstanceKeys.html" title="class in com.ibm.wala.ipa.callgraph.propagation.cfa">ZeroXInstanceKeys</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/cfa/ZeroXInstanceKeys.html" title="class in com.ibm.wala.ipa.callgraph.propagation.cfa">ZeroXInstanceKeys</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Flexible class to create <a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>InstanceKey</code></a>s depending on various policies ranging from
  class-based (i.e.</div>
 </div>

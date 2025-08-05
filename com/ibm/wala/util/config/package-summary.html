@@ -84,17 +84,31 @@ loadScripts(document, 'script');</script>
 </li>
 <li>
 <div id="class-summary">
-<div class="caption"><span>Classes</span></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="class-summary-tab0" role="tab" aria-selected="true" aria-controls="class-summary.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary', 2)" class="active-table-tab">All Classes and Interfaces</button><button id="class-summary-tab1" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab1', 2)" class="table-tab">Interfaces</button><button id="class-summary-tab2" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab2', 2)" class="table-tab">Classes</button></div>
+<div id="class-summary.tabpanel" role="tabpanel" aria-labelledby="class-summary-tab0">
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Class</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="FileOfClasses.html" title="class in com.ibm.wala.util.config">FileOfClasses</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">Deprecated, for removal: This API element is subject to removal in a future version.
+<div class="deprecation-comment">Use <a href="PatternsFilter.html" title="class in com.ibm.wala.util.config"><code>PatternsFilter</code></a> instead.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="PatternsFilter.html" title="class in com.ibm.wala.util.config">PatternsFilter</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">A filter that accepts any <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a> that matches any of a sequence of <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/regex/Pattern.html" title="class or interface in java.util.regex" class="external-link"><code>Pattern</code></a>s.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="PatternsFilter.Builder.html" title="class in com.ibm.wala.util.config">PatternsFilter.Builder</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">An object which represents a set of classes read from a text file.</div>
+<div class="block">Helper for collecting regular expressions to form a <a href="PatternsFilter.html" title="class in com.ibm.wala.util.config"><code>PatternsFilter</code></a>.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">Logically, a set of <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link"><code>Class</code></a>.</div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">Deprecated, for removal: This API element is subject to removal in a future version.
+<div class="deprecation-comment">Use <a href="StringFilter.html" title="interface in com.ibm.wala.util.config"><code>StringFilter</code></a> instead.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="block">A serializable filter that accepts or rejects <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a>s.</div>
+</div>
 </div>
 </div>
 </div>

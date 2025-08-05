@@ -65,7 +65,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(com.ibm.wala.util.config.SetOfClasses)" tabindex="0">ClassLoaderFactoryImpl(SetOfClasses)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.util.config.StringFilter)" tabindex="0">ClassLoaderFactoryImpl(StringFilter)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -112,7 +112,7 @@ implements <a href="ClassLoaderFactory.html" title="interface in com.ibm.wala.cl
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.util.config.SetOfClasses)" class="member-name-link">ClassLoaderFactoryImpl</a><wbr>(<a href="../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a>&nbsp;exclusions)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.util.config.StringFilter)" class="member-name-link">ClassLoaderFactoryImpl</a><wbr>(<a href="../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -128,7 +128,7 @@ implements <a href="ClassLoaderFactory.html" title="interface in com.ibm.wala.cl
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getExclusions()" class="member-name-link">getExclusions</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></div>
@@ -164,10 +164,10 @@ implements <a href="ClassLoaderFactory.html" title="interface in com.ibm.wala.cl
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.util.config.SetOfClasses)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.util.config.StringFilter)">
 <h3>ClassLoaderFactoryImpl</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ClassLoaderFactoryImpl</span><wbr><span class="parameters">(<a href="../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a>&nbsp;exclusions)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ClassLoaderFactoryImpl</span><wbr><span class="parameters">(<a href="../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</span></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>exclusions</code> - A set of classes that class loaders should pretend don't exist.</dd>
@@ -233,7 +233,7 @@ implements <a href="ClassLoaderFactory.html" title="interface in com.ibm.wala.cl
 <section class="detail" id="getExclusions()">
 <h3>getExclusions</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">SetOfClasses</a></span>&nbsp;<span class="element-name">getExclusions</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a></span>&nbsp;<span class="element-name">getExclusions</span>()</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the set of classes that will be ignored.</dd>
