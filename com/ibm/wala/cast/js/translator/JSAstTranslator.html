@@ -363,7 +363,7 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#leaveInstanceOf(com.ibm.wala.cast.tree.CAstNode,com.ibm.wala.cast.ir.translator.AstTranslator.WalkContext,com.ibm.wala.cast.tree.visit.CAstVisitor)" class="member-name-link">leaveInstanceOf</a><wbr>(<a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
- <a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&nbsp;c,
+ <a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&nbsp;context,
  <a href="../../tree/visit/CAstVisitor.html" title="class in com.ibm.wala.cast.tree.visit">CAstVisitor</a>&lt;<a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&gt;&nbsp;visitor)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Leave an InstanceOf node.</div>
@@ -394,7 +394,7 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitInstanceOf(com.ibm.wala.cast.tree.CAstNode,com.ibm.wala.cast.ir.translator.AstTranslator.WalkContext,com.ibm.wala.cast.tree.visit.CAstVisitor)" class="member-name-link">visitInstanceOf</a><wbr>(<a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
- <a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&nbsp;c,
+ <a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&nbsp;context,
  <a href="../../tree/visit/CAstVisitor.html" title="class in com.ibm.wala.cast.tree.visit">CAstVisitor</a>&lt;<a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&gt;&nbsp;visitor)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Visit an InstanceOf node.</div>
@@ -844,7 +844,7 @@ loadScripts(document, 'script');</script>
 <h3>visitInstanceOf</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">visitInstanceOf</span><wbr><span class="parameters">(<a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
- <a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&nbsp;c,
+ <a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&nbsp;context,
  <a href="../../tree/visit/CAstVisitor.html" title="class in com.ibm.wala.cast.tree.visit">CAstVisitor</a>&lt;<a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&gt;&nbsp;visitor)</span></div>
 <div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="../../tree/visit/CAstVisitor.html#visitInstanceOf(com.ibm.wala.cast.tree.CAstNode,C,com.ibm.wala.cast.tree.visit.CAstVisitor)">CAstVisitor</a></code></span></div>
 <div class="block">Visit an InstanceOf node.</div>
@@ -853,7 +853,7 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="../../tree/visit/CAstVisitor.html#visitInstanceOf(com.ibm.wala.cast.tree.CAstNode,C,com.ibm.wala.cast.tree.visit.CAstVisitor)">visitInstanceOf</a></code>&nbsp;in class&nbsp;<code><a href="../../tree/visit/CAstVisitor.html" title="class in com.ibm.wala.cast.tree.visit">CAstVisitor</a>&lt;<a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>n</code> - the node to process</dd>
-<dd><code>c</code> - a visitor-specific context</dd>
+<dd><code>context</code> - a visitor-specific context</dd>
 <dt>Returns:</dt>
 <dd>true if no further processing is needed</dd>
 </dl>
@@ -865,7 +865,7 @@ loadScripts(document, 'script');</script>
 <h3>leaveInstanceOf</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">leaveInstanceOf</span><wbr><span class="parameters">(<a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
- <a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&nbsp;c,
+ <a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&nbsp;context,
  <a href="../../tree/visit/CAstVisitor.html" title="class in com.ibm.wala.cast.tree.visit">CAstVisitor</a>&lt;<a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&gt;&nbsp;visitor)</span></div>
 <div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="../../tree/visit/CAstVisitor.html#leaveInstanceOf(com.ibm.wala.cast.tree.CAstNode,C,com.ibm.wala.cast.tree.visit.CAstVisitor)">CAstVisitor</a></code></span></div>
 <div class="block">Leave an InstanceOf node.</div>
@@ -874,7 +874,7 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="../../tree/visit/CAstVisitor.html#leaveInstanceOf(com.ibm.wala.cast.tree.CAstNode,C,com.ibm.wala.cast.tree.visit.CAstVisitor)">leaveInstanceOf</a></code>&nbsp;in class&nbsp;<code><a href="../../tree/visit/CAstVisitor.html" title="class in com.ibm.wala.cast.tree.visit">CAstVisitor</a>&lt;<a href="../../ir/translator/AstTranslator.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">AstTranslator.WalkContext</a>&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>n</code> - the node to process</dd>
-<dd><code>c</code> - a visitor-specific context</dd>
+<dd><code>context</code> - a visitor-specific context</dd>
 </dl>
 </div>
 </section>
