@@ -207,7 +207,7 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getConstantPoolMemberName(int)" class="member-name-link">getConstantPoolMemberName</a><wbr>(int&nbsp;index)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Retrieve the name part of a CONSTANT_FieldRef, CONSTANT_MethodRef, or
- CONSTANT_InterfaceMethodRef constant pool item, This method should be overriden by a
+ CONSTANT_InterfaceMethodRef constant pool item, This method should be overridden by a
  toolkit-specific subclass.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
@@ -266,7 +266,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getConstantPoolItemType</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Retrieve the JVM constant pool item type (a Constants.CONSTANT_xxx value). This method should
- be overriden by a toolkit-specific subclass.</div>
+ be overridden by a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - the constant pool item to examine</dd>
@@ -279,8 +279,8 @@ loadScripts(document, 'script');</script>
 <h3>getConstantPoolInteger</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getConstantPoolInteger</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
-<div class="block">Retrieve the value of a CONSTANT_Integer constant pool item. This method should be overriden by
- a toolkit-specific subclass.</div>
+<div class="block">Retrieve the value of a CONSTANT_Integer constant pool item. This method should be overridden
+ by a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - the constant pool item to examine</dd>
@@ -293,8 +293,8 @@ loadScripts(document, 'script');</script>
 <h3>getConstantPoolFloat</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">float</span>&nbsp;<span class="element-name">getConstantPoolFloat</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
-<div class="block">Retrieve the value of a CONSTANT_Float constant pool item. This method should be overriden by a
- toolkit-specific subclass.</div>
+<div class="block">Retrieve the value of a CONSTANT_Float constant pool item. This method should be overridden by
+ a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - the constant pool item to examine</dd>
@@ -307,7 +307,7 @@ loadScripts(document, 'script');</script>
 <h3>getConstantPoolLong</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">long</span>&nbsp;<span class="element-name">getConstantPoolLong</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
-<div class="block">Retrieve the value of a CONSTANT_Long constant pool item. This method should be overriden by a
+<div class="block">Retrieve the value of a CONSTANT_Long constant pool item. This method should be overridden by a
  toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -321,7 +321,7 @@ loadScripts(document, 'script');</script>
 <h3>getConstantPoolDouble</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getConstantPoolDouble</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
-<div class="block">Retrieve the value of a CONSTANT_Double constant pool item. This method should be overriden by
+<div class="block">Retrieve the value of a CONSTANT_Double constant pool item. This method should be overridden by
  a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -335,7 +335,7 @@ loadScripts(document, 'script');</script>
 <h3>getConstantPoolString</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getConstantPoolString</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
-<div class="block">Retrieve the value of a CONSTANT_String constant pool item. This method should be overriden by
+<div class="block">Retrieve the value of a CONSTANT_String constant pool item. This method should be overridden by
  a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -349,8 +349,8 @@ loadScripts(document, 'script');</script>
 <h3>getConstantPoolMethodType</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getConstantPoolMethodType</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
-<div class="block">Retrieve the value of a CONSTANT_MethodType constant pool item. This method should be overriden
- by a toolkit-specific subclass.</div>
+<div class="block">Retrieve the value of a CONSTANT_MethodType constant pool item. This method should be
+ overridden by a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - the constant pool item to examine</dd>
@@ -364,7 +364,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getConstantPoolClassType</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Retrieve the value of a CONSTANT_Class constant pool item in JVM internal class format (e.g.,
- java/lang/Object). This method should be overriden by a toolkit-specific subclass.</div>
+ java/lang/Object). This method should be overridden by a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - the constant pool item to examine</dd>
@@ -379,7 +379,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getConstantPoolMemberClassType</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Retrieve the class part of a CONSTANT_FieldRef, CONSTANT_MethodRef, or
  CONSTANT_InterfaceMethodRef constant pool item, in JVM internal class format (e.g.,
- java/lang/Object). This method should be overriden by a toolkit-specific subclass.</div>
+ java/lang/Object). This method should be overridden by a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - the constant pool item to examine</dd>
@@ -393,7 +393,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getConstantPoolMemberName</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Retrieve the name part of a CONSTANT_FieldRef, CONSTANT_MethodRef, or
- CONSTANT_InterfaceMethodRef constant pool item, This method should be overriden by a
+ CONSTANT_InterfaceMethodRef constant pool item, This method should be overridden by a
  toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -409,7 +409,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getConstantPoolMemberType</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Retrieve the type part of a CONSTANT_FieldRef, CONSTANT_MethodRef, or
  CONSTANT_InterfaceMethodRef constant pool item, in JVM internal type format (e.g.,
- Ljava/lang/Object;). This method should be overriden by a toolkit-specific subclass.</div>
+ Ljava/lang/Object;). This method should be overridden by a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - the constant pool item to examine</dd>
@@ -424,7 +424,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getConstantPoolHandleClassType</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Retrieve the class part of the CONSTANT_FieldRef, CONSTANT_MethodRef, or
  CONSTANT_InterfaceMethodRef constant pool item pointed to by a CONSTANT_MethodHandle entry.
- This method should be overriden by a toolkit-specific subclass.</div>
+ This method should be overridden by a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - the constant pool item to examine</dd>
@@ -439,7 +439,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getConstantPoolHandleName</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Retrieve the name part of the CONSTANT_FieldRef, CONSTANT_MethodRef, or
  CONSTANT_InterfaceMethodRef constant pool item pointed to by a CONSTANT_MethodHandle entry.
- This method should be overriden by a toolkit-specific subclass.</div>
+ This method should be overridden by a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - the constant pool item to examine</dd>
@@ -454,7 +454,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getConstantPoolHandleType</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Retrieve the type part of the CONSTANT_FieldRef, CONSTANT_MethodRef, or
  CONSTANT_InterfaceMethodRef constant pool item pointed to by a CONSTANT_MethodHandle entry.
- This method should be overriden by a toolkit-specific subclass.</div>
+ This method should be overridden by a toolkit-specific subclass.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - the constant pool item to examine</dd>

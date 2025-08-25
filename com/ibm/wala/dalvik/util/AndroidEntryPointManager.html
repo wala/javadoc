@@ -186,7 +186,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#doFlatComponents()" class="member-name-link">doFlatComponents</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Controlls the initialization of Components.</div>
+<div class="block">Controls the initialization of Components.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#EPContainAny(com.ibm.wala.dalvik.util.AndroidComponent)" class="member-name-link">EPContainAny</a><wbr>(<a href="AndroidComponent.html" title="enum class in com.ibm.wala.dalvik.util">AndroidComponent</a>&nbsp;compo)</code></div>
@@ -280,7 +280,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDoFlatComponents(boolean)" class="member-name-link">setDoFlatComponents</a><wbr>(boolean&nbsp;flatComponents)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Controlls the initialization of Components.</div>
+<div class="block">Controls the initialization of Components.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../ipa/callgraph/androidModel/parameters/IInstantiationBehavior.html" title="class in com.ibm.wala.dalvik.ipa.callgraph.androidModel.parameters">IInstantiationBehavior</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setInstantiationBehavior(com.ibm.wala.dalvik.ipa.callgraph.androidModel.parameters.IInstantiationBehavior)" class="member-name-link">setInstantiationBehavior</a><wbr>(<a href="../ipa/callgraph/androidModel/parameters/IInstantiationBehavior.html" title="class in com.ibm.wala.dalvik.ipa.callgraph.androidModel.parameters">IInstantiationBehavior</a>&nbsp;instantiation)</code></div>
@@ -416,7 +416,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base
 <h3>doFlatComponents</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">doFlatComponents</span>()</div>
-<div class="block">Controlls the initialization of Components.
+<div class="block">Controls the initialization of Components.
 
  <p>See <a href="#setDoFlatComponents(boolean)"><code>setDoFlatComponents(boolean)</code></a>.</div>
 </div>
@@ -427,7 +427,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base
 <h3>setDoFlatComponents</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">setDoFlatComponents</span><wbr><span class="parameters">(boolean&nbsp;flatComponents)</span></div>
-<div class="block">Controlls the initialization of Components.
+<div class="block">Controls the initialization of Components.
 
  <p>If flatComponents is active an Instance of each Component of the application is generated in
  the AndroidModelClass. Whenever the model requires a new instance of a component this
@@ -468,7 +468,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../ipa/callgraph/androidModel/parameters/IInstantiationBehavior.html" title="class in com.ibm.wala.dalvik.ipa.callgraph.androidModel.parameters">IInstantiationBehavior</a></span>&nbsp;<span class="element-name">setInstantiationBehavior</span><wbr><span class="parameters">(<a href="../ipa/callgraph/androidModel/parameters/IInstantiationBehavior.html" title="class in com.ibm.wala.dalvik.ipa.callgraph.androidModel.parameters">IInstantiationBehavior</a>&nbsp;instantiation)</span></div>
 <div class="block">Controls the instantiation of variables in the model.
 
- <p>Controlls on which occasions a new instance to a given type shall be generated and when to
+ <p>Controls on which occasions a new instance to a given type shall be generated and when to
  reuse an existing instance.
 
  <p>This also changes the parameters to the later model.
@@ -622,7 +622,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base
  <p>Setting the package of the application is completely optional. However if you do it it helps
  determining whether an Intent has an internal target.
 
- <p>If a AndroidManifest.xml is read this getts set automaticly.</div>
+ <p>If a AndroidManifest.xml is read this getts set automatically.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>pack</code> - The package of the analyzed application</dd>
@@ -844,7 +844,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base
 <div class="block">Controll modification of an Intents target after construction.
 
  <p>After an Intent has been constructed its target may be changed using functions like
- setAction or setComponent. This setting controlls the behavior of the model on occurrence of
+ setAction or setComponent. This setting controls the behavior of the model on occurrence of
  such a function:
 
  <p>If set to false the Intent will be marked as unresolvable.
