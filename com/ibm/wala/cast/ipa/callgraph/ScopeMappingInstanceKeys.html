@@ -78,6 +78,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#needsScopeMappingKey(com.ibm.wala.ipa.callgraph.propagation.InstanceKey)" tabindex="0">needsScopeMappingKey(InstanceKey)</a></li>
+<li><a href="#isTrueConstructorCall(com.ibm.wala.util.collections.Pair,com.ibm.wala.ipa.callgraph.CGNode)" tabindex="0">isTrueConstructorCall(Pair, CGNode)</a></li>
 <li><a href="#getInstanceKeyForAllocation(com.ibm.wala.ipa.callgraph.CGNode,com.ibm.wala.classLoader.NewSiteReference)" tabindex="0">getInstanceKeyForAllocation(CGNode, NewSiteReference)</a></li>
 <li><a href="#getConstructorCallers(com.ibm.wala.cast.ipa.callgraph.ScopeMappingInstanceKeys.ScopeMappingInstanceKey,com.ibm.wala.util.collections.Pair)" tabindex="0">getConstructorCallers(ScopeMappingInstanceKeys.ScopeMappingInstanceKey, Pair)</a></li>
 <li><a href="#getInstanceKeyForMultiNewArray(com.ibm.wala.ipa.callgraph.CGNode,com.ibm.wala.classLoader.NewSiteReference,int)" tabindex="0">getInstanceKeyForMultiNewArray(CGNode, NewSiteReference, int)</a></li>
@@ -204,8 +205,12 @@ implements <a href="../../../ipa/callgraph/propagation/InstanceKeyFactory.html" 
  <a href="../../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;type)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#needsScopeMappingKey(com.ibm.wala.ipa.callgraph.propagation.InstanceKey)" class="member-name-link">needsScopeMappingKey</a><wbr>(<a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;base)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isTrueConstructorCall(com.ibm.wala.util.collections.Pair,com.ibm.wala.ipa.callgraph.CGNode)" class="member-name-link">isTrueConstructorCall</a><wbr>(<a href="../../../util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;name,
+ <a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;callerOfConstructor)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#needsScopeMappingKey(com.ibm.wala.ipa.callgraph.propagation.InstanceKey)" class="member-name-link">needsScopeMappingKey</a><wbr>(<a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;base)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">does base require a scope mapping key? Typically, true if base is allocated in a nested lexical
  scope, to handle the case of base being a function that performs closure accesses</div>
 </div>
@@ -266,6 +271,23 @@ implements <a href="../../../ipa/callgraph/propagation/InstanceKeyFactory.html" 
 <div class="member-signature"><span class="modifiers">protected abstract</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">needsScopeMappingKey</span><wbr><span class="parameters">(<a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;base)</span></div>
 <div class="block">does base require a scope mapping key? Typically, true if base is allocated in a nested lexical
  scope, to handle the case of base being a function that performs closure accesses</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="isTrueConstructorCall(com.ibm.wala.util.collections.Pair,com.ibm.wala.ipa.callgraph.CGNode)">
+<h3>isTrueConstructorCall</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected abstract</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isTrueConstructorCall</span><wbr><span class="parameters">(<a href="../../../util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;name,
+ <a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;callerOfConstructor)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the variable name and creator pair</dd>
+<dd><code>callerOfConstructor</code> - the purported caller of the constructor</dd>
+<dt>Returns:</dt>
+<dd>whether this is a real constructor call or an artifact of function pointers (always
+     true for lexical scoping in Java)</dd>
+</dl>
 </div>
 </section>
 </li>

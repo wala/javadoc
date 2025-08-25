@@ -72,6 +72,7 @@ loadScripts(document, 'script');</script>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
+<li><a href="#isTrueConstructorCall(com.ibm.wala.util.collections.Pair,com.ibm.wala.ipa.callgraph.CGNode)" tabindex="0">isTrueConstructorCall(Pair, CGNode)</a></li>
 <li><a href="#getParents(com.ibm.wala.ipa.callgraph.propagation.InstanceKey)" tabindex="0">getParents(InstanceKey)</a></li>
 <li><a href="#isPossiblyLexicalClass(com.ibm.wala.classLoader.IClass)" tabindex="0">isPossiblyLexicalClass(IClass)</a></li>
 <li><a href="#needsScopeMappingKey(com.ibm.wala.ipa.callgraph.propagation.InstanceKey)" tabindex="0">needsScopeMappingKey(InstanceKey)</a></li>
@@ -159,8 +160,12 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isPossiblyLexicalClass(com.ibm.wala.classLoader.IClass)" class="member-name-link">isPossiblyLexicalClass</a><wbr>(<a href="../../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;cls)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#needsScopeMappingKey(com.ibm.wala.ipa.callgraph.propagation.InstanceKey)" class="member-name-link">needsScopeMappingKey</a><wbr>(<a href="../../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;base)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isTrueConstructorCall(com.ibm.wala.util.collections.Pair,com.ibm.wala.ipa.callgraph.CGNode)" class="member-name-link">isTrueConstructorCall</a><wbr>(<a href="../../../../util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;name,
+ <a href="../../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;callerOfConstructor)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#needsScopeMappingKey(com.ibm.wala.ipa.callgraph.propagation.InstanceKey)" class="member-name-link">needsScopeMappingKey</a><wbr>(<a href="../../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>&nbsp;base)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">does base require a scope mapping key? Typically, true if base is allocated in a nested lexical
  scope, to handle the case of base being a function that performs closure accesses</div>
 </div>
@@ -201,6 +206,25 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="isTrueConstructorCall(com.ibm.wala.util.collections.Pair,com.ibm.wala.ipa.callgraph.CGNode)">
+<h3>isTrueConstructorCall</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isTrueConstructorCall</span><wbr><span class="parameters">(<a href="../../../../util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;name,
+ <a href="../../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;callerOfConstructor)</span></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../../ipa/callgraph/ScopeMappingInstanceKeys.html#isTrueConstructorCall(com.ibm.wala.util.collections.Pair,com.ibm.wala.ipa.callgraph.CGNode)">isTrueConstructorCall</a></code>&nbsp;in class&nbsp;<code><a href="../../../ipa/callgraph/ScopeMappingInstanceKeys.html" title="class in com.ibm.wala.cast.ipa.callgraph">ScopeMappingInstanceKeys</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>name</code> - the variable name and creator pair</dd>
+<dd><code>callerOfConstructor</code> - the purported caller of the constructor</dd>
+<dt>Returns:</dt>
+<dd>whether this is a real constructor call or an artifact of function pointers (always
+     true for lexical scoping in Java)</dd>
+</dl>
+</div>
+</section>
+</li>
 <li>
 <section class="detail" id="getParents(com.ibm.wala.ipa.callgraph.propagation.InstanceKey)">
 <h3>getParents</h3>

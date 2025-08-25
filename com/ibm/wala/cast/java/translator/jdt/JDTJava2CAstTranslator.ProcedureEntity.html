@@ -62,8 +62,15 @@ loadScripts(document, 'script');</script>
 <button class="hide-sidebar"><span>Hide sidebar&nbsp;</span>&#10094;</button><button class="show-sidebar">&#10095;<span>&nbsp;Show sidebar</span></button>
 <ol class="toc-list">
 <li><a href="#" tabindex="0">Description</a></li>
+<li><a href="#nested-class-summary" tabindex="0">Nested Class Summary</a></li>
 <li><a href="#field-summary" tabindex="0">Field Summary</a></li>
+<li><a href="#constructor-summary" tabindex="0">Constructor Summary</a></li>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
+<li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
+<ol class="toc-list">
+<li><a href="#%3Cinit%3E(com.ibm.wala.cast.tree.CAstNode,org.eclipse.jdt.core.dom.ITypeBinding,java.util.Map,com.ibm.wala.cast.java.translator.jdt.JDTJava2CAstTranslator.MethodContext,java.util.Set,java.util.List,java.util.List)" tabindex="0">ProcedureEntity(CAstNode, ITypeBinding, Map, JDTJava2CAstTranslator.MethodContext, Set, List, List)</a></li>
+</ol>
+</li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#getAllScopedEntities()" tabindex="0">getAllScopedEntities()</a></li>
@@ -108,13 +115,28 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="horizontal-scroll">
-<div class="type-signature"><span class="modifiers">protected final class </span><span class="element-name type-name-label">JDTJava2CAstTranslator.ProcedureEntity</span>
+<div class="type-signature"><span class="modifiers">protected class </span><span class="element-name type-name-label">JDTJava2CAstTranslator.ProcedureEntity</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="../JavaProcedureEntity.html" title="interface in com.ibm.wala.cast.java.translator">JavaProcedureEntity</a></span></div>
 </div>
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<li>
+<section class="nested-class-summary" id="nested-class-summary">
+<h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>protected class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="JDTJava2CAstTranslator.ProcedureEntity.JdtMethodCAstType.html" class="type-name-link" title="class in com.ibm.wala.cast.java.translator.jdt">JDTJava2CAstTranslator.ProcedureEntity.JdtMethodCAstType</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
 <!-- =========== FIELD SUMMARY =========== -->
 <li>
 <section class="field-summary" id="field-summary">
@@ -122,6 +144,25 @@ implements <a href="../JavaProcedureEntity.html" title="interface in com.ibm.wal
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-com.ibm.wala.cast.tree.CAstEntity">Fields inherited from interface&nbsp;com.ibm.wala.cast.tree.<a href="../../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a></h3>
 <code><a href="../../../tree/CAstEntity.html#FIELD_ENTITY">FIELD_ENTITY</a>, <a href="../../../tree/CAstEntity.html#FILE_ENTITY">FILE_ENTITY</a>, <a href="../../../tree/CAstEntity.html#FUNCTION_ENTITY">FUNCTION_ENTITY</a>, <a href="../../../tree/CAstEntity.html#GLOBAL_ENTITY">GLOBAL_ENTITY</a>, <a href="../../../tree/CAstEntity.html#MACRO_ENTITY">MACRO_ENTITY</a>, <a href="../../../tree/CAstEntity.html#RULE_ENTITY">RULE_ENTITY</a>, <a href="../../../tree/CAstEntity.html#SCRIPT_ENTITY">SCRIPT_ENTITY</a>, <a href="../../../tree/CAstEntity.html#SUB_LANGUAGE_BASE">SUB_LANGUAGE_BASE</a>, <a href="../../../tree/CAstEntity.html#TYPE_ENTITY">TYPE_ENTITY</a></code></div>
+</section>
+</li>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<li>
+<section class="constructor-summary" id="constructor-summary">
+<h2>Constructor Summary</h2>
+<div class="caption"><span>Constructors</span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Constructor</div>
+<div class="table-header col-last">Description</div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.cast.tree.CAstNode,org.eclipse.jdt.core.dom.ITypeBinding,java.util.Map,com.ibm.wala.cast.java.translator.jdt.JDTJava2CAstTranslator.MethodContext,java.util.Set,java.util.List,java.util.List)" class="member-name-link">ProcedureEntity</a><wbr>(<a href="../../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;mdast,
+ org.eclipse.jdt.core.dom.ITypeBinding&nbsp;typeBinding,
+ <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>, <a href="../../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;&nbsp;emptyMap,
+ <a href="JDTJava2CAstTranslator.html" title="class in com.ibm.wala.cast.java.translator.jdt">JDTJava2CAstTranslator</a>&lt;<a href="JDTJava2CAstTranslator.html#type-param-T" title="type parameter in JDTJava2CAstTranslator">T</a>&gt;.<a href="JDTJava2CAstTranslator.MethodContext.html" title="class in com.ibm.wala.cast.java.translator.jdt">MethodContext</a>&nbsp;context,
+ <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="../../../tree/CAstAnnotation.html" title="interface in com.ibm.wala.cast.tree">CAstAnnotation</a>&gt;&nbsp;emptySet,
+ <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../tree/CAstType.html" title="interface in com.ibm.wala.cast.tree">CAstType</a>&gt;&nbsp;castTypes,
+ <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;castNames)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
 </section>
 </li>
 <!-- ========== METHOD SUMMARY =========== -->
@@ -245,6 +286,28 @@ implements <a href="../JavaProcedureEntity.html" title="interface in com.ibm.wal
 </section>
 <section class="details">
 <ul class="details-list">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<li>
+<section class="constructor-details" id="constructor-detail">
+<h2>Constructor Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.cast.tree.CAstNode,org.eclipse.jdt.core.dom.ITypeBinding,java.util.Map,com.ibm.wala.cast.java.translator.jdt.JDTJava2CAstTranslator.MethodContext,java.util.Set,java.util.List,java.util.List)">
+<h3>ProcedureEntity</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ProcedureEntity</span><wbr><span class="parameters">(<a href="../../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;mdast,
+ org.eclipse.jdt.core.dom.ITypeBinding&nbsp;typeBinding,
+ <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>, <a href="../../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;&nbsp;emptyMap,
+ <a href="JDTJava2CAstTranslator.html" title="class in com.ibm.wala.cast.java.translator.jdt">JDTJava2CAstTranslator</a>&lt;<a href="JDTJava2CAstTranslator.html#type-param-T" title="type parameter in JDTJava2CAstTranslator">T</a>&gt;.<a href="JDTJava2CAstTranslator.MethodContext.html" title="class in com.ibm.wala.cast.java.translator.jdt">MethodContext</a>&nbsp;context,
+ <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="../../../tree/CAstAnnotation.html" title="interface in com.ibm.wala.cast.tree">CAstAnnotation</a>&gt;&nbsp;emptySet,
+ <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../tree/CAstType.html" title="interface in com.ibm.wala.cast.tree">CAstType</a>&gt;&nbsp;castTypes,
+ <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;castNames)</span></div>
+</div>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ============ METHOD DETAIL ========== -->
 <li>
 <section class="method-details" id="method-detail">

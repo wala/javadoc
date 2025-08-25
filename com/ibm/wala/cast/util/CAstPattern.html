@@ -78,6 +78,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#match(com.ibm.wala.cast.util.CAstPattern,com.ibm.wala.cast.tree.CAstNode)" tabindex="0">match(CAstPattern, CAstNode)</a></li>
 <li><a href="#parse(java.lang.String)" tabindex="0">parse(String)</a></li>
 <li><a href="#findAll(com.ibm.wala.cast.util.CAstPattern,com.ibm.wala.cast.tree.CAstEntity)" tabindex="0">findAll(CAstPattern, CAstEntity)</a></li>
+<li><a href="#findAll(com.ibm.wala.cast.util.CAstPattern,com.ibm.wala.cast.tree.CAstEntity,com.ibm.wala.cast.tree.CAstNode)" tabindex="0">findAll(CAstPattern, CAstEntity, CAstNode)</a></li>
 </ol>
 </li>
 </ol>
@@ -153,20 +154,25 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findAll(com.ibm.wala.cast.util.CAstPattern,com.ibm.wala.cast.tree.CAstEntity)" class="member-name-link">findAll</a><wbr>(<a href="CAstPattern.html" title="class in com.ibm.wala.cast.util">CAstPattern</a>&nbsp;p,
  <a href="../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;e)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#match(com.ibm.wala.cast.tree.CAstNode,com.ibm.wala.cast.util.CAstPattern.Segments)" class="member-name-link">match</a><wbr>(<a href="../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;tree,
- <a href="CAstPattern.Segments.html" title="class in com.ibm.wala.cast.util">CAstPattern.Segments</a>&nbsp;s)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="CAstPattern.Segments.html" title="class in com.ibm.wala.cast.util">CAstPattern.Segments</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#match(com.ibm.wala.cast.util.CAstPattern,com.ibm.wala.cast.tree.CAstNode)" class="member-name-link">match</a><wbr>(<a href="CAstPattern.html" title="class in com.ibm.wala.cast.util">CAstPattern</a>&nbsp;p,
- <a href="../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="CAstPattern.html" title="class in com.ibm.wala.cast.util">CAstPattern</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#parse(java.lang.String)" class="member-name-link">parse</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;patternString)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="CAstPattern.Segments.html" title="class in com.ibm.wala.cast.util">CAstPattern.Segments</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findAll(com.ibm.wala.cast.util.CAstPattern,com.ibm.wala.cast.tree.CAstEntity,com.ibm.wala.cast.tree.CAstNode)" class="member-name-link">findAll</a><wbr>(<a href="CAstPattern.html" title="class in com.ibm.wala.cast.util">CAstPattern</a>&nbsp;p,
+ <a href="../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;e,
+ <a href="../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;ast)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#match(com.ibm.wala.cast.tree.CAstNode,com.ibm.wala.cast.util.CAstPattern.Segments)" class="member-name-link">match</a><wbr>(<a href="../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;tree,
+ <a href="CAstPattern.Segments.html" title="class in com.ibm.wala.cast.util">CAstPattern.Segments</a>&nbsp;s)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="CAstPattern.Segments.html" title="class in com.ibm.wala.cast.util">CAstPattern.Segments</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#match(com.ibm.wala.cast.util.CAstPattern,com.ibm.wala.cast.tree.CAstNode)" class="member-name-link">match</a><wbr>(<a href="CAstPattern.html" title="class in com.ibm.wala.cast.util">CAstPattern</a>&nbsp;p,
+ <a href="../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="CAstPattern.html" title="class in com.ibm.wala.cast.util">CAstPattern</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#parse(java.lang.String)" class="member-name-link">parse</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;patternString)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -264,6 +270,16 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="CAstPattern.Segments.html" title="class in com.ibm.wala.cast.util">CAstPattern.Segments</a>&gt;</span>&nbsp;<span class="element-name">findAll</span><wbr><span class="parameters">(<a href="CAstPattern.html" title="class in com.ibm.wala.cast.util">CAstPattern</a>&nbsp;p,
  <a href="../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;e)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="findAll(com.ibm.wala.cast.util.CAstPattern,com.ibm.wala.cast.tree.CAstEntity,com.ibm.wala.cast.tree.CAstNode)">
+<h3>findAll</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="CAstPattern.Segments.html" title="class in com.ibm.wala.cast.util">CAstPattern.Segments</a>&gt;</span>&nbsp;<span class="element-name">findAll</span><wbr><span class="parameters">(<a href="CAstPattern.html" title="class in com.ibm.wala.cast.util">CAstPattern</a>&nbsp;p,
+ <a href="../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;e,
+ <a href="../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;ast)</span></div>
 </div>
 </section>
 </li>
