@@ -85,6 +85,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#visitAstGlobalWrite(com.ibm.wala.cast.ir.ssa.AstGlobalWrite)" tabindex="0">visitAstGlobalWrite(AstGlobalWrite)</a></li>
 <li><a href="#visitPut(com.ibm.wala.ssa.SSAPutInstruction)" tabindex="0">visitPut(SSAPutInstruction)</a></li>
 <li><a href="#visitEachElementGet(com.ibm.wala.cast.ir.ssa.EachElementGetInstruction)" tabindex="0">visitEachElementGet(EachElementGetInstruction)</a></li>
+<li><a href="#newFieldOperation(com.ibm.wala.ipa.callgraph.CGNode,int,int,boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction)" tabindex="0">newFieldOperation(CGNode, int, int, boolean, AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction)</a></li>
 <li><a href="#newFieldOperationFieldConstant(com.ibm.wala.ipa.callgraph.CGNode,boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,int,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" tabindex="0">newFieldOperationFieldConstant(CGNode, boolean, AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction, int, InstanceKey[])</a></li>
 <li><a href="#newFieldFullOperation(boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,com.ibm.wala.ipa.callgraph.propagation.PointerKey,com.ibm.wala.ipa.callgraph.propagation.PointerKey)" tabindex="0">newFieldFullOperation(boolean, AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction, PointerKey, PointerKey)</a></li>
 <li><a href="#newFieldOperationOnlyFieldConstant(boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,com.ibm.wala.ipa.callgraph.propagation.PointerKey,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" tabindex="0">newFieldOperationOnlyFieldConstant(boolean, AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction, PointerKey, InstanceKey[])</a></li>
@@ -215,96 +216,103 @@ implements <a href="../../ir/ssa/AstInstructionVisitor.html" title="interface in
  <a href="../../../ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;fieldKey)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldOperationFieldConstant(com.ibm.wala.ipa.callgraph.CGNode,boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,int,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldOperationFieldConstant</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldOperation(com.ibm.wala.ipa.callgraph.CGNode,int,int,boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction)" class="member-name-link">newFieldOperation</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
+ int&nbsp;objVn,
+ int&nbsp;fieldsVn,
+ boolean&nbsp;isLoadOperation,
+ <a href="AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;action)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldOperationFieldConstant(com.ibm.wala.ipa.callgraph.CGNode,boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,int,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldOperationFieldConstant</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
  boolean&nbsp;isLoadOperation,
  <a href="AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;action,
  int&nbsp;objVn,
  <a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;fieldsKeys)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldOperationObjectAndFieldConstant(boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldOperationObjectAndFieldConstant</a><wbr>(boolean&nbsp;isLoadOperation,
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldOperationObjectAndFieldConstant(boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldOperationObjectAndFieldConstant</a><wbr>(boolean&nbsp;isLoadOperation,
  <a href="AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;action,
  <a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;objKeys,
  <a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;fieldsKeys)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldOperationOnlyFieldConstant(boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,com.ibm.wala.ipa.callgraph.propagation.PointerKey,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldOperationOnlyFieldConstant</a><wbr>(boolean&nbsp;isLoadOperation,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldOperationOnlyFieldConstant(boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,com.ibm.wala.ipa.callgraph.propagation.PointerKey,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldOperationOnlyFieldConstant</a><wbr>(boolean&nbsp;isLoadOperation,
  <a href="AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;action,
  <a href="../../../ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;objKey,
  <a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;fieldsKeys)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldOperationOnlyObjectConstant(boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,com.ibm.wala.ipa.callgraph.propagation.PointerKey,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldOperationOnlyObjectConstant</a><wbr>(boolean&nbsp;isLoadOperation,
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldOperationOnlyObjectConstant(boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction,com.ibm.wala.ipa.callgraph.propagation.PointerKey,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldOperationOnlyObjectConstant</a><wbr>(boolean&nbsp;isLoadOperation,
  <a href="AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;action,
  <a href="../../../ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;fieldKey,
  <a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;objKeys)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldRead(com.ibm.wala.ipa.callgraph.CGNode,int,int,int)" class="member-name-link">newFieldRead</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldRead(com.ibm.wala.ipa.callgraph.CGNode,int,int,int)" class="member-name-link">newFieldRead</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
  int&nbsp;objVn,
  int&nbsp;fieldsVn,
  int&nbsp;lhsVn)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldRead(com.ibm.wala.ipa.callgraph.CGNode,int,int,com.ibm.wala.ipa.callgraph.propagation.PointerKey)" class="member-name-link">newFieldRead</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldRead(com.ibm.wala.ipa.callgraph.CGNode,int,int,com.ibm.wala.ipa.callgraph.propagation.PointerKey)" class="member-name-link">newFieldRead</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
  int&nbsp;objVn,
  int&nbsp;fieldsVn,
  <a href="../../../ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;lhs)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldWrite(com.ibm.wala.ipa.callgraph.CGNode,int,int,int)" class="member-name-link">newFieldWrite</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldWrite(com.ibm.wala.ipa.callgraph.CGNode,int,int,int)" class="member-name-link">newFieldWrite</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
  int&nbsp;objVn,
  int&nbsp;fieldsVn,
  int&nbsp;rhsVn)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldWrite(com.ibm.wala.ipa.callgraph.CGNode,int,int,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldWrite</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldWrite(com.ibm.wala.ipa.callgraph.CGNode,int,int,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldWrite</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
  int&nbsp;objVn,
  int&nbsp;fieldsVn,
  <a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;rhsFixedValues)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldWrite(com.ibm.wala.ipa.callgraph.CGNode,int,int,com.ibm.wala.ipa.callgraph.propagation.PointerKey)" class="member-name-link">newFieldWrite</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldWrite(com.ibm.wala.ipa.callgraph.CGNode,int,int,com.ibm.wala.ipa.callgraph.propagation.PointerKey)" class="member-name-link">newFieldWrite</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
  int&nbsp;objVn,
  int&nbsp;fieldsVn,
  <a href="../../../ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;rhs)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldWrite(com.ibm.wala.ipa.callgraph.CGNode,int,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldWrite</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldWrite(com.ibm.wala.ipa.callgraph.CGNode,int,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D)" class="member-name-link">newFieldWrite</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
  int&nbsp;objVn,
  <a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;fieldKeys,
  <a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;rhsValues)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldWrite(com.ibm.wala.ipa.callgraph.CGNode,int,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D,com.ibm.wala.ipa.callgraph.propagation.PointerKey)" class="member-name-link">newFieldWrite</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newFieldWrite(com.ibm.wala.ipa.callgraph.CGNode,int,com.ibm.wala.ipa.callgraph.propagation.InstanceKey%5B%5D,com.ibm.wala.ipa.callgraph.propagation.PointerKey)" class="member-name-link">newFieldWrite</a><wbr>(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
  int&nbsp;objVn,
  <a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a>[]&nbsp;fieldKeys,
  <a href="../../../ipa/callgraph/propagation/PointerKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">PointerKey</a>&nbsp;rhs)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitAstGlobalRead(com.ibm.wala.cast.ir.ssa.AstGlobalRead)" class="member-name-link">visitAstGlobalRead</a><wbr>(<a href="../../ir/ssa/AstGlobalRead.html" title="class in com.ibm.wala.cast.ir.ssa">AstGlobalRead</a>&nbsp;instruction)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitAstGlobalWrite(com.ibm.wala.cast.ir.ssa.AstGlobalWrite)" class="member-name-link">visitAstGlobalWrite</a><wbr>(<a href="../../ir/ssa/AstGlobalWrite.html" title="class in com.ibm.wala.cast.ir.ssa">AstGlobalWrite</a>&nbsp;instruction)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitAstGlobalRead(com.ibm.wala.cast.ir.ssa.AstGlobalRead)" class="member-name-link">visitAstGlobalRead</a><wbr>(<a href="../../ir/ssa/AstGlobalRead.html" title="class in com.ibm.wala.cast.ir.ssa">AstGlobalRead</a>&nbsp;instruction)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitAstLexicalRead(com.ibm.wala.cast.ir.ssa.AstLexicalRead)" class="member-name-link">visitAstLexicalRead</a><wbr>(<a href="../../ir/ssa/AstLexicalRead.html" title="class in com.ibm.wala.cast.ir.ssa">AstLexicalRead</a>&nbsp;instruction)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitAstGlobalWrite(com.ibm.wala.cast.ir.ssa.AstGlobalWrite)" class="member-name-link">visitAstGlobalWrite</a><wbr>(<a href="../../ir/ssa/AstGlobalWrite.html" title="class in com.ibm.wala.cast.ir.ssa">AstGlobalWrite</a>&nbsp;instruction)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitAstLexicalWrite(com.ibm.wala.cast.ir.ssa.AstLexicalWrite)" class="member-name-link">visitAstLexicalWrite</a><wbr>(<a href="../../ir/ssa/AstLexicalWrite.html" title="class in com.ibm.wala.cast.ir.ssa">AstLexicalWrite</a>&nbsp;instruction)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitAstLexicalRead(com.ibm.wala.cast.ir.ssa.AstLexicalRead)" class="member-name-link">visitAstLexicalRead</a><wbr>(<a href="../../ir/ssa/AstLexicalRead.html" title="class in com.ibm.wala.cast.ir.ssa">AstLexicalRead</a>&nbsp;instruction)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitEachElementGet(com.ibm.wala.cast.ir.ssa.EachElementGetInstruction)" class="member-name-link">visitEachElementGet</a><wbr>(<a href="../../ir/ssa/EachElementGetInstruction.html" title="class in com.ibm.wala.cast.ir.ssa">EachElementGetInstruction</a>&nbsp;inst)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitAstLexicalWrite(com.ibm.wala.cast.ir.ssa.AstLexicalWrite)" class="member-name-link">visitAstLexicalWrite</a><wbr>(<a href="../../ir/ssa/AstLexicalWrite.html" title="class in com.ibm.wala.cast.ir.ssa">AstLexicalWrite</a>&nbsp;instruction)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPropertyRead(com.ibm.wala.cast.ir.ssa.AstPropertyRead)" class="member-name-link">visitPropertyRead</a><wbr>(<a href="../../ir/ssa/AstPropertyRead.html" title="class in com.ibm.wala.cast.ir.ssa">AstPropertyRead</a>&nbsp;instruction)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitEachElementGet(com.ibm.wala.cast.ir.ssa.EachElementGetInstruction)" class="member-name-link">visitEachElementGet</a><wbr>(<a href="../../ir/ssa/EachElementGetInstruction.html" title="class in com.ibm.wala.cast.ir.ssa">EachElementGetInstruction</a>&nbsp;inst)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPropertyWrite(com.ibm.wala.cast.ir.ssa.AstPropertyWrite)" class="member-name-link">visitPropertyWrite</a><wbr>(<a href="../../ir/ssa/AstPropertyWrite.html" title="class in com.ibm.wala.cast.ir.ssa">AstPropertyWrite</a>&nbsp;instruction)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPropertyRead(com.ibm.wala.cast.ir.ssa.AstPropertyRead)" class="member-name-link">visitPropertyRead</a><wbr>(<a href="../../ir/ssa/AstPropertyRead.html" title="class in com.ibm.wala.cast.ir.ssa">AstPropertyRead</a>&nbsp;instruction)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPut(com.ibm.wala.ssa.SSAPutInstruction)" class="member-name-link">visitPut</a><wbr>(<a href="../../../ssa/SSAPutInstruction.html" title="class in com.ibm.wala.ssa">SSAPutInstruction</a>&nbsp;inst)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPropertyWrite(com.ibm.wala.cast.ir.ssa.AstPropertyWrite)" class="member-name-link">visitPropertyWrite</a><wbr>(<a href="../../ir/ssa/AstPropertyWrite.html" title="class in com.ibm.wala.cast.ir.ssa">AstPropertyWrite</a>&nbsp;instruction)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPut(com.ibm.wala.ssa.SSAPutInstruction)" class="member-name-link">visitPut</a><wbr>(<a href="../../../ssa/SSAPutInstruction.html" title="class in com.ibm.wala.ssa">SSAPutInstruction</a>&nbsp;inst)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -481,6 +489,18 @@ implements <a href="../../ir/ssa/AstInstructionVisitor.html" title="interface in
 <dt>Specified by:</dt>
 <dd><code><a href="../../ir/ssa/AstInstructionVisitor.html#visitEachElementGet(com.ibm.wala.cast.ir.ssa.EachElementGetInstruction)">visitEachElementGet</a></code>&nbsp;in interface&nbsp;<code><a href="../../ir/ssa/AstInstructionVisitor.html" title="interface in com.ibm.wala.cast.ir.ssa">AstInstructionVisitor</a></code></dd>
 </dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="newFieldOperation(com.ibm.wala.ipa.callgraph.CGNode,int,int,boolean,com.ibm.wala.cast.ipa.callgraph.AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction)">
+<h3>newFieldOperation</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">newFieldOperation</span><wbr><span class="parameters">(<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>&nbsp;opNode,
+ int&nbsp;objVn,
+ int&nbsp;fieldsVn,
+ boolean&nbsp;isLoadOperation,
+ <a href="AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction.html" title="interface in com.ibm.wala.cast.ipa.callgraph">AstSSAPropagationCallGraphBuilder.AstConstraintVisitor.ReflectedFieldAction</a>&nbsp;action)</span></div>
 </div>
 </section>
 </li>
