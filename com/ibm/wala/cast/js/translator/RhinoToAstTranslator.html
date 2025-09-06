@@ -79,7 +79,6 @@ loadScripts(document, 'script');</script>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#noteSourcePosition(com.ibm.wala.cast.js.translator.RhinoToAstTranslator.WalkContext,com.ibm.wala.cast.tree.CAstNode,org.mozilla.javascript.ast.AstNode)" tabindex="0">noteSourcePosition(RhinoToAstTranslator.WalkContext, CAstNode, AstNode)</a></li>
 <li><a href="#translateToCAst()" tabindex="0">translateToCAst()</a></li>
 <li><a href="#addRewriter(com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,boolean)" tabindex="0">addRewriter(CAstRewriterFactory, boolean)</a></li>
 </ol>
@@ -177,14 +176,9 @@ implements <a href="../../ir/translator/TranslatorToCAst.html" title="interface 
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addRewriter(com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory,boolean)" class="member-name-link">addRewriter</a><wbr>(<a href="../../tree/rewrite/CAstRewriterFactory.html" title="interface in com.ibm.wala.cast.tree.rewrite">CAstRewriterFactory</a>&lt;C,<wbr>K&gt;&nbsp;factory,
  boolean&nbsp;prepend)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#noteSourcePosition(com.ibm.wala.cast.js.translator.RhinoToAstTranslator.WalkContext,com.ibm.wala.cast.tree.CAstNode,org.mozilla.javascript.ast.AstNode)" class="member-name-link">noteSourcePosition</a><wbr>(com.ibm.wala.cast.js.translator.RhinoToAstTranslator.WalkContext&nbsp;context,
- <a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
- org.mozilla.javascript.ast.AstNode&nbsp;p)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#translateToCAst()" class="member-name-link">translateToCAst</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#translateToCAst()" class="member-name-link">translateToCAst</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">parse the JavaScript code using Rhino, and then translate the resulting AST to CAst</div>
 </div>
 </div>
@@ -281,16 +275,6 @@ implements <a href="../../ir/translator/TranslatorToCAst.html" title="interface 
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
-<li>
-<section class="detail" id="noteSourcePosition(com.ibm.wala.cast.js.translator.RhinoToAstTranslator.WalkContext,com.ibm.wala.cast.tree.CAstNode,org.mozilla.javascript.ast.AstNode)">
-<h3>noteSourcePosition</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a></span>&nbsp;<span class="element-name">noteSourcePosition</span><wbr><span class="parameters">(com.ibm.wala.cast.js.translator.RhinoToAstTranslator.WalkContext&nbsp;context,
- <a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;n,
- org.mozilla.javascript.ast.AstNode&nbsp;p)</span></div>
-</div>
-</section>
-</li>
 <li>
 <section class="detail" id="translateToCAst()">
 <h3>translateToCAst</h3>
