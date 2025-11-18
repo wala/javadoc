@@ -537,7 +537,7 @@ corresponding to each match edge.</div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/ipa/callgraph/ArgumentSpecialization.ArgumentCountIRFactory.html" title="class in com.ibm.wala.cast.js.ipa.callgraph">ArgumentSpecialization.ArgumentCountIRFactory</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/ipa/callgraph/ArgumentSpecialization.ArgumentSpecializationContextIntepreter.html" title="class in com.ibm.wala.cast.js.ipa.callgraph">ArgumentSpecialization.ArgumentSpecializationContextIntepreter</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/js/ipa/callgraph/ArgumentSpecialization.ArgumentSpecializationContextInterpreter.html" title="class in com.ibm.wala.cast.js.ipa.callgraph">ArgumentSpecialization.ArgumentSpecializationContextInterpreter</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/impl/ArgumentTypeEntrypoint.html" title="class in com.ibm.wala.ipa.callgraph.impl">ArgumentTypeEntrypoint</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
@@ -4165,7 +4165,7 @@ byte array, in an attempt to save space for common data structures.</div>
 </div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/MultiNewArrayInNode.html" title="class in com.ibm.wala.ipa.callgraph.propagation">MultiNewArrayInNode</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">
-<div class="block">An <a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>InstanceKey</code></a> which represents a multinewarray allocation site in a <a href="com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CGNode</code></a>.</div>
+<div class="block">An <a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>InstanceKey</code></a> which represents a multi-new-array allocation site in a <a href="com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CGNode</code></a>.</div>
 </div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/cast/ir/ssa/MultiReturnValueInvokeInstruction.html" title="class in com.ibm.wala.cast.ir.ssa">MultiReturnValueInvokeInstruction</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
@@ -4331,7 +4331,7 @@ implementation.</div>
 </div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/propagation/NormalAllocationInNode.html" title="class in com.ibm.wala.ipa.callgraph.propagation">NormalAllocationInNode</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">
-<div class="block">An <a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>InstanceKey</code></a> which represents a "normal" (not multinewarray) <a href="com/ibm/wala/classLoader/NewSiteReference.html" title="class in com.ibm.wala.classLoader"><code>NewSiteReference</code></a>
+<div class="block">An <a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>InstanceKey</code></a> which represents a "normal" (not multi-new-array) <a href="com/ibm/wala/classLoader/NewSiteReference.html" title="class in com.ibm.wala.classLoader"><code>NewSiteReference</code></a>
 in a <a href="com/ibm/wala/ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph"><code>CGNode</code></a>.</div>
 </div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/arraybounds/hypergraph/weight/NormalOrder.html" title="class in com.ibm.wala.analysis.arraybounds.hypergraph.weight">NormalOrder</a></div>
@@ -4557,13 +4557,13 @@ number of considered accesses.</div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
 <div class="block">The Constructor used to create ParameterAccessor influences the parameter-offset.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/core/util/ssa/ParameterAccessor.ParamerterDisposition.html" title="enum class in com.ibm.wala.core.util.ssa">ParameterAccessor.ParamerterDisposition</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab3">
-<div class="block">The kind of parameter.</div>
-</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/ssa/ParameterAccessor.Parameter.html" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor.Parameter</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/ssa/ParameterAccessor.Parameter.html" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor.Parameter</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">The representation of a Parameter handled using a ParameterAccessor.</div>
+</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="com/ibm/wala/core/util/ssa/ParameterAccessor.ParameterDisposition.html" title="enum class in com.ibm.wala.core.util.ssa">ParameterAccessor.ParameterDisposition</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
+<div class="block">The kind of parameter.</div>
 </div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/core/util/ssa/ParameterAccessor.ParameterKey.html" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor.ParameterKey</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">

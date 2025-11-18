@@ -128,8 +128,8 @@ positions again.
 <p>Accessing parameters of these functions by their numbers only is error prone and leads to
 confusion. This class tries to leverage parameter-access.
 
-<p>You can use this class using now numbers at all. However if you choose to use numbers this
-class has yet another numbering convention (jupeee): 1 is the first parameter appearing in the
+<p>You can use this class using no numbers at all. However if you choose to use numbers this
+class has yet another numbering convention (yippee): 1 is the first parameter appearing in the
 Selector, no matter if the Method has an implicit this. It is not zero as Java initializes new
 integer-arrays with zero.
 
@@ -159,15 +159,15 @@ ParameterManager which tracks the changes.</div>
 <div class="col-last even-row-color">
 <div class="block">The Constructor used to create ParameterAccessor influences the parameter-offset.</div>
 </div>
-<div class="col-first odd-row-color"><code>static enum&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="ParameterAccessor.ParamerterDisposition.html" class="type-name-link" title="enum class in com.ibm.wala.core.util.ssa">ParameterAccessor.ParamerterDisposition</a></code></div>
+<div class="col-first odd-row-color"><code>static class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="ParameterAccessor.Parameter.html" class="type-name-link" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor.Parameter</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The kind of parameter.</div>
-</div>
-<div class="col-first even-row-color"><code>static class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="ParameterAccessor.Parameter.html" class="type-name-link" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor.Parameter</a></code></div>
-<div class="col-last even-row-color">
 <div class="block">The representation of a Parameter handled using a ParameterAccessor.</div>
+</div>
+<div class="col-first even-row-color"><code>static enum&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="ParameterAccessor.ParameterDisposition.html" class="type-name-link" title="enum class in com.ibm.wala.core.util.ssa">ParameterAccessor.ParameterDisposition</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The kind of parameter.</div>
 </div>
 <div class="col-first odd-row-color"><code>static class&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="ParameterAccessor.ParameterKey.html" class="type-name-link" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor.ParameterKey</a></code></div>
@@ -268,7 +268,7 @@ ParameterManager which tracks the changes.</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#firstInSelector()" class="member-name-link">firstInSelector</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">The SSA-Value to acces the parameter appearing first in the Descriptor with.</div>
+<div class="block">The SSA-Value to access the parameter appearing first in the Descriptor with.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ParameterAccessor.Parameter.html" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor.Parameter</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#firstOf(com.ibm.wala.types.TypeName)" class="member-name-link">firstOf</a><wbr>(<a href="../../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;tName)</code></div>
@@ -291,14 +291,14 @@ ParameterAccessor target, final IClassHierarchy cha).</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int[]</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#forInvokeStatic(java.util.List)" class="member-name-link">forInvokeStatic</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;? extends <a href="SSAValue.html" title="class in com.ibm.wala.core.util.ssa">SSAValue</a>&gt;&nbsp;args)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Generate the params-param for an InvokeIstruction w/o type checking.</div>
+<div class="block">Generate the params-param for an InvokeInstruction w/o type checking.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int[]</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#forInvokeStatic(java.util.List,com.ibm.wala.core.util.ssa.ParameterAccessor,com.ibm.wala.ipa.cha.IClassHierarchy)" class="member-name-link">forInvokeStatic</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;? extends <a href="SSAValue.html" title="class in com.ibm.wala.core.util.ssa">SSAValue</a>&gt;&nbsp;args,
  <a href="ParameterAccessor.html" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor</a>&nbsp;target,
  <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Generate the params-param for an InvokeIstruction with type checking.</div>
+<div class="block">Generate the params-param for an InvokeInstruction with type checking.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int[]</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#forInvokeVirtual(int,java.util.List,com.ibm.wala.types.MethodReference,com.ibm.wala.ipa.cha.IClassHierarchy)" class="member-name-link">forInvokeVirtual</a><wbr>(int&nbsp;self,
@@ -313,7 +313,7 @@ final ParameterAccessor target, final IClassHierarchy cha).</div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#forInvokeVirtual(int,java.util.List)" class="member-name-link">forInvokeVirtual</a><wbr>(int&nbsp;self,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;? extends <a href="SSAValue.html" title="class in com.ibm.wala.core.util.ssa">SSAValue</a>&gt;&nbsp;args)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Generate the params-param for an InvokeIstruction w/o type checking.</div>
+<div class="block">Generate the params-param for an InvokeInstruction w/o type checking.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int[]</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#forInvokeVirtual(int,java.util.List,com.ibm.wala.core.util.ssa.ParameterAccessor,com.ibm.wala.ipa.cha.IClassHierarchy)" class="member-name-link">forInvokeVirtual</a><wbr>(int&nbsp;self,
@@ -321,7 +321,7 @@ final ParameterAccessor target, final IClassHierarchy cha).</div>
  <a href="ParameterAccessor.html" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor</a>&nbsp;target,
  <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Generate the params-param for an InvokeIstruction with type checking.</div>
+<div class="block">Generate the params-param for an InvokeInstruction with type checking.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#forMethod()" class="member-name-link">forMethod</a>()</code></div>
@@ -450,7 +450,7 @@ final ParameterAccessor target, final IClassHierarchy cha).</div>
  <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</span></div>
 <div class="block">Reads the parameters of a MethodReference CAUTION:.
 
-<p>Do _not_ use ParameterAceesor(IMethod.getReference()), but ParameterAceesor(IMehod)!
+<p>Do _not_ use ParameterAccessor(IMethod.getReference()), but ParameterAccessor(IMethod)!
 
 <p>Using this Constructor influences the SSA-Values returned later. The cha is needed to
 determine whether mRef is static. If this is already known one should prefer the faster <a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,boolean)"><code>ParameterAccessor(MethodReference, boolean)</code></a>.</div>
@@ -469,7 +469,7 @@ determine whether mRef is static. If this is already known one should prefer the
  boolean&nbsp;hasImplicitThis)</span></div>
 <div class="block">Reads the parameters of a MethodReference CAUTION:.
 
-<p>Do _not_ use ParameterAceesor(IMethod.getReference()), but ParameterAceesor(IMehod)!
+<p>Do _not_ use ParameterAccessor(IMethod.getReference()), but ParameterAccessor(IMethod)!
 
 <p>This constructor is faster than <a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>ParameterAccessor(MethodReference, IClassHierarchy)</code></a>.</div>
 <dl class="notes">
@@ -536,12 +536,12 @@ implicit this pointer.
 <p>Number 1 is the first parameter in the methods Selector. No matter if the function has an
 implicit this pointer.
 
-<p>If the Function has an implicit this-pointer you can acess it using getThisNo().</div>
+<p>If the Function has an implicit this-pointer you can access it using getThisNo().</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>no</code> - the number in the Selector</dd>
 <dt>Returns:</dt>
-<dd>the offseted number for accessing the parameter</dd>
+<dd>the offsetted number for accessing the parameter</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if the parameter is zero</dd>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ArrayIndexOutOfBoundsException.html" title="class or interface in java.lang" class="external-link">ArrayIndexOutOfBoundsException</a></code> - if no is not within bounds [1 to numberOfParameters]</dd>
@@ -676,7 +676,7 @@ has such an implicit this using hasImplicitThis() as this method will throw if t
 <h3>firstInSelector</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">firstInSelector</span>()</div>
-<div class="block">The SSA-Value to acces the parameter appearing first in the Descriptor with.</div>
+<div class="block">The SSA-Value to access the parameter appearing first in the Descriptor with.</div>
 <dl class="notes">
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if the method has no parameters in its Descriptor.</dd>
@@ -775,7 +775,7 @@ available.</div>
  <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</span></div>
 <div class="block">First parameter in the selector that is a subclass of tName (slow).
 
-<p>TypeNames have to be lloked up first, do prefer the variant with the TypeReference if one is
+<p>TypeNames have to be looked up first, do prefer the variant with the TypeReference if one is
 available.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -818,7 +818,7 @@ available.</div>
 <h3>forInvokeStatic</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int[]</span>&nbsp;<span class="element-name">forInvokeStatic</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;? extends <a href="SSAValue.html" title="class in com.ibm.wala.core.util.ssa">SSAValue</a>&gt;&nbsp;args)</span></div>
-<div class="block">Generate the params-param for an InvokeIstruction w/o type checking.</div>
+<div class="block">Generate the params-param for an InvokeInstruction w/o type checking.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>args</code> - list to build the arguments from - without implicit this</dd>
@@ -833,7 +833,7 @@ available.</div>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int[]</span>&nbsp;<span class="element-name">forInvokeStatic</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;? extends <a href="SSAValue.html" title="class in com.ibm.wala.core.util.ssa">SSAValue</a>&gt;&nbsp;args,
  <a href="ParameterAccessor.html" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor</a>&nbsp;target,
  <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</span></div>
-<div class="block">Generate the params-param for an InvokeIstruction with type checking.</div>
+<div class="block">Generate the params-param for an InvokeInstruction with type checking.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>args</code> - list to build the arguments from - without implicit this</dd>
@@ -855,7 +855,7 @@ available.</div>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int[]</span>&nbsp;<span class="element-name">forInvokeVirtual</span><wbr><span class="parameters">(int&nbsp;self,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;? extends <a href="SSAValue.html" title="class in com.ibm.wala.core.util.ssa">SSAValue</a>&gt;&nbsp;args)</span></div>
-<div class="block">Generate the params-param for an InvokeIstruction w/o type checking.</div>
+<div class="block">Generate the params-param for an InvokeInstruction w/o type checking.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>self</code> - the this-pointer to use</dd>
@@ -875,7 +875,7 @@ available.</div>
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;? extends <a href="SSAValue.html" title="class in com.ibm.wala.core.util.ssa">SSAValue</a>&gt;&nbsp;args,
  <a href="ParameterAccessor.html" title="class in com.ibm.wala.core.util.ssa">ParameterAccessor</a>&nbsp;target,
  <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</span></div>
-<div class="block">Generate the params-param for an InvokeIstruction with type checking.</div>
+<div class="block">Generate the params-param for an InvokeInstruction with type checking.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>self</code> - the this-pointer to use</dd>
@@ -904,7 +904,7 @@ available.</div>
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>...&nbsp;instantiatorArgs)</span></div>
 <div class="block">Connects though parameters from the calling function (overridable) - CAUTION:.
 
-<p>This functions makes is decisions based on Type-Referes only so if a TypeReference occurs
+<p>This functions makes is decisions based on TypeReferences only so if a TypeReference occurs
 multiple times in the caller or callee it may make surprising connections.
 
 <p>The List of Parameters is generated based on the overrides, than parameters in 'this' are
