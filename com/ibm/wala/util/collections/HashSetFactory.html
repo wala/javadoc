@@ -73,6 +73,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#make()" tabindex="0">make()</a></li>
 <li><a href="#make(java.util.Collection)" tabindex="0">make(Collection)</a></li>
 <li><a href="#of(U...)" tabindex="0">of(U...)</a></li>
+<li><a href="#toSet()" tabindex="0">toSet()</a></li>
 </ol>
 </li>
 </ol>
@@ -149,6 +150,12 @@ Otherwise, it returns <a href="https://docs.oracle.com/en/java/javase/25/docs/ap
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T, U extends T&gt;<br><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HashSet.html" title="class or interface in java.util" class="external-link">HashSet</a><wbr>&lt;T&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(U...)" class="member-name-link">of</a><wbr>(U...&nbsp;elements)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T&gt;&nbsp;@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html" title="class or interface in java.util.stream" class="external-link">Collector</a><wbr>&lt;T,<wbr>?,<wbr><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;T&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toSet()" class="member-name-link">toSet</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns a <code>Collector</code> that accumulates the input elements into a new <code>HashSet</code> as
+provided by <a href="#make()"><code>make()</code></a>.</div>
+</div>
 </div>
 </div>
 </div>
@@ -259,6 +266,23 @@ Otherwise, it returns <a href="https://docs.oracle.com/en/java/javase/25/docs/ap
 <li><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Set.html#of(E...)" title="class or interface in java.util" class="external-link"><code>Set.of(Object[])</code></a></li>
 </ul>
 </dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="toSet()">
+<h3>toSet</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html" title="class or interface in java.util.stream" class="external-link">Collector</a>&lt;T,<wbr>?,<wbr><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;T&gt;&gt;</span>&nbsp;<span class="element-name">toSet</span>()</div>
+<div class="block">Returns a <code>Collector</code> that accumulates the input elements into a new <code>HashSet</code> as
+provided by <a href="#make()"><code>make()</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><span id="toSet()-type-param-T"><code>T</code> - the type of the input elements</span></dd>
+<dt>Returns:</dt>
+<dd>a <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html" title="class or interface in java.util.stream" class="external-link"><code>Collector</code></a> that collects all the input elements into a <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HashSet.html" title="class or interface in java.util" class="external-link"><code>HashSet</code></a></dd>
 </dl>
 </div>
 </section>

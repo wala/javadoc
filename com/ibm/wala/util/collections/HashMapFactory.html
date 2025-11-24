@@ -66,6 +66,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#make(int)" tabindex="0">make(int)</a></li>
 <li><a href="#make()" tabindex="0">make()</a></li>
 <li><a href="#make(java.util.Map)" tabindex="0">make(Map)</a></li>
+<li><a href="#toMap(java.util.function.Function,java.util.function.Function)" tabindex="0">toMap(Function, Function)</a></li>
 </ol>
 </li>
 </ol>
@@ -122,6 +123,13 @@ Otherwise, it returns <a href="https://docs.oracle.com/en/java/javase/25/docs/ap
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;K,<wbr>V&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HashMap.html" title="class or interface in java.util" class="external-link">HashMap</a><wbr>&lt;K,<wbr>V&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#make(java.util.Map)" class="member-name-link">make</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;? extends K, ? extends V&gt;&nbsp;t)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T,<wbr>K,<wbr>V&gt;&nbsp;@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html" title="class or interface in java.util.stream" class="external-link">Collector</a><wbr>&lt;T, ?, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HashMap.html" title="class or interface in java.util" class="external-link">HashMap</a>&lt;K,<wbr>V&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toMap(java.util.function.Function,java.util.function.Function)" class="member-name-link">toMap</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;? super T, ? extends K&gt;&nbsp;keyMapper,
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;? super T, ? extends V&gt;&nbsp;valueMapper)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns a <code>Collector</code> that accumulates the input elements into a new <code>HashMap</code> as
+provided by <a href="#make()"><code>make()</code></a>.</div>
+</div>
 </div>
 </div>
 </div>
@@ -187,6 +195,29 @@ Otherwise, it returns <a href="https://docs.oracle.com/en/java/javase/25/docs/ap
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>A ParanoidHashMap if DEBUG = true, a LinkedHashMap otherwise</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="toMap(java.util.function.Function,java.util.function.Function)">
+<h3>toMap</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;T,<wbr>K,<wbr>V&gt;</span>
+<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html" title="class or interface in java.util.stream" class="external-link">Collector</a>&lt;T, ?, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HashMap.html" title="class or interface in java.util" class="external-link">HashMap</a>&lt;K,<wbr>V&gt;&gt;</span>&nbsp;<span class="element-name">toMap</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;? super T, ? extends K&gt;&nbsp;keyMapper,
+ @NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;? super T, ? extends V&gt;&nbsp;valueMapper)</span></div>
+<div class="block">Returns a <code>Collector</code> that accumulates the input elements into a new <code>HashMap</code> as
+provided by <a href="#make()"><code>make()</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><span id="toMap(java.util.function.Function,java.util.function.Function)-type-param-T"><code>T</code> - the type of the input elements</span></dd>
+<dd><span id="toMap(java.util.function.Function,java.util.function.Function)-type-param-K"><code>K</code> - the type of the result map's keys</span></dd>
+<dd><span id="toMap(java.util.function.Function,java.util.function.Function)-type-param-V"><code>V</code> - the type of the result map's values</span></dd>
+<dt>Returns:</dt>
+<dd>a <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html" title="class or interface in java.util.stream" class="external-link"><code>Collector</code></a> that collects all the input elements into a <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HashMap.html" title="class or interface in java.util" class="external-link"><code>HashMap</code></a></dd>
 </dl>
 </div>
 </section>
