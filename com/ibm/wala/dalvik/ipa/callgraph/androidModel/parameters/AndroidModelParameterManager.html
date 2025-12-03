@@ -115,10 +115,10 @@ Phi-Statement.
 <dd>2013-09-19
     <p>TODO:
     <ul>
-      <li>Track if a variable has been refered to to be able to prune unused Phi-Instructions
+      <li>Track if a variable has been referred to to be able to prune unused Phi-Instructions
           later
       <li>Trim Memory consumption? The whole class should not be in * memory for long time so
-          this might be not neccessary.
+          this might be not necessary.
     </ul></dd>
 <dt>Author:</dt>
 <dd>Tobias Blaschke &lt;code@toiasblaschke.de&gt;</dd>
@@ -368,7 +368,7 @@ assign it a value. And at last call this function.
 <dd><code>ssaValue</code> - the number the SSA-Instruction assigns to</dd>
 <dd><code>setBy</code> - the Phi-Instruction itself - may be null</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if you assign to a number requested using <a href="#getFree(com.ibm.wala.types.TypeReference)"><code>getFree(TypeReference)</code></a> but types mismach.</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if you assign to a number requested using <a href="#getFree(com.ibm.wala.types.TypeReference)"><code>getFree(TypeReference)</code></a> but types mismatch.</dd>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></code> - if you forgot to close some Phis</dd>
 </dl>
 </div>
@@ -552,7 +552,7 @@ using getFree</div>
 <div class="block">Enter a subordinate scope.
 
 <p>Call this whenever a new code block starts i.e. when ever you would have to put a left
-curly-bracket in yout java code.
+curly-bracket in your java code.
 
 <p>This function influences the placement of Phi-Functions. Thus if you don't change values you
 don't have to call it.</div>
