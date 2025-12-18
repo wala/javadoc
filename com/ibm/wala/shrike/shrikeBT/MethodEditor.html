@@ -99,7 +99,7 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">MethodEditor</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
 <div class="block">The MethodEditor is the core of the ShrikeBT code rewriting mechanism. To rewrite code, construct
-a MethodEditor initialized with the intial code for the method. Then perform a series of passes.
+a MethodEditor initialized with the initial code for the method. Then perform a series of passes.
 In each pass you call beginPass(), insert a number of patches using the insert...() or
 replace...() methods, then optionally call applyPatches() to update the code with your changes,
 then call endPass(). The end of each pass updates the code in the MethodData that you passed in,
@@ -131,11 +131,11 @@ application point. See the patch application methods below.
 <p>MethodEditor relies on labels. A label is an integer representing a point in the code. Labels
 are valid only during a single pass; at the end of each pass, instructions are reordered and old
 labels become invalid. At the beginning of a pass every instruction in the instructions array is
-labelled with the index of that instruction in the array. During instrumentation new labels can
-be allocated by calling MethodEditor.allocateLabel(); control instructions can be created
-referring to these new labels or the existing labels. At the end of a pass, as patch code is
-spliced into the method body, all instructions are updated to refer to the new labels which are
-simply the indices of instructions in the instruction array.</div>
+labeled with the index of that instruction in the array. During instrumentation new labels can be
+allocated by calling MethodEditor.allocateLabel(); control instructions can be created referring
+to these new labels or the existing labels. At the end of a pass, as patch code is spliced into
+the method body, all instructions are updated to refer to the new labels which are simply the
+indices of instructions in the instruction array.</div>
 </div>
 </section>
 <section class="summary">
