@@ -1533,11 +1533,14 @@ as all other instances of the same concrete type.</div>
 </div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/reflection/ClassFactoryContextInterpreter.html" title="class in com.ibm.wala.analysis.reflection">ClassFactoryContextInterpreter</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
-<div class="block">An <a href="com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>SSAContextInterpreter</code></a> specialized to interpret reflective class factories (e.g.</div>
+<div class="block">An <a href="com/ibm/wala/ipa/callgraph/propagation/SSAContextInterpreter.html" title="interface in com.ibm.wala.ipa.callgraph.propagation"><code>SSAContextInterpreter</code></a> specialized to interpret reflective class factories (e.g.,
+Class.forName()) in a <a href="com/ibm/wala/analysis/reflection/JavaTypeContext.html" title="class in com.ibm.wala.analysis.reflection"><code>JavaTypeContext</code></a> which represents the point-type of the class object
+created by the call.</div>
 </div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/analysis/reflection/ClassFactoryContextSelector.html" title="class in com.ibm.wala.analysis.reflection">ClassFactoryContextSelector</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">
-<div class="block">A <a href="com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph"><code>ContextSelector</code></a> to intercept calls to reflective class factories (e.g.</div>
+<div class="block">A <a href="com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph"><code>ContextSelector</code></a> to intercept calls to reflective class factories (e.g.,
+Class.forName()) when the parameter is a string constant</div>
 </div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/classLoader/ClassFileModule.html" title="class in com.ibm.wala.classLoader">ClassFileModule</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
@@ -1872,7 +1875,8 @@ from the standard libraries.</div>
 </div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="com/ibm/wala/ipa/callgraph/ContextKey.ParameterKey.html" title="class in com.ibm.wala.ipa.callgraph">ContextKey.ParameterKey</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">
-<div class="block">context key representing some parameter index, useful, e.g.</div>
+<div class="block">context key representing some parameter index, useful, e.g., for CPA-style context-sensitivity
+policies.</div>
 </div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="com/ibm/wala/ipa/callgraph/ContextSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ContextSelector</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">

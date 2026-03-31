@@ -228,7 +228,7 @@ initTheme();
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hasDef()" class="member-name-link">hasDef</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Does this instruction define a normal value, as distinct from a set of exceptions possibly
-thrown by it (e.g.</div>
+thrown by it (e.g., for invoke instructions).</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
@@ -382,7 +382,7 @@ the type of this instruction.</div>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasDef</span>()</div>
 <div class="block">Does this instruction define a normal value, as distinct from a set of exceptions possibly
-thrown by it (e.g. for invoke instructions).</div>
+thrown by it (e.g., for invoke instructions).</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>true if the instruction does define a proper value.</dd>
@@ -503,7 +503,7 @@ thrown by it (e.g. for invoke instructions).</div>
 <p>Depending on the caching policy (see <a href="SSACache.html" title="class in com.ibm.wala.ssa"><code>SSACache</code></a>), the governing IR
 may be deleted to reclaim memory and recomputed as needed. When an IR is recomputed, it also
 creates fresh SSAInstruction objects that will not equal old ones. Thus, do not compare for
-identity SSAInstructions obtained from distinct calls that retrieve cached values (e.g.
+identity SSAInstructions obtained from distinct calls that retrieve cached values (e.g.,
 distinct CGNode.getIR() calls). See <a href="https://github.com/wala/WALA/issues/6">the github
 issue </a> for details.</div>
 <dl class="notes">

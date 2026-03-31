@@ -210,7 +210,7 @@ initTheme();
 <div class="col-second odd-row-color"><code><a href="TranslatorToCAst.WalkContext.html#addScopedEntity(com.ibm.wala.cast.tree.CAstNode,com.ibm.wala.cast.tree.CAstEntity)" class="member-name-link">addScopedEntity</a><wbr>(<a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;newNode,
  <a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;visit)</code></div>
 <div class="col-last odd-row-color">
-<div class="block">associate a child entity with a given CAstNode, e.g.</div>
+<div class="block">associate a child entity with a given CAstNode, e.g., for a function declaration</div>
 </div>
 <div class="col-first even-row-color"><code>default <a href="../../tree/impl/CAstControlFlowRecorder.html" title="class in com.ibm.wala.cast.tree.impl">CAstControlFlowRecorder</a></code></div>
 <div class="col-second even-row-color"><code><a href="TranslatorToCAst.WalkContext.html#cfg()" class="member-name-link">cfg</a>()</code></div>
@@ -239,7 +239,8 @@ initTheme();
 <div class="col-first even-row-color"><code>default <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a><wbr>&lt;<a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;<a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="TranslatorToCAst.WalkContext.html#getScopedEntities()" class="member-name-link">getScopedEntities</a>()</code></div>
 <div class="col-last even-row-color">
-<div class="block">get a mapping from CAstNodes to the scoped entities (e.g.</div>
+<div class="block">get a mapping from CAstNodes to the scoped entities (e.g., functions or local classes)
+introduced by those nodes.</div>
 </div>
 <div class="col-first odd-row-color"><code>default <a href="../../tree/impl/CAstSourcePositionRecorder.html" title="class in com.ibm.wala.cast.tree.impl">CAstSourcePositionRecorder</a></code></div>
 <div class="col-second odd-row-color"><code><a href="TranslatorToCAst.WalkContext.html#pos()" class="member-name-link">pos</a>()</code></div>

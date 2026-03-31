@@ -148,7 +148,7 @@ implements <a href="TranslatorToCAst.WalkContext.html" title="interface in com.i
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addScopedEntity(com.ibm.wala.cast.tree.CAstNode,com.ibm.wala.cast.tree.CAstEntity)" class="member-name-link">addScopedEntity</a><wbr>(<a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;newNode,
  <a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;visit)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">associate a child entity with a given CAstNode, e.g.</div>
+<div class="block">associate a child entity with a given CAstNode, e.g., for a function declaration</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../tree/impl/CAstControlFlowRecorder.html" title="class in com.ibm.wala.cast.tree.impl">CAstControlFlowRecorder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#cfg()" class="member-name-link">cfg</a>()</code></div>
@@ -179,7 +179,8 @@ implements <a href="TranslatorToCAst.WalkContext.html" title="interface in com.i
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a><wbr>&lt;<a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;<a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getScopedEntities()" class="member-name-link">getScopedEntities</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">get a mapping from CAstNodes to the scoped entities (e.g.</div>
+<div class="block">get a mapping from CAstNodes to the scoped entities (e.g., functions or local classes)
+introduced by those nodes.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../tree/impl/CAstSourcePositionRecorder.html" title="class in com.ibm.wala.cast.tree.impl">CAstSourcePositionRecorder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#pos()" class="member-name-link">pos</a>()</code></div>
@@ -248,7 +249,7 @@ implements <a href="TranslatorToCAst.WalkContext.html" title="interface in com.i
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a>&lt;<a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;<a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;&gt;</span>&nbsp;<span class="element-name">getScopedEntities</span>()</div>
 <div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="TranslatorToCAst.WalkContext.html#getScopedEntities()">TranslatorToCAst.WalkContext</a></code></span></div>
-<div class="block">get a mapping from CAstNodes to the scoped entities (e.g. functions or local classes)
+<div class="block">get a mapping from CAstNodes to the scoped entities (e.g., functions or local classes)
 introduced by those nodes. Also maps <code>null</code> to those entities not corresponding to any
 node (e.g nested classes)</div>
 <dl class="notes">
@@ -277,7 +278,7 @@ node (e.g nested classes)</div>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addScopedEntity</span><wbr><span class="parameters">(<a href="../../tree/CAstNode.html" title="interface in com.ibm.wala.cast.tree">CAstNode</a>&nbsp;newNode,
  <a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;visit)</span></div>
 <div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="TranslatorToCAst.WalkContext.html#addScopedEntity(com.ibm.wala.cast.tree.CAstNode,com.ibm.wala.cast.tree.CAstEntity)">TranslatorToCAst.WalkContext</a></code></span></div>
-<div class="block">associate a child entity with a given CAstNode, e.g. for a function declaration</div>
+<div class="block">associate a child entity with a given CAstNode, e.g., for a function declaration</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="TranslatorToCAst.WalkContext.html#addScopedEntity(com.ibm.wala.cast.tree.CAstNode,com.ibm.wala.cast.tree.CAstEntity)">addScopedEntity</a></code>&nbsp;in interface&nbsp;<code><a href="TranslatorToCAst.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToCAst.WalkContext</a>&lt;<a href="#type-param-C" title="type parameter in TranslatorToCAst.RootContext">C</a> extends <a href="TranslatorToCAst.WalkContext.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToCAst.WalkContext</a>&lt;<a href="#type-param-C" title="type parameter in TranslatorToCAst.RootContext">C</a>,<wbr><a href="#type-param-T" title="type parameter in TranslatorToCAst.RootContext">T</a>&gt;, <a href="#type-param-T" title="type parameter in TranslatorToCAst.RootContext">T</a>&gt;</code></dd>
