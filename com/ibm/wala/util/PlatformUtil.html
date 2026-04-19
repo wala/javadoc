@@ -74,9 +74,9 @@ initTheme();
 <li><a href="#onLinux()" tabindex="0">onLinux()</a></li>
 <li><a href="#onWindows()" tabindex="0">onWindows()</a></li>
 <li><a href="#onIKVM()" tabindex="0">onIKVM()</a></li>
-<li><a href="#getJDKModules(boolean)" tabindex="0">getJDKModules(boolean)</a></li>
-<li><a href="#getPathForJDKModule(java.lang.String)" tabindex="0">getPathForJDKModule(String)</a></li>
+<li><a href="#getJDKModuleNames(boolean)" tabindex="0">getJDKModuleNames(boolean)</a></li>
 <li><a href="#getJavaRuntimeVersion()" tabindex="0">getJavaRuntimeVersion()</a></li>
+<li><a href="#getJrtFileSystem()" tabindex="0">getJrtFileSystem()</a></li>
 </ol>
 </li>
 </ol>
@@ -127,14 +127,14 @@ initTheme();
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getJavaRuntimeVersion()" class="member-name-link">getJavaRuntimeVersion</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>[]</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getJDKModules(boolean)" class="member-name-link">getJDKModules</a><wbr>(boolean&nbsp;justBase)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getJDKModuleNames(boolean)" class="member-name-link">getJDKModuleNames</a><wbr>(boolean&nbsp;justBase)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Gets the standard JDK modules shipped with the running JDK</div>
+<div class="block">Gets the standard JDK module names exposed by the running JDK image.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/nio/file/Path.html" title="interface in java.nio.file" class="external-link">Path</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getPathForJDKModule(java.lang.String)" class="member-name-link">getPathForJDKModule</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;moduleName)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/nio/file/FileSystem.html" title="class in java.nio.file" class="external-link">FileSystem</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getJrtFileSystem()" class="member-name-link">getJrtFileSystem</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Returns the filesystem path for a JDK module from the running JVM</div>
+<div class="block">Returns the shared <code>jrt:/</code> filesystem for this JVM.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#onIKVM()" class="member-name-link">onIKVM</a>()</code></div>
@@ -226,34 +226,16 @@ initTheme();
 </section>
 </li>
 <li>
-<section class="detail" id="getJDKModules(boolean)">
-<h3>getJDKModules</h3>
+<section class="detail" id="getJDKModuleNames(boolean)">
+<h3>getJDKModuleNames</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>[]</span>&nbsp;<span class="element-name">getJDKModules</span><wbr><span class="parameters">(boolean&nbsp;justBase)</span></div>
-<div class="block">Gets the standard JDK modules shipped with the running JDK</div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>[]</span>&nbsp;<span class="element-name">getJDKModuleNames</span><wbr><span class="parameters">(boolean&nbsp;justBase)</span></div>
+<div class="block">Gets the standard JDK module names exposed by the running JDK image.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>justBase</code> - if <code>true</code>, only include the file corresponding to the <code>java.base</code>
-    module</dd>
+<dd><code>justBase</code> - if <code>true</code>, only include <code>java.base</code></dd>
 <dt>Returns:</dt>
-<dd>array of <code>.jmod</code> module files</dd>
-<dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/IllegalStateException.html" title="class in java.lang" class="external-link">IllegalStateException</a></code> - if modules cannot be found</dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="getPathForJDKModule(java.lang.String)">
-<h3>getPathForJDKModule</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/nio/file/Path.html" title="interface in java.nio.file" class="external-link">Path</a></span>&nbsp;<span class="element-name">getPathForJDKModule</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;moduleName)</span></div>
-<div class="block">Returns the filesystem path for a JDK module from the running JVM</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>moduleName</code> - name of the module, e.g., <code>"java.sql"</code></dd>
-<dt>Returns:</dt>
-<dd>path to the module</dd>
+<dd>array of module names from the <code>jrt:/modules</code> filesystem</dd>
 </dl>
 </div>
 </section>
@@ -267,6 +249,15 @@ initTheme();
 <dt>Returns:</dt>
 <dd>the major version of the Java runtime we are running on.</dd>
 </dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getJrtFileSystem()">
+<h3>getJrtFileSystem</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/nio/file/FileSystem.html" title="class in java.nio.file" class="external-link">FileSystem</a></span>&nbsp;<span class="element-name">getJrtFileSystem</span>()</div>
+<div class="block">Returns the shared <code>jrt:/</code> filesystem for this JVM. Callers should not close it.</div>
 </div>
 </section>
 </li>

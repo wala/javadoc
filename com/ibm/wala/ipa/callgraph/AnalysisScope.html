@@ -95,6 +95,8 @@ initTheme();
 <li><a href="#addSourceFileToScope(com.ibm.wala.types.ClassLoaderReference,java.io.File,java.lang.String)" tabindex="0">addSourceFileToScope(ClassLoaderReference, File, String)</a></li>
 <li><a href="#addClassFileToScope(com.ibm.wala.types.ClassLoaderReference,java.io.File)" tabindex="0">addClassFileToScope(ClassLoaderReference, File)</a></li>
 <li><a href="#addJDKModuleToScope(java.lang.String)" tabindex="0">addJDKModuleToScope(String)</a></li>
+<li><a href="#addJDKModuleToScope(com.ibm.wala.types.ClassLoaderReference,java.lang.String)" tabindex="0">addJDKModuleToScope(ClassLoaderReference, String)</a></li>
+<li><a href="#addStdLibs(boolean,com.ibm.wala.types.ClassLoaderReference)" tabindex="0">addStdLibs(boolean, ClassLoaderReference)</a></li>
 <li><a href="#addInputStreamForJarToScope(com.ibm.wala.types.ClassLoaderReference,java.io.InputStream)" tabindex="0">addInputStreamForJarToScope(ClassLoaderReference, InputStream)</a></li>
 <li><a href="#addToScope(com.ibm.wala.types.ClassLoaderReference,java.util.jar.JarFile)" tabindex="0">addToScope(ClassLoaderReference, JarFile)</a></li>
 <li><a href="#addToScope(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.classLoader.Module)" tabindex="0">addToScope(ClassLoaderReference, Module)</a></li>
@@ -225,16 +227,28 @@ Each class loader will load a set of classes described by a <a href="../../class
 <div class="block">Add a jar file to the scope via an <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/InputStream.html" title="class in java.io" class="external-link"><code>InputStream</code></a>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addJDKModuleToScope(java.lang.String)" class="member-name-link">addJDKModuleToScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;moduleName)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addJDKModuleToScope(com.ibm.wala.types.ClassLoaderReference,java.lang.String)" class="member-name-link">addJDKModuleToScope</a><wbr>(<a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loader,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;moduleName)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Adds a module from the Java standard library to the analysis scope.</div>
+<div class="block">Adds a module from the running JDK image to the analysis scope for a specific loader.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addSourceFileToScope(com.ibm.wala.types.ClassLoaderReference,java.io.File,java.lang.String)" class="member-name-link">addSourceFileToScope</a><wbr>(<a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loader,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addJDKModuleToScope(java.lang.String)" class="member-name-link">addJDKModuleToScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;moduleName)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds a module from the Java standard library to the analysis scope.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addSourceFileToScope(com.ibm.wala.types.ClassLoaderReference,java.io.File,java.lang.String)" class="member-name-link">addSourceFileToScope</a><wbr>(<a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loader,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a>&nbsp;file,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;fileName)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Add a class file to the scope for a loader</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addStdLibs(boolean,com.ibm.wala.types.ClassLoaderReference)" class="member-name-link">addStdLibs</a><wbr>(boolean&nbsp;justBase,
+ <a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loader)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Add modules for the Java standard library to the scope.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addToScope(com.ibm.wala.ipa.callgraph.AnalysisScope)" class="member-name-link">addToScope</a><wbr>(<a href="AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;other)</code></div>
@@ -631,6 +645,45 @@ hierarchy using ToJson.</div>
 <dd><code>moduleName</code> - the name of the module, e.g., <code>"java.sql"</code></dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/IOException.html" title="class in java.io" class="external-link">IOException</a></code> - if a module by that name cannot successfully be loaded</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="addJDKModuleToScope(com.ibm.wala.types.ClassLoaderReference,java.lang.String)">
+<h3>addJDKModuleToScope</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addJDKModuleToScope</span><wbr><span class="parameters">(<a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loader,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;moduleName)</span>
+                         throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/IOException.html" title="class in java.io" class="external-link">IOException</a></span></div>
+<div class="block">Adds a module from the running JDK image to the analysis scope for a specific loader.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>loader</code> - the target loader</dd>
+<dd><code>moduleName</code> - the name of the module, e.g., <code>"java.sql"</code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/IOException.html" title="class in java.io" class="external-link">IOException</a></code> - if a module by that name cannot successfully be loaded</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="addStdLibs(boolean,com.ibm.wala.types.ClassLoaderReference)">
+<h3>addStdLibs</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addStdLibs</span><wbr><span class="parameters">(boolean&nbsp;justBase,
+ <a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loader)</span>
+                throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/IOException.html" title="class in java.io" class="external-link">IOException</a></span></div>
+<div class="block">Add modules for the Java standard library to the scope. First, try to add the standard
+libraries specified in the wala.properties file. If that fails, add the standard library
+modules from the running JDK.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>justBase</code> - if true, just include the base module; otherwise, include all discovered
+    modules</dd>
+<dd><code>loader</code> - the target loader for the standard library modules</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/IOException.html" title="class in java.io" class="external-link">IOException</a></code> - if creating a <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/jar/JarFile.html" title="class in java.util.jar" class="external-link"><code>JarFile</code></a> fails with an <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/IOException.html" title="class in java.io" class="external-link"><code>IOException</code></a></dd>
 </dl>
 </div>
 </section>

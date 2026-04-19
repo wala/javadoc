@@ -74,11 +74,6 @@ initTheme();
 <li><a href="#%3Cinit%3E()" tabindex="0">Java9AnalysisScopeReader()</a></li>
 </ol>
 </li>
-<li><a href="#method-detail" tabindex="0">Method Details</a>
-<ol class="toc-list">
-<li><a href="#handleInSubclass(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.types.ClassLoaderReference,java.lang.String,java.lang.String,java.lang.String)" tabindex="0">handleInSubclass(AnalysisScope, ClassLoaderReference, String, String, String)</a></li>
-</ol>
-</li>
 </ol>
 <button class="hide-sidebar"><span>Hide sidebar&nbsp;</span><img src="../../../../../resource-files/left.svg" alt="Hide sidebar"></button><button class="show-sidebar"><img src="../../../../../resource-files/right.svg" alt="Show sidebar"><span>&nbsp;Show sidebar</span></button></nav>
 <main role="main">
@@ -94,8 +89,12 @@ initTheme();
 <section class="class-description" id="class-description">
 <hr>
 <div class="horizontal-scroll">
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Java9AnalysisScopeReader</span>
+<div class="type-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public class </span><span class="element-name type-name-label">Java9AnalysisScopeReader</span>
 <span class="extends-implements">extends <a href="../util/config/AnalysisScopeReader.html" title="class in com.ibm.wala.core.util.config">AnalysisScopeReader</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Use <a href="../util/config/AnalysisScopeReader.html" title="class in com.ibm.wala.core.util.config"><code>AnalysisScopeReader</code></a>; support for <code>jrt</code> entries is now built in.</div>
+</div>
 </div>
 </section>
 <section class="summary">
@@ -111,7 +110,9 @@ initTheme();
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static final <a href="Java9AnalysisScopeReader.html" title="class in com.ibm.wala.core.java11">Java9AnalysisScopeReader</a></code></div>
 <div class="col-second even-row-color"><code><a href="#instance" class="member-name-link">instance</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
 </div>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-com.ibm.wala.core.util.config.AnalysisScopeReader">Fields inherited from class&nbsp;<a href="../util/config/AnalysisScopeReader.html#field-summary" title="class in com.ibm.wala.core.util.config">AnalysisScopeReader</a></h3>
@@ -139,7 +140,9 @@ initTheme();
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">Java9AnalysisScopeReader</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</div>
 </div>
 </section>
 </li>
@@ -147,26 +150,9 @@ initTheme();
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
-<div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
-<div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#handleInSubclass(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.types.ClassLoaderReference,java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">handleInSubclass</a><wbr>(<a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
- <a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;walaLoader,
- <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;language,
- <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;entryType,
- <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;entryPathname)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-</div>
-</div>
-</div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-com.ibm.wala.core.util.config.AnalysisScopeReader">Methods inherited from class&nbsp;<a href="../util/config/AnalysisScopeReader.html#method-summary" title="class in com.ibm.wala.core.util.config">AnalysisScopeReader</a></h3>
-<code><a href="../util/config/AnalysisScopeReader.html#addClassPathToScope(java.lang.String,com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.types.ClassLoaderReference)" title="addClassPathToScope(String, AnalysisScope, ClassLoaderReference)">addClassPathToScope</a>, <a href="../util/config/AnalysisScopeReader.html#makeBasePrimordialScope(java.io.File)" title="makeBasePrimordialScope(File)">makeBasePrimordialScope</a>, <a href="../util/config/AnalysisScopeReader.html#makeJavaBinaryAnalysisScope(java.lang.String,java.io.File)" title="makeJavaBinaryAnalysisScope(String, File)">makeJavaBinaryAnalysisScope</a>, <a href="../util/config/AnalysisScopeReader.html#makePrimordialScope(java.io.File)" title="makePrimordialScope(File)">makePrimordialScope</a>, <a href="../util/config/AnalysisScopeReader.html#processScopeDefLine(com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,java.lang.String)" title="processScopeDefLine(AnalysisScope, ClassLoader, String)">processScopeDefLine</a>, <a href="../util/config/AnalysisScopeReader.html#read(com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.String,java.io.File,java.lang.ClassLoader)" title="read(AnalysisScope, String, File, ClassLoader)">read</a>, <a href="../util/config/AnalysisScopeReader.html#read(com.ibm.wala.ipa.callgraph.AnalysisScope,java.net.URI,java.io.File,java.lang.ClassLoader)" title="read(AnalysisScope, URI, File, ClassLoader)">read</a>, <a href="../util/config/AnalysisScopeReader.html#readJavaScope(java.lang.String,java.io.File,java.lang.ClassLoader)" title="readJavaScope(String, File, ClassLoader)">readJavaScope</a>, <a href="../util/config/AnalysisScopeReader.html#setScopeReader(com.ibm.wala.core.util.config.AnalysisScopeReader)" title="setScopeReader(AnalysisScopeReader)">setScopeReader</a></code>
+<code><a href="../util/config/AnalysisScopeReader.html#addClassPathToScope(java.lang.String,com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.types.ClassLoaderReference)" title="addClassPathToScope(String, AnalysisScope, ClassLoaderReference)">addClassPathToScope</a>, <a href="../util/config/AnalysisScopeReader.html#handleInSubclass(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.types.ClassLoaderReference,java.lang.String,java.lang.String,java.lang.String)" title="handleInSubclass(AnalysisScope, ClassLoaderReference, String, String, String)">handleInSubclass</a>, <a href="../util/config/AnalysisScopeReader.html#makeBasePrimordialScope(java.io.File)" title="makeBasePrimordialScope(File)">makeBasePrimordialScope</a>, <a href="../util/config/AnalysisScopeReader.html#makeJavaBinaryAnalysisScope(java.lang.String,java.io.File)" title="makeJavaBinaryAnalysisScope(String, File)">makeJavaBinaryAnalysisScope</a>, <a href="../util/config/AnalysisScopeReader.html#makePrimordialScope(java.io.File)" title="makePrimordialScope(File)">makePrimordialScope</a>, <a href="../util/config/AnalysisScopeReader.html#processScopeDefLine(com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,java.lang.String)" title="processScopeDefLine(AnalysisScope, ClassLoader, String)">processScopeDefLine</a>, <a href="../util/config/AnalysisScopeReader.html#read(com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.String,java.io.File,java.lang.ClassLoader)" title="read(AnalysisScope, String, File, ClassLoader)">read</a>, <a href="../util/config/AnalysisScopeReader.html#read(com.ibm.wala.ipa.callgraph.AnalysisScope,java.net.URI,java.io.File,java.lang.ClassLoader)" title="read(AnalysisScope, URI, File, ClassLoader)">read</a>, <a href="../util/config/AnalysisScopeReader.html#readJavaScope(java.lang.String,java.io.File,java.lang.ClassLoader)" title="readJavaScope(String, File, ClassLoader)">readJavaScope</a>, <a href="../util/config/AnalysisScopeReader.html#setScopeReader(com.ibm.wala.core.util.config.AnalysisScopeReader)" title="setScopeReader(AnalysisScopeReader)">setScopeReader</a></code>
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
@@ -176,47 +162,54 @@ initTheme();
  <a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
  <a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loader)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
-<div class="col-second odd-row-color"><code><a href="../util/config/AnalysisScopeReader.html#makeBasePrimordialScope(java.io.File)" class="member-name-link">makeBasePrimordialScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a>&nbsp;exclusionsFile)</code></div>
-<div class="col-last odd-row-color">
-<div class="block">Creates an AnalysisScope containing only the JDK standard libraries.</div>
-</div>
+<div class="col-first odd-row-color"><code>protected boolean</code></div>
+<div class="col-second odd-row-color"><code><a href="../util/config/AnalysisScopeReader.html#handleInSubclass(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.types.ClassLoaderReference,java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">handleInSubclass</a><wbr>(<a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+ <a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;walaLoader,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;language,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;entryType,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;entryPathname)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code><a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
-<div class="col-second even-row-color"><code><a href="../util/config/AnalysisScopeReader.html#makeJavaBinaryAnalysisScope(java.lang.String,java.io.File)" class="member-name-link">makeJavaBinaryAnalysisScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;classPath,
- <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a>&nbsp;exclusionsFile)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
-<div class="col-second odd-row-color"><code><a href="../util/config/AnalysisScopeReader.html#makePrimordialScope(java.io.File)" class="member-name-link">makePrimordialScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a>&nbsp;exclusionsFile)</code></div>
-<div class="col-last odd-row-color">
+<div class="col-second even-row-color"><code><a href="../util/config/AnalysisScopeReader.html#makeBasePrimordialScope(java.io.File)" class="member-name-link">makeBasePrimordialScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a>&nbsp;exclusionsFile)</code></div>
+<div class="col-last even-row-color">
 <div class="block">Creates an AnalysisScope containing only the JDK standard libraries.</div>
 </div>
-<div class="col-first even-row-color"><code>void</code></div>
-<div class="col-second even-row-color"><code><a href="../util/config/AnalysisScopeReader.html#processScopeDefLine(com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,java.lang.String)" class="member-name-link">processScopeDefLine</a><wbr>(<a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+<div class="col-first odd-row-color"><code><a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
+<div class="col-second odd-row-color"><code><a href="../util/config/AnalysisScopeReader.html#makeJavaBinaryAnalysisScope(java.lang.String,java.io.File)" class="member-name-link">makeJavaBinaryAnalysisScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;classPath,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a>&nbsp;exclusionsFile)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
+<div class="col-second even-row-color"><code><a href="../util/config/AnalysisScopeReader.html#makePrimordialScope(java.io.File)" class="member-name-link">makePrimordialScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a>&nbsp;exclusionsFile)</code></div>
+<div class="col-last even-row-color">
+<div class="block">Creates an AnalysisScope containing only the JDK standard libraries.</div>
+</div>
+<div class="col-first odd-row-color"><code>void</code></div>
+<div class="col-second odd-row-color"><code><a href="../util/config/AnalysisScopeReader.html#processScopeDefLine(com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,java.lang.String)" class="member-name-link">processScopeDefLine</a><wbr>(<a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/ClassLoader.html" title="class in java.lang" class="external-link">ClassLoader</a>&nbsp;javaLoader,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;line)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
-<div class="col-second odd-row-color"><code><a href="../util/config/AnalysisScopeReader.html#read(com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.String,java.io.File,java.lang.ClassLoader)" class="member-name-link">read</a><wbr>(<a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
+<div class="col-second even-row-color"><code><a href="../util/config/AnalysisScopeReader.html#read(com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.String,java.io.File,java.lang.ClassLoader)" class="member-name-link">read</a><wbr>(<a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;scopeFileName,
  @Nullable <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a>&nbsp;exclusionsFile,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/ClassLoader.html" title="class in java.lang" class="external-link">ClassLoader</a>&nbsp;javaLoader)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected <a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
-<div class="col-second even-row-color"><code><a href="../util/config/AnalysisScopeReader.html#read(com.ibm.wala.ipa.callgraph.AnalysisScope,java.net.URI,java.io.File,java.lang.ClassLoader)" class="member-name-link">read</a><wbr>(<a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected <a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
+<div class="col-second odd-row-color"><code><a href="../util/config/AnalysisScopeReader.html#read(com.ibm.wala.ipa.callgraph.AnalysisScope,java.net.URI,java.io.File,java.lang.ClassLoader)" class="member-name-link">read</a><wbr>(<a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/net/URI.html" title="class in java.net" class="external-link">URI</a>&nbsp;scopeFileURI,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a>&nbsp;exclusionsFile,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/ClassLoader.html" title="class in java.lang" class="external-link">ClassLoader</a>&nbsp;javaLoader)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
-<div class="col-second odd-row-color"><code><a href="../util/config/AnalysisScopeReader.html#readJavaScope(java.lang.String,java.io.File,java.lang.ClassLoader)" class="member-name-link">readJavaScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;scopeFileName,
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a></code></div>
+<div class="col-second even-row-color"><code><a href="../util/config/AnalysisScopeReader.html#readJavaScope(java.lang.String,java.io.File,java.lang.ClassLoader)" class="member-name-link">readJavaScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;scopeFileName,
  @Nullable <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a>&nbsp;exclusionsFile,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/ClassLoader.html" title="class in java.lang" class="external-link">ClassLoader</a>&nbsp;javaLoader)</code></div>
-<div class="col-last odd-row-color">
+<div class="col-last even-row-color">
 <div class="block">read in an analysis scope for a Java application from a text file</div>
 </div>
-<div class="col-first even-row-color"><code>protected static void</code></div>
-<div class="col-second even-row-color"><code><a href="../util/config/AnalysisScopeReader.html#setScopeReader(com.ibm.wala.core.util.config.AnalysisScopeReader)" class="member-name-link">setScopeReader</a><wbr>(<a href="../util/config/AnalysisScopeReader.html" title="class in com.ibm.wala.core.util.config">AnalysisScopeReader</a>&nbsp;reader)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected static void</code></div>
+<div class="col-second odd-row-color"><code><a href="../util/config/AnalysisScopeReader.html#setScopeReader(com.ibm.wala.core.util.config.AnalysisScopeReader)" class="member-name-link">setScopeReader</a><wbr>(<a href="../util/config/AnalysisScopeReader.html" title="class in com.ibm.wala.core.util.config">AnalysisScopeReader</a>&nbsp;reader)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </div>
 <div class="inherited-list">
@@ -238,6 +231,7 @@ initTheme();
 <h3>instance</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Java9AnalysisScopeReader.html" title="class in com.ibm.wala.core.java11">Java9AnalysisScopeReader</a></span>&nbsp;<span class="element-name">instance</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </div>
 </section>
 </li>
@@ -254,30 +248,7 @@ initTheme();
 <h3>Java9AnalysisScopeReader</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Java9AnalysisScopeReader</span>()</div>
-</div>
-</section>
-</li>
-</ul>
-</section>
-</li>
-<!-- ============ METHOD DETAIL ========== -->
-<li>
-<section class="method-details" id="method-detail">
-<h2>Method Details</h2>
-<ul class="member-list">
-<li>
-<section class="detail" id="handleInSubclass(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.types.ClassLoaderReference,java.lang.String,java.lang.String,java.lang.String)">
-<h3>handleInSubclass</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">handleInSubclass</span><wbr><span class="parameters">(<a href="../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
- <a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;walaLoader,
- <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;language,
- <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;entryType,
- <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;entryPathname)</span></div>
-<dl class="notes">
-<dt>Overrides:</dt>
-<dd><code><a href="../util/config/AnalysisScopeReader.html#handleInSubclass(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.types.ClassLoaderReference,java.lang.String,java.lang.String,java.lang.String)">handleInSubclass</a></code>&nbsp;in class&nbsp;<code><a href="../util/config/AnalysisScopeReader.html" title="class in com.ibm.wala.core.util.config">AnalysisScopeReader</a></code></dd>
-</dl>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 </div>
 </section>
 </li>
