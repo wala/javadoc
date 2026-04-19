@@ -60,7 +60,9 @@ initTheme();
 <h2 title="Contents">Contents</h2>
 <ul class="contents-list">
 <li id="contents-for-removal"><a href="#for-removal">Terminally Deprecated</a></li>
+<li id="contents-interface"><a href="#interface">Interfaces</a></li>
 <li id="contents-class"><a href="#class">Classes</a></li>
+<li id="contents-field"><a href="#field">Fields</a></li>
 <li id="contents-method"><a href="#method">Methods</a></li>
 <li id="contents-constructor"><a href="#constructor">Constructors</a></li>
 </ul>
@@ -71,23 +73,116 @@ initTheme();
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Element</div>
 <div class="table-header col-last">Description</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/AnalysisScope.html#setExclusions(com.ibm.wala.util.config.SetOfClasses)">com.ibm.wala.ipa.callgraph.AnalysisScope.setExclusions<wbr>(SetOfClasses)</a></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html" title="interface in com.ibm.wala.dalvik.classLoader">com.ibm.wala.dalvik.classLoader.DexConstants</a></div>
 <div class="col-last even-row-color">
+<div class="block">replace <code>ACC_XXX</code> with <code>AccessFlags</code><code>.XXX.getValue()</code> and replace
+    <code>VALUE_XXX</code> with <code>ValueType</code><code>.XXX</code></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ABSTRACT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ABSTRACT</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ANNOTATION">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ANNOTATION</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_BRIDGE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_BRIDGE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_CONSTRUCTOR">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_CONSTRUCTOR</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_DECLARED_SYNCHRONIZED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_DECLARED_SYNCHRONIZED</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ENUM">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ENUM</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_FINAL">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_FINAL</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_INTERFACE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_INTERFACE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_NATIVE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_NATIVE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_private">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_private</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PRIVATE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PRIVATE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PROTECTED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PROTECTED</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PUBLIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PUBLIC</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_STATIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_STATIC</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_STRICT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_STRICT</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_SYNCHRONIZED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_SYNCHRONIZED</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_SYNTHETIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_SYNTHETIC</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_TRANSIENT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_TRANSIENT</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_VARARGS">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_VARARGS</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_VOLATILE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_VOLATILE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ANNOTATION">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ANNOTATION</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ARRAY">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ARRAY</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_BOOLEAN">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_BOOLEAN</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_BYTE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_BYTE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_CHAR">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_CHAR</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_DOUBLE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_DOUBLE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ENUM">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ENUM</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_FIELD">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_FIELD</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_FLOAT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_FLOAT</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_INT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_INT</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_LONG">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_LONG</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_METHOD">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_METHOD</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_NULL">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_NULL</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_SHORT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_SHORT</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_STRING">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_STRING</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_TYPE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_TYPE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/AnalysisScope.html#setExclusions(com.ibm.wala.util.config.SetOfClasses)">com.ibm.wala.ipa.callgraph.AnalysisScope.setExclusions<wbr>(SetOfClasses)</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Use <a href="com/ibm/wala/ipa/callgraph/AnalysisScope.html#setExclusions(com.ibm.wala.util.config.StringFilter)"><code>AnalysisScope.setExclusions(StringFilter)</code></a>} instead.</div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/config/FileOfClasses.html" title="class in com.ibm.wala.util.config">com.ibm.wala.util.config.FileOfClasses</a></div>
-<div class="col-last odd-row-color">
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/config/FileOfClasses.html" title="class in com.ibm.wala.util.config">com.ibm.wala.util.config.FileOfClasses</a></div>
+<div class="col-last even-row-color">
 <div class="block">Use <a href="com/ibm/wala/util/config/PatternsFilter.html" title="class in com.ibm.wala.util.config"><code>PatternsFilter</code></a> instead.</div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">com.ibm.wala.util.config.SetOfClasses</a></div>
-<div class="col-last even-row-color">
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/config/SetOfClasses.html" title="class in com.ibm.wala.util.config">com.ibm.wala.util.config.SetOfClasses</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Use <a href="com/ibm/wala/util/config/StringFilter.html" title="interface in com.ibm.wala.util.config"><code>StringFilter</code></a> instead.</div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/io/Streams.html" title="class in com.ibm.wala.util.io">com.ibm.wala.util.io.Streams</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/io/Streams.html#inputStream2ByteArray(java.io.InputStream)">com.ibm.wala.util.io.Streams.inputStream2ByteArray<wbr>(InputStream)</a></div>
-<div class="col-last even-row-color">
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/io/Streams.html" title="class in com.ibm.wala.util.io">com.ibm.wala.util.io.Streams</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/io/Streams.html#inputStream2ByteArray(java.io.InputStream)">com.ibm.wala.util.io.Streams.inputStream2ByteArray<wbr>(InputStream)</a></div>
+<div class="col-last odd-row-color">
 <div class="block">use <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/InputStream.html#readAllBytes()" class="external-link"><code>InputStream.readAllBytes()</code></a> instead.</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<ul class="block-list">
+<li>
+<div id="interface">
+<div class="caption"><span>Deprecated Interfaces</span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html" title="interface in com.ibm.wala.dalvik.classLoader">com.ibm.wala.dalvik.classLoader.DexConstants</a></div>
+<div class="col-last even-row-color">
+<div class="block">replace <code>ACC_XXX</code> with <code>AccessFlags</code><code>.XXX.getValue()</code> and replace
+    <code>VALUE_XXX</code> with <code>ValueType</code><code>.XXX</code></div>
 </div>
 </div>
 </div>
@@ -122,6 +217,89 @@ initTheme();
 </div>
 <div class="col-summary-item-name even-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.ReturnDefUse.html" title="class in org.scandroid.flow.functions">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.ReturnDefUse</a></div>
 <div class="col-last even-row-color"></div>
+</div>
+</div>
+</li>
+</ul>
+<ul class="block-list">
+<li>
+<div id="field">
+<div class="caption"><span>Deprecated Fields</span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ABSTRACT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ABSTRACT</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ANNOTATION">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ANNOTATION</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_BRIDGE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_BRIDGE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_CONSTRUCTOR">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_CONSTRUCTOR</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_DECLARED_SYNCHRONIZED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_DECLARED_SYNCHRONIZED</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ENUM">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ENUM</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_FINAL">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_FINAL</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_INTERFACE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_INTERFACE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_NATIVE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_NATIVE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_private">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_private</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PRIVATE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PRIVATE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PROTECTED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PROTECTED</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PUBLIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PUBLIC</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_STATIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_STATIC</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_STRICT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_STRICT</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_SYNCHRONIZED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_SYNCHRONIZED</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_SYNTHETIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_SYNTHETIC</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_TRANSIENT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_TRANSIENT</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_VARARGS">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_VARARGS</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_VOLATILE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_VOLATILE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ANNOTATION">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ANNOTATION</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ARRAY">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ARRAY</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_BOOLEAN">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_BOOLEAN</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_BYTE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_BYTE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_CHAR">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_CHAR</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_DOUBLE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_DOUBLE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ENUM">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ENUM</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_FIELD">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_FIELD</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_FLOAT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_FLOAT</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_INT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_INT</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_LONG">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_LONG</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_METHOD">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_METHOD</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_NULL">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_NULL</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_SHORT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_SHORT</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_STRING">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_STRING</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_TYPE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_TYPE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </div>
 </li>

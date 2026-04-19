@@ -64,7 +64,7 @@ initTheme();
 <li><a href="#field-summary" tabindex="0">Field Summary</a></li>
 <li><a href="#field-detail" tabindex="0">Field Details</a>
 <ol class="toc-list">
-<li><a href="#ACC_private" tabindex="0">ACC_private</a></li>
+<li><a href="#ACC_PUBLIC" tabindex="0">ACC_PUBLIC</a></li>
 <li><a href="#ACC_PRIVATE" tabindex="0">ACC_PRIVATE</a></li>
 <li><a href="#ACC_PROTECTED" tabindex="0">ACC_PROTECTED</a></li>
 <li><a href="#ACC_STATIC" tabindex="0">ACC_STATIC</a></li>
@@ -84,6 +84,7 @@ initTheme();
 <li><a href="#ACC_UNUSED" tabindex="0">ACC_UNUSED</a></li>
 <li><a href="#ACC_CONSTRUCTOR" tabindex="0">ACC_CONSTRUCTOR</a></li>
 <li><a href="#ACC_DECLARED_SYNCHRONIZED" tabindex="0">ACC_DECLARED_SYNCHRONIZED</a></li>
+<li><a href="#ACC_private" tabindex="0">ACC_private</a></li>
 <li><a href="#VALUE_BYTE" tabindex="0">VALUE_BYTE</a></li>
 <li><a href="#VALUE_SHORT" tabindex="0">VALUE_SHORT</a></li>
 <li><a href="#VALUE_CHAR" tabindex="0">VALUE_CHAR</a></li>
@@ -110,13 +111,15 @@ initTheme();
 <h1 title="Interface DexConstants" class="title">Interface DexConstants</h1>
 </div>
 <section class="class-description" id="class-description">
-<dl class="notes">
-<dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../ssa/AbstractIntRegisterMachine.BasicRegisterFlowProvider.html" title="class in com.ibm.wala.dalvik.ssa">AbstractIntRegisterMachine.BasicRegisterFlowProvider</a></code></dd>
-</dl>
 <hr>
 <div class="horizontal-scroll">
-<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">DexConstants</span></div>
+<div class="type-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">public interface </span><span class="element-name type-name-label">DexConstants</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">replace <code>ACC_XXX</code> with <code>AccessFlags</code><code>.XXX.getValue()</code> and replace
+    <code>VALUE_XXX</code> with <code>ValueType</code><code>.XXX</code></div>
+</div>
 </div>
 </section>
 <section class="summary">
@@ -132,112 +135,189 @@ initTheme();
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
 <div class="col-second even-row-color"><code><a href="#ACC_ABSTRACT" class="member-name-link">ACC_ABSTRACT</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
 <div class="col-second odd-row-color"><code><a href="#ACC_ANNOTATION" class="member-name-link">ACC_ANNOTATION</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
 <div class="col-second even-row-color"><code><a href="#ACC_BRIDGE" class="member-name-link">ACC_BRIDGE</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
 <div class="col-second odd-row-color"><code><a href="#ACC_CONSTRUCTOR" class="member-name-link">ACC_CONSTRUCTOR</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
 <div class="col-second even-row-color"><code><a href="#ACC_DECLARED_SYNCHRONIZED" class="member-name-link">ACC_DECLARED_SYNCHRONIZED</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
 <div class="col-second odd-row-color"><code><a href="#ACC_ENUM" class="member-name-link">ACC_ENUM</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
 <div class="col-second even-row-color"><code><a href="#ACC_FINAL" class="member-name-link">ACC_FINAL</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
 <div class="col-second odd-row-color"><code><a href="#ACC_INTERFACE" class="member-name-link">ACC_INTERFACE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
 <div class="col-second even-row-color"><code><a href="#ACC_NATIVE" class="member-name-link">ACC_NATIVE</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
 <div class="col-second odd-row-color"><code><a href="#ACC_private" class="member-name-link">ACC_private</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
 <div class="col-second even-row-color"><code><a href="#ACC_PRIVATE" class="member-name-link">ACC_PRIVATE</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
 <div class="col-second odd-row-color"><code><a href="#ACC_PROTECTED" class="member-name-link">ACC_PROTECTED</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#ACC_STATIC" class="member-name-link">ACC_STATIC</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#ACC_PUBLIC" class="member-name-link">ACC_PUBLIC</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#ACC_STRICT" class="member-name-link">ACC_STRICT</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#ACC_STATIC" class="member-name-link">ACC_STATIC</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#ACC_SYNCHRONIZED" class="member-name-link">ACC_SYNCHRONIZED</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#ACC_STRICT" class="member-name-link">ACC_STRICT</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#ACC_SYNTHETIC" class="member-name-link">ACC_SYNTHETIC</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#ACC_SYNCHRONIZED" class="member-name-link">ACC_SYNCHRONIZED</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#ACC_TRANSIENT" class="member-name-link">ACC_TRANSIENT</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#ACC_SYNTHETIC" class="member-name-link">ACC_SYNTHETIC</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#ACC_UNUSED" class="member-name-link">ACC_UNUSED</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#ACC_TRANSIENT" class="member-name-link">ACC_TRANSIENT</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#ACC_VARARGS" class="member-name-link">ACC_VARARGS</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#ACC_UNUSED" class="member-name-link">ACC_UNUSED</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
+&nbsp;</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#ACC_VOLATILE" class="member-name-link">ACC_VOLATILE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#ACC_VARARGS" class="member-name-link">ACC_VARARGS</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#VALUE_ANNOTATION" class="member-name-link">VALUE_ANNOTATION</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#ACC_VOLATILE" class="member-name-link">ACC_VOLATILE</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#VALUE_ARRAY" class="member-name-link">VALUE_ARRAY</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#VALUE_ANNOTATION" class="member-name-link">VALUE_ANNOTATION</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#VALUE_BOOLEAN" class="member-name-link">VALUE_BOOLEAN</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#VALUE_ARRAY" class="member-name-link">VALUE_ARRAY</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#VALUE_BYTE" class="member-name-link">VALUE_BYTE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#VALUE_BOOLEAN" class="member-name-link">VALUE_BOOLEAN</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#VALUE_CHAR" class="member-name-link">VALUE_CHAR</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#VALUE_BYTE" class="member-name-link">VALUE_BYTE</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#VALUE_DOUBLE" class="member-name-link">VALUE_DOUBLE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#VALUE_CHAR" class="member-name-link">VALUE_CHAR</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#VALUE_ENUM" class="member-name-link">VALUE_ENUM</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#VALUE_DOUBLE" class="member-name-link">VALUE_DOUBLE</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#VALUE_FIELD" class="member-name-link">VALUE_FIELD</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#VALUE_ENUM" class="member-name-link">VALUE_ENUM</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#VALUE_FLOAT" class="member-name-link">VALUE_FLOAT</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#VALUE_FIELD" class="member-name-link">VALUE_FIELD</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#VALUE_INT" class="member-name-link">VALUE_INT</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#VALUE_FLOAT" class="member-name-link">VALUE_FLOAT</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#VALUE_LONG" class="member-name-link">VALUE_LONG</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#VALUE_INT" class="member-name-link">VALUE_INT</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#VALUE_METHOD" class="member-name-link">VALUE_METHOD</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#VALUE_LONG" class="member-name-link">VALUE_LONG</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#VALUE_NULL" class="member-name-link">VALUE_NULL</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#VALUE_METHOD" class="member-name-link">VALUE_METHOD</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#VALUE_SHORT" class="member-name-link">VALUE_SHORT</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#VALUE_NULL" class="member-name-link">VALUE_NULL</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first even-row-color"><code>static final int</code></div>
-<div class="col-second even-row-color"><code><a href="#VALUE_STRING" class="member-name-link">VALUE_STRING</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-second even-row-color"><code><a href="#VALUE_SHORT" class="member-name-link">VALUE_SHORT</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 <div class="col-first odd-row-color"><code>static final int</code></div>
-<div class="col-second odd-row-color"><code><a href="#VALUE_TYPE" class="member-name-link">VALUE_TYPE</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-second odd-row-color"><code><a href="#VALUE_STRING" class="member-name-link">VALUE_STRING</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
+<div class="col-first even-row-color"><code>static final int</code></div>
+<div class="col-second even-row-color"><code><a href="#VALUE_TYPE" class="member-name-link">VALUE_TYPE</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>&nbsp;</div>
+</div>
 </div>
 </section>
 </li>
@@ -251,15 +331,18 @@ initTheme();
 <h2>Field Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="ACC_private">
-<h3>ACC_private</h3>
+<section class="detail" id="ACC_PUBLIC">
+<h3>ACC_PUBLIC</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_private</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_PUBLIC</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_private">Constant Field Values</a></li>
+<li><code>AccessFlags.PUBLIC</code></li>
 </ul>
 </dd>
 </dl>
@@ -270,12 +353,15 @@ initTheme();
 <section class="detail" id="ACC_PRIVATE">
 <h3>ACC_PRIVATE</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_PRIVATE</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_PRIVATE</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PRIVATE">Constant Field Values</a></li>
+<li><code>AccessFlags.PRIVATE</code></li>
 </ul>
 </dd>
 </dl>
@@ -286,12 +372,15 @@ initTheme();
 <section class="detail" id="ACC_PROTECTED">
 <h3>ACC_PROTECTED</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_PROTECTED</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_PROTECTED</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PROTECTED">Constant Field Values</a></li>
+<li><code>AccessFlags.PROTECTED</code></li>
 </ul>
 </dd>
 </dl>
@@ -302,12 +391,15 @@ initTheme();
 <section class="detail" id="ACC_STATIC">
 <h3>ACC_STATIC</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_STATIC</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_STATIC</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_STATIC">Constant Field Values</a></li>
+<li><code>AccessFlags.STATIC</code></li>
 </ul>
 </dd>
 </dl>
@@ -318,12 +410,15 @@ initTheme();
 <section class="detail" id="ACC_FINAL">
 <h3>ACC_FINAL</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_FINAL</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_FINAL</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_FINAL">Constant Field Values</a></li>
+<li><code>AccessFlags.FINAL</code></li>
 </ul>
 </dd>
 </dl>
@@ -334,12 +429,15 @@ initTheme();
 <section class="detail" id="ACC_SYNCHRONIZED">
 <h3>ACC_SYNCHRONIZED</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_SYNCHRONIZED</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_SYNCHRONIZED</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_SYNCHRONIZED">Constant Field Values</a></li>
+<li><code>AccessFlags.SYNCHRONIZED</code></li>
 </ul>
 </dd>
 </dl>
@@ -350,12 +448,15 @@ initTheme();
 <section class="detail" id="ACC_VOLATILE">
 <h3>ACC_VOLATILE</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_VOLATILE</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_VOLATILE</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_VOLATILE">Constant Field Values</a></li>
+<li><code>AccessFlags.VOLATILE</code></li>
 </ul>
 </dd>
 </dl>
@@ -366,12 +467,15 @@ initTheme();
 <section class="detail" id="ACC_BRIDGE">
 <h3>ACC_BRIDGE</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_BRIDGE</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_BRIDGE</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_BRIDGE">Constant Field Values</a></li>
+<li><code>AccessFlags.BRIDGE</code></li>
 </ul>
 </dd>
 </dl>
@@ -382,12 +486,15 @@ initTheme();
 <section class="detail" id="ACC_TRANSIENT">
 <h3>ACC_TRANSIENT</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_TRANSIENT</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_TRANSIENT</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_TRANSIENT">Constant Field Values</a></li>
+<li><code>AccessFlags.TRANSIENT</code></li>
 </ul>
 </dd>
 </dl>
@@ -398,12 +505,15 @@ initTheme();
 <section class="detail" id="ACC_VARARGS">
 <h3>ACC_VARARGS</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_VARARGS</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_VARARGS</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_VARARGS">Constant Field Values</a></li>
+<li><code>AccessFlags.VARARGS</code></li>
 </ul>
 </dd>
 </dl>
@@ -414,12 +524,15 @@ initTheme();
 <section class="detail" id="ACC_NATIVE">
 <h3>ACC_NATIVE</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_NATIVE</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_NATIVE</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_NATIVE">Constant Field Values</a></li>
+<li><code>AccessFlags.NATIVE</code></li>
 </ul>
 </dd>
 </dl>
@@ -430,12 +543,15 @@ initTheme();
 <section class="detail" id="ACC_INTERFACE">
 <h3>ACC_INTERFACE</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_INTERFACE</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_INTERFACE</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_INTERFACE">Constant Field Values</a></li>
+<li><code>AccessFlags.INTERFACE</code></li>
 </ul>
 </dd>
 </dl>
@@ -446,12 +562,15 @@ initTheme();
 <section class="detail" id="ACC_ABSTRACT">
 <h3>ACC_ABSTRACT</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_ABSTRACT</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_ABSTRACT</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ABSTRACT">Constant Field Values</a></li>
+<li><code>AccessFlags.ABSTRACT</code></li>
 </ul>
 </dd>
 </dl>
@@ -462,12 +581,15 @@ initTheme();
 <section class="detail" id="ACC_STRICT">
 <h3>ACC_STRICT</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_STRICT</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_STRICT</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_STRICT">Constant Field Values</a></li>
+<li><code>AccessFlags.STRICTFP</code></li>
 </ul>
 </dd>
 </dl>
@@ -478,12 +600,15 @@ initTheme();
 <section class="detail" id="ACC_SYNTHETIC">
 <h3>ACC_SYNTHETIC</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_SYNTHETIC</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_SYNTHETIC</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_SYNTHETIC">Constant Field Values</a></li>
+<li><code>AccessFlags.SYNTHETIC</code></li>
 </ul>
 </dd>
 </dl>
@@ -494,12 +619,15 @@ initTheme();
 <section class="detail" id="ACC_ANNOTATION">
 <h3>ACC_ANNOTATION</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_ANNOTATION</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_ANNOTATION</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ANNOTATION">Constant Field Values</a></li>
+<li><code>AccessFlags.ANNOTATION</code></li>
 </ul>
 </dd>
 </dl>
@@ -510,12 +638,15 @@ initTheme();
 <section class="detail" id="ACC_ENUM">
 <h3>ACC_ENUM</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_ENUM</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_ENUM</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ENUM">Constant Field Values</a></li>
+<li><code>AccessFlags.ENUM</code></li>
 </ul>
 </dd>
 </dl>
@@ -527,6 +658,7 @@ initTheme();
 <h3>ACC_UNUSED</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_UNUSED</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -542,12 +674,15 @@ initTheme();
 <section class="detail" id="ACC_CONSTRUCTOR">
 <h3>ACC_CONSTRUCTOR</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_CONSTRUCTOR</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_CONSTRUCTOR</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_CONSTRUCTOR">Constant Field Values</a></li>
+<li><code>AccessFlags.CONSTRUCTOR</code></li>
 </ul>
 </dd>
 </dl>
@@ -558,12 +693,34 @@ initTheme();
 <section class="detail" id="ACC_DECLARED_SYNCHRONIZED">
 <h3>ACC_DECLARED_SYNCHRONIZED</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_DECLARED_SYNCHRONIZED</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_DECLARED_SYNCHRONIZED</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list-long">
+<li><code>AccessFlags.DECLARED_SYNCHRONIZED</code></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="ACC_private">
+<h3>ACC_private</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">ACC_private</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.ACC_DECLARED_SYNCHRONIZED">Constant Field Values</a></li>
+<li><a href="#ACC_PUBLIC"><code>ACC_PUBLIC</code></a></li>
 </ul>
 </dd>
 </dl>
@@ -574,11 +731,15 @@ initTheme();
 <section class="detail" id="VALUE_BYTE">
 <h3>VALUE_BYTE</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_BYTE</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_BYTE</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.BYTE</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_BYTE">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -590,11 +751,15 @@ initTheme();
 <section class="detail" id="VALUE_SHORT">
 <h3>VALUE_SHORT</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_SHORT</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_SHORT</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.SHORT</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_SHORT">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -606,11 +771,15 @@ initTheme();
 <section class="detail" id="VALUE_CHAR">
 <h3>VALUE_CHAR</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_CHAR</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_CHAR</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.CHAR</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_CHAR">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -622,11 +791,15 @@ initTheme();
 <section class="detail" id="VALUE_INT">
 <h3>VALUE_INT</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_INT</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_INT</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.INT</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_INT">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -638,11 +811,15 @@ initTheme();
 <section class="detail" id="VALUE_LONG">
 <h3>VALUE_LONG</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_LONG</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_LONG</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.LONG</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_LONG">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -654,11 +831,15 @@ initTheme();
 <section class="detail" id="VALUE_FLOAT">
 <h3>VALUE_FLOAT</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_FLOAT</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_FLOAT</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.FLOAT</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_FLOAT">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -670,11 +851,15 @@ initTheme();
 <section class="detail" id="VALUE_DOUBLE">
 <h3>VALUE_DOUBLE</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_DOUBLE</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_DOUBLE</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.DOUBLE</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_DOUBLE">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -686,11 +871,15 @@ initTheme();
 <section class="detail" id="VALUE_STRING">
 <h3>VALUE_STRING</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_STRING</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_STRING</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.STRING</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_STRING">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -702,11 +891,15 @@ initTheme();
 <section class="detail" id="VALUE_TYPE">
 <h3>VALUE_TYPE</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_TYPE</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_TYPE</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.TYPE</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_TYPE">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -718,11 +911,15 @@ initTheme();
 <section class="detail" id="VALUE_FIELD">
 <h3>VALUE_FIELD</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_FIELD</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_FIELD</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.FIELD</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_FIELD">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -734,11 +931,15 @@ initTheme();
 <section class="detail" id="VALUE_METHOD">
 <h3>VALUE_METHOD</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_METHOD</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_METHOD</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.METHOD</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_METHOD">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -750,11 +951,15 @@ initTheme();
 <section class="detail" id="VALUE_ENUM">
 <h3>VALUE_ENUM</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_ENUM</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_ENUM</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.ENUM</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ENUM">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -766,11 +971,15 @@ initTheme();
 <section class="detail" id="VALUE_ARRAY">
 <h3>VALUE_ARRAY</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_ARRAY</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_ARRAY</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.ARRAY</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ARRAY">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -782,11 +991,15 @@ initTheme();
 <section class="detail" id="VALUE_ANNOTATION">
 <h3>VALUE_ANNOTATION</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_ANNOTATION</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_ANNOTATION</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.ANNOTATION</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ANNOTATION">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -798,11 +1011,15 @@ initTheme();
 <section class="detail" id="VALUE_NULL">
 <h3>VALUE_NULL</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_NULL</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_NULL</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.NULL</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_NULL">Constant Field Values</a></li>
 </ul>
 </dd>
@@ -814,11 +1031,15 @@ initTheme();
 <section class="detail" id="VALUE_BOOLEAN">
 <h3>VALUE_BOOLEAN</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_BOOLEAN</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.7.2")
+</span><span class="modifiers">static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">VALUE_BOOLEAN</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
+<li><code>ValueType.BOOLEAN</code></li>
 <li><a href="../../../../../constant-values.html#com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_BOOLEAN">Constant Field Values</a></li>
 </ul>
 </dd>
