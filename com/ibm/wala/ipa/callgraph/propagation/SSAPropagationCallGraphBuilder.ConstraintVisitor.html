@@ -134,7 +134,6 @@ initTheme();
 <li><a href="#getBasicBlock()" tabindex="0">getBasicBlock()</a></li>
 <li><a href="#setBasicBlock(com.ibm.wala.ssa.ISSABasicBlock)" tabindex="0">setBasicBlock(ISSABasicBlock)</a></li>
 <li><a href="#visitLoadMetadata(com.ibm.wala.ssa.SSALoadMetadataInstruction)" tabindex="0">visitLoadMetadata(SSALoadMetadataInstruction)</a></li>
-<li><a href="#processClassInitializer(com.ibm.wala.classLoader.IClass)" tabindex="0">processClassInitializer(IClass)</a></li>
 </ol>
 </li>
 </ol>
@@ -356,81 +355,76 @@ initTheme();
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRootType(com.ibm.wala.classLoader.IClass)" class="member-name-link">isRootType</a><wbr>(<a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#processClassInitializer(com.ibm.wala.classLoader.IClass)" class="member-name-link">processClassInitializer</a><wbr>(<a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">TODO: lift most of this logic to PropagationCallGraphBuilder</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#processPutField(int,int,com.ibm.wala.classLoader.IField)" class="member-name-link">processPutField</a><wbr>(int&nbsp;rval,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#processPutField(int,int,com.ibm.wala.classLoader.IField)" class="member-name-link">processPutField</a><wbr>(int&nbsp;rval,
  int&nbsp;ref,
  <a href="../../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a>&nbsp;f)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#processPutStatic(int,com.ibm.wala.types.FieldReference,com.ibm.wala.classLoader.IField)" class="member-name-link">processPutStatic</a><wbr>(int&nbsp;rval,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#processPutStatic(int,com.ibm.wala.types.FieldReference,com.ibm.wala.classLoader.IField)" class="member-name-link">processPutStatic</a><wbr>(int&nbsp;rval,
  <a href="../../../types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&nbsp;field,
  <a href="../../../classLoader/IField.html" title="interface in com.ibm.wala.classLoader">IField</a>&nbsp;f)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBasicBlock(com.ibm.wala.ssa.ISSABasicBlock)" class="member-name-link">setBasicBlock</a><wbr>(<a href="../../../ssa/ISSABasicBlock.html" title="interface in com.ibm.wala.ssa">ISSABasicBlock</a>&nbsp;block)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBasicBlock(com.ibm.wala.ssa.ISSABasicBlock)" class="member-name-link">setBasicBlock</a><wbr>(<a href="../../../ssa/ISSABasicBlock.html" title="interface in com.ibm.wala.ssa">ISSABasicBlock</a>&nbsp;block)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">The calling loop must call this in each iteration!</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitArrayLoad(com.ibm.wala.ssa.SSAArrayLoadInstruction)" class="member-name-link">visitArrayLoad</a><wbr>(<a href="../../../ssa/SSAArrayLoadInstruction.html" title="class in com.ibm.wala.ssa">SSAArrayLoadInstruction</a>&nbsp;instruction)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitArrayStore(com.ibm.wala.ssa.SSAArrayStoreInstruction)" class="member-name-link">visitArrayStore</a><wbr>(<a href="../../../ssa/SSAArrayStoreInstruction.html" title="class in com.ibm.wala.ssa">SSAArrayStoreInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitArrayLoad(com.ibm.wala.ssa.SSAArrayLoadInstruction)" class="member-name-link">visitArrayLoad</a><wbr>(<a href="../../../ssa/SSAArrayLoadInstruction.html" title="class in com.ibm.wala.ssa">SSAArrayLoadInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitCheckCast(com.ibm.wala.ssa.SSACheckCastInstruction)" class="member-name-link">visitCheckCast</a><wbr>(<a href="../../../ssa/SSACheckCastInstruction.html" title="class in com.ibm.wala.ssa">SSACheckCastInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitArrayStore(com.ibm.wala.ssa.SSAArrayStoreInstruction)" class="member-name-link">visitArrayStore</a><wbr>(<a href="../../../ssa/SSAArrayStoreInstruction.html" title="class in com.ibm.wala.ssa">SSAArrayStoreInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitGet(com.ibm.wala.ssa.SSAGetInstruction)" class="member-name-link">visitGet</a><wbr>(<a href="../../../ssa/SSAGetInstruction.html" title="class in com.ibm.wala.ssa">SSAGetInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitCheckCast(com.ibm.wala.ssa.SSACheckCastInstruction)" class="member-name-link">visitCheckCast</a><wbr>(<a href="../../../ssa/SSACheckCastInstruction.html" title="class in com.ibm.wala.ssa">SSACheckCastInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitGetCaughtException(com.ibm.wala.ssa.SSAGetCaughtExceptionInstruction)" class="member-name-link">visitGetCaughtException</a><wbr>(<a href="../../../ssa/SSAGetCaughtExceptionInstruction.html" title="class in com.ibm.wala.ssa">SSAGetCaughtExceptionInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitGet(com.ibm.wala.ssa.SSAGetInstruction)" class="member-name-link">visitGet</a><wbr>(<a href="../../../ssa/SSAGetInstruction.html" title="class in com.ibm.wala.ssa">SSAGetInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitGetInternal(int,int,boolean,com.ibm.wala.types.FieldReference)" class="member-name-link">visitGetInternal</a><wbr>(int&nbsp;lval,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitGetCaughtException(com.ibm.wala.ssa.SSAGetCaughtExceptionInstruction)" class="member-name-link">visitGetCaughtException</a><wbr>(<a href="../../../ssa/SSAGetCaughtExceptionInstruction.html" title="class in com.ibm.wala.ssa">SSAGetCaughtExceptionInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitGetInternal(int,int,boolean,com.ibm.wala.types.FieldReference)" class="member-name-link">visitGetInternal</a><wbr>(int&nbsp;lval,
  int&nbsp;ref,
  boolean&nbsp;isStatic,
  <a href="../../../types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&nbsp;field)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitInvoke(com.ibm.wala.ssa.SSAInvokeInstruction)" class="member-name-link">visitInvoke</a><wbr>(<a href="../../../ssa/SSAInvokeInstruction.html" title="class in com.ibm.wala.ssa">SSAInvokeInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitInvokeInternal(com.ibm.wala.ssa.SSAAbstractInvokeInstruction,com.ibm.wala.ipa.callgraph.propagation.SSAPropagationCallGraphBuilder.ConstraintVisitor.InvariantComputer)" class="member-name-link">visitInvokeInternal</a><wbr>(<a href="../../../ssa/SSAAbstractInvokeInstruction.html" title="class in com.ibm.wala.ssa">SSAAbstractInvokeInstruction</a>&nbsp;instruction,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitInvoke(com.ibm.wala.ssa.SSAInvokeInstruction)" class="member-name-link">visitInvoke</a><wbr>(<a href="../../../ssa/SSAInvokeInstruction.html" title="class in com.ibm.wala.ssa">SSAInvokeInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitInvokeInternal(com.ibm.wala.ssa.SSAAbstractInvokeInstruction,com.ibm.wala.ipa.callgraph.propagation.SSAPropagationCallGraphBuilder.ConstraintVisitor.InvariantComputer)" class="member-name-link">visitInvokeInternal</a><wbr>(<a href="../../../ssa/SSAAbstractInvokeInstruction.html" title="class in com.ibm.wala.ssa">SSAAbstractInvokeInstruction</a>&nbsp;instruction,
  <a href="SSAPropagationCallGraphBuilder.ConstraintVisitor.InvariantComputer.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">SSAPropagationCallGraphBuilder.ConstraintVisitor.InvariantComputer</a>&nbsp;invs)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitLoadMetadata(com.ibm.wala.ssa.SSALoadMetadataInstruction)" class="member-name-link">visitLoadMetadata</a><wbr>(<a href="../../../ssa/SSALoadMetadataInstruction.html" title="class in com.ibm.wala.ssa">SSALoadMetadataInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitNew(com.ibm.wala.ssa.SSANewInstruction)" class="member-name-link">visitNew</a><wbr>(<a href="../../../ssa/SSANewInstruction.html" title="class in com.ibm.wala.ssa">SSANewInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitLoadMetadata(com.ibm.wala.ssa.SSALoadMetadataInstruction)" class="member-name-link">visitLoadMetadata</a><wbr>(<a href="../../../ssa/SSALoadMetadataInstruction.html" title="class in com.ibm.wala.ssa">SSALoadMetadataInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPhi(com.ibm.wala.ssa.SSAPhiInstruction)" class="member-name-link">visitPhi</a><wbr>(<a href="../../../ssa/SSAPhiInstruction.html" title="class in com.ibm.wala.ssa">SSAPhiInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitNew(com.ibm.wala.ssa.SSANewInstruction)" class="member-name-link">visitNew</a><wbr>(<a href="../../../ssa/SSANewInstruction.html" title="class in com.ibm.wala.ssa">SSANewInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPi(com.ibm.wala.ssa.SSAPiInstruction)" class="member-name-link">visitPi</a><wbr>(<a href="../../../ssa/SSAPiInstruction.html" title="class in com.ibm.wala.ssa">SSAPiInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPhi(com.ibm.wala.ssa.SSAPhiInstruction)" class="member-name-link">visitPhi</a><wbr>(<a href="../../../ssa/SSAPhiInstruction.html" title="class in com.ibm.wala.ssa">SSAPhiInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPut(com.ibm.wala.ssa.SSAPutInstruction)" class="member-name-link">visitPut</a><wbr>(<a href="../../../ssa/SSAPutInstruction.html" title="class in com.ibm.wala.ssa">SSAPutInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPi(com.ibm.wala.ssa.SSAPiInstruction)" class="member-name-link">visitPi</a><wbr>(<a href="../../../ssa/SSAPiInstruction.html" title="class in com.ibm.wala.ssa">SSAPiInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPutInternal(int,int,boolean,com.ibm.wala.types.FieldReference)" class="member-name-link">visitPutInternal</a><wbr>(int&nbsp;rval,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPut(com.ibm.wala.ssa.SSAPutInstruction)" class="member-name-link">visitPut</a><wbr>(<a href="../../../ssa/SSAPutInstruction.html" title="class in com.ibm.wala.ssa">SSAPutInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitPutInternal(int,int,boolean,com.ibm.wala.types.FieldReference)" class="member-name-link">visitPutInternal</a><wbr>(int&nbsp;rval,
  int&nbsp;ref,
  boolean&nbsp;isStatic,
  <a href="../../../types/FieldReference.html" title="class in com.ibm.wala.types">FieldReference</a>&nbsp;field)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitReturn(com.ibm.wala.ssa.SSAReturnInstruction)" class="member-name-link">visitReturn</a><wbr>(<a href="../../../ssa/SSAReturnInstruction.html" title="class in com.ibm.wala.ssa">SSAReturnInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitThrow(com.ibm.wala.ssa.SSAThrowInstruction)" class="member-name-link">visitThrow</a><wbr>(<a href="../../../ssa/SSAThrowInstruction.html" title="class in com.ibm.wala.ssa">SSAThrowInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitReturn(com.ibm.wala.ssa.SSAReturnInstruction)" class="member-name-link">visitReturn</a><wbr>(<a href="../../../ssa/SSAReturnInstruction.html" title="class in com.ibm.wala.ssa">SSAReturnInstruction</a>&nbsp;instruction)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#visitThrow(com.ibm.wala.ssa.SSAThrowInstruction)" class="member-name-link">visitThrow</a><wbr>(<a href="../../../ssa/SSAThrowInstruction.html" title="class in com.ibm.wala.ssa">SSAThrowInstruction</a>&nbsp;instruction)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -970,17 +964,6 @@ allow more flexible reuse of this visitor in subclasses</div>
 <h3>visitLoadMetadata</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">visitLoadMetadata</span><wbr><span class="parameters">(<a href="../../../ssa/SSALoadMetadataInstruction.html" title="class in com.ibm.wala.ssa">SSALoadMetadataInstruction</a>&nbsp;instruction)</span></div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="processClassInitializer(com.ibm.wala.classLoader.IClass)">
-<h3>processClassInitializer</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">processClassInitializer</span><wbr><span class="parameters">(<a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</span></div>
-<div class="block">TODO: lift most of this logic to PropagationCallGraphBuilder
-
-<p>Add a call to the class initializer from the root method.</div>
 </div>
 </section>
 </li>
