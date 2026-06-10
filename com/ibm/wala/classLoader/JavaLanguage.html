@@ -68,6 +68,7 @@ initTheme();
 <ol class="toc-list">
 <li><a href="#methods-inherited-from-class-com.ibm.wala.classLoader.LanguageImpl" tabindex="0">Methods inherited from class&nbsp;LanguageImpl</a></li>
 <li><a href="#methods-inherited-from-class-java.lang.Object" tabindex="0">Methods inherited from class&nbsp;Object</a></li>
+<li><a href="#methods-inherited-from-class-com.ibm.wala.classLoader.Language" tabindex="0">Methods inherited from interface&nbsp;Language</a></li>
 </ol>
 </li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
@@ -112,7 +113,7 @@ initTheme();
 <li><a href="#getPrimitive(com.ibm.wala.types.TypeReference)" tabindex="0">getPrimitive(TypeReference)</a></li>
 <li><a href="#getInvokeMethodReference(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.shrike.shrikeBT.IInvokeInstruction)" tabindex="0">getInvokeMethodReference(ClassLoaderReference, IInvokeInstruction)</a></li>
 <li><a href="#methodsHaveDeclaredParameterTypes()" tabindex="0">methodsHaveDeclaredParameterTypes()</a></li>
-<li><a href="#getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" tabindex="0">getFakeRootMethod(IClassHierarchy, AnalysisOptions, IAnalysisCacheView)</a></li>
+<li><a href="#getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" tabindex="0">getFakeRootMethod(IClassHierarchy, IAnalysisCacheView)</a></li>
 <li><a href="#makeRefVisitor(com.ibm.wala.ipa.callgraph.CGNode,java.util.Collection,com.ibm.wala.ipa.callgraph.propagation.PointerAnalysis,com.ibm.wala.ipa.modref.ExtendedHeapModel)" tabindex="0">makeRefVisitor(CGNode, Collection, PointerAnalysis, ExtendedHeapModel)</a></li>
 <li><a href="#makeModVisitor(com.ibm.wala.ipa.callgraph.CGNode,java.util.Collection,com.ibm.wala.ipa.callgraph.propagation.PointerAnalysis,com.ibm.wala.ipa.modref.ExtendedHeapModel,boolean)" tabindex="0">makeModVisitor(CGNode, Collection, PointerAnalysis, ExtendedHeapModel, boolean)</a></li>
 <li><a href="#arraysAsNestedObject()" tabindex="0">arraysAsNestedObject()</a></li>
@@ -1091,8 +1092,7 @@ implements <a href="BytecodeLanguage.html" title="interface in com.ibm.wala.clas
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getExceptionInInitializerError()" class="member-name-link">getExceptionInInitializerError</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../ipa/callgraph/impl/AbstractRootMethod.html" title="class in com.ibm.wala.ipa.callgraph.impl">AbstractRootMethod</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" class="member-name-link">getFakeRootMethod</a><wbr>(<a href="../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
- <a href="../ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" class="member-name-link">getFakeRootMethod</a><wbr>(<a href="../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  <a href="../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></div>
@@ -1258,6 +1258,25 @@ the corresponding character to use in a Java method descriptor</div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#method-summary" title="class in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#clone()" title="clone()" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#finalize()" title="finalize()" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#getClass()" title="getClass()" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#notify()" title="notify()" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#notifyAll()" title="notifyAll()" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#wait()" title="wait()" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#wait(long)" title="wait(long)" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="wait(long, int)" class="external-link">wait</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-com.ibm.wala.classLoader.Language">Methods inherited from interface&nbsp;<a href="Language.html#method-summary" title="interface in com.ibm.wala.classLoader">Language</a></h3>
+<code><a href="Language.html#getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" title="getFakeRootMethod(IClassHierarchy, AnalysisOptions, IAnalysisCacheView)">getFakeRootMethod</a></code>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>default <a href="../ipa/callgraph/impl/AbstractRootMethod.html" title="class in com.ibm.wala.ipa.callgraph.impl">AbstractRootMethod</a></code></div>
+<div class="col-second even-row-color"><code><a href="Language.html#getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" class="member-name-link">getFakeRootMethod</a><wbr>(<a href="../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+ <a href="../ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+ <a href="../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache)</code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="Language.html#getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)"><code>Language.getFakeRootMethod(IClassHierarchy, IAnalysisCacheView)</code></a>; the <code>
+    options</code> parameter is unused.</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 </li>
 </ul>
@@ -1732,15 +1751,14 @@ The returned object should be appropriate for use as the token in an <a href="..
 </section>
 </li>
 <li>
-<section class="detail" id="getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">
+<section class="detail" id="getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">
 <h3>getFakeRootMethod</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../ipa/callgraph/impl/AbstractRootMethod.html" title="class in com.ibm.wala.ipa.callgraph.impl">AbstractRootMethod</a></span>&nbsp;<span class="element-name">getFakeRootMethod</span><wbr><span class="parameters">(<a href="../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
- <a href="../ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
  <a href="../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache)</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="Language.html#getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">getFakeRootMethod</a></code>&nbsp;in interface&nbsp;<code><a href="Language.html" title="interface in com.ibm.wala.classLoader">Language</a></code></dd>
+<dd><code><a href="Language.html#getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">getFakeRootMethod</a></code>&nbsp;in interface&nbsp;<code><a href="Language.html" title="interface in com.ibm.wala.classLoader">Language</a></code></dd>
 </dl>
 </div>
 </section>

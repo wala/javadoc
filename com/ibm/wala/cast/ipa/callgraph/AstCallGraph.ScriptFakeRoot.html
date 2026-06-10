@@ -68,6 +68,7 @@ initTheme();
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
+<li><a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" tabindex="0">ScriptFakeRoot(MethodReference, IClass, IClassHierarchy, IAnalysisCacheView)</a></li>
 <li><a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" tabindex="0">ScriptFakeRoot(MethodReference, IClass, IClassHierarchy, AnalysisOptions, IAnalysisCacheView)</a></li>
 <li><a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" tabindex="0">ScriptFakeRoot(MethodReference, IClassHierarchy, AnalysisOptions, IAnalysisCacheView)</a></li>
 <li><a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" tabindex="0">ScriptFakeRoot(MethodReference, IClassHierarchy, IAnalysisCacheView)</a></li>
@@ -209,20 +210,29 @@ initTheme();
  <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  <a href="../../../ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
  <a href="../../../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" class="member-name-link">ScriptFakeRoot</a><wbr>(<a href="../../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;rootMethod,
- <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
- <a href="../../../ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
- <a href="../../../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache)</code></div>
-<div class="col-last odd-row-color">
+<div class="col-last even-row-color">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">to remove unused <code>options</code> parameter</div>
 </div>
 </div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" class="member-name-link">ScriptFakeRoot</a><wbr>(<a href="../../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;rootMethod,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" class="member-name-link">ScriptFakeRoot</a><wbr>(<a href="../../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;rootMethod,
+ <a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;declaringClass,
  <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  <a href="../../../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" class="member-name-link">ScriptFakeRoot</a><wbr>(<a href="../../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;rootMethod,
+ <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+ <a href="../../../ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
+ <a href="../../../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache)</code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">to remove unused <code>options</code> parameter</div>
+</div>
+</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)" class="member-name-link">ScriptFakeRoot</a><wbr>(<a href="../../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;rootMethod,
+ <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+ <a href="../../../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -577,14 +587,38 @@ synthetic methods, refer to <a href="../../../classLoader/IMethod.html#isSynthet
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.types.MethodReference,com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.types.MethodReference,com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">
 <h3>ScriptFakeRoot</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ScriptFakeRoot</span><wbr><span class="parameters">(<a href="../../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;rootMethod,
  <a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;declaringClass,
  <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+ <a href="../../../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.types.MethodReference,com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">
+<h3>ScriptFakeRoot</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.8.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="element-name">ScriptFakeRoot</span><wbr><span class="parameters">(<a href="../../../types/MethodReference.html" title="class in com.ibm.wala.types">MethodReference</a>&nbsp;rootMethod,
+ <a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;declaringClass,
+ <a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  <a href="../../../ipa/callgraph/AnalysisOptions.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisOptions</a>&nbsp;options,
  <a href="../../../ipa/callgraph/IAnalysisCacheView.html" title="interface in com.ibm.wala.ipa.callgraph">IAnalysisCacheView</a>&nbsp;cache)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">to remove unused <code>options</code> parameter</div>
+</div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list-long">
+<li><a href="#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)"><code>ScriptFakeRoot(MethodReference, IClass, IClassHierarchy, IAnalysisCacheView)</code></a></li>
+</ul>
+</dd>
+</dl>
 </div>
 </section>
 </li>
