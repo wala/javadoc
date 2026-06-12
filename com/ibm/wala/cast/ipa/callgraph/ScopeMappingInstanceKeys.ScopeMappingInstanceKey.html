@@ -64,7 +64,12 @@ initTheme();
 <li><a href="#" tabindex="0">Description</a></li>
 <li><a href="#nested-class-summary" tabindex="0">Nested Class Summary</a></li>
 <li><a href="#constructor-summary" tabindex="0">Constructor Summary</a></li>
-<li><a href="#method-summary" tabindex="0">Method Summary</a></li>
+<li><a href="#method-summary" tabindex="0">Method Summary</a>
+<ol class="toc-list">
+<li><a href="#methods-inherited-from-class-java.lang.Object" tabindex="0">Methods inherited from class&nbsp;Object</a></li>
+<li><a href="#methods-inherited-from-class-com.ibm.wala.ipa.callgraph.propagation.InstanceKey" tabindex="0">Methods inherited from interface&nbsp;InstanceKey</a></li>
+</ol>
+</li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
 <li><a href="#%3Cinit%3E(com.ibm.wala.ipa.callgraph.CGNode,com.ibm.wala.ipa.callgraph.propagation.InstanceKey)" tabindex="0">ScopeMappingInstanceKey(CGNode, InstanceKey)</a></li>
@@ -72,7 +77,7 @@ initTheme();
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#getConcreteType()" tabindex="0">getConcreteType()</a></li>
+<li><a href="#concreteType()" tabindex="0">concreteType()</a></li>
 <li><a href="#getFunargNodes(com.ibm.wala.util.collections.Pair)" tabindex="0">getFunargNodes(Pair)</a></li>
 <li><a href="#getFunargNodes(com.ibm.wala.util.collections.Pair,java.util.Set)" tabindex="0">getFunargNodes(Pair, Set)</a></li>
 <li><a href="#hashCode()" tabindex="0">hashCode()</a></li>
@@ -166,19 +171,19 @@ parent is no longer on the call stack when the function is allocated. See test c
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBase()" class="member-name-link">getBase</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getConcreteType()" class="member-name-link">getConcreteType</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#concreteType()" class="member-name-link">concreteType</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">For now, we assert that each InstanceKey represents a set of classes which are all of the same
 concrete type (modulo the fact that all arrays of references are considered concrete type
 []Object;)</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBase()" class="member-name-link">getBase</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Iterator.html" title="interface in java.util" class="external-link">Iterator</a><wbr>&lt;<a href="../../../util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../../../ipa/callgraph/CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>, <a href="../../../classLoader/NewSiteReference.html" title="class in com.ibm.wala.classLoader">NewSiteReference</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCreationSites(com.ibm.wala.ipa.callgraph.CallGraph)" class="member-name-link">getCreationSites</a><wbr>(<a href="../../../ipa/callgraph/CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a>&nbsp;CG)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -209,6 +214,22 @@ represented by <code>this</code>.</div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#method-summary" title="class in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#clone()" title="clone()" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#finalize()" title="finalize()" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#getClass()" title="getClass()" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#notify()" title="notify()" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#notifyAll()" title="notifyAll()" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#wait()" title="wait()" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#wait(long)" title="wait(long)" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="wait(long, int)" class="external-link">wait</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-com.ibm.wala.ipa.callgraph.propagation.InstanceKey">Methods inherited from interface&nbsp;<a href="../../../ipa/callgraph/propagation/InstanceKey.html#method-summary" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a></h3>
+<code><a href="../../../ipa/callgraph/propagation/InstanceKey.html#getConcreteType()" title="getConcreteType()">getConcreteType</a></code>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>default <a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second even-row-color"><code><a href="../../../ipa/callgraph/propagation/InstanceKey.html#getConcreteType()" class="member-name-link">getConcreteType</a>()</code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="../../../ipa/callgraph/propagation/InstanceKey.html#concreteType()"><code>InstanceKey.concreteType()</code></a> instead</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 </li>
 </ul>
@@ -238,17 +259,17 @@ represented by <code>this</code>.</div>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="getConcreteType()">
-<h3>getConcreteType</h3>
+<section class="detail" id="concreteType()">
+<h3>concreteType</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></span>&nbsp;<span class="element-name">getConcreteType</span>()</div>
-<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../../ipa/callgraph/propagation/InstanceKey.html#getConcreteType()">InstanceKey</a></code></span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></span>&nbsp;<span class="element-name">concreteType</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../../ipa/callgraph/propagation/InstanceKey.html#concreteType()">InstanceKey</a></code></span></div>
 <div class="block">For now, we assert that each InstanceKey represents a set of classes which are all of the same
 concrete type (modulo the fact that all arrays of references are considered concrete type
 []Object;)</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../../../ipa/callgraph/propagation/InstanceKey.html#getConcreteType()">getConcreteType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a></code></dd>
+<dd><code><a href="../../../ipa/callgraph/propagation/InstanceKey.html#concreteType()">concreteType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../ipa/callgraph/propagation/InstanceKey.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">InstanceKey</a></code></dd>
 </dl>
 </div>
 </section>
