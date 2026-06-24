@@ -914,7 +914,7 @@ initTheme();
 <li class="circle">com.ibm.wala.util.graph.traverse.<a href="com/ibm/wala/util/graph/traverse/BoundedBFSIterator.html" class="type-name-link" title="class in com.ibm.wala.util.graph.traverse">BoundedBFSIterator</a>&lt;T&gt; (implements java.util.<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Iterator.html" title="interface in java.util" class="external-link">Iterator</a>&lt;E&gt;)</li>
 <li class="circle">com.ibm.wala.ipa.summaries.<a href="com/ibm/wala/ipa/summaries/BypassClassTargetSelector.html" class="type-name-link" title="class in com.ibm.wala.ipa.summaries">BypassClassTargetSelector</a> (implements com.ibm.wala.ipa.callgraph.<a href="com/ibm/wala/ipa/callgraph/ClassTargetSelector.html" title="interface in com.ibm.wala.ipa.callgraph">ClassTargetSelector</a>)</li>
 <li class="circle">com.ibm.wala.ipa.summaries.<a href="com/ibm/wala/ipa/summaries/BypassMethodTargetSelector.html" class="type-name-link" title="class in com.ibm.wala.ipa.summaries">BypassMethodTargetSelector</a> (implements com.ibm.wala.ipa.callgraph.<a href="com/ibm/wala/ipa/callgraph/MethodTargetSelector.html" title="interface in com.ibm.wala.ipa.callgraph">MethodTargetSelector</a>)</li>
-<li class="circle">com.ibm.wala.ipa.summaries.<a href="com/ibm/wala/ipa/summaries/BypassSyntheticClassLoader.html" class="type-name-link" title="class in com.ibm.wala.ipa.summaries">BypassSyntheticClassLoader</a> (implements com.ibm.wala.classLoader.<a href="com/ibm/wala/classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>)</li>
+<li class="circle">com.ibm.wala.ipa.summaries.<a href="com/ibm/wala/ipa/summaries/BypassSyntheticClassLoader.html" class="type-name-link" title="class in com.ibm.wala.ipa.summaries">BypassSyntheticClassLoader</a> (implements com.ibm.wala.classLoader.<a href="com/ibm/wala/classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>, com.ibm.wala.ipa.summaries.<a href="com/ibm/wala/ipa/summaries/SummaryClassShellLoader.html" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a>)</li>
 <li class="circle">com.ibm.wala.classLoader.<a href="com/ibm/wala/classLoader/BytecodeClass.html" class="type-name-link" title="class in com.ibm.wala.classLoader">BytecodeClass</a>&lt;T&gt; (implements com.ibm.wala.classLoader.<a href="com/ibm/wala/classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>)
 <ul>
 <li class="circle">com.ibm.wala.dalvik.classLoader.<a href="com/ibm/wala/dalvik/classLoader/DexIClass.html" class="type-name-link" title="class in com.ibm.wala.dalvik.classLoader">DexIClass</a></li>
@@ -967,7 +967,7 @@ initTheme();
 <li class="circle">org.scandroid.flow.functions.<a href="org/scandroid/flow/functions/CallToReturnFunction.html" class="type-name-link" title="class in org.scandroid.flow.functions">CallToReturnFunction</a>&lt;E&gt; (implements com.ibm.wala.dataflow.IFDS.<a href="com/ibm/wala/dataflow/IFDS/IUnaryFlowFunction.html" title="interface in com.ibm.wala.dataflow.IFDS">IUnaryFlowFunction</a>)</li>
 <li class="circle">com.ibm.wala.cast.loader.<a href="com/ibm/wala/cast/loader/CAstAbstractLoader.html" class="type-name-link" title="class in com.ibm.wala.cast.loader">CAstAbstractLoader</a> (implements com.ibm.wala.classLoader.<a href="com/ibm/wala/classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>)
 <ul>
-<li class="circle">com.ibm.wala.cast.loader.<a href="com/ibm/wala/cast/loader/CAstAbstractModuleLoader.html" class="type-name-link" title="class in com.ibm.wala.cast.loader">CAstAbstractModuleLoader</a>
+<li class="circle">com.ibm.wala.cast.loader.<a href="com/ibm/wala/cast/loader/CAstAbstractModuleLoader.html" class="type-name-link" title="class in com.ibm.wala.cast.loader">CAstAbstractModuleLoader</a> (implements com.ibm.wala.ipa.summaries.<a href="com/ibm/wala/ipa/summaries/SummaryClassShellLoader.html" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a>)
 <ul>
 <li class="circle">com.ibm.wala.cast.js.loader.<a href="com/ibm/wala/cast/js/loader/JavaScriptLoader.html" class="type-name-link" title="class in com.ibm.wala.cast.js.loader">JavaScriptLoader</a></li>
 </ul>
@@ -2630,6 +2630,7 @@ initTheme();
 <li class="circle">com.ibm.wala.ipa.callgraph.impl.<a href="com/ibm/wala/ipa/callgraph/impl/FakeRootClass.html" class="type-name-link" title="class in com.ibm.wala.ipa.callgraph.impl">FakeRootClass</a></li>
 <li class="circle">com.ibm.wala.ipa.summaries.<a href="com/ibm/wala/ipa/summaries/LambdaSummaryClass.html" class="type-name-link" title="class in com.ibm.wala.ipa.summaries">LambdaSummaryClass</a></li>
 <li class="circle">com.ibm.wala.classLoader.<a href="com/ibm/wala/classLoader/PhantomClass.html" class="type-name-link" title="class in com.ibm.wala.classLoader">PhantomClass</a></li>
+<li class="circle">com.ibm.wala.ipa.summaries.<a href="com/ibm/wala/ipa/summaries/SummaryClassShell.html" class="type-name-link" title="class in com.ibm.wala.ipa.summaries">SummaryClassShell</a></li>
 </ul>
 </li>
 <li class="circle">com.ibm.wala.model.<a href="com/ibm/wala/model/SyntheticFactory.html" class="type-name-link" title="class in com.ibm.wala.model">SyntheticFactory</a></li>
@@ -3133,7 +3134,11 @@ initTheme();
 <li class="circle">com.ibm.wala.ipa.slicer.<a href="com/ibm/wala/ipa/slicer/ISDG.html" class="type-name-link" title="interface in com.ibm.wala.ipa.slicer">ISDG</a> (also extends com.ibm.wala.util.graph.<a href="com/ibm/wala/util/graph/NumberedGraph.html" title="interface in com.ibm.wala.util.graph">NumberedGraph</a>&lt;T&gt;)</li>
 </ul>
 </li>
-<li class="circle">com.ibm.wala.classLoader.<a href="com/ibm/wala/classLoader/IClassLoader.html" class="type-name-link" title="interface in com.ibm.wala.classLoader">IClassLoader</a></li>
+<li class="circle">com.ibm.wala.classLoader.<a href="com/ibm/wala/classLoader/IClassLoader.html" class="type-name-link" title="interface in com.ibm.wala.classLoader">IClassLoader</a>
+<ul>
+<li class="circle">com.ibm.wala.ipa.summaries.<a href="com/ibm/wala/ipa/summaries/SummaryClassShellLoader.html" class="type-name-link" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a></li>
+</ul>
+</li>
 <li class="circle">com.ibm.wala.shrike.shrikeBT.<a href="com/ibm/wala/shrike/shrikeBT/IConditionalBranchInstruction.IOperator.html" class="type-name-link" title="interface in com.ibm.wala.shrike.shrikeBT">IConditionalBranchInstruction.IOperator</a></li>
 <li class="circle">com.ibm.wala.demandpa.alg.<a href="com/ibm/wala/demandpa/alg/IDemandPointerAnalysis.html" class="type-name-link" title="interface in com.ibm.wala.demandpa.alg">IDemandPointerAnalysis</a></li>
 <li class="circle">org.scandroid.util.<a href="org/scandroid/util/IEntryPointSpecifier.html" class="type-name-link" title="interface in org.scandroid.util">IEntryPointSpecifier</a></li>

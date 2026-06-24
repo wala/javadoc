@@ -118,7 +118,7 @@ initTheme();
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></dd>
+<dd><code><a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>, <a href="../../../ipa/summaries/SummaryClassShellLoader.html" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a></code></dd>
 </dl>
 <hr>
 <div class="horizontal-scroll">
@@ -302,22 +302,29 @@ initTheme();
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-com.ibm.wala.cast.loader.CAstAbstractModuleLoader">Methods inherited from class&nbsp;<a href="../../loader/CAstAbstractModuleLoader.html#method-summary" title="class in com.ibm.wala.cast.loader">CAstAbstractModuleLoader</a></h3>
-<code><a href="../../loader/CAstAbstractModuleLoader.html#finishTranslation()" title="finishTranslation()">finishTranslation</a>, <a href="../../loader/CAstAbstractModuleLoader.html#getLocalFile(com.ibm.wala.classLoader.SourceModule)" title="getLocalFile(SourceModule)">getLocalFile</a>, <a href="../../loader/CAstAbstractModuleLoader.html#init(java.util.List)" title="init(List)">init</a></code>
+<code><a href="../../loader/CAstAbstractModuleLoader.html#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)" title="defineSummaryClassShell(TypeName, TypeName)">defineSummaryClassShell</a>, <a href="../../loader/CAstAbstractModuleLoader.html#finishTranslation()" title="finishTranslation()">finishTranslation</a>, <a href="../../loader/CAstAbstractModuleLoader.html#getLocalFile(com.ibm.wala.classLoader.SourceModule)" title="getLocalFile(SourceModule)">getLocalFile</a>, <a href="../../loader/CAstAbstractModuleLoader.html#init(java.util.List)" title="init(List)">init</a></code>
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><code><a href="../../loader/CAstAbstractModuleLoader.html#finishTranslation()" class="member-name-link">finishTranslation</a>()</code></div>
+<div class="col-first even-row-color"><code><a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second even-row-color"><code><a href="../../loader/CAstAbstractModuleLoader.html#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)" class="member-name-link">defineSummaryClassShell</a><wbr>(<a href="../../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;name,
+ <a href="../../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;superName)</code></div>
 <div class="col-last even-row-color">
+<div class="block">Register a "shell" <a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> for a summary-modeled type, so that source classes loaded by
+this loader can resolve it as a superclass at definition time.</div>
+</div>
+<div class="col-first odd-row-color"><code>protected void</code></div>
+<div class="col-second odd-row-color"><code><a href="../../loader/CAstAbstractModuleLoader.html#finishTranslation()" class="member-name-link">finishTranslation</a>()</code></div>
+<div class="col-last odd-row-color">
 <div class="block">subclasses should override to perform actions after CAst and IR have been generated.</div>
 </div>
-<div class="col-first odd-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a></code></div>
-<div class="col-second odd-row-color"><code><a href="../../loader/CAstAbstractModuleLoader.html#getLocalFile(com.ibm.wala.classLoader.SourceModule)" class="member-name-link">getLocalFile</a><wbr>(<a href="../../../classLoader/SourceModule.html" title="interface in com.ibm.wala.classLoader">SourceModule</a>&nbsp;M)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>void</code></div>
-<div class="col-second even-row-color"><code><a href="../../loader/CAstAbstractModuleLoader.html#init(java.util.List)" class="member-name-link">init</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/List.html" title="interface in java.util" class="external-link">List</a>&lt;<a href="../../../classLoader/Module.html" title="interface in com.ibm.wala.classLoader">Module</a>&gt;&nbsp;modules)</code></div>
-<div class="col-last even-row-color">
+<div class="col-first even-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a></code></div>
+<div class="col-second even-row-color"><code><a href="../../loader/CAstAbstractModuleLoader.html#getLocalFile(com.ibm.wala.classLoader.SourceModule)" class="member-name-link">getLocalFile</a><wbr>(<a href="../../../classLoader/SourceModule.html" title="interface in com.ibm.wala.classLoader">SourceModule</a>&nbsp;M)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>void</code></div>
+<div class="col-second odd-row-color"><code><a href="../../loader/CAstAbstractModuleLoader.html#init(java.util.List)" class="member-name-link">init</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/List.html" title="interface in java.util" class="external-link">List</a>&lt;<a href="../../../classLoader/Module.html" title="interface in com.ibm.wala.classLoader">Module</a>&gt;&nbsp;modules)</code></div>
+<div class="col-last odd-row-color">
 <div class="block">Initialize internal data structures.</div>
 </div>
 </div>

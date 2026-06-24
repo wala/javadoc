@@ -73,6 +73,8 @@ initTheme();
 <ol class="toc-list">
 <li><a href="#getSummaries()" tabindex="0">getSummaries()</a></li>
 <li><a href="#getAllocatableClasses()" tabindex="0">getAllocatableClasses()</a></li>
+<li><a href="#getClasses()" tabindex="0">getClasses()</a></li>
+<li><a href="#getClassSuperclasses()" tabindex="0">getClassSuperclasses()</a></li>
 <li><a href="#getIgnoredPackages()" tabindex="0">getIgnoredPackages()</a></li>
 </ol>
 </li>
@@ -764,6 +766,12 @@ implements <a href="../../shrike/shrikeBT/BytecodeConstants.html" title="interfa
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getAllocatableClasses()" class="member-name-link">getAllocatableClasses</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getClasses()" class="member-name-link">getClasses</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a><wbr>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>, <a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getClassSuperclasses()" class="member-name-link">getClassSuperclasses</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="../../core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getIgnoredPackages()" class="member-name-link">getIgnoredPackages</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -830,6 +838,35 @@ implements <a href="../../shrike/shrikeBT/BytecodeConstants.html" title="interfa
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>Set of TypeReferences marked "allocatable"</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getClasses()">
+<h3>getClasses</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</span>&nbsp;<span class="element-name">getClasses</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Set of TypeReferences for classes declared via a <code>&lt;class&gt;</code> element, i.e. the
+    classes this summary models. The declaring class loader of each <a href="../../types/TypeReference.html" title="class in com.ibm.wala.types"><code>TypeReference</code></a> is
+    the one named by the enclosing <code>&lt;classloader&gt;</code> element.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getClassSuperclasses()">
+<h3>getClassSuperclasses</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a>&lt;<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>, <a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&gt;</span>&nbsp;<span class="element-name">getClassSuperclasses</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a map from each class declared via <code>&lt;class name="..." super="..."&gt;</code> to its
+    declared superclass. Declaring a <code>super</code> opts the class in to being materialized as a
+    standalone class shell, positioned at that superclass; classes declared without a <code>
+    super</code> are method-summary-only and do not appear here. See <a href="../callgraph/impl/Util.html#addSummaryClassShells(com.ibm.wala.ipa.summaries.SummaryClassShellLoader,com.ibm.wala.ipa.summaries.XMLMethodSummaryReader)"><code>Util.addSummaryClassShells(SummaryClassShellLoader, XMLMethodSummaryReader)</code></a> and <a href="https://github.com/wala/WALA/issues/1957">#1957</a>.</dd>
 </dl>
 </div>
 </section>

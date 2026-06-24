@@ -79,6 +79,7 @@ initTheme();
 <li><a href="#getLocalFile(com.ibm.wala.classLoader.SourceModule)" tabindex="0">getLocalFile(SourceModule)</a></li>
 <li><a href="#finishTranslation()" tabindex="0">finishTranslation()</a></li>
 <li><a href="#init(java.util.List)" tabindex="0">init(List)</a></li>
+<li><a href="#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)" tabindex="0">defineSummaryClassShell(TypeName, TypeName)</a></li>
 </ol>
 </li>
 </ol>
@@ -96,7 +97,7 @@ initTheme();
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></dd>
+<dd><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>, <a href="../../ipa/summaries/SummaryClassShellLoader.html" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a></code></dd>
 </dl>
 <dl class="notes">
 <dt>Direct Known Subclasses:</dt>
@@ -105,7 +106,8 @@ initTheme();
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">CAstAbstractModuleLoader</span>
-<span class="extends-implements">extends <a href="CAstAbstractLoader.html" title="class in com.ibm.wala.cast.loader">CAstAbstractLoader</a></span></div>
+<span class="extends-implements">extends <a href="CAstAbstractLoader.html" title="class in com.ibm.wala.cast.loader">CAstAbstractLoader</a>
+implements <a href="../../ipa/summaries/SummaryClassShellLoader.html" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a></span></div>
 <div class="block">abstract class loader that performs CAst and IR generation for relevant entities in a list of
 <a href="../../classLoader/Module.html" title="interface in com.ibm.wala.classLoader"><code>Module</code></a>s. Subclasses provide the CAst / IR translators appropriate for the language.</div>
 </div>
@@ -186,34 +188,41 @@ initTheme();
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#finishTranslation()" class="member-name-link">finishTranslation</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)" class="member-name-link">defineSummaryClassShell</a><wbr>(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;name,
+ <a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;superName)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Register a "shell" <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> for a summary-modeled type, so that source classes loaded by
+this loader can resolve it as a superclass at definition time.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#finishTranslation()" class="member-name-link">finishTranslation</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">subclasses should override to perform actions after CAst and IR have been generated.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLocalFile(com.ibm.wala.classLoader.SourceModule)" class="member-name-link">getLocalFile</a><wbr>(<a href="../../classLoader/SourceModule.html" title="interface in com.ibm.wala.classLoader">SourceModule</a>&nbsp;M)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract <a href="../ir/translator/TranslatorToCAst.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToCAst</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getTranslatorToCAst(com.ibm.wala.cast.tree.CAst,com.ibm.wala.classLoader.ModuleEntry,java.util.List)" class="member-name-link">getTranslatorToCAst</a><wbr>(<a href="../tree/CAst.html" title="interface in com.ibm.wala.cast.tree">CAst</a>&nbsp;ast,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/File.html" title="class in java.io" class="external-link">File</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLocalFile(com.ibm.wala.classLoader.SourceModule)" class="member-name-link">getLocalFile</a><wbr>(<a href="../../classLoader/SourceModule.html" title="interface in com.ibm.wala.classLoader">SourceModule</a>&nbsp;M)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract <a href="../ir/translator/TranslatorToCAst.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToCAst</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getTranslatorToCAst(com.ibm.wala.cast.tree.CAst,com.ibm.wala.classLoader.ModuleEntry,java.util.List)" class="member-name-link">getTranslatorToCAst</a><wbr>(<a href="../tree/CAst.html" title="interface in com.ibm.wala.cast.tree">CAst</a>&nbsp;ast,
  <a href="../../classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;M,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/List.html" title="interface in java.util" class="external-link">List</a>&lt;<a href="../../classLoader/Module.html" title="interface in com.ibm.wala.classLoader">Module</a>&gt;&nbsp;modules)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">create the appropriate CAst translator for the language and source module</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#init(java.util.List)" class="member-name-link">init</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/List.html" title="interface in java.util" class="external-link">List</a>&lt;<a href="../../classLoader/Module.html" title="interface in com.ibm.wala.classLoader">Module</a>&gt;&nbsp;modules)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#init(java.util.List)" class="member-name-link">init</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/List.html" title="interface in java.util" class="external-link">List</a>&lt;<a href="../../classLoader/Module.html" title="interface in com.ibm.wala.classLoader">Module</a>&gt;&nbsp;modules)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Initialize internal data structures.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract <a href="../ir/translator/TranslatorToIR.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToIR</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#initTranslator(java.util.Set)" class="member-name-link">initTranslator</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a>&lt;<a href="../../util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>, <a href="../../classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&gt;&gt;&nbsp;topLevelEntities)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract <a href="../ir/translator/TranslatorToIR.html" title="interface in com.ibm.wala.cast.ir.translator">TranslatorToIR</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#initTranslator(java.util.Set)" class="member-name-link">initTranslator</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a>&lt;<a href="../../util/collections/Pair.html" title="class in com.ibm.wala.util.collections">Pair</a>&lt;<a href="../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>, <a href="../../classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&gt;&gt;&nbsp;topLevelEntities)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">create the appropriate IR translator for the language</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#shouldTranslate(com.ibm.wala.cast.tree.CAstEntity)" class="member-name-link">shouldTranslate</a><wbr>(<a href="../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;entity)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#shouldTranslate(com.ibm.wala.cast.tree.CAstEntity)" class="member-name-link">shouldTranslate</a><wbr>(<a href="../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;entity)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">should IR be generated for entity?</div>
 </div>
 </div>
@@ -421,6 +430,38 @@ default, do nothing</div>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">init</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/List.html" title="interface in java.util" class="external-link">List</a>&lt;<a href="../../classLoader/Module.html" title="interface in com.ibm.wala.classLoader">Module</a>&gt;&nbsp;modules)</span></div>
 <div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../classLoader/IClassLoader.html#init(java.util.List)">IClassLoader</a></code></span></div>
 <div class="block">Initialize internal data structures.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../classLoader/IClassLoader.html#init(java.util.List)">init</a></code>&nbsp;in interface&nbsp;<code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)">
+<h3>defineSummaryClassShell</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></span>&nbsp;<span class="element-name">defineSummaryClassShell</span><wbr><span class="parameters">(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;name,
+ <a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;superName)</span></div>
+<div class="block">Register a "shell" <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> for a summary-modeled type, so that source classes loaded by
+this loader can resolve it as a superclass at definition time.
+
+<p>A CAst class resolves its superclass through this loader's own type map (<a href="CAstAbstractLoader.html#lookupClass(com.ibm.wala.types.TypeName)"><code>CAstAbstractLoader.lookupClass(TypeName)</code></a>, <a href="CAstAbstractModuleLoader.CoreClass.html#getSuperclass()"><code>CAstAbstractModuleLoader.CoreClass.getSuperclass()</code></a>), which is loader-local and does not
+consult the <a href="../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha"><code>IClassHierarchy</code></a> or parent loaders. When a framework base type is modeled
+only by an XML method summary, the corresponding class is materialized into the <a href="../../ipa/summaries/BypassSyntheticClassLoader.html" title="class in com.ibm.wala.ipa.summaries"><code>BypassSyntheticClassLoader</code></a> only after the class hierarchy is built,
+which is too late, and in the wrong loader, for a source subclass to pick up the inheritance
+edge. Registering a shell here, before the hierarchy is built, closes that gap (see <a href="https://github.com/wala/WALA/issues/1957">#1957</a>).
+
+<p>Idempotent: if a class is already registered under <code>name</code>, it is returned unchanged.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../ipa/summaries/SummaryClassShellLoader.html#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)">defineSummaryClassShell</a></code>&nbsp;in interface&nbsp;<code><a href="../../ipa/summaries/SummaryClassShellLoader.html" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>name</code> - the type to register a shell for</dd>
+<dd><code>superName</code> - the shell's superclass, or <code>null</code> for this loader's language root type</dd>
+<dt>Returns:</dt>
+<dd>the registered (or pre-existing) class</dd>
+</dl>
 </div>
 </section>
 </li>

@@ -78,7 +78,8 @@ initTheme();
 <ul class="summary-list">
 <li>
 <div id="class-summary">
-<div class="caption"><span>Classes</span></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="class-summary-tab0" role="tab" aria-selected="true" aria-controls="class-summary.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary', 2)" class="active-table-tab">All Classes and Interfaces</button><button id="class-summary-tab1" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab1', 2)" class="table-tab">Interfaces</button><button id="class-summary-tab2" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab2', 2)" class="table-tab">Classes</button></div>
+<div id="class-summary.tabpanel" role="tabpanel" aria-labelledby="class-summary-tab0">
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Class</div>
 <div class="table-header col-last">Description</div>
@@ -128,6 +129,16 @@ application being analyzed.</div>
 <div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="SummarizedMethodWithNames.SyntheticIRWithNames.SyntheticSSA2LocalMap.html" title="class in com.ibm.wala.ipa.summaries">SummarizedMethodWithNames.SyntheticIRWithNames.SyntheticSSA2LocalMap</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="SummaryClassShell.html" title="class in com.ibm.wala.ipa.summaries">SummaryClassShell</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">A minimal standalone shell <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> for a type modeled only by a summary.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="SummaryClassShellLoader.html" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="block">A capability, implemented by class loaders that can introduce "shell" classes for types modeled
+only by a summary, so that source classes subclassing such a type can resolve their base at
+definition time rather than falling back to the language root.</div>
+</div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="SyntheticIR.html" title="class in com.ibm.wala.ipa.summaries">SyntheticIR</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="SyntheticIRFactory.html" title="class in com.ibm.wala.ipa.summaries">SyntheticIRFactory</a></div>
@@ -139,6 +150,7 @@ application being analyzed.</div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="XMLMethodSummaryReader.html" title="class in com.ibm.wala.ipa.summaries">XMLMethodSummaryReader</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">This class reads method summaries from an XML Stream.</div>
+</div>
 </div>
 </div>
 </div>

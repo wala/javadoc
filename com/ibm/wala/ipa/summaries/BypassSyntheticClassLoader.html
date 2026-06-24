@@ -73,6 +73,7 @@ initTheme();
 <li><a href="#toString()" tabindex="0">toString()</a></li>
 <li><a href="#lookupClass(com.ibm.wala.types.TypeName)" tabindex="0">lookupClass(TypeName)</a></li>
 <li><a href="#registerClass(com.ibm.wala.types.TypeName,com.ibm.wala.classLoader.IClass)" tabindex="0">registerClass(TypeName, IClass)</a></li>
+<li><a href="#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)" tabindex="0">defineSummaryClassShell(TypeName, TypeName)</a></li>
 <li><a href="#getReference()" tabindex="0">getReference()</a></li>
 <li><a href="#iterateAllClasses()" tabindex="0">iterateAllClasses()</a></li>
 <li><a href="#getNumberOfClasses()" tabindex="0">getNumberOfClasses()</a></li>
@@ -102,13 +103,13 @@ initTheme();
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></dd>
+<dd><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>, <a href="SummaryClassShellLoader.html" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a></code></dd>
 </dl>
 <hr>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">BypassSyntheticClassLoader</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>
-implements <a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></span></div>
+implements <a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>, <a href="SummaryClassShellLoader.html" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a></span></div>
 <div class="block">This class represents class loaders that introduce classes that do not exist in the actual
 application being analyzed. They may be abstract summaries of unanalyzed library code, wrappers
 that encode J2EE specialized behavior or other invented classes.
@@ -167,71 +168,78 @@ synthetic class.
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../ssa/SSAInstructionFactory.html" title="interface in com.ibm.wala.ssa">SSAInstructionFactory</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getInstructionFactory()" class="member-name-link">getInstructionFactory</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLanguage()" class="member-name-link">getLanguage</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)" class="member-name-link">defineSummaryClassShell</a><wbr>(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;name,
+ <a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;superName)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Register a shell <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> for a summary-modeled type, so that classes loaded by this
+loader can resolve it as a superclass.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../ssa/SSAInstructionFactory.html" title="interface in com.ibm.wala.ssa">SSAInstructionFactory</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getInstructionFactory()" class="member-name-link">getInstructionFactory</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLanguage()" class="member-name-link">getLanguage</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumberOfClasses()" class="member-name-link">getNumberOfClasses</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../core/util/strings/Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumberOfMethods()" class="member-name-link">getNumberOfMethods</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumberOfClasses()" class="member-name-link">getNumberOfClasses</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getParent()" class="member-name-link">getParent</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumberOfMethods()" class="member-name-link">getNumberOfMethods</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getReference()" class="member-name-link">getReference</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getParent()" class="member-name-link">getParent</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getReference()" class="member-name-link">getReference</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Return the ClassLoaderReference for this class loader.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/Reader.html" title="class in java.io" class="external-link">Reader</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSource(com.ibm.wala.classLoader.IClass)" class="member-name-link">getSource</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/Reader.html" title="class in java.io" class="external-link">Reader</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSource(com.ibm.wala.classLoader.IMethod,int)" class="member-name-link">getSource</a><wbr>(<a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&nbsp;method,
- int&nbsp;offset)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSource(com.ibm.wala.classLoader.IClass)" class="member-name-link">getSource</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSourceFileName(com.ibm.wala.classLoader.IClass)" class="member-name-link">getSourceFileName</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/Reader.html" title="class in java.io" class="external-link">Reader</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSource(com.ibm.wala.classLoader.IMethod,int)" class="member-name-link">getSource</a><wbr>(<a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&nbsp;method,
+ int&nbsp;offset)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSourceFileName(com.ibm.wala.classLoader.IMethod,int)" class="member-name-link">getSourceFileName</a><wbr>(<a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&nbsp;method,
- int&nbsp;offset)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSourceFileName(com.ibm.wala.classLoader.IClass)" class="member-name-link">getSourceFileName</a><wbr>(<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;klass)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#init(java.util.List)" class="member-name-link">init</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/List.html" title="interface in java.util" class="external-link">List</a>&lt;<a href="../../classLoader/Module.html" title="interface in com.ibm.wala.classLoader">Module</a>&gt;&nbsp;modules)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSourceFileName(com.ibm.wala.classLoader.IMethod,int)" class="member-name-link">getSourceFileName</a><wbr>(<a href="../../classLoader/IMethod.html" title="interface in com.ibm.wala.classLoader">IMethod</a>&nbsp;method,
+ int&nbsp;offset)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#init(java.util.List)" class="member-name-link">init</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/List.html" title="interface in java.util" class="external-link">List</a>&lt;<a href="../../classLoader/Module.html" title="interface in com.ibm.wala.classLoader">Module</a>&gt;&nbsp;modules)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Initialize internal data structures.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Iterator.html" title="interface in java.util" class="external-link">Iterator</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#iterateAllClasses()" class="member-name-link">iterateAllClasses</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#lookupClass(com.ibm.wala.types.TypeName)" class="member-name-link">lookupClass</a><wbr>(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;className)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Iterator.html" title="interface in java.util" class="external-link">Iterator</a><wbr>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#iterateAllClasses()" class="member-name-link">iterateAllClasses</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#lookupClass(com.ibm.wala.types.TypeName)" class="member-name-link">lookupClass</a><wbr>(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;className)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Find and return the IClass defined by this class loader that corresponds to the given class
 name.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#registerClass(com.ibm.wala.types.TypeName,com.ibm.wala.classLoader.IClass)" class="member-name-link">registerClass</a><wbr>(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;className,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#registerClass(com.ibm.wala.types.TypeName,com.ibm.wala.classLoader.IClass)" class="member-name-link">registerClass</a><wbr>(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;className,
  <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;theClass)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Register the existence of a new synthetic class</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeAll(java.util.Collection)" class="member-name-link">removeAll</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;&nbsp;toRemove)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeAll(java.util.Collection)" class="member-name-link">removeAll</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;<a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&gt;&nbsp;toRemove)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">blow away references to any classes in the set</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -315,6 +323,29 @@ name.</div>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">registerClass</span><wbr><span class="parameters">(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;className,
  <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a>&nbsp;theClass)</span></div>
 <div class="block">Register the existence of a new synthetic class</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)">
+<h3>defineSummaryClassShell</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></span>&nbsp;<span class="element-name">defineSummaryClassShell</span><wbr><span class="parameters">(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;name,
+ <a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;superName)</span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="SummaryClassShellLoader.html#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)">SummaryClassShellLoader</a></code></span></div>
+<div class="block">Register a shell <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> for a summary-modeled type, so that classes loaded by this
+loader can resolve it as a superclass.
+
+<p>Idempotent: if a class is already registered under <code>name</code>, it is returned unchanged.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="SummaryClassShellLoader.html#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)">defineSummaryClassShell</a></code>&nbsp;in interface&nbsp;<code><a href="SummaryClassShellLoader.html" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>name</code> - the type to register a shell for</dd>
+<dd><code>superName</code> - the shell's superclass, or <code>null</code> for this loader's language root type</dd>
+<dt>Returns:</dt>
+<dd>the registered (or pre-existing) class</dd>
+</dl>
 </div>
 </section>
 </li>
