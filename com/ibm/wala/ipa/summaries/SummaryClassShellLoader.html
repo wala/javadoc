@@ -65,6 +65,7 @@ initTheme();
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)" tabindex="0">defineSummaryClassShell(TypeName, TypeName)</a></li>
+<li><a href="#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName,java.util.Collection)" tabindex="0">defineSummaryClassShell(TypeName, TypeName, Collection)</a></li>
 </ol>
 </li>
 </ol>
@@ -113,7 +114,7 @@ eagerly, before the hierarchy is built. See <a href="https://github.com/wala/WAL
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -125,6 +126,14 @@ eagerly, before the hierarchy is built. See <a href="https://github.com/wala/WAL
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Register a shell <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> for a summary-modeled type, so that classes loaded by this
 loader can resolve it as a superclass.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName,java.util.Collection)" class="member-name-link">defineSummaryClassShell</a><wbr>(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;name,
+ <a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;superName,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;<a href="MethodSummary.html" title="class in com.ibm.wala.ipa.summaries">MethodSummary</a>&gt;&nbsp;methods)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Register a shell <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> that also exposes the given method summaries as its own
+declared methods, so that a walk of the shell (e.g.</div>
 </div>
 </div>
 </div>
@@ -219,6 +228,31 @@ loader can resolve it as a superclass.
 <dt>Parameters:</dt>
 <dd><code>name</code> - the type to register a shell for</dd>
 <dd><code>superName</code> - the shell's superclass, or <code>null</code> for this loader's language root type</dd>
+<dt>Returns:</dt>
+<dd>the registered (or pre-existing) class</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName,java.util.Collection)">
+<h3>defineSummaryClassShell</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></span>&nbsp;<span class="element-name">defineSummaryClassShell</span><wbr><span class="parameters">(<a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;name,
+ <a href="../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;superName,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;<a href="MethodSummary.html" title="class in com.ibm.wala.ipa.summaries">MethodSummary</a>&gt;&nbsp;methods)</span></div>
+<div class="block">Register a shell <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> that also exposes the given method summaries as its own
+declared methods, so that a walk of the shell (e.g. when resolving an inherited method on a
+subclass) finds them. The method bodies are still bound late by the usual bypass mechanism;
+only the declarations need to exist on the shell.
+
+<p>The default implementation ignores <code>methods</code> and delegates to <a href="#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName)"><code>defineSummaryClassShell(TypeName, TypeName)</code></a>; implementations whose shells can carry methods
+(such as the <a href="BypassSyntheticClassLoader.html" title="class in com.ibm.wala.ipa.summaries"><code>BypassSyntheticClassLoader</code></a>) override this.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the type to register a shell for</dd>
+<dd><code>superName</code> - the shell's superclass, or <code>null</code> for this loader's language root type</dd>
+<dd><code>methods</code> - summaries for the methods the shell should declare</dd>
 <dt>Returns:</dt>
 <dd>the registered (or pre-existing) class</dd>
 </dl>

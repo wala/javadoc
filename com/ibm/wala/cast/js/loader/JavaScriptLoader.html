@@ -69,6 +69,7 @@ initTheme();
 <li><a href="#methods-inherited-from-class-com.ibm.wala.cast.loader.CAstAbstractModuleLoader" tabindex="0">Methods inherited from class&nbsp;CAstAbstractModuleLoader</a></li>
 <li><a href="#methods-inherited-from-class-com.ibm.wala.cast.loader.CAstAbstractLoader" tabindex="0">Methods inherited from class&nbsp;CAstAbstractLoader</a></li>
 <li><a href="#methods-inherited-from-class-java.lang.Object" tabindex="0">Methods inherited from class&nbsp;Object</a></li>
+<li><a href="#methods-inherited-from-class-com.ibm.wala.ipa.summaries.SummaryClassShellLoader" tabindex="0">Methods inherited from interface&nbsp;SummaryClassShellLoader</a></li>
 </ol>
 </li>
 <li><a href="#field-detail" tabindex="0">Field Details</a>
@@ -405,6 +406,23 @@ name.</div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#method-summary" title="class in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#clone()" title="clone()" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="equals(Object)" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#finalize()" title="finalize()" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#getClass()" title="getClass()" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#hashCode()" title="hashCode()" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#notify()" title="notify()" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#notifyAll()" title="notifyAll()" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#toString()" title="toString()" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#wait()" title="wait()" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#wait(long)" title="wait(long)" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="wait(long, int)" class="external-link">wait</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-com.ibm.wala.ipa.summaries.SummaryClassShellLoader">Methods inherited from interface&nbsp;<a href="../../../ipa/summaries/SummaryClassShellLoader.html#method-summary" title="interface in com.ibm.wala.ipa.summaries">SummaryClassShellLoader</a></h3>
+<code><a href="../../../ipa/summaries/SummaryClassShellLoader.html#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName,java.util.Collection)" title="defineSummaryClassShell(TypeName, TypeName, Collection)">defineSummaryClassShell</a></code>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>default <a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader">IClass</a></code></div>
+<div class="col-second even-row-color"><code><a href="../../../ipa/summaries/SummaryClassShellLoader.html#defineSummaryClassShell(com.ibm.wala.types.TypeName,com.ibm.wala.types.TypeName,java.util.Collection)" class="member-name-link">defineSummaryClassShell</a><wbr>(<a href="../../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;name,
+ <a href="../../../types/TypeName.html" title="class in com.ibm.wala.types">TypeName</a>&nbsp;superName,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;<a href="../../../ipa/summaries/MethodSummary.html" title="class in com.ibm.wala.ipa.summaries">MethodSummary</a>&gt;&nbsp;methods)</code></div>
+<div class="col-last even-row-color">
+<div class="block">Register a shell <a href="../../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> that also exposes the given method summaries as its own
+declared methods, so that a walk of the shell (e.g.</div>
+</div>
+</div>
+</div>
 </section>
 </li>
 </ul>

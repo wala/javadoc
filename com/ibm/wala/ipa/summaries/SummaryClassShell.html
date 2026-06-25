@@ -71,6 +71,7 @@ initTheme();
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
 <li><a href="#%3Cinit%3E(com.ibm.wala.types.TypeReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.types.TypeReference)" tabindex="0">SummaryClassShell(TypeReference, IClassHierarchy, TypeReference)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.types.TypeReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.types.TypeReference,java.util.Collection)" tabindex="0">SummaryClassShell(TypeReference, IClassHierarchy, TypeReference, Collection)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -117,9 +118,10 @@ initTheme();
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">SummaryClassShell</span>
 <span class="extends-implements">extends <a href="../../classLoader/SyntheticClass.html" title="class in com.ibm.wala.classLoader">SyntheticClass</a></span></div>
 <div class="block">A minimal standalone shell <a href="../../classLoader/IClass.html" title="interface in com.ibm.wala.classLoader"><code>IClass</code></a> for a type modeled only by a summary. Unlike <a href="BypassSyntheticClass.html" title="class in com.ibm.wala.ipa.summaries"><code>BypassSyntheticClass</code></a>, which wraps an existing "real" type, a shell stands on its own and is
-positioned in the hierarchy at an explicitly declared superclass. It carries no members; its
-purpose is to occupy a place in the class hierarchy so that source subclasses resolve their base.
-See <a href="https://github.com/wala/WALA/issues/1957">#1957</a>.</div>
+positioned in the hierarchy at an explicitly declared superclass. Its purpose is to occupy a
+place in the class hierarchy so that source subclasses resolve their base. It carries no fields;
+it exposes only the methods given to it as <a href="MethodSummary.html" title="class in com.ibm.wala.ipa.summaries"><code>summaries</code></a> (typically the <code>
+&lt;method&gt;</code> children of the <code>&lt;class&gt;</code> it was materialized from), as <a href="SummarizedMethod.html" title="class in com.ibm.wala.ipa.summaries"><code>SummarizedMethod</code></a>s. See <a href="https://github.com/wala/WALA/issues/1957">#1957</a>.</div>
 </div>
 </section>
 <section class="summary">
@@ -136,6 +138,11 @@ See <a href="https://github.com/wala/WALA/issues/1957">#1957</a>.</div>
  <a href="../cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  <a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;superReference)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.types.TypeReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.types.TypeReference,java.util.Collection)" class="member-name-link">SummaryClassShell</a><wbr>(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;type,
+ <a href="../cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+ <a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;superReference,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;<a href="MethodSummary.html" title="class in com.ibm.wala.ipa.summaries">MethodSummary</a>&gt;&nbsp;methods)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -311,6 +318,24 @@ See <a href="https://github.com/wala/WALA/issues/1957">#1957</a>.</div>
 <dd><code>type</code> - the type this shell represents</dd>
 <dd><code>cha</code> - the governing class hierarchy</dd>
 <dd><code>superReference</code> - the declared superclass, or <code>null</code> for the language root type</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.types.TypeReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.types.TypeReference,java.util.Collection)">
+<h3>SummaryClassShell</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">SummaryClassShell</span><wbr><span class="parameters">(<a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;type,
+ <a href="../cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+ <a href="../../types/TypeReference.html" title="class in com.ibm.wala.types">TypeReference</a>&nbsp;superReference,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;<a href="MethodSummary.html" title="class in com.ibm.wala.ipa.summaries">MethodSummary</a>&gt;&nbsp;methods)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>type</code> - the type this shell represents</dd>
+<dd><code>cha</code> - the governing class hierarchy</dd>
+<dd><code>superReference</code> - the declared superclass, or <code>null</code> for the language root type</dd>
+<dd><code>methods</code> - summaries for the shell's own declared methods</dd>
 </dl>
 </div>
 </section>
