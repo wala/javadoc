@@ -128,18 +128,491 @@ initTheme();
 <div class="block">Use <a href="com/ibm/wala/classLoader/Language.html#getFakeRootMethod(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)"><code>Language.getFakeRootMethod(IClassHierarchy, IAnalysisCacheView)</code></a>; the <code>
     options</code> parameter is unused.</div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/core/java11/Java9AnalysisScopeReader.html" title="class in com.ibm.wala.core.java11">com.ibm.wala.core.java11.Java9AnalysisScopeReader</a></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/classLoader/Language.html#JAVA">com.ibm.wala.classLoader.Language.JAVA</a></div>
 <div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/classLoader/JavaLanguage.html#get()"><code>JavaLanguage.get()</code></a> instead.</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/core/java11/Java9AnalysisScopeReader.html" title="class in com.ibm.wala.core.java11">com.ibm.wala.core.java11.Java9AnalysisScopeReader</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Use <a href="com/ibm/wala/core/util/config/AnalysisScopeReader.html" title="class in com.ibm.wala.core.util.config"><code>AnalysisScopeReader</code></a>; support for <code>jrt</code> entries is now built in.</div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/core/util/ssa/InstructionByIIndexWrapper.html#getInstruction()">com.ibm.wala.core.util.ssa.InstructionByIIndexWrapper.getInstruction()</a></div>
-<div class="col-last odd-row-color">
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/core/util/ssa/InstructionByIIndexWrapper.html#getInstruction()">com.ibm.wala.core.util.ssa.InstructionByIIndexWrapper.getInstruction()</a></div>
+<div class="col-last even-row-color">
 <div class="block">Use <a href="com/ibm/wala/core/util/ssa/InstructionByIIndexWrapper.html#instruction()"><code>InstructionByIIndexWrapper.instruction()</code></a> instead</div>
 </div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html" title="interface in com.ibm.wala.dalvik.classLoader">com.ibm.wala.dalvik.classLoader.DexConstants</a></div>
+<div class="col-last odd-row-color">
+<div class="block">replace <code>ACC_XXX</code> with <code>AccessFlags</code><code>.XXX.getValue()</code> and replace
+    <code>VALUE_XXX</code> with <code>ValueType</code><code>.XXX</code></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ABSTRACT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ABSTRACT</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ANNOTATION">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ANNOTATION</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_BRIDGE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_BRIDGE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_CONSTRUCTOR">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_CONSTRUCTOR</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_DECLARED_SYNCHRONIZED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_DECLARED_SYNCHRONIZED</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ENUM">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ENUM</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_FINAL">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_FINAL</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_INTERFACE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_INTERFACE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_NATIVE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_NATIVE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_private">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_private</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PRIVATE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PRIVATE</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PROTECTED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PROTECTED</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PUBLIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PUBLIC</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_STATIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_STATIC</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_STRICT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_STRICT</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_SYNCHRONIZED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_SYNCHRONIZED</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_SYNTHETIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_SYNTHETIC</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_TRANSIENT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_TRANSIENT</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_VARARGS">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_VARARGS</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_VOLATILE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_VOLATILE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ANNOTATION">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ANNOTATION</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ARRAY">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ARRAY</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_BOOLEAN">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_BOOLEAN</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_BYTE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_BYTE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_CHAR">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_CHAR</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_DOUBLE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_DOUBLE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ENUM">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ENUM</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_FIELD">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_FIELD</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_FLOAT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_FLOAT</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_INT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_INT</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_LONG">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_LONG</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_METHOD">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_METHOD</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_NULL">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_NULL</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_SHORT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_SHORT</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_STRING">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_STRING</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_TYPE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_TYPE</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/demandpa/flowgraph/PointerKeyAndCallSite.html#getCallSiteRef()">com.ibm.wala.demandpa.flowgraph.PointerKeyAndCallSite.getCallSiteRef()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/demandpa/flowgraph/PointerKeyAndCallSite.html#callSiteRef()"><code>PointerKeyAndCallSite.callSiteRef()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/demandpa/flowgraph/PointerKeyAndCallSite.html#getKey()">com.ibm.wala.demandpa.flowgraph.PointerKeyAndCallSite.getKey()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/demandpa/flowgraph/PointerKeyAndCallSite.html#key()"><code>PointerKeyAndCallSite.key()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/demandpa/util/MemoryAccess.html#getInstructionIndex()">com.ibm.wala.demandpa.util.MemoryAccess.getInstructionIndex()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/demandpa/util/MemoryAccess.html#instructionIndex()"><code>MemoryAccess.instructionIndex()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/demandpa/util/MemoryAccess.html#getNode()">com.ibm.wala.demandpa.util.MemoryAccess.getNode()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/demandpa/util/MemoryAccess.html#node()"><code>MemoryAccess.node()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ide/util/JdtUtil.html#createJavaElementFromJdtHandle(java.lang.String)">com.ibm.wala.ide.util.JdtUtil.createJavaElementFromJdtHandle<wbr>(String)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ide/util/JdtUtil.html#findJavaMethodInWorkspaceBrokenForInnerClasses(java.lang.String)">com.ibm.wala.ide.util.JdtUtil.findJavaMethodInWorkspaceBrokenForInnerClasses<wbr>(String)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/AbstractRootMethod.html#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">com.ibm.wala.ipa.callgraph.impl.AbstractRootMethod<wbr>(MethodReference, IClass, IClassHierarchy, AnalysisOptions, IAnalysisCacheView)</a></div>
+<div class="col-last even-row-color">
+<div class="block">to remove unused <code>options</code> parameter</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/AbstractRootMethod.html#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">com.ibm.wala.ipa.callgraph.impl.AbstractRootMethod<wbr>(MethodReference, IClassHierarchy, AnalysisOptions, IAnalysisCacheView)</a></div>
+<div class="col-last odd-row-color">
+<div class="block">to remove unused <code>options</code> parameter</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/FakeRootMethod.html#%3Cinit%3E(com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">com.ibm.wala.ipa.callgraph.impl.FakeRootMethod<wbr>(IClass, AnalysisOptions, IAnalysisCacheView)</a></div>
+<div class="col-last even-row-color">
+<div class="block">to remove unused <code>options</code> parameter</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/FakeWorldClinitMethod.html#%3Cinit%3E(com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">com.ibm.wala.ipa.callgraph.impl.FakeWorldClinitMethod<wbr>(IClass, AnalysisOptions, IAnalysisCacheView)</a></div>
+<div class="col-last odd-row-color">
+<div class="block">to remove unused <code>options</code> parameter</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,com.ibm.wala.ipa.summaries.XMLMethodSummaryReader,com.ibm.wala.ipa.cha.IClassHierarchy)">com.ibm.wala.ipa.callgraph.impl.Util.addBypassLogic<wbr>(AnalysisOptions, AnalysisScope, ClassLoader, XMLMethodSummaryReader, IClassHierarchy)</a></div>
+<div class="col-last even-row-color">
+<div class="block">Method will be replaced. Please
+    <p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,java.lang.ClassLoader,com.ibm.wala.ipa.summaries.XMLMethodSummaryReader,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.addBypassLogic(AnalysisOptions, ClassLoader, XMLMethodSummaryReader, IClassHierarchy)</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,java.lang.String,com.ibm.wala.ipa.cha.IClassHierarchy)">com.ibm.wala.ipa.callgraph.impl.Util.addBypassLogic<wbr>(AnalysisOptions, AnalysisScope, ClassLoader, String, IClassHierarchy)</a></div>
+<div class="col-last odd-row-color">
+<div class="block">This method is being replaced. Please
+    <p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,java.lang.ClassLoader,java.lang.String,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.addBypassLogic(AnalysisOptions, ClassLoader, String, IClassHierarchy)</code></a>
+    instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addDefaultBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy)">com.ibm.wala.ipa.callgraph.impl.Util.addDefaultBypassLogic<wbr>(AnalysisOptions, AnalysisScope, ClassLoader, IClassHierarchy)</a></div>
+<div class="col-last even-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addDefaultBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,java.lang.ClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.addDefaultBypassLogic(AnalysisOptions, ClassLoader, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.cha.IClassHierarchy)">com.ibm.wala.ipa.callgraph.impl.Util.makeMainEntrypoints<wbr>(AnalysisScope, IClassHierarchy)</a></div>
+<div class="col-last odd-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeMainEntrypoints(IClassHierarchy)</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.cha.IClassHierarchy,java.lang.String)">com.ibm.wala.ipa.callgraph.impl.Util.makeMainEntrypoints<wbr>(AnalysisScope, IClassHierarchy, String)</a></div>
+<div class="col-last even-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.cha.IClassHierarchy,java.lang.String)"><code>Util.makeMainEntrypoints(IClassHierarchy, String)</code></a></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.cha.IClassHierarchy,java.lang.String%5B%5D)">com.ibm.wala.ipa.callgraph.impl.Util.makeMainEntrypoints<wbr>(AnalysisScope, IClassHierarchy, String[])</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Please
+    <p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.cha.IClassHierarchy,java.lang.String%5B%5D)"><code>Util.makeMainEntrypoints(IClassHierarchy, String[])</code></a></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeNCFABuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeNCFABuilder<wbr>(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last even-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeNCFABuilder(int,com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeNCFABuilder(int, Language, AnalysisOptions, IAnalysisCacheView,IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeNObjBuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeNObjBuilder<wbr>(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last odd-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeNObjBuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeNObjBuilder(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeRTABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeRTABuilder<wbr>(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last even-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeRTABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeRTABuilder(AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNCFABuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeVanillaNCFABuilder<wbr>(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last odd-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNCFABuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeVanillaNCFABuilder(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNObjBuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeVanillaNObjBuilder<wbr>(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last even-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNObjBuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeVanillaNObjBuilder(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeVanillaZeroOneCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last odd-row-color">
+<div class="block"><p>use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeVanillaZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)">com.ibm.wala.ipa.callgraph.impl.Util.makeVanillaZeroOneCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope, ContextSelector, SSAContextInterpreter)</a></div>
+<div class="col-last even-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)"><code>Util.makeVanillaZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeVanillaZeroOneContainerCFABuilder<wbr>(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last odd-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeVanillaZeroOneContainerCFABuilder(AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last even-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeZeroCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope, ContextSelector, SSAContextInterpreter)</a></div>
+<div class="col-last odd-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)"><code>Util.makeZeroCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroContainerCFABuilder<wbr>(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last even-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeZeroContainerCFABuilder(AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroOneCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last odd-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroOneCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope, ContextSelector, SSAContextInterpreter)</a></div>
+<div class="col-last even-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)"><code>Util.makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroOneContainerCFABuilder<wbr>(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
+<div class="col-last odd-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroOneContainerCFABuilder<wbr>(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope, ContextSelector, SSAContextInterpreter)</a></div>
+<div class="col-last even-row-color">
+<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)"><code>Util.makeZeroOneContainerCFABuilder(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/AllocationSite.html#getMethod()">com.ibm.wala.ipa.callgraph.propagation.AllocationSite.getMethod()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/AllocationSite.html#method()"><code>AllocationSite.method()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/AllocationSite.html#getSite()">com.ibm.wala.ipa.callgraph.propagation.AllocationSite.getSite()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/AllocationSite.html#site()"><code>AllocationSite.site()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/cfa/AllocationString.html#getAllocationSites()">com.ibm.wala.ipa.callgraph.propagation.cfa.AllocationString.getAllocationSites()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/cfa/AllocationString.html#allocationSites()"><code>AllocationString.allocationSites()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/ConcreteTypeKey.html#getType()">com.ibm.wala.ipa.callgraph.propagation.ConcreteTypeKey.getType()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/ConcreteTypeKey.html#type()"><code>ConcreteTypeKey.type()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/FilteredPointerKey.SingleClassFilter.html#getConcreteType()">com.ibm.wala.ipa.callgraph.propagation.FilteredPointerKey.SingleClassFilter.getConcreteType()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/FilteredPointerKey.SingleClassFilter.html#concreteType()"><code>FilteredPointerKey.SingleClassFilter.concreteType()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html#getConcreteType()">com.ibm.wala.ipa.callgraph.propagation.InstanceKey.getConcreteType()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html#concreteType()"><code>InstanceKey.concreteType()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/cfg/exceptionpruning/FilteredException.html#getException()">com.ibm.wala.ipa.cfg.exceptionpruning.FilteredException.getException()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/ipa/cfg/exceptionpruning/FilteredException.html#exception()"><code>FilteredException.exception()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeBT/Constants.html#MAYBE">com.ibm.wala.shrike.shrikeBT.Constants.MAYBE</a></div>
+<div class="col-last even-row-color">
+<div class="block">use <code>AnalysisResult.MAYBE.ordinal() + 1</code></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeBT/Constants.html#NO">com.ibm.wala.shrike.shrikeBT.Constants.NO</a></div>
+<div class="col-last odd-row-color">
+<div class="block">use <code>AnalysisResult.NO.ordinal() + 1</code></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeBT/Constants.html#YES">com.ibm.wala.shrike.shrikeBT.Constants.YES</a></div>
+<div class="col-last even-row-color">
+<div class="block">use <code>AnalysisResult.YES.ordinal() + 1</code></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeBT/tools/MethodOptimizer.html" title="class in com.ibm.wala.shrike.shrikeBT.tools">com.ibm.wala.shrike.shrikeBT.tools.MethodOptimizer</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeBT/tools/MethodOptimizer.html#%3Cinit%3E(com.ibm.wala.shrike.shrikeBT.MethodData,com.ibm.wala.shrike.shrikeBT.MethodEditor)">com.ibm.wala.shrike.shrikeBT.tools.MethodOptimizer<wbr>(MethodData, MethodEditor)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#getClassName()">com.ibm.wala.shrike.shrikeCT.ConstantPoolParser.ReferenceToken.getClassName()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#className()"><code>ConstantPoolParser.ReferenceToken.className()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#getDescriptor()">com.ibm.wala.shrike.shrikeCT.ConstantPoolParser.ReferenceToken.getDescriptor()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#descriptor()"><code>ConstantPoolParser.ReferenceToken.descriptor()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#getElementName()">com.ibm.wala.shrike.shrikeCT.ConstantPoolParser.ReferenceToken.getElementName()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#elementName()"><code>ConstantPoolParser.ReferenceToken.elementName()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#getKind()">com.ibm.wala.shrike.shrikeCT.ConstantPoolParser.ReferenceToken.getKind()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#kind()"><code>ConstantPoolParser.ReferenceToken.kind()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#getFrameType()">com.ibm.wala.shrike.shrikeCT.StackMapConstants.StackMapFrame.getFrameType()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#frameType()"><code>StackMapConstants.StackMapFrame.frameType()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#getLocalTypes()">com.ibm.wala.shrike.shrikeCT.StackMapConstants.StackMapFrame.getLocalTypes()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#localTypes()"><code>StackMapConstants.StackMapFrame.localTypes()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#getOffset()">com.ibm.wala.shrike.shrikeCT.StackMapConstants.StackMapFrame.getOffset()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#offset()"><code>StackMapConstants.StackMapFrame.offset()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#getStackTypes()">com.ibm.wala.shrike.shrikeCT.StackMapConstants.StackMapFrame.getStackTypes()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#stackTypes()"><code>StackMapConstants.StackMapFrame.stackTypes()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ssa/SSACheckCastInstruction.html#getDeclaredResultType()">com.ibm.wala.ssa.SSACheckCastInstruction.getDeclaredResultType()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">the system now supports multiple types, so this accessor will not work for all
+    languages.</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/types/ClassLoaderReference.html#getLanguage()">com.ibm.wala.types.ClassLoaderReference.getLanguage()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/types/ClassLoaderReference.html#language()"><code>ClassLoaderReference.language()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/types/ClassLoaderReference.html#getName()">com.ibm.wala.types.ClassLoaderReference.getName()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/types/ClassLoaderReference.html#name()"><code>ClassLoaderReference.name()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/types/ClassLoaderReference.html#getParent()">com.ibm.wala.types.ClassLoaderReference.getParent()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/types/ClassLoaderReference.html#parent()"><code>ClassLoaderReference.parent()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/types/Selector.html#getDescriptor()">com.ibm.wala.types.Selector.getDescriptor()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/types/Selector.html#descriptor()"><code>Selector.descriptor()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/types/Selector.html#getName()">com.ibm.wala.types.Selector.getName()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/types/Selector.html#name()"><code>Selector.name()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#add(T)">com.ibm.wala.util.collections.Iterator2Collection.add<wbr>(T)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#addAll(java.util.Collection)">com.ibm.wala.util.collections.Iterator2Collection.addAll<wbr>(Collection&lt;? extends T&gt;)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#clear()">com.ibm.wala.util.collections.Iterator2Collection.clear()</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#contains(java.lang.Object)">com.ibm.wala.util.collections.Iterator2Collection.contains<wbr>(Object)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#containsAll(java.util.Collection)">com.ibm.wala.util.collections.Iterator2Collection.containsAll<wbr>(Collection&lt;?&gt;)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#equals(java.lang.Object)">com.ibm.wala.util.collections.Iterator2Collection.equals<wbr>(Object)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#hashCode()">com.ibm.wala.util.collections.Iterator2Collection.hashCode()</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#isEmpty()">com.ibm.wala.util.collections.Iterator2Collection.isEmpty()</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#iterator()">com.ibm.wala.util.collections.Iterator2Collection.iterator()</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#remove(java.lang.Object)">com.ibm.wala.util.collections.Iterator2Collection.remove<wbr>(Object)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#removeAll(java.util.Collection)">com.ibm.wala.util.collections.Iterator2Collection.removeAll<wbr>(Collection&lt;?&gt;)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#retainAll(java.util.Collection)">com.ibm.wala.util.collections.Iterator2Collection.retainAll<wbr>(Collection&lt;?&gt;)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#size()">com.ibm.wala.util.collections.Iterator2Collection.size()</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#toArray()">com.ibm.wala.util.collections.Iterator2Collection.toArray()</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#toArray(U%5B%5D)">com.ibm.wala.util.collections.Iterator2Collection.toArray<wbr>(U[])</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#toString()">com.ibm.wala.util.collections.Iterator2Collection.toString()</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.Iterator2List</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#%3Cinit%3E(java.util.Iterator,java.util.List)">com.ibm.wala.util.collections.Iterator2List<wbr>(Iterator&lt;? extends T&gt;, List&lt;T&gt;)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#add(int,T)">com.ibm.wala.util.collections.Iterator2List.add<wbr>(int, T)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#addAll(int,java.util.Collection)">com.ibm.wala.util.collections.Iterator2List.addAll<wbr>(int, Collection&lt;? extends T&gt;)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#get(int)">com.ibm.wala.util.collections.Iterator2List.get<wbr>(int)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#getDelegate()">com.ibm.wala.util.collections.Iterator2List.getDelegate()</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#indexOf(java.lang.Object)">com.ibm.wala.util.collections.Iterator2List.indexOf<wbr>(Object)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#lastIndexOf(java.lang.Object)">com.ibm.wala.util.collections.Iterator2List.lastIndexOf<wbr>(Object)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#listIterator()">com.ibm.wala.util.collections.Iterator2List.listIterator()</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#listIterator(int)">com.ibm.wala.util.collections.Iterator2List.listIterator<wbr>(int)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#remove(int)">com.ibm.wala.util.collections.Iterator2List.remove<wbr>(int)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#set(int,T)">com.ibm.wala.util.collections.Iterator2List.set<wbr>(int, T)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#subList(int,int)">com.ibm.wala.util.collections.Iterator2List.subList<wbr>(int, int)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Set.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.Iterator2Set</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Set.html#%3Cinit%3E(java.util.Iterator,java.util.Set)">com.ibm.wala.util.collections.Iterator2Set<wbr>(Iterator&lt;? extends T&gt;, Set&lt;T&gt;)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Set.html#getDelegate()">com.ibm.wala.util.collections.Iterator2Set.getDelegate()</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#getColors()">com.ibm.wala.util.graph.traverse.WelshPowell.ColoredVertices.getColors()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#colors()"><code>WelshPowell.ColoredVertices.colors()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#getNumColors()">com.ibm.wala.util.graph.traverse.WelshPowell.ColoredVertices.getNumColors()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#numColors()"><code>WelshPowell.ColoredVertices.numColors()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#isFullColoring()">com.ibm.wala.util.graph.traverse.WelshPowell.ColoredVertices.isFullColoring()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#fullColoring()"><code>WelshPowell.ColoredVertices.fullColoring()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/intset/IntPair.html#getX()">com.ibm.wala.util.intset.IntPair.getX()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/util/intset/IntPair.html#x()"><code>IntPair.x()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/intset/IntPair.html#getY()">com.ibm.wala.util.intset.IntPair.getY()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="com/ibm/wala/util/intset/IntPair.html#y()"><code>IntPair.y()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/processes/JavaLauncher.html#quoteStringIfNeeded(java.lang.String)">com.ibm.wala.util.processes.JavaLauncher.quoteStringIfNeeded<wbr>(String)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html" title="class in org.scandroid.flow.functions">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Replaced by TaintTransferFunctions.</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html#%3Cinit%3E(org.scandroid.domain.IFDSTaintDomain,com.ibm.wala.dataflow.IFDS.ISupergraph,com.ibm.wala.ipa.callgraph.propagation.PointerAnalysis)">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider<wbr>(IFDSTaintDomain&lt;E&gt;, ISupergraph&lt;BasicBlockInContext&lt;E&gt;, CGNode&gt;, PointerAnalysis&lt;InstanceKey&gt;)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html#getCallFlowFunction(com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext)">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.getCallFlowFunction<wbr>(BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html#getCallNoneToReturnFlowFunction(com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext)">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.getCallNoneToReturnFlowFunction<wbr>(BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html#getCallToReturnFlowFunction(com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext)">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.getCallToReturnFlowFunction<wbr>(BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;)</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html#getReturnFlowFunction(com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext)">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.getReturnFlowFunction<wbr>(BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;)</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.ReturnDefUse.html" title="class in org.scandroid.flow.functions">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.ReturnDefUse</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="org/scandroid/spec/MethodNamePattern.html#getClassName()">org.scandroid.spec.MethodNamePattern.getClassName()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="org/scandroid/spec/MethodNamePattern.html#className()"><code>MethodNamePattern.className()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/spec/MethodNamePattern.html#getDescriptor()">org.scandroid.spec.MethodNamePattern.getDescriptor()</a></div>
+<div class="col-last odd-row-color">
+<div class="block">Use <a href="org/scandroid/spec/MethodNamePattern.html#descriptor()"><code>MethodNamePattern.descriptor()</code></a> instead</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="org/scandroid/spec/MethodNamePattern.html#getMemberName()">org.scandroid.spec.MethodNamePattern.getMemberName()</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="org/scandroid/spec/MethodNamePattern.html#memberName()"><code>MethodNamePattern.memberName()</code></a> instead</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<ul class="block-list">
+<li>
+<div id="interface">
+<div class="caption"><span>Deprecated Interfaces</span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Interface</div>
+<div class="table-header col-last">Description</div>
 <div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html" title="interface in com.ibm.wala.dalvik.classLoader">com.ibm.wala.dalvik.classLoader.DexConstants</a></div>
 <div class="col-last even-row-color">
 <div class="block">replace <code>ACC_XXX</code> with <code>AccessFlags</code><code>.XXX.getValue()</code> and replace
     <code>VALUE_XXX</code> with <code>ValueType</code><code>.XXX</code></div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<ul class="block-list">
+<li>
+<div id="class">
+<div class="caption"><span>Deprecated Classes</span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/core/java11/Java9AnalysisScopeReader.html" title="class in com.ibm.wala.core.java11">com.ibm.wala.core.java11.Java9AnalysisScopeReader</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/core/util/config/AnalysisScopeReader.html" title="class in com.ibm.wala.core.util.config"><code>AnalysisScopeReader</code></a>; support for <code>jrt</code> entries is now built in.</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeBT/tools/MethodOptimizer.html" title="class in com.ibm.wala.shrike.shrikeBT.tools">com.ibm.wala.shrike.shrikeBT.tools.MethodOptimizer</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.Iterator2List</a></div>
+<div class="col-last even-row-color"></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Set.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.Iterator2Set</a></div>
+<div class="col-last odd-row-color"></div>
+<div class="col-summary-item-name even-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html" title="class in org.scandroid.flow.functions">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider</a></div>
+<div class="col-last even-row-color">
+<div class="block">Replaced by TaintTransferFunctions.</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.ReturnDefUse.html" title="class in org.scandroid.flow.functions">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.ReturnDefUse</a></div>
+<div class="col-last odd-row-color"></div>
+</div>
+</div>
+</li>
+</ul>
+<ul class="block-list">
+<li>
+<div id="field">
+<div class="caption"><span>Deprecated Fields</span></div>
+<div class="summary-table two-column-summary">
+<div class="table-header col-first">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/classLoader/Language.html#JAVA">com.ibm.wala.classLoader.Language.JAVA</a></div>
+<div class="col-last even-row-color">
+<div class="block">Use <a href="com/ibm/wala/classLoader/JavaLanguage.html#get()"><code>JavaLanguage.get()</code></a> instead.</div>
 </div>
 <div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ABSTRACT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ABSTRACT</a></div>
 <div class="col-last odd-row-color">&nbsp;</div>
@@ -213,158 +686,6 @@ initTheme();
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_TYPE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_TYPE</a></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/demandpa/flowgraph/PointerKeyAndCallSite.html#getCallSiteRef()">com.ibm.wala.demandpa.flowgraph.PointerKeyAndCallSite.getCallSiteRef()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/demandpa/flowgraph/PointerKeyAndCallSite.html#callSiteRef()"><code>PointerKeyAndCallSite.callSiteRef()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/demandpa/flowgraph/PointerKeyAndCallSite.html#getKey()">com.ibm.wala.demandpa.flowgraph.PointerKeyAndCallSite.getKey()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/demandpa/flowgraph/PointerKeyAndCallSite.html#key()"><code>PointerKeyAndCallSite.key()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/demandpa/util/MemoryAccess.html#getInstructionIndex()">com.ibm.wala.demandpa.util.MemoryAccess.getInstructionIndex()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/demandpa/util/MemoryAccess.html#instructionIndex()"><code>MemoryAccess.instructionIndex()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/demandpa/util/MemoryAccess.html#getNode()">com.ibm.wala.demandpa.util.MemoryAccess.getNode()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/demandpa/util/MemoryAccess.html#node()"><code>MemoryAccess.node()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ide/util/JdtUtil.html#createJavaElementFromJdtHandle(java.lang.String)">com.ibm.wala.ide.util.JdtUtil.createJavaElementFromJdtHandle<wbr>(String)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ide/util/JdtUtil.html#findJavaMethodInWorkspaceBrokenForInnerClasses(java.lang.String)">com.ibm.wala.ide.util.JdtUtil.findJavaMethodInWorkspaceBrokenForInnerClasses<wbr>(String)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/AbstractRootMethod.html#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">com.ibm.wala.ipa.callgraph.impl.AbstractRootMethod<wbr>(MethodReference, IClass, IClassHierarchy, AnalysisOptions, IAnalysisCacheView)</a></div>
-<div class="col-last odd-row-color">
-<div class="block">to remove unused <code>options</code> parameter</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/AbstractRootMethod.html#%3Cinit%3E(com.ibm.wala.types.MethodReference,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">com.ibm.wala.ipa.callgraph.impl.AbstractRootMethod<wbr>(MethodReference, IClassHierarchy, AnalysisOptions, IAnalysisCacheView)</a></div>
-<div class="col-last even-row-color">
-<div class="block">to remove unused <code>options</code> parameter</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/FakeRootMethod.html#%3Cinit%3E(com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">com.ibm.wala.ipa.callgraph.impl.FakeRootMethod<wbr>(IClass, AnalysisOptions, IAnalysisCacheView)</a></div>
-<div class="col-last odd-row-color">
-<div class="block">to remove unused <code>options</code> parameter</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/FakeWorldClinitMethod.html#%3Cinit%3E(com.ibm.wala.classLoader.IClass,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView)">com.ibm.wala.ipa.callgraph.impl.FakeWorldClinitMethod<wbr>(IClass, AnalysisOptions, IAnalysisCacheView)</a></div>
-<div class="col-last even-row-color">
-<div class="block">to remove unused <code>options</code> parameter</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,com.ibm.wala.ipa.summaries.XMLMethodSummaryReader,com.ibm.wala.ipa.cha.IClassHierarchy)">com.ibm.wala.ipa.callgraph.impl.Util.addBypassLogic<wbr>(AnalysisOptions, AnalysisScope, ClassLoader, XMLMethodSummaryReader, IClassHierarchy)</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Method will be replaced. Please
-    <p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,java.lang.ClassLoader,com.ibm.wala.ipa.summaries.XMLMethodSummaryReader,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.addBypassLogic(AnalysisOptions, ClassLoader, XMLMethodSummaryReader, IClassHierarchy)</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,java.lang.String,com.ibm.wala.ipa.cha.IClassHierarchy)">com.ibm.wala.ipa.callgraph.impl.Util.addBypassLogic<wbr>(AnalysisOptions, AnalysisScope, ClassLoader, String, IClassHierarchy)</a></div>
-<div class="col-last even-row-color">
-<div class="block">This method is being replaced. Please
-    <p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,java.lang.ClassLoader,java.lang.String,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.addBypassLogic(AnalysisOptions, ClassLoader, String, IClassHierarchy)</code></a>
-    instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addDefaultBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.AnalysisScope,java.lang.ClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy)">com.ibm.wala.ipa.callgraph.impl.Util.addDefaultBypassLogic<wbr>(AnalysisOptions, AnalysisScope, ClassLoader, IClassHierarchy)</a></div>
-<div class="col-last odd-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#addDefaultBypassLogic(com.ibm.wala.ipa.callgraph.AnalysisOptions,java.lang.ClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.addDefaultBypassLogic(AnalysisOptions, ClassLoader, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.cha.IClassHierarchy)">com.ibm.wala.ipa.callgraph.impl.Util.makeMainEntrypoints<wbr>(AnalysisScope, IClassHierarchy)</a></div>
-<div class="col-last even-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeMainEntrypoints(IClassHierarchy)</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.cha.IClassHierarchy,java.lang.String)">com.ibm.wala.ipa.callgraph.impl.Util.makeMainEntrypoints<wbr>(AnalysisScope, IClassHierarchy, String)</a></div>
-<div class="col-last odd-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.cha.IClassHierarchy,java.lang.String)"><code>Util.makeMainEntrypoints(IClassHierarchy, String)</code></a></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.cha.IClassHierarchy,java.lang.String%5B%5D)">com.ibm.wala.ipa.callgraph.impl.Util.makeMainEntrypoints<wbr>(AnalysisScope, IClassHierarchy, String[])</a></div>
-<div class="col-last even-row-color">
-<div class="block">Please
-    <p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeMainEntrypoints(com.ibm.wala.ipa.cha.IClassHierarchy,java.lang.String%5B%5D)"><code>Util.makeMainEntrypoints(IClassHierarchy, String[])</code></a></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeNCFABuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeNCFABuilder<wbr>(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last odd-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeNCFABuilder(int,com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeNCFABuilder(int, Language, AnalysisOptions, IAnalysisCacheView,IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeNObjBuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeNObjBuilder<wbr>(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last even-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeNObjBuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeNObjBuilder(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeRTABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeRTABuilder<wbr>(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last odd-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeRTABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeRTABuilder(AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNCFABuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeVanillaNCFABuilder<wbr>(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last even-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNCFABuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeVanillaNCFABuilder(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNObjBuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeVanillaNObjBuilder<wbr>(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last odd-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaNObjBuilder(int,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeVanillaNObjBuilder(int, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeVanillaZeroOneCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last even-row-color">
-<div class="block"><p>use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeVanillaZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)">com.ibm.wala.ipa.callgraph.impl.Util.makeVanillaZeroOneCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope, ContextSelector, SSAContextInterpreter)</a></div>
-<div class="col-last odd-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)"><code>Util.makeVanillaZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeVanillaZeroOneContainerCFABuilder<wbr>(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last even-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeVanillaZeroOneContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeVanillaZeroOneContainerCFABuilder(AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last odd-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeZeroCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope, ContextSelector, SSAContextInterpreter)</a></div>
-<div class="col-last even-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)"><code>Util.makeZeroCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroContainerCFABuilder<wbr>(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last odd-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeZeroContainerCFABuilder(AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroOneCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last even-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroOneCFABuilder<wbr>(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope, ContextSelector, SSAContextInterpreter)</a></div>
-<div class="col-last odd-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)"><code>Util.makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroOneContainerCFABuilder<wbr>(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope)</a></div>
-<div class="col-last even-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneCFABuilder(com.ibm.wala.classLoader.Language,com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy)"><code>Util.makeZeroOneCFABuilder(Language, AnalysisOptions, IAnalysisCacheView, IClassHierarchy)</code></a></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)">com.ibm.wala.ipa.callgraph.impl.Util.makeZeroOneContainerCFABuilder<wbr>(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, AnalysisScope, ContextSelector, SSAContextInterpreter)</a></div>
-<div class="col-last odd-row-color">
-<div class="block"><p>Use <a href="com/ibm/wala/ipa/callgraph/impl/Util.html#makeZeroOneContainerCFABuilder(com.ibm.wala.ipa.callgraph.AnalysisOptions,com.ibm.wala.ipa.callgraph.IAnalysisCacheView,com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ipa.callgraph.ContextSelector,com.ibm.wala.ipa.callgraph.propagation.SSAContextInterpreter)"><code>Util.makeZeroOneContainerCFABuilder(AnalysisOptions, IAnalysisCacheView, IClassHierarchy, ContextSelector, SSAContextInterpreter)</code></a></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/AllocationSite.html#getMethod()">com.ibm.wala.ipa.callgraph.propagation.AllocationSite.getMethod()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/AllocationSite.html#method()"><code>AllocationSite.method()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/AllocationSite.html#getSite()">com.ibm.wala.ipa.callgraph.propagation.AllocationSite.getSite()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/AllocationSite.html#site()"><code>AllocationSite.site()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/cfa/AllocationString.html#getAllocationSites()">com.ibm.wala.ipa.callgraph.propagation.cfa.AllocationString.getAllocationSites()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/cfa/AllocationString.html#allocationSites()"><code>AllocationString.allocationSites()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/ConcreteTypeKey.html#getType()">com.ibm.wala.ipa.callgraph.propagation.ConcreteTypeKey.getType()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/ConcreteTypeKey.html#type()"><code>ConcreteTypeKey.type()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/FilteredPointerKey.SingleClassFilter.html#getConcreteType()">com.ibm.wala.ipa.callgraph.propagation.FilteredPointerKey.SingleClassFilter.getConcreteType()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/FilteredPointerKey.SingleClassFilter.html#concreteType()"><code>FilteredPointerKey.SingleClassFilter.concreteType()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html#getConcreteType()">com.ibm.wala.ipa.callgraph.propagation.InstanceKey.getConcreteType()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/ipa/callgraph/propagation/InstanceKey.html#concreteType()"><code>InstanceKey.concreteType()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ipa/cfg/exceptionpruning/FilteredException.html#getException()">com.ibm.wala.ipa.cfg.exceptionpruning.FilteredException.getException()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/ipa/cfg/exceptionpruning/FilteredException.html#exception()"><code>FilteredException.exception()</code></a> instead</div>
-</div>
 <div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeBT/Constants.html#MAYBE">com.ibm.wala.shrike.shrikeBT.Constants.MAYBE</a></div>
 <div class="col-last odd-row-color">
 <div class="block">use <code>AnalysisResult.MAYBE.ordinal() + 1</code></div>
@@ -375,319 +696,6 @@ initTheme();
 </div>
 <div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeBT/Constants.html#YES">com.ibm.wala.shrike.shrikeBT.Constants.YES</a></div>
 <div class="col-last odd-row-color">
-<div class="block">use <code>AnalysisResult.YES.ordinal() + 1</code></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeBT/tools/MethodOptimizer.html" title="class in com.ibm.wala.shrike.shrikeBT.tools">com.ibm.wala.shrike.shrikeBT.tools.MethodOptimizer</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeBT/tools/MethodOptimizer.html#%3Cinit%3E(com.ibm.wala.shrike.shrikeBT.MethodData,com.ibm.wala.shrike.shrikeBT.MethodEditor)">com.ibm.wala.shrike.shrikeBT.tools.MethodOptimizer<wbr>(MethodData, MethodEditor)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#getClassName()">com.ibm.wala.shrike.shrikeCT.ConstantPoolParser.ReferenceToken.getClassName()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#className()"><code>ConstantPoolParser.ReferenceToken.className()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#getDescriptor()">com.ibm.wala.shrike.shrikeCT.ConstantPoolParser.ReferenceToken.getDescriptor()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#descriptor()"><code>ConstantPoolParser.ReferenceToken.descriptor()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#getElementName()">com.ibm.wala.shrike.shrikeCT.ConstantPoolParser.ReferenceToken.getElementName()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#elementName()"><code>ConstantPoolParser.ReferenceToken.elementName()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#getKind()">com.ibm.wala.shrike.shrikeCT.ConstantPoolParser.ReferenceToken.getKind()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/ConstantPoolParser.ReferenceToken.html#kind()"><code>ConstantPoolParser.ReferenceToken.kind()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#getFrameType()">com.ibm.wala.shrike.shrikeCT.StackMapConstants.StackMapFrame.getFrameType()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#frameType()"><code>StackMapConstants.StackMapFrame.frameType()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#getLocalTypes()">com.ibm.wala.shrike.shrikeCT.StackMapConstants.StackMapFrame.getLocalTypes()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#localTypes()"><code>StackMapConstants.StackMapFrame.localTypes()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#getOffset()">com.ibm.wala.shrike.shrikeCT.StackMapConstants.StackMapFrame.getOffset()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#offset()"><code>StackMapConstants.StackMapFrame.offset()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#getStackTypes()">com.ibm.wala.shrike.shrikeCT.StackMapConstants.StackMapFrame.getStackTypes()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/shrike/shrikeCT/StackMapConstants.StackMapFrame.html#stackTypes()"><code>StackMapConstants.StackMapFrame.stackTypes()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/ssa/SSACheckCastInstruction.html#getDeclaredResultType()">com.ibm.wala.ssa.SSACheckCastInstruction.getDeclaredResultType()</a></div>
-<div class="col-last even-row-color">
-<div class="block">the system now supports multiple types, so this accessor will not work for all
-    languages.</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/types/ClassLoaderReference.html#getLanguage()">com.ibm.wala.types.ClassLoaderReference.getLanguage()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/types/ClassLoaderReference.html#language()"><code>ClassLoaderReference.language()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/types/ClassLoaderReference.html#getName()">com.ibm.wala.types.ClassLoaderReference.getName()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/types/ClassLoaderReference.html#name()"><code>ClassLoaderReference.name()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/types/ClassLoaderReference.html#getParent()">com.ibm.wala.types.ClassLoaderReference.getParent()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/types/ClassLoaderReference.html#parent()"><code>ClassLoaderReference.parent()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/types/Selector.html#getDescriptor()">com.ibm.wala.types.Selector.getDescriptor()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/types/Selector.html#descriptor()"><code>Selector.descriptor()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/types/Selector.html#getName()">com.ibm.wala.types.Selector.getName()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/types/Selector.html#name()"><code>Selector.name()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#add(T)">com.ibm.wala.util.collections.Iterator2Collection.add<wbr>(T)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#addAll(java.util.Collection)">com.ibm.wala.util.collections.Iterator2Collection.addAll<wbr>(Collection&lt;? extends T&gt;)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#clear()">com.ibm.wala.util.collections.Iterator2Collection.clear()</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#contains(java.lang.Object)">com.ibm.wala.util.collections.Iterator2Collection.contains<wbr>(Object)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#containsAll(java.util.Collection)">com.ibm.wala.util.collections.Iterator2Collection.containsAll<wbr>(Collection&lt;?&gt;)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#equals(java.lang.Object)">com.ibm.wala.util.collections.Iterator2Collection.equals<wbr>(Object)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#hashCode()">com.ibm.wala.util.collections.Iterator2Collection.hashCode()</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#isEmpty()">com.ibm.wala.util.collections.Iterator2Collection.isEmpty()</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#iterator()">com.ibm.wala.util.collections.Iterator2Collection.iterator()</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#remove(java.lang.Object)">com.ibm.wala.util.collections.Iterator2Collection.remove<wbr>(Object)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#removeAll(java.util.Collection)">com.ibm.wala.util.collections.Iterator2Collection.removeAll<wbr>(Collection&lt;?&gt;)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#retainAll(java.util.Collection)">com.ibm.wala.util.collections.Iterator2Collection.retainAll<wbr>(Collection&lt;?&gt;)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#size()">com.ibm.wala.util.collections.Iterator2Collection.size()</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#toArray()">com.ibm.wala.util.collections.Iterator2Collection.toArray()</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#toArray(U%5B%5D)">com.ibm.wala.util.collections.Iterator2Collection.toArray<wbr>(U[])</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Collection.html#toString()">com.ibm.wala.util.collections.Iterator2Collection.toString()</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.Iterator2List</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#%3Cinit%3E(java.util.Iterator,java.util.List)">com.ibm.wala.util.collections.Iterator2List<wbr>(Iterator&lt;? extends T&gt;, List&lt;T&gt;)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#add(int,T)">com.ibm.wala.util.collections.Iterator2List.add<wbr>(int, T)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#addAll(int,java.util.Collection)">com.ibm.wala.util.collections.Iterator2List.addAll<wbr>(int, Collection&lt;? extends T&gt;)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#get(int)">com.ibm.wala.util.collections.Iterator2List.get<wbr>(int)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#getDelegate()">com.ibm.wala.util.collections.Iterator2List.getDelegate()</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#indexOf(java.lang.Object)">com.ibm.wala.util.collections.Iterator2List.indexOf<wbr>(Object)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#lastIndexOf(java.lang.Object)">com.ibm.wala.util.collections.Iterator2List.lastIndexOf<wbr>(Object)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#listIterator()">com.ibm.wala.util.collections.Iterator2List.listIterator()</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#listIterator(int)">com.ibm.wala.util.collections.Iterator2List.listIterator<wbr>(int)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#remove(int)">com.ibm.wala.util.collections.Iterator2List.remove<wbr>(int)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#set(int,T)">com.ibm.wala.util.collections.Iterator2List.set<wbr>(int, T)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html#subList(int,int)">com.ibm.wala.util.collections.Iterator2List.subList<wbr>(int, int)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Set.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.Iterator2Set</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2Set.html#%3Cinit%3E(java.util.Iterator,java.util.Set)">com.ibm.wala.util.collections.Iterator2Set<wbr>(Iterator&lt;? extends T&gt;, Set&lt;T&gt;)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Set.html#getDelegate()">com.ibm.wala.util.collections.Iterator2Set.getDelegate()</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#getColors()">com.ibm.wala.util.graph.traverse.WelshPowell.ColoredVertices.getColors()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#colors()"><code>WelshPowell.ColoredVertices.colors()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#getNumColors()">com.ibm.wala.util.graph.traverse.WelshPowell.ColoredVertices.getNumColors()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#numColors()"><code>WelshPowell.ColoredVertices.numColors()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#isFullColoring()">com.ibm.wala.util.graph.traverse.WelshPowell.ColoredVertices.isFullColoring()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/util/graph/traverse/WelshPowell.ColoredVertices.html#fullColoring()"><code>WelshPowell.ColoredVertices.fullColoring()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/intset/IntPair.html#getX()">com.ibm.wala.util.intset.IntPair.getX()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="com/ibm/wala/util/intset/IntPair.html#x()"><code>IntPair.x()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/intset/IntPair.html#getY()">com.ibm.wala.util.intset.IntPair.getY()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/util/intset/IntPair.html#y()"><code>IntPair.y()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/processes/JavaLauncher.html#quoteStringIfNeeded(java.lang.String)">com.ibm.wala.util.processes.JavaLauncher.quoteStringIfNeeded<wbr>(String)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html" title="class in org.scandroid.flow.functions">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider</a></div>
-<div class="col-last even-row-color">
-<div class="block">Replaced by TaintTransferFunctions.</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html#%3Cinit%3E(org.scandroid.domain.IFDSTaintDomain,com.ibm.wala.dataflow.IFDS.ISupergraph,com.ibm.wala.ipa.callgraph.propagation.PointerAnalysis)">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider<wbr>(IFDSTaintDomain&lt;E&gt;, ISupergraph&lt;BasicBlockInContext&lt;E&gt;, CGNode&gt;, PointerAnalysis&lt;InstanceKey&gt;)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html#getCallFlowFunction(com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext)">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.getCallFlowFunction<wbr>(BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html#getCallNoneToReturnFlowFunction(com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext)">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.getCallNoneToReturnFlowFunction<wbr>(BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html#getCallToReturnFlowFunction(com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext)">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.getCallToReturnFlowFunction<wbr>(BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;)</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html#getReturnFlowFunction(com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext)">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.getReturnFlowFunction<wbr>(BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;, BasicBlockInContext&lt;E&gt;)</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.ReturnDefUse.html" title="class in org.scandroid.flow.functions">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.ReturnDefUse</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/spec/MethodNamePattern.html#getClassName()">org.scandroid.spec.MethodNamePattern.getClassName()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="org/scandroid/spec/MethodNamePattern.html#className()"><code>MethodNamePattern.className()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="org/scandroid/spec/MethodNamePattern.html#getDescriptor()">org.scandroid.spec.MethodNamePattern.getDescriptor()</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="org/scandroid/spec/MethodNamePattern.html#descriptor()"><code>MethodNamePattern.descriptor()</code></a> instead</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/spec/MethodNamePattern.html#getMemberName()">org.scandroid.spec.MethodNamePattern.getMemberName()</a></div>
-<div class="col-last odd-row-color">
-<div class="block">Use <a href="org/scandroid/spec/MethodNamePattern.html#memberName()"><code>MethodNamePattern.memberName()</code></a> instead</div>
-</div>
-</div>
-</div>
-</li>
-</ul>
-<ul class="block-list">
-<li>
-<div id="interface">
-<div class="caption"><span>Deprecated Interfaces</span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Interface</div>
-<div class="table-header col-last">Description</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html" title="interface in com.ibm.wala.dalvik.classLoader">com.ibm.wala.dalvik.classLoader.DexConstants</a></div>
-<div class="col-last even-row-color">
-<div class="block">replace <code>ACC_XXX</code> with <code>AccessFlags</code><code>.XXX.getValue()</code> and replace
-    <code>VALUE_XXX</code> with <code>ValueType</code><code>.XXX</code></div>
-</div>
-</div>
-</div>
-</li>
-</ul>
-<ul class="block-list">
-<li>
-<div id="class">
-<div class="caption"><span>Deprecated Classes</span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/core/java11/Java9AnalysisScopeReader.html" title="class in com.ibm.wala.core.java11">com.ibm.wala.core.java11.Java9AnalysisScopeReader</a></div>
-<div class="col-last even-row-color">
-<div class="block">Use <a href="com/ibm/wala/core/util/config/AnalysisScopeReader.html" title="class in com.ibm.wala.core.util.config"><code>AnalysisScopeReader</code></a>; support for <code>jrt</code> entries is now built in.</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeBT/tools/MethodOptimizer.html" title="class in com.ibm.wala.shrike.shrikeBT.tools">com.ibm.wala.shrike.shrikeBT.tools.MethodOptimizer</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/util/collections/Iterator2List.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.Iterator2List</a></div>
-<div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/util/collections/Iterator2Set.html" title="class in com.ibm.wala.util.collections">com.ibm.wala.util.collections.Iterator2Set</a></div>
-<div class="col-last odd-row-color"></div>
-<div class="col-summary-item-name even-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.html" title="class in org.scandroid.flow.functions">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider</a></div>
-<div class="col-last even-row-color">
-<div class="block">Replaced by TaintTransferFunctions.</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="org/scandroid/flow/functions/IFDSTaintFlowFunctionProvider.ReturnDefUse.html" title="class in org.scandroid.flow.functions">org.scandroid.flow.functions.IFDSTaintFlowFunctionProvider.ReturnDefUse</a></div>
-<div class="col-last odd-row-color"></div>
-</div>
-</div>
-</li>
-</ul>
-<ul class="block-list">
-<li>
-<div id="field">
-<div class="caption"><span>Deprecated Fields</span></div>
-<div class="summary-table two-column-summary">
-<div class="table-header col-first">Field</div>
-<div class="table-header col-last">Description</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ABSTRACT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ABSTRACT</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ANNOTATION">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ANNOTATION</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_BRIDGE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_BRIDGE</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_CONSTRUCTOR">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_CONSTRUCTOR</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_DECLARED_SYNCHRONIZED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_DECLARED_SYNCHRONIZED</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_ENUM">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_ENUM</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_FINAL">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_FINAL</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_INTERFACE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_INTERFACE</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_NATIVE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_NATIVE</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_private">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_private</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PRIVATE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PRIVATE</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PROTECTED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PROTECTED</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_PUBLIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_PUBLIC</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_STATIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_STATIC</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_STRICT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_STRICT</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_SYNCHRONIZED">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_SYNCHRONIZED</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_SYNTHETIC">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_SYNTHETIC</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_TRANSIENT">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_TRANSIENT</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_VARARGS">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_VARARGS</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#ACC_VOLATILE">com.ibm.wala.dalvik.classLoader.DexConstants.ACC_VOLATILE</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ANNOTATION">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ANNOTATION</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ARRAY">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ARRAY</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_BOOLEAN">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_BOOLEAN</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_BYTE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_BYTE</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_CHAR">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_CHAR</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_DOUBLE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_DOUBLE</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_ENUM">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_ENUM</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_FIELD">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_FIELD</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_FLOAT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_FLOAT</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_INT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_INT</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_LONG">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_LONG</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_METHOD">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_METHOD</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_NULL">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_NULL</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_SHORT">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_SHORT</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_STRING">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_STRING</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/dalvik/classLoader/DexConstants.html#VALUE_TYPE">com.ibm.wala.dalvik.classLoader.DexConstants.VALUE_TYPE</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeBT/Constants.html#MAYBE">com.ibm.wala.shrike.shrikeBT.Constants.MAYBE</a></div>
-<div class="col-last even-row-color">
-<div class="block">use <code>AnalysisResult.MAYBE.ordinal() + 1</code></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/ibm/wala/shrike/shrikeBT/Constants.html#NO">com.ibm.wala.shrike.shrikeBT.Constants.NO</a></div>
-<div class="col-last odd-row-color">
-<div class="block">use <code>AnalysisResult.NO.ordinal() + 1</code></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/ibm/wala/shrike/shrikeBT/Constants.html#YES">com.ibm.wala.shrike.shrikeBT.Constants.YES</a></div>
-<div class="col-last even-row-color">
 <div class="block">use <code>AnalysisResult.YES.ordinal() + 1</code></div>
 </div>
 </div>
