@@ -83,6 +83,7 @@ initTheme();
 <li><a href="#loader" tabindex="0">loader</a></li>
 <li><a href="#namedEntityResolver" tabindex="0">namedEntityResolver</a></li>
 <li><a href="#insts" tabindex="0">insts</a></li>
+<li><a href="#ssaOptions" tabindex="0">ssaOptions</a></li>
 <li><a href="#DEBUG_ALL" tabindex="0">DEBUG_ALL</a></li>
 <li><a href="#DEBUG_TOP" tabindex="0">DEBUG_TOP</a></li>
 <li><a href="#DEBUG_CFG" tabindex="0">DEBUG_CFG</a></li>
@@ -94,9 +95,9 @@ initTheme();
 </li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader,java.util.Map,com.ibm.wala.cast.ir.translator.ArrayOpHandler)" tabindex="0">AstTranslator(IClassLoader, Map, ArrayOpHandler)</a></li>
-<li><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader,java.util.Map)" tabindex="0">AstTranslator(IClassLoader, Map)</a></li>
-<li><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader)" tabindex="0">AstTranslator(IClassLoader)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ssa.SSAOptions,java.util.Map,com.ibm.wala.cast.ir.translator.ArrayOpHandler)" tabindex="0">AstTranslator(IClassLoader, SSAOptions, Map, ArrayOpHandler)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ssa.SSAOptions,java.util.Map)" tabindex="0">AstTranslator(IClassLoader, SSAOptions, Map)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ssa.SSAOptions)" tabindex="0">AstTranslator(IClassLoader, SSAOptions)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -447,6 +448,9 @@ appropriately.</div>
 <div class="col-last odd-row-color">
 <div class="block">for handling languages that let you include other source files named statically (e.g., ABAP)</div>
 </div>
+<div class="col-first even-row-color"><code>protected final <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a></code></div>
+<div class="col-second even-row-color"><code><a href="#ssaOptions" class="member-name-link">ssaOptions</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-com.ibm.wala.cast.tree.visit.CAstVisitor">Fields inherited from class&nbsp;<a href="../../tree/visit/CAstVisitor.html#field-summary" title="class in com.ibm.wala.cast.tree.visit">CAstVisitor</a></h3>
@@ -472,14 +476,17 @@ appropriately.</div>
 <div class="table-header col-second">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected </code></div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader)" class="member-name-link">AstTranslator</a><wbr>(<a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;loader)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ssa.SSAOptions)" class="member-name-link">AstTranslator</a><wbr>(<a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;loader,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>protected </code></div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader,java.util.Map)" class="member-name-link">AstTranslator</a><wbr>(<a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;loader,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ssa.SSAOptions,java.util.Map)" class="member-name-link">AstTranslator</a><wbr>(<a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;loader,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>, <a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;&nbsp;namedEntityResolver)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>protected </code></div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader,java.util.Map,com.ibm.wala.cast.ir.translator.ArrayOpHandler)" class="member-name-link">AstTranslator</a><wbr>(<a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;loader,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ssa.SSAOptions,java.util.Map,com.ibm.wala.cast.ir.translator.ArrayOpHandler)" class="member-name-link">AstTranslator</a><wbr>(<a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;loader,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>, <a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;&nbsp;namedEntityResolver,
  <a href="ArrayOpHandler.html" title="interface in com.ibm.wala.cast.ir.translator">ArrayOpHandler</a>&nbsp;arrayOpHandler)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
@@ -2145,6 +2152,14 @@ types.</div>
 </section>
 </li>
 <li>
+<section class="detail" id="ssaOptions">
+<h3>ssaOptions</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a></span>&nbsp;<span class="element-name">ssaOptions</span></div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="DEBUG_ALL">
 <h3>DEBUG_ALL</h3>
 <div class="horizontal-scroll">
@@ -2249,29 +2264,32 @@ types.</div>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.classLoader.IClassLoader,java.util.Map,com.ibm.wala.cast.ir.translator.ArrayOpHandler)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ssa.SSAOptions,java.util.Map,com.ibm.wala.cast.ir.translator.ArrayOpHandler)">
 <h3>AstTranslator</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">AstTranslator</span><wbr><span class="parameters">(<a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;loader,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>, <a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;&nbsp;namedEntityResolver,
  <a href="ArrayOpHandler.html" title="interface in com.ibm.wala.cast.ir.translator">ArrayOpHandler</a>&nbsp;arrayOpHandler)</span></div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.classLoader.IClassLoader,java.util.Map)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ssa.SSAOptions,java.util.Map)">
 <h3>AstTranslator</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">AstTranslator</span><wbr><span class="parameters">(<a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;loader,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>, <a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&gt;&nbsp;namedEntityResolver)</span></div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.classLoader.IClassLoader)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ssa.SSAOptions)">
 <h3>AstTranslator</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">AstTranslator</span><wbr><span class="parameters">(<a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;loader)</span></div>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">AstTranslator</span><wbr><span class="parameters">(<a href="../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;loader,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions)</span></div>
 </div>
 </section>
 </li>

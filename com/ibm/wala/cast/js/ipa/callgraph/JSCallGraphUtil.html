@@ -92,8 +92,8 @@ initTheme();
 <li><a href="#makeScriptRoots(com.ibm.wala.ipa.cha.IClassHierarchy)" tabindex="0">makeScriptRoots(IClassHierarchy)</a></li>
 <li><a href="#getNodes(com.ibm.wala.ipa.callgraph.CallGraph,java.lang.String)" tabindex="0">getNodes(CallGraph, String)</a></li>
 <li><a href="#getMethodReference(java.lang.String)" tabindex="0">getMethodReference(String)</a></li>
-<li><a href="#loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,java.net.URL)" tabindex="0">loadAdditionalFile(IClassHierarchy, JavaScriptLoader, URL)</a></li>
-<li><a href="#loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.classLoader.ModuleEntry)" tabindex="0">loadAdditionalFile(IClassHierarchy, JavaScriptLoader, ModuleEntry)</a></li>
+<li><a href="#loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.ssa.SSAOptions,java.net.URL)" tabindex="0">loadAdditionalFile(IClassHierarchy, JavaScriptLoader, SSAOptions, URL)</a></li>
+<li><a href="#loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.classLoader.ModuleEntry,com.ibm.wala.ssa.SSAOptions)" tabindex="0">loadAdditionalFile(IClassHierarchy, JavaScriptLoader, ModuleEntry, SSAOptions)</a></li>
 <li><a href="#simulateToStringForPropertyNames(java.lang.Object)" tabindex="0">simulateToStringForPropertyNames(Object)</a></li>
 <li><a href="#getPrologueFile(java.lang.String)" tabindex="0">getPrologueFile(String)</a></li>
 </ol>
@@ -210,13 +210,15 @@ using a global?</div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getTranslatorFactory()" class="member-name-link">getTranslatorFactory</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.classLoader.ModuleEntry)" class="member-name-link">loadAdditionalFile</a><wbr>(<a href="../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.classLoader.ModuleEntry,com.ibm.wala.ssa.SSAOptions)" class="member-name-link">loadAdditionalFile</a><wbr>(<a href="../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  <a href="../../loader/JavaScriptLoader.html" title="class in com.ibm.wala.cast.js.loader">JavaScriptLoader</a>&nbsp;cl,
- <a href="../../../../classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;M)</code></div>
+ <a href="../../../../classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;M,
+ <a href="../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,java.net.URL)" class="member-name-link">loadAdditionalFile</a><wbr>(<a href="../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.ssa.SSAOptions,java.net.URL)" class="member-name-link">loadAdditionalFile</a><wbr>(<a href="../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  <a href="../../loader/JavaScriptLoader.html" title="class in com.ibm.wala.cast.js.loader">JavaScriptLoader</a>&nbsp;cl,
+ <a href="../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/net/URL.html" title="class in java.net" class="external-link">URL</a>&nbsp;url)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a></code></div>
@@ -448,11 +450,12 @@ Otherwise, return nodes for functions whose name matches funName exactly.</div>
 </section>
 </li>
 <li>
-<section class="detail" id="loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,java.net.URL)">
+<section class="detail" id="loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.ssa.SSAOptions,java.net.URL)">
 <h3>loadAdditionalFile</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">loadAdditionalFile</span><wbr><span class="parameters">(<a href="../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  <a href="../../loader/JavaScriptLoader.html" title="class in com.ibm.wala.cast.js.loader">JavaScriptLoader</a>&nbsp;cl,
+ <a href="../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/net/URL.html" title="class in java.net" class="external-link">URL</a>&nbsp;url)</span>
                                       throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/IOException.html" title="class in java.io" class="external-link">IOException</a></span></div>
 <dl class="notes">
@@ -465,12 +468,13 @@ Otherwise, return nodes for functions whose name matches funName exactly.</div>
 </section>
 </li>
 <li>
-<section class="detail" id="loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.classLoader.ModuleEntry)">
+<section class="detail" id="loadAdditionalFile(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.classLoader.ModuleEntry,com.ibm.wala.ssa.SSAOptions)">
 <h3>loadAdditionalFile</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">loadAdditionalFile</span><wbr><span class="parameters">(<a href="../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  <a href="../../loader/JavaScriptLoader.html" title="class in com.ibm.wala.cast.js.loader">JavaScriptLoader</a>&nbsp;cl,
- <a href="../../../../classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;M)</span>
+ <a href="../../../../classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;M,
+ <a href="../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions)</span>
                                       throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/IOException.html" title="class in java.io" class="external-link">IOException</a></span></div>
 <dl class="notes">
 <dt>Throws:</dt>

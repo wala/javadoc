@@ -73,7 +73,7 @@ initTheme();
 </li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(com.ibm.wala.classLoader.ModuleEntry,com.ibm.wala.cast.tree.CAstEntity,com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.util.config.StringFilter)" tabindex="0">JavaCAst2IRTranslator(ModuleEntry, CAstEntity, JavaSourceLoaderImpl, StringFilter)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.classLoader.ModuleEntry,com.ibm.wala.cast.tree.CAstEntity,com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.util.config.StringFilter)" tabindex="0">JavaCAst2IRTranslator(ModuleEntry, CAstEntity, JavaSourceLoaderImpl, SSAOptions, StringFilter)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -234,7 +234,7 @@ initTheme();
 <h2>Field Summary</h2>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-com.ibm.wala.cast.ir.translator.AstTranslator">Fields inherited from class&nbsp;<a href="../../ir/translator/AstTranslator.html#field-summary" title="class in com.ibm.wala.cast.ir.translator">AstTranslator</a></h3>
-<code><a href="../../ir/translator/AstTranslator.html#DEBUG_ALL">DEBUG_ALL</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_CFG">DEBUG_CFG</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_LEXICAL">DEBUG_LEXICAL</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_NAMES">DEBUG_NAMES</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_TOP">DEBUG_TOP</a>, <a href="../../ir/translator/AstTranslator.html#entity2ExposedNames">entity2ExposedNames</a>, <a href="../../ir/translator/AstTranslator.html#entity2WrittenNames">entity2WrittenNames</a>, <a href="../../ir/translator/AstTranslator.html#insts">insts</a>, <a href="../../ir/translator/AstTranslator.html#loader">loader</a>, <a href="../../ir/translator/AstTranslator.html#namedEntityResolver">namedEntityResolver</a></code>
+<code><a href="../../ir/translator/AstTranslator.html#DEBUG_ALL">DEBUG_ALL</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_CFG">DEBUG_CFG</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_LEXICAL">DEBUG_LEXICAL</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_NAMES">DEBUG_NAMES</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_TOP">DEBUG_TOP</a>, <a href="../../ir/translator/AstTranslator.html#entity2ExposedNames">entity2ExposedNames</a>, <a href="../../ir/translator/AstTranslator.html#entity2WrittenNames">entity2WrittenNames</a>, <a href="../../ir/translator/AstTranslator.html#insts">insts</a>, <a href="../../ir/translator/AstTranslator.html#loader">loader</a>, <a href="../../ir/translator/AstTranslator.html#namedEntityResolver">namedEntityResolver</a>, <a href="../../ir/translator/AstTranslator.html#ssaOptions">ssaOptions</a></code>
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
@@ -271,6 +271,9 @@ initTheme();
 <div class="col-last odd-row-color">
 <div class="block">for handling languages that let you include other source files named statically (e.g., ABAP)</div>
 </div>
+<div class="col-first even-row-color"><code>protected final <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a></code></div>
+<div class="col-second even-row-color"><code><a href="../../ir/translator/AstTranslator.html#ssaOptions" class="member-name-link">ssaOptions</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </div>
 <div class="inherited-list">
@@ -295,9 +298,10 @@ initTheme();
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.classLoader.ModuleEntry,com.ibm.wala.cast.tree.CAstEntity,com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.util.config.StringFilter)" class="member-name-link">JavaCAst2IRTranslator</a><wbr>(<a href="../../../classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;module,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.classLoader.ModuleEntry,com.ibm.wala.cast.tree.CAstEntity,com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.util.config.StringFilter)" class="member-name-link">JavaCAst2IRTranslator</a><wbr>(<a href="../../../classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;module,
  <a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;sourceFileEntity,
  <a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;loader,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
@@ -1955,12 +1959,13 @@ types.</div>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.classLoader.ModuleEntry,com.ibm.wala.cast.tree.CAstEntity,com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.util.config.StringFilter)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.classLoader.ModuleEntry,com.ibm.wala.cast.tree.CAstEntity,com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.util.config.StringFilter)">
 <h3>JavaCAst2IRTranslator</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">JavaCAst2IRTranslator</span><wbr><span class="parameters">(<a href="../../../classLoader/ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&nbsp;module,
  <a href="../../tree/CAstEntity.html" title="interface in com.ibm.wala.cast.tree">CAstEntity</a>&nbsp;sourceFileEntity,
  <a href="../loader/JavaSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a>&nbsp;loader,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="../../../util/config/StringFilter.html" title="interface in com.ibm.wala.util.config">StringFilter</a>&nbsp;exclusions)</span></div>
 </div>
 </section>

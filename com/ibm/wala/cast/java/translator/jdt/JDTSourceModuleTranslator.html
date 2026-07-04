@@ -72,8 +72,8 @@ initTheme();
 </li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl)" tabindex="0">JDTSourceModuleTranslator(AnalysisScope, JDTSourceLoaderImpl)</a></li>
-<li><a href="#%3Cinit%3E(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl,boolean)" tabindex="0">JDTSourceModuleTranslator(AnalysisScope, JDTSourceLoaderImpl, boolean)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl,com.ibm.wala.ssa.SSAOptions)" tabindex="0">JDTSourceModuleTranslator(AnalysisScope, JDTSourceLoaderImpl, SSAOptions)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl,com.ibm.wala.ssa.SSAOptions,boolean)" tabindex="0">JDTSourceModuleTranslator(AnalysisScope, JDTSourceLoaderImpl, SSAOptions, boolean)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -139,11 +139,13 @@ pseudo-compiler to generate DOMO IR for the sources in the compile-time classpat
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl)" class="member-name-link">JDTSourceModuleTranslator</a><wbr>(<a href="../../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
- <a href="JDTSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.translator.jdt">JDTSourceLoaderImpl</a>&nbsp;sourceLoader)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl,boolean)" class="member-name-link">JDTSourceModuleTranslator</a><wbr>(<a href="../../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl,com.ibm.wala.ssa.SSAOptions)" class="member-name-link">JDTSourceModuleTranslator</a><wbr>(<a href="../../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
  <a href="JDTSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.translator.jdt">JDTSourceLoaderImpl</a>&nbsp;sourceLoader,
+ <a href="../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl,com.ibm.wala.ssa.SSAOptions,boolean)" class="member-name-link">JDTSourceModuleTranslator</a><wbr>(<a href="../../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+ <a href="JDTSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.translator.jdt">JDTSourceLoaderImpl</a>&nbsp;sourceLoader,
+ <a href="../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  boolean&nbsp;dump)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 </div>
@@ -213,20 +215,22 @@ pseudo-compiler to generate DOMO IR for the sources in the compile-time classpat
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl)">
-<h3>JDTSourceModuleTranslator</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">JDTSourceModuleTranslator</span><wbr><span class="parameters">(<a href="../../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
- <a href="JDTSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.translator.jdt">JDTSourceLoaderImpl</a>&nbsp;sourceLoader)</span></div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl,boolean)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl,com.ibm.wala.ssa.SSAOptions)">
 <h3>JDTSourceModuleTranslator</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">JDTSourceModuleTranslator</span><wbr><span class="parameters">(<a href="../../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
  <a href="JDTSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.translator.jdt">JDTSourceLoaderImpl</a>&nbsp;sourceLoader,
+ <a href="../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.ipa.callgraph.AnalysisScope,com.ibm.wala.cast.java.translator.jdt.JDTSourceLoaderImpl,com.ibm.wala.ssa.SSAOptions,boolean)">
+<h3>JDTSourceModuleTranslator</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">JDTSourceModuleTranslator</span><wbr><span class="parameters">(<a href="../../../../ipa/callgraph/AnalysisScope.html" title="class in com.ibm.wala.ipa.callgraph">AnalysisScope</a>&nbsp;scope,
+ <a href="JDTSourceLoaderImpl.html" title="class in com.ibm.wala.cast.java.translator.jdt">JDTSourceLoaderImpl</a>&nbsp;sourceLoader,
+ <a href="../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  boolean&nbsp;dump)</span></div>
 </div>
 </section>

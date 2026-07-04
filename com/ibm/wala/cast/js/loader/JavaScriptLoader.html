@@ -75,13 +75,14 @@ initTheme();
 <li><a href="#field-detail" tabindex="0">Field Details</a>
 <ol class="toc-list">
 <li><a href="#JS" tabindex="0">JS</a></li>
+<li><a href="#ssaOptions" tabindex="0">ssaOptions</a></li>
 <li><a href="#bootstrapFileNames" tabindex="0">bootstrapFileNames</a></li>
 </ol>
 </li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory)" tabindex="0">JavaScriptLoader(IClassHierarchy, JavaScriptTranslatorFactory)</a></li>
-<li><a href="#%3Cinit%3E(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory)" tabindex="0">JavaScriptLoader(IClassHierarchy, JavaScriptTranslatorFactory, CAstRewriterFactory)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory)" tabindex="0">JavaScriptLoader(IClassHierarchy, SSAOptions, JavaScriptTranslatorFactory)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory)" tabindex="0">JavaScriptLoader(IClassHierarchy, SSAOptions, JavaScriptTranslatorFactory, CAstRewriterFactory)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -170,6 +171,9 @@ initTheme();
 <div class="col-first odd-row-color"><code>static final <a href="../../../classLoader/Language.html" title="interface in com.ibm.wala.classLoader">Language</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#JS" class="member-name-link">JS</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected final <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a></code></div>
+<div class="col-second even-row-color"><code><a href="#ssaOptions" class="member-name-link">ssaOptions</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-com.ibm.wala.cast.loader.CAstAbstractLoader">Fields inherited from class&nbsp;<a href="../../loader/CAstAbstractLoader.html#field-summary" title="class in com.ibm.wala.cast.loader">CAstAbstractLoader</a></h3>
@@ -201,10 +205,12 @@ initTheme();
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory)" class="member-name-link">JavaScriptLoader</a><wbr>(<a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory)" class="member-name-link">JavaScriptLoader</a><wbr>(<a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="../translator/JavaScriptTranslatorFactory.html" title="interface in com.ibm.wala.cast.js.translator">JavaScriptTranslatorFactory</a>&nbsp;translatorFactory)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory)" class="member-name-link">JavaScriptLoader</a><wbr>(<a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory)" class="member-name-link">JavaScriptLoader</a><wbr>(<a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="../translator/JavaScriptTranslatorFactory.html" title="interface in com.ibm.wala.cast.js.translator">JavaScriptTranslatorFactory</a>&nbsp;translatorFactory,
  <a href="../../tree/rewrite/CAstRewriterFactory.html" title="interface in com.ibm.wala.cast.tree.rewrite">CAstRewriterFactory</a>&lt;?,<wbr>?&gt;&nbsp;preprocessor)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
@@ -443,6 +449,14 @@ declared methods, so that a walk of the shell (e.g.</div>
 </section>
 </li>
 <li>
+<section class="detail" id="ssaOptions">
+<h3>ssaOptions</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a></span>&nbsp;<span class="element-name">ssaOptions</span></div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="bootstrapFileNames">
 <h3>bootstrapFileNames</h3>
 <div class="horizontal-scroll">
@@ -461,19 +475,21 @@ com.ibm.wala.cast.js/dat/prologue.js.</div>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory)">
 <h3>JavaScriptLoader</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">JavaScriptLoader</span><wbr><span class="parameters">(<a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="../translator/JavaScriptTranslatorFactory.html" title="interface in com.ibm.wala.cast.js.translator">JavaScriptTranslatorFactory</a>&nbsp;translatorFactory)</span></div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.ipa.cha.IClassHierarchy,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.cast.js.translator.JavaScriptTranslatorFactory,com.ibm.wala.cast.tree.rewrite.CAstRewriterFactory)">
 <h3>JavaScriptLoader</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">JavaScriptLoader</span><wbr><span class="parameters">(<a href="../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="../translator/JavaScriptTranslatorFactory.html" title="interface in com.ibm.wala.cast.js.translator">JavaScriptTranslatorFactory</a>&nbsp;translatorFactory,
  <a href="../../tree/rewrite/CAstRewriterFactory.html" title="interface in com.ibm.wala.cast.tree.rewrite">CAstRewriterFactory</a>&lt;?,<wbr>?&gt;&nbsp;preprocessor)</span></div>
 </div>

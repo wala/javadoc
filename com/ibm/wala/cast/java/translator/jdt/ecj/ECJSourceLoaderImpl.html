@@ -68,12 +68,13 @@ initTheme();
 <li><a href="#field-detail" tabindex="0">Field Details</a>
 <ol class="toc-list">
 <li><a href="#dump" tabindex="0">dump</a></li>
+<li><a href="#ssaOptions" tabindex="0">ssaOptions</a></li>
 </ol>
 </li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy)" tabindex="0">ECJSourceLoaderImpl(ClassLoaderReference, IClassLoader, IClassHierarchy)</a></li>
-<li><a href="#%3Cinit%3E(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy,boolean)" tabindex="0">ECJSourceLoaderImpl(ClassLoaderReference, IClassLoader, IClassHierarchy, boolean)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy)" tabindex="0">ECJSourceLoaderImpl(ClassLoaderReference, SSAOptions, IClassLoader, IClassHierarchy)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy,boolean)" tabindex="0">ECJSourceLoaderImpl(ClassLoaderReference, SSAOptions, IClassLoader, IClassHierarchy, boolean)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -165,6 +166,9 @@ source file</div>
 <div class="col-first even-row-color"><code>protected final boolean</code></div>
 <div class="col-second even-row-color"><code><a href="#dump" class="member-name-link">dump</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected final <a href="../../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#ssaOptions" class="member-name-link">ssaOptions</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-com.ibm.wala.cast.java.loader.JavaSourceLoaderImpl">Fields inherited from class&nbsp;<a href="../../../loader/JavaSourceLoaderImpl.html#field-summary" title="class in com.ibm.wala.cast.java.loader">JavaSourceLoaderImpl</a></h3>
@@ -216,11 +220,13 @@ source file</div>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy)" class="member-name-link">ECJSourceLoaderImpl</a><wbr>(<a href="../../../../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loaderRef,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy)" class="member-name-link">ECJSourceLoaderImpl</a><wbr>(<a href="../../../../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loaderRef,
+ <a href="../../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="../../../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;parent,
  <a href="../../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy,boolean)" class="member-name-link">ECJSourceLoaderImpl</a><wbr>(<a href="../../../../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loaderRef,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy,boolean)" class="member-name-link">ECJSourceLoaderImpl</a><wbr>(<a href="../../../../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loaderRef,
+ <a href="../../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="../../../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;parent,
  <a href="../../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  boolean&nbsp;dump)</code></div>
@@ -387,6 +393,14 @@ name.</div>
 </div>
 </section>
 </li>
+<li>
+<section class="detail" id="ssaOptions">
+<h3>ssaOptions</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="../../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a></span>&nbsp;<span class="element-name">ssaOptions</span></div>
+</div>
+</section>
+</li>
 </ul>
 </section>
 </li>
@@ -396,20 +410,22 @@ name.</div>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy)">
 <h3>ECJSourceLoaderImpl</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ECJSourceLoaderImpl</span><wbr><span class="parameters">(<a href="../../../../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loaderRef,
+ <a href="../../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="../../../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;parent,
  <a href="../../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha)</span></div>
 </div>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy,boolean)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.types.ClassLoaderReference,com.ibm.wala.ssa.SSAOptions,com.ibm.wala.classLoader.IClassLoader,com.ibm.wala.ipa.cha.IClassHierarchy,boolean)">
 <h3>ECJSourceLoaderImpl</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ECJSourceLoaderImpl</span><wbr><span class="parameters">(<a href="../../../../../types/ClassLoaderReference.html" title="class in com.ibm.wala.types">ClassLoaderReference</a>&nbsp;loaderRef,
+ <a href="../../../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions,
  <a href="../../../../../classLoader/IClassLoader.html" title="interface in com.ibm.wala.classLoader">IClassLoader</a>&nbsp;parent,
  <a href="../../../../../ipa/cha/IClassHierarchy.html" title="interface in com.ibm.wala.ipa.cha">IClassHierarchy</a>&nbsp;cha,
  boolean&nbsp;dump)</span></div>

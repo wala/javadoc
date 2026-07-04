@@ -78,7 +78,7 @@ initTheme();
 </li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(com.ibm.wala.cast.js.loader.JavaScriptLoader)" tabindex="0">JSAstTranslator(JavaScriptLoader)</a></li>
+<li><a href="#%3Cinit%3E(com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.ssa.SSAOptions)" tabindex="0">JSAstTranslator(JavaScriptLoader, SSAOptions)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
@@ -247,7 +247,7 @@ initTheme();
 </div>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-com.ibm.wala.cast.ir.translator.AstTranslator">Fields inherited from class&nbsp;<a href="../../ir/translator/AstTranslator.html#field-summary" title="class in com.ibm.wala.cast.ir.translator">AstTranslator</a></h3>
-<code><a href="../../ir/translator/AstTranslator.html#DEBUG_ALL">DEBUG_ALL</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_CFG">DEBUG_CFG</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_LEXICAL">DEBUG_LEXICAL</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_NAMES">DEBUG_NAMES</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_TOP">DEBUG_TOP</a>, <a href="../../ir/translator/AstTranslator.html#entity2ExposedNames">entity2ExposedNames</a>, <a href="../../ir/translator/AstTranslator.html#entity2WrittenNames">entity2WrittenNames</a>, <a href="../../ir/translator/AstTranslator.html#insts">insts</a>, <a href="../../ir/translator/AstTranslator.html#loader">loader</a>, <a href="../../ir/translator/AstTranslator.html#namedEntityResolver">namedEntityResolver</a></code>
+<code><a href="../../ir/translator/AstTranslator.html#DEBUG_ALL">DEBUG_ALL</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_CFG">DEBUG_CFG</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_LEXICAL">DEBUG_LEXICAL</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_NAMES">DEBUG_NAMES</a>, <a href="../../ir/translator/AstTranslator.html#DEBUG_TOP">DEBUG_TOP</a>, <a href="../../ir/translator/AstTranslator.html#entity2ExposedNames">entity2ExposedNames</a>, <a href="../../ir/translator/AstTranslator.html#entity2WrittenNames">entity2WrittenNames</a>, <a href="../../ir/translator/AstTranslator.html#insts">insts</a>, <a href="../../ir/translator/AstTranslator.html#loader">loader</a>, <a href="../../ir/translator/AstTranslator.html#namedEntityResolver">namedEntityResolver</a>, <a href="../../ir/translator/AstTranslator.html#ssaOptions">ssaOptions</a></code>
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
@@ -284,6 +284,9 @@ initTheme();
 <div class="col-last odd-row-color">
 <div class="block">for handling languages that let you include other source files named statically (e.g., ABAP)</div>
 </div>
+<div class="col-first even-row-color"><code>protected final <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a></code></div>
+<div class="col-second even-row-color"><code><a href="../../ir/translator/AstTranslator.html#ssaOptions" class="member-name-link">ssaOptions</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </div>
 <div class="inherited-list">
@@ -308,7 +311,8 @@ initTheme();
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.cast.js.loader.JavaScriptLoader)" class="member-name-link">JSAstTranslator</a><wbr>(<a href="../loader/JavaScriptLoader.html" title="class in com.ibm.wala.cast.js.loader">JavaScriptLoader</a>&nbsp;loader)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.ssa.SSAOptions)" class="member-name-link">JSAstTranslator</a><wbr>(<a href="../loader/JavaScriptLoader.html" title="class in com.ibm.wala.cast.js.loader">JavaScriptLoader</a>&nbsp;loader,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -1972,10 +1976,11 @@ types.</div>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.ibm.wala.cast.js.loader.JavaScriptLoader)">
+<section class="detail" id="&lt;init&gt;(com.ibm.wala.cast.js.loader.JavaScriptLoader,com.ibm.wala.ssa.SSAOptions)">
 <h3>JSAstTranslator</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">JSAstTranslator</span><wbr><span class="parameters">(<a href="../loader/JavaScriptLoader.html" title="class in com.ibm.wala.cast.js.loader">JavaScriptLoader</a>&nbsp;loader)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">JSAstTranslator</span><wbr><span class="parameters">(<a href="../loader/JavaScriptLoader.html" title="class in com.ibm.wala.cast.js.loader">JavaScriptLoader</a>&nbsp;loader,
+ <a href="../../../ssa/SSAOptions.html" title="class in com.ibm.wala.ssa">SSAOptions</a>&nbsp;ssaOptions)</span></div>
 </div>
 </section>
 </li>
