@@ -178,7 +178,9 @@ implements <a href="../../../../com/ibm/wala/dataflow/IFDS/IFlowFunctionMap.html
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getReturnFlowFunction(com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ipa.cfg.BasicBlockInContext)" class="member-name-link">getReturnFlowFunction</a><wbr>(<a href="../../../../com/ibm/wala/ipa/cfg/BasicBlockInContext.html" title="class in com.ibm.wala.ipa.cfg">BasicBlockInContext</a>&lt;<a href="#type-param-E" title="type parameter in TaintTransferFunctions">E</a>&gt;&nbsp;call,
  <a href="../../../../com/ibm/wala/ipa/cfg/BasicBlockInContext.html" title="class in com.ibm.wala.ipa.cfg">BasicBlockInContext</a>&lt;<a href="#type-param-E" title="type parameter in TaintTransferFunctions">E</a>&gt;&nbsp;src,
  <a href="../../../../com/ibm/wala/ipa/cfg/BasicBlockInContext.html" title="class in com.ibm.wala.ipa.cfg">BasicBlockInContext</a>&lt;<a href="#type-param-E" title="type parameter in TaintTransferFunctions">E</a>&gt;&nbsp;dest)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">The usual arguments:</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../../com/ibm/wala/dataflow/IFDS/IUnaryFlowFunction.html" title="interface in com.ibm.wala.dataflow.IFDS">IUnaryFlowFunction</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeStaticFieldTaints(com.ibm.wala.ipa.cfg.BasicBlockInContext,com.ibm.wala.ssa.SSAInstruction,org.scandroid.flow.functions.PairBasedFlowFunction)" class="member-name-link">makeStaticFieldTaints</a><wbr>(<a href="../../../../com/ibm/wala/ipa/cfg/BasicBlockInContext.html" title="class in com.ibm.wala.ipa.cfg">BasicBlockInContext</a>&lt;<a href="#type-param-E" title="type parameter in TaintTransferFunctions">E</a>&gt;&nbsp;dest,
  <a href="../../../../com/ibm/wala/ssa/SSAInstruction.html" title="class in com.ibm.wala.ssa">SSAInstruction</a>&nbsp;inst,
@@ -336,6 +338,22 @@ implements <a href="../../../../com/ibm/wala/dataflow/IFDS/IFlowFunctionMap.html
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../../com/ibm/wala/dataflow/IFDS/IFlowFunction.html" title="interface in com.ibm.wala.dataflow.IFDS">IFlowFunction</a></span>&nbsp;<span class="element-name">getReturnFlowFunction</span><wbr><span class="parameters">(<a href="../../../../com/ibm/wala/ipa/cfg/BasicBlockInContext.html" title="class in com.ibm.wala.ipa.cfg">BasicBlockInContext</a>&lt;<a href="#type-param-E" title="type parameter in TaintTransferFunctions">E</a>&gt;&nbsp;call,
  <a href="../../../../com/ibm/wala/ipa/cfg/BasicBlockInContext.html" title="class in com.ibm.wala.ipa.cfg">BasicBlockInContext</a>&lt;<a href="#type-param-E" title="type parameter in TaintTransferFunctions">E</a>&gt;&nbsp;src,
  <a href="../../../../com/ibm/wala/ipa/cfg/BasicBlockInContext.html" title="class in com.ibm.wala.ipa.cfg">BasicBlockInContext</a>&lt;<a href="#type-param-E" title="type parameter in TaintTransferFunctions">E</a>&gt;&nbsp;dest)</span></div>
+<div class="block">The usual arguments:
+
+<p>call: the invoke instruction that took us into this method
+
+<p>src: a block that's the postdominator of this method, usually with no instructions
+
+<p>dest: whatever instruction followed the invoke instruction in call
+
+<p>What we want to accomplish:
+
+<p>1. Map taints from the value being returned to a LocalElement in the caller's context
+
+<p>2. Pass through any global information that the callee may have changed
+
+<p>3. Process ins/outs of dest block as well (it will never be the dest of a
+NormalFlowFunction)</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="../../../../com/ibm/wala/dataflow/IFDS/IFlowFunctionMap.html#getReturnFlowFunction(T,T,T)">getReturnFlowFunction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/ibm/wala/dataflow/IFDS/IFlowFunctionMap.html" title="interface in com.ibm.wala.dataflow.IFDS">IFlowFunctionMap</a>&lt;<a href="#type-param-E" title="type parameter in TaintTransferFunctions">E</a> extends <a href="../../../../com/ibm/wala/ssa/ISSABasicBlock.html" title="interface in com.ibm.wala.ssa">ISSABasicBlock</a>&gt;</code></dd>

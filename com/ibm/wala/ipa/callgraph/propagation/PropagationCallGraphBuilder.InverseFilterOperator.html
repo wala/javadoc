@@ -194,7 +194,7 @@ evaluated again.</div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#evaluate(com.ibm.wala.ipa.callgraph.propagation.PointsToSetVariable,com.ibm.wala.ipa.callgraph.propagation.PointsToSetVariable)" class="member-name-link">evaluate</a><wbr>(<a href="PointsToSetVariable.html" title="class in com.ibm.wala.ipa.callgraph.propagation">PointsToSetVariable</a>&nbsp;lhs,
  <a href="PointsToSetVariable.html" title="class in com.ibm.wala.ipa.callgraph.propagation">PointsToSetVariable</a>&nbsp;rhs)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Evaluate this equation, setting a new value for the left-hand side.</div>
+<div class="block">simply check if rhs contains a malleable.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isComplex()" class="member-name-link">isComplex</a>()</code></div>
@@ -300,12 +300,6 @@ evaluated again.</div>
 <dd><code><a href="IPointerOperator.html#isComplex()">isComplex</a></code>&nbsp;in interface&nbsp;<code><a href="IPointerOperator.html" title="interface in com.ibm.wala.ipa.callgraph.propagation">IPointerOperator</a></code></dd>
 <dt>Overrides:</dt>
 <dd><code><a href="PropagationCallGraphBuilder.FilterOperator.html#isComplex()">isComplex</a></code>&nbsp;in class&nbsp;<code><a href="PropagationCallGraphBuilder.FilterOperator.html" title="class in com.ibm.wala.ipa.callgraph.propagation">PropagationCallGraphBuilder.FilterOperator</a></code></dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="IPointerOperator.html#isComplex()"><code>IPointerOperator.isComplex()</code></a></li>
-</ul>
-</dd>
 </dl>
 </div>
 </section>
@@ -316,8 +310,7 @@ evaluated again.</div>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name">evaluate</span><wbr><span class="parameters">(<a href="PointsToSetVariable.html" title="class in com.ibm.wala.ipa.callgraph.propagation">PointsToSetVariable</a>&nbsp;lhs,
  <a href="PointsToSetVariable.html" title="class in com.ibm.wala.ipa.callgraph.propagation">PointsToSetVariable</a>&nbsp;rhs)</span></div>
-<div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="../../../fixpoint/UnaryOperator.html#evaluate(T,T)">UnaryOperator</a></code></span></div>
-<div class="block">Evaluate this equation, setting a new value for the left-hand side.</div>
+<div class="block">simply check if rhs contains a malleable.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code><a href="PropagationCallGraphBuilder.FilterOperator.html#evaluate(com.ibm.wala.ipa.callgraph.propagation.PointsToSetVariable,com.ibm.wala.ipa.callgraph.propagation.PointsToSetVariable)">evaluate</a></code>&nbsp;in class&nbsp;<code><a href="PropagationCallGraphBuilder.FilterOperator.html" title="class in com.ibm.wala.ipa.callgraph.propagation">PropagationCallGraphBuilder.FilterOperator</a></code></dd>
