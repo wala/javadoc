@@ -122,7 +122,12 @@ implements <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base
 operator.
 
 <p>Atoms are used to represent names, descriptors, and string literals appearing in a class's
-constant pool.</div>
+constant pool.
+
+<p>Some of <a href="Atom.html" title="class in com.ibm.wala.core.util.strings"><code>Atom</code></a>'s methods are deprecated. They are not used within WALA itself except by
+correctness tests, and we do not believe they are used anywhere outside of WALA. If you do use
+them outside of WALA, please <a href="https://github.com/wala/WALA/issues/new">let the WALA
+maintainers know</a> so that we don't remove them in the future.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -140,28 +145,38 @@ constant pool.</div>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#arrayDescriptorFromElementDescriptor()" class="member-name-link">arrayDescriptorFromElementDescriptor</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Return array descriptor corresponding to "this" array-element descriptor.</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#arrayDescriptorFromElementDescriptor()" class="member-name-link">arrayDescriptorFromElementDescriptor</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#concat(byte,com.ibm.wala.core.util.strings.ImmutableByteArray)" class="member-name-link">concat</a><wbr>(byte&nbsp;c,
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static <a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#concat(byte,com.ibm.wala.core.util.strings.ImmutableByteArray)" class="member-name-link">concat</a><wbr>(byte&nbsp;c,
  <a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
+</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#concat(com.ibm.wala.core.util.strings.Atom,com.ibm.wala.core.util.strings.Atom)" class="member-name-link">concat</a><wbr>(<a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;ma,
  <a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a>&nbsp;mb)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#contains(byte)" class="member-name-link">contains</a><wbr>(byte&nbsp;b)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#contains(byte)" class="member-name-link">contains</a><wbr>(byte&nbsp;b)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
+</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>&nbsp;obj)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -180,11 +195,15 @@ constant pool.</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findOrCreate(com.ibm.wala.core.util.strings.ImmutableByteArray)" class="member-name-link">findOrCreate</a><wbr>(<a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findOrCreate(com.ibm.wala.core.util.strings.ImmutableByteArray,int,int)" class="member-name-link">findOrCreate</a><wbr>(<a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static <a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#findOrCreate(com.ibm.wala.core.util.strings.ImmutableByteArray,int,int)" class="member-name-link">findOrCreate</a><wbr>(<a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b,
  int&nbsp;start,
  int&nbsp;length)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
+</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findOrCreateAsciiAtom(java.lang.String)" class="member-name-link">findOrCreateAsciiAtom</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;str)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -195,10 +214,12 @@ constant pool.</div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Find or create an atom.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findOrCreateUtf8Atom(byte%5B%5D)" class="member-name-link">findOrCreateUtf8Atom</a><wbr>(byte[]&nbsp;utf8)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Find or create an atom.</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static <a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#findOrCreateUtf8Atom(byte%5B%5D)" class="member-name-link">findOrCreateUtf8Atom</a><wbr>(byte[]&nbsp;utf8)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
+</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>byte</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getVal(int)" class="member-name-link">getVal</a><wbr>(int&nbsp;i)</code></div>
@@ -211,52 +232,71 @@ constant pool.</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isArrayDescriptor()" class="member-name-link">isArrayDescriptor</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Is "this" atom an array descriptor?</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isArrayDescriptor()" class="member-name-link">isArrayDescriptor</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isArrayDescriptor(com.ibm.wala.core.util.strings.ImmutableByteArray)" class="member-name-link">isArrayDescriptor</a><wbr>(<a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isClassDescriptor()" class="member-name-link">isClassDescriptor</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Is "this" atom a class descriptor?</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isMethodDescriptor()" class="member-name-link">isMethodDescriptor</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Is "this" atom a method descriptor?</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isArrayDescriptor(com.ibm.wala.core.util.strings.ImmutableByteArray)" class="member-name-link">isArrayDescriptor</a><wbr>(<a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isReservedMemberName()" class="member-name-link">isReservedMemberName</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Is "this" atom a reserved member name? Note: Sun has reserved all member names starting with
-'&lt;' for future use.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#left(int)" class="member-name-link">left</a><wbr>(int&nbsp;count)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">New Atom containing first count bytes</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isClassDescriptor()" class="member-name-link">isClassDescriptor</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isMethodDescriptor()" class="member-name-link">isMethodDescriptor</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isReservedMemberName()" class="member-name-link">isReservedMemberName</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#left(int)" class="member-name-link">left</a><wbr>(int&nbsp;count)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
+</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#length()" class="member-name-link">length</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#parseForArrayDimensionality()" class="member-name-link">parseForArrayDimensionality</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Parse "this" array descriptor to obtain number of dimensions in corresponding array type.</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#parseForArrayDimensionality()" class="member-name-link">parseForArrayDimensionality</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#parseForArrayElementDescriptor()" class="member-name-link">parseForArrayElementDescriptor</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Parse "this" array descriptor to obtain descriptor for array's element type.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#parseForInnermostArrayElementDescriptor()" class="member-name-link">parseForInnermostArrayElementDescriptor</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Return the innermost element type reference for an array</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#parseForArrayElementDescriptor()" class="member-name-link">parseForArrayElementDescriptor</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#parseForInnermostArrayElementDescriptor()" class="member-name-link">parseForInnermostArrayElementDescriptor</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests.</div>
+</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#right(int)" class="member-name-link">right</a><wbr>(int&nbsp;count)</code></div>
@@ -333,7 +373,12 @@ constant pool.</div>
 <section class="detail" id="findOrCreateUtf8Atom(byte[])">
 <h3>findOrCreateUtf8Atom</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">findOrCreateUtf8Atom</span><wbr><span class="parameters">(byte[]&nbsp;utf8)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">findOrCreateUtf8Atom</span><wbr><span class="parameters">(byte[]&nbsp;utf8)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
 <div class="block">Find or create an atom.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -383,9 +428,23 @@ constant pool.</div>
 <section class="detail" id="findOrCreate(com.ibm.wala.core.util.strings.ImmutableByteArray,int,int)">
 <h3>findOrCreate</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">findOrCreate</span><wbr><span class="parameters">(<a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b,
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">findOrCreate</span><wbr><span class="parameters">(<a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b,
  int&nbsp;start,
  int&nbsp;length)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
+<div class="block">Find or create an atom from <code>b[start]</code> of length <code>length</code>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>b</code> - the immutable byte array</dd>
+<dd><code>start</code> - the offset of the first byte</dd>
+<dd><code>length</code> - the number of bytes</dd>
+<dt>Returns:</dt>
+<dd>atom</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -420,8 +479,13 @@ constant pool.</div>
 <section class="detail" id="left(int)">
 <h3>left</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">left</span><wbr><span class="parameters">(int&nbsp;count)</span></div>
-<div class="block">New Atom containing first count bytes</div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">left</span><wbr><span class="parameters">(int&nbsp;count)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
+<div class="block">New Atom containing first count bytes.</div>
 </div>
 </section>
 </li>
@@ -446,7 +510,12 @@ constant pool.</div>
 <section class="detail" id="arrayDescriptorFromElementDescriptor()">
 <h3>arrayDescriptorFromElementDescriptor</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">arrayDescriptorFromElementDescriptor</span>()</div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">arrayDescriptorFromElementDescriptor</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
 <div class="block">Return array descriptor corresponding to "this" array-element descriptor. this: array-element
 descriptor - something like "I" or "Ljava/lang/Object;"</div>
 <dl class="notes">
@@ -460,7 +529,12 @@ descriptor - something like "I" or "Ljava/lang/Object;"</div>
 <section class="detail" id="isReservedMemberName()">
 <h3>isReservedMemberName</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isReservedMemberName</span>()</div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isReservedMemberName</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
 <div class="block">Is "this" atom a reserved member name? Note: Sun has reserved all member names starting with
 '&lt;' for future use. At present, only &lt;init&gt; and &lt;clinit&gt; are used.</div>
 </div>
@@ -470,7 +544,12 @@ descriptor - something like "I" or "Ljava/lang/Object;"</div>
 <section class="detail" id="isClassDescriptor()">
 <h3>isClassDescriptor</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isClassDescriptor</span>()</div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isClassDescriptor</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
 <div class="block">Is "this" atom a class descriptor?</div>
 </div>
 </section>
@@ -479,7 +558,12 @@ descriptor - something like "I" or "Ljava/lang/Object;"</div>
 <section class="detail" id="isArrayDescriptor()">
 <h3>isArrayDescriptor</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isArrayDescriptor</span>()</div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isArrayDescriptor</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
 <div class="block">Is "this" atom an array descriptor?</div>
 </div>
 </section>
@@ -488,8 +572,13 @@ descriptor - something like "I" or "Ljava/lang/Object;"</div>
 <section class="detail" id="isMethodDescriptor()">
 <h3>isMethodDescriptor</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isMethodDescriptor</span>()
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isMethodDescriptor</span>()
                            throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class in java.lang" class="external-link">IllegalArgumentException</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
 <div class="block">Is "this" atom a method descriptor?</div>
 <dl class="notes">
 <dt>Throws:</dt>
@@ -510,8 +599,13 @@ descriptor - something like "I" or "Ljava/lang/Object;"</div>
 <section class="detail" id="parseForArrayElementDescriptor()">
 <h3>parseForArrayElementDescriptor</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">parseForArrayElementDescriptor</span>()
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">parseForArrayElementDescriptor</span>()
                                     throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class in java.lang" class="external-link">IllegalArgumentException</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
 <div class="block">Parse "this" array descriptor to obtain descriptor for array's element type. this: array
 descriptor - something like "[I"</div>
 <dl class="notes">
@@ -527,8 +621,13 @@ descriptor - something like "[I"</div>
 <section class="detail" id="parseForArrayDimensionality()">
 <h3>parseForArrayDimensionality</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">parseForArrayDimensionality</span>()
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">parseForArrayDimensionality</span>()
                                 throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class in java.lang" class="external-link">IllegalArgumentException</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
 <div class="block">Parse "this" array descriptor to obtain number of dimensions in corresponding array type. this:
 descriptor - something like "[Ljava/lang/String;" or "[[I"</div>
 <dl class="notes">
@@ -545,8 +644,13 @@ descriptor - something like "[Ljava/lang/String;" or "[[I"</div>
 <section class="detail" id="parseForInnermostArrayElementDescriptor()">
 <h3>parseForInnermostArrayElementDescriptor</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">parseForInnermostArrayElementDescriptor</span>()
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">parseForInnermostArrayElementDescriptor</span>()
                                              throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class in java.lang" class="external-link">IllegalArgumentException</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
 <div class="block">Return the innermost element type reference for an array</div>
 <dl class="notes">
 <dt>Throws:</dt>
@@ -607,7 +711,12 @@ descriptor - something like "[Ljava/lang/String;" or "[[I"</div>
 <section class="detail" id="contains(byte)">
 <h3>contains</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">contains</span><wbr><span class="parameters">(byte&nbsp;b)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">contains</span><wbr><span class="parameters">(byte&nbsp;b)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>true iff this atom contains the specified byte</dd>
@@ -627,8 +736,21 @@ descriptor - something like "[Ljava/lang/String;" or "[[I"</div>
 <section class="detail" id="concat(byte,com.ibm.wala.core.util.strings.ImmutableByteArray)">
 <h3>concat</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">concat</span><wbr><span class="parameters">(byte&nbsp;c,
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Atom.html" title="class in com.ibm.wala.core.util.strings">Atom</a></span>&nbsp;<span class="element-name">concat</span><wbr><span class="parameters">(byte&nbsp;c,
  <a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
+<div class="block">Concatenate a byte with an immutable byte array to form an atom.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>c</code> - the leading byte</dd>
+<dd><code>b</code> - the following bytes</dd>
+<dt>Returns:</dt>
+<dd>atom</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -645,7 +767,19 @@ descriptor - something like "[Ljava/lang/String;" or "[[I"</div>
 <section class="detail" id="isArrayDescriptor(com.ibm.wala.core.util.strings.ImmutableByteArray)">
 <h3>isArrayDescriptor</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isArrayDescriptor</span><wbr><span class="parameters">(<a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html" title="annotation interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Deprecated.html#since()" class="external-link">since</a>="1.9.0")
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isArrayDescriptor</span><wbr><span class="parameters">(<a href="ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a>&nbsp;b)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">This method is used only by WALA's own unit tests. It may be removed in a future
+    release.</div>
+</div>
+<div class="block">Is the given immutable byte array an array descriptor?</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>b</code> - the immutable byte array</dd>
+<dt>Returns:</dt>
+<dd>true iff the first byte is '['</dd>
+</dl>
 </div>
 </section>
 </li>
