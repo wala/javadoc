@@ -71,6 +71,7 @@ initTheme();
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#isClassFile()" tabindex="0">isClassFile()</a></li>
+<li><a href="#getClassName()" tabindex="0">getClassName()</a></li>
 <li><a href="#isSourceFile()" tabindex="0">isSourceFile()</a></li>
 <li><a href="#getInputReader()" tabindex="0">getInputReader()</a></li>
 </ol>
@@ -125,21 +126,24 @@ implements <a href="SourceModule.html" title="interface in com.ibm.wala.classLoa
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/Reader.html" title="class in java.io" class="external-link">Reader</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getInputReader()" class="member-name-link">getInputReader</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getClassName()" class="member-name-link">getClassName</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isClassFile()" class="member-name-link">isClassFile</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/Reader.html" title="class in java.io" class="external-link">Reader</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getInputReader()" class="member-name-link">getInputReader</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSourceFile()" class="member-name-link">isSourceFile</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isClassFile()" class="member-name-link">isClassFile</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSourceFile()" class="member-name-link">isSourceFile</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-com.ibm.wala.classLoader.AbstractURLModule">Methods inherited from class&nbsp;<a href="AbstractURLModule.html#method-summary" title="class in com.ibm.wala.classLoader">AbstractURLModule</a></h3>
-<code><a href="AbstractURLModule.html#asModule()" title="asModule()">asModule</a>, <a href="AbstractURLModule.html#getClassName()" title="getClassName()">getClassName</a>, <a href="AbstractURLModule.html#getContainer()" title="getContainer()">getContainer</a>, <a href="AbstractURLModule.html#getEntries()" title="getEntries()">getEntries</a>, <a href="AbstractURLModule.html#getInputStream()" title="getInputStream()">getInputStream</a>, <a href="AbstractURLModule.html#getName()" title="getName()">getName</a>, <a href="AbstractURLModule.html#getURL()" title="getURL()">getURL</a>, <a href="AbstractURLModule.html#isModuleFile()" title="isModuleFile()">isModuleFile</a>, <a href="AbstractURLModule.html#toString()" title="toString()">toString</a></code>
+<code><a href="AbstractURLModule.html#asModule()" title="asModule()">asModule</a>, <a href="AbstractURLModule.html#getContainer()" title="getContainer()">getContainer</a>, <a href="AbstractURLModule.html#getEntries()" title="getEntries()">getEntries</a>, <a href="AbstractURLModule.html#getInputStream()" title="getInputStream()">getInputStream</a>, <a href="AbstractURLModule.html#getName()" title="getName()">getName</a>, <a href="AbstractURLModule.html#getURL()" title="getURL()">getURL</a>, <a href="AbstractURLModule.html#isModuleFile()" title="isModuleFile()">isModuleFile</a>, <a href="AbstractURLModule.html#toString()" title="toString()">toString</a></code>
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
@@ -149,32 +153,29 @@ implements <a href="SourceModule.html" title="interface in com.ibm.wala.classLoa
 <div class="col-last even-row-color">
 <div class="block">Precondition: isModuleFile().</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color"><code><a href="AbstractURLModule.html#getClassName()" class="member-name-link">getClassName</a>()</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="Module.html" title="interface in com.ibm.wala.classLoader">Module</a></code></div>
-<div class="col-second even-row-color"><code><a href="AbstractURLModule.html#getContainer()" class="member-name-link">getContainer</a>()</code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code><a href="Module.html" title="interface in com.ibm.wala.classLoader">Module</a></code></div>
+<div class="col-second odd-row-color"><code><a href="AbstractURLModule.html#getContainer()" class="member-name-link">getContainer</a>()</code></div>
+<div class="col-last odd-row-color">
 <div class="block">the containing module</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Iterator.html" title="interface in java.util" class="external-link">Iterator</a><wbr>&lt;<a href="ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="AbstractURLModule.html#getEntries()" class="member-name-link">getEntries</a>()</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/InputStream.html" title="class in java.io" class="external-link">InputStream</a></code></div>
-<div class="col-second even-row-color"><code><a href="AbstractURLModule.html#getInputStream()" class="member-name-link">getInputStream</a>()</code></div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Iterator.html" title="interface in java.util" class="external-link">Iterator</a><wbr>&lt;<a href="ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="AbstractURLModule.html#getEntries()" class="member-name-link">getEntries</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color"><code><a href="AbstractURLModule.html#getName()" class="member-name-link">getName</a>()</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/net/URL.html" title="class in java.net" class="external-link">URL</a></code></div>
-<div class="col-second even-row-color"><code><a href="AbstractURLModule.html#getURL()" class="member-name-link">getURL</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>boolean</code></div>
-<div class="col-second odd-row-color"><code><a href="AbstractURLModule.html#isModuleFile()" class="member-name-link">isModuleFile</a>()</code></div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/InputStream.html" title="class in java.io" class="external-link">InputStream</a></code></div>
+<div class="col-second odd-row-color"><code><a href="AbstractURLModule.html#getInputStream()" class="member-name-link">getInputStream</a>()</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color"><code><a href="AbstractURLModule.html#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-second even-row-color"><code><a href="AbstractURLModule.html#getName()" class="member-name-link">getName</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/net/URL.html" title="class in java.net" class="external-link">URL</a></code></div>
+<div class="col-second odd-row-color"><code><a href="AbstractURLModule.html#getURL()" class="member-name-link">getURL</a>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>boolean</code></div>
+<div class="col-second even-row-color"><code><a href="AbstractURLModule.html#isModuleFile()" class="member-name-link">isModuleFile</a>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color"><code><a href="AbstractURLModule.html#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </div>
 <div class="inherited-list">
@@ -229,6 +230,22 @@ implements <a href="SourceModule.html" title="interface in com.ibm.wala.classLoa
 <dd><code><a href="ModuleEntry.html#isClassFile()">isClassFile</a></code>&nbsp;in interface&nbsp;<code><a href="ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a></code></dd>
 <dt>Returns:</dt>
 <dd>true if the file is a class file.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getClassName()">
+<h3>getClassName</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getClassName</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="ModuleEntry.html#getClassName()">getClassName</a></code>&nbsp;in interface&nbsp;<code><a href="ModuleEntry.html" title="interface in com.ibm.wala.classLoader">ModuleEntry</a></code></dd>
+<dt>Overrides:</dt>
+<dd><code><a href="AbstractURLModule.html#getClassName()">getClassName</a></code>&nbsp;in class&nbsp;<code><a href="AbstractURLModule.html" title="class in com.ibm.wala.classLoader">AbstractURLModule</a></code></dd>
+<dt>Returns:</dt>
+<dd>the name of the class represented by this entry</dd>
 </dl>
 </div>
 </section>

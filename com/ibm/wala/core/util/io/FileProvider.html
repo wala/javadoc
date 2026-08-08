@@ -76,6 +76,7 @@ initTheme();
 <li><a href="#getResource(java.lang.String,java.lang.ClassLoader)" tabindex="0">getResource(String, ClassLoader)</a></li>
 <li><a href="#getFile(java.lang.String)" tabindex="0">getFile(String)</a></li>
 <li><a href="#getFile(java.lang.String,java.lang.ClassLoader)" tabindex="0">getFile(String, ClassLoader)</a></li>
+<li><a href="#getURLFromClassLoader(java.lang.String,java.lang.ClassLoader)" tabindex="0">getURLFromClassLoader(String, ClassLoader)</a></li>
 <li><a href="#getFileFromClassLoader(java.lang.String,java.lang.ClassLoader)" tabindex="0">getFileFromClassLoader(String, ClassLoader)</a></li>
 <li><a href="#getInputStreamFromClassLoader(java.lang.String,java.lang.ClassLoader)" tabindex="0">getInputStreamFromClassLoader(String, ClassLoader)</a></li>
 <li><a href="#getJarFileFromClassLoader(java.lang.String,java.lang.ClassLoader)" tabindex="0">getJarFileFromClassLoader(String, ClassLoader)</a></li>
@@ -170,6 +171,13 @@ initTheme();
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getResource(java.lang.String,java.lang.ClassLoader)" class="member-name-link">getResource</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;fileName,
  <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/ClassLoader.html" title="class in java.lang" class="external-link">ClassLoader</a>&nbsp;loader)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/net/URL.html" title="class in java.net" class="external-link">URL</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getURLFromClassLoader(java.lang.String,java.lang.ClassLoader)" class="member-name-link">getURLFromClassLoader</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;fileName,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/ClassLoader.html" title="class in java.lang" class="external-link">ClassLoader</a>&nbsp;loader)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the URL of the given file name, which may be either a classpath resource or a plain
+filesystem path.</div>
+</div>
 </div>
 </div>
 </div>
@@ -272,6 +280,31 @@ initTheme();
 <dl class="notes">
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/IOException.html" title="class in java.io" class="external-link">IOException</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getURLFromClassLoader(java.lang.String,java.lang.ClassLoader)">
+<h3>getURLFromClassLoader</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/net/URL.html" title="class in java.net" class="external-link">URL</a></span>&nbsp;<span class="element-name">getURLFromClassLoader</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html" title="class in java.lang" class="external-link">String</a>&nbsp;fileName,
+ <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/ClassLoader.html" title="class in java.lang" class="external-link">ClassLoader</a>&nbsp;loader)</span>
+                          throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/FileNotFoundException.html" title="class in java.io" class="external-link">FileNotFoundException</a>,
+<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/net/MalformedURLException.html" title="class in java.net" class="external-link">MalformedURLException</a></span></div>
+<div class="block">Returns the URL of the given file name, which may be either a classpath resource or a plain
+filesystem path.
+
+<p>The <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/ClassLoader.html" title="class in java.lang" class="external-link"><code>ClassLoader</code></a> is searched first, so that a resource packaged inside a JAR is found
+even though it has no real filesystem path. If no such resource exists, <code>fileName</code> is
+instead treated as a pathname relative to the current working directory.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the URL of the given file name</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/io/FileNotFoundException.html" title="class in java.io" class="external-link">FileNotFoundException</a></code> - if <code>fileName</code> is neither a classpath resource nor an
+    existing filesystem path</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/net/MalformedURLException.html" title="class in java.net" class="external-link">MalformedURLException</a></code></dd>
 </dl>
 </div>
 </section>
