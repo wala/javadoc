@@ -78,6 +78,7 @@ initTheme();
 <li><a href="#diff(com.ibm.wala.util.intset.IntSet,com.ibm.wala.util.intset.IntSet,com.ibm.wala.util.intset.MutableIntSetFactory)" tabindex="0">diff(IntSet, IntSet, MutableIntSetFactory)</a></li>
 <li><a href="#removeAll(com.ibm.wala.util.intset.MutableIntSet,com.ibm.wala.util.intset.IntSet)" tabindex="0">removeAll(MutableIntSet, IntSet)</a></li>
 <li><a href="#binarySearch(int%5B%5D,int,int,int)" tabindex="0">binarySearch(int[], int, int, int)</a></li>
+<li><a href="#binarySearchInsertionPoint(int%5B%5D,int,int,int)" tabindex="0">binarySearchInsertionPoint(int[], int, int, int)</a></li>
 <li><a href="#getDefaultIntSetFactory()" tabindex="0">getDefaultIntSetFactory()</a></li>
 <li><a href="#setDefaultIntSetFactory(com.ibm.wala.util.intset.MutableIntSetFactory)" tabindex="0">setDefaultIntSetFactory(MutableIntSetFactory)</a></li>
 <li><a href="#add(com.ibm.wala.util.intset.IntSet,int)" tabindex="0">add(IntSet, int)</a></li>
@@ -140,48 +141,56 @@ initTheme();
  int&nbsp;low,
  int&nbsp;high)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#diff(com.ibm.wala.util.intset.IntSet,com.ibm.wala.util.intset.IntSet)" class="member-name-link">diff</a><wbr>(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;A,
- <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;B)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#binarySearchInsertionPoint(int%5B%5D,int,int,int)" class="member-name-link">binarySearchInsertionPoint</a><wbr>(int[]&nbsp;data,
+ int&nbsp;key,
+ int&nbsp;low,
+ int&nbsp;high)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Compute the asymmetric difference of two sets, a \ b.</div>
+<div class="block">Find the insertion point for a key in a sorted array.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#diff(com.ibm.wala.util.intset.IntSet,com.ibm.wala.util.intset.IntSet,com.ibm.wala.util.intset.MutableIntSetFactory)" class="member-name-link">diff</a><wbr>(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;A,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#diff(com.ibm.wala.util.intset.IntSet,com.ibm.wala.util.intset.IntSet)" class="member-name-link">diff</a><wbr>(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;A,
+ <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;B)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Compute the asymmetric difference of two sets, a \ b.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#diff(com.ibm.wala.util.intset.IntSet,com.ibm.wala.util.intset.IntSet,com.ibm.wala.util.intset.MutableIntSetFactory)" class="member-name-link">diff</a><wbr>(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;A,
  <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;B,
  <a href="MutableIntSetFactory.html" title="interface in com.ibm.wala.util.intset">MutableIntSetFactory</a>&lt;?&gt;&nbsp;factory)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Compute the asymmetric difference of two sets, a \ b.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MutableIntSetFactory.html" title="interface in com.ibm.wala.util.intset">MutableIntSetFactory</a><wbr>&lt;?&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getDefaultIntSetFactory()" class="member-name-link">getDefaultIntSetFactory</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MutableIntSetFactory.html" title="interface in com.ibm.wala.util.intset">MutableIntSetFactory</a><wbr>&lt;?&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getDefaultIntSetFactory()" class="member-name-link">getDefaultIntSetFactory</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.intset">MutableIntSet</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#make()" class="member-name-link">make</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.intset">MutableIntSet</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#make()" class="member-name-link">make</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#make(int%5B%5D)" class="member-name-link">make</a><wbr>(int[]&nbsp;initial)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.intset">MutableIntSet</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#make(int%5B%5D)" class="member-name-link">make</a><wbr>(int[]&nbsp;initial)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#make(java.util.Set)" class="member-name-link">make</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Integer.html" title="class in java.lang" class="external-link">Integer</a>&gt;&nbsp;x)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#make(java.util.Set)" class="member-name-link">make</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/Set.html" title="interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Integer.html" title="class in java.lang" class="external-link">Integer</a>&gt;&nbsp;x)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.intset">MutableIntSet</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#makeMutableCopy(com.ibm.wala.util.intset.IntSet)" class="member-name-link">makeMutableCopy</a><wbr>(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.intset">MutableIntSet</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#makeMutableCopy(com.ibm.wala.util.intset.IntSet)" class="member-name-link">makeMutableCopy</a><wbr>(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;set)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">This method constructs an appropriate mutable copy of set.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.intset">MutableIntSet</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#removeAll(com.ibm.wala.util.intset.MutableIntSet,com.ibm.wala.util.intset.IntSet)" class="member-name-link">removeAll</a><wbr>(<a href="MutableIntSet.html" title="interface in com.ibm.wala.util.intset">MutableIntSet</a>&nbsp;A,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MutableIntSet.html" title="interface in com.ibm.wala.util.intset">MutableIntSet</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#removeAll(com.ibm.wala.util.intset.MutableIntSet,com.ibm.wala.util.intset.IntSet)" class="member-name-link">removeAll</a><wbr>(<a href="MutableIntSet.html" title="interface in com.ibm.wala.util.intset">MutableIntSet</a>&nbsp;A,
  <a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;B)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Subtract two sets, i.e.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setDefaultIntSetFactory(com.ibm.wala.util.intset.MutableIntSetFactory)" class="member-name-link">setDefaultIntSetFactory</a><wbr>(<a href="MutableIntSetFactory.html" title="interface in com.ibm.wala.util.intset">MutableIntSetFactory</a>&lt;?&gt;&nbsp;defaultIntSetFactory)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int[]</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toArray(com.ibm.wala.util.intset.IntSet)" class="member-name-link">toArray</a><wbr>(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;s)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setDefaultIntSetFactory(com.ibm.wala.util.intset.MutableIntSetFactory)" class="member-name-link">setDefaultIntSetFactory</a><wbr>(<a href="MutableIntSetFactory.html" title="interface in com.ibm.wala.util.intset">MutableIntSetFactory</a>&lt;?&gt;&nbsp;defaultIntSetFactory)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int[]</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toArray(com.ibm.wala.util.intset.IntSet)" class="member-name-link">toArray</a><wbr>(<a href="IntSet.html" title="interface in com.ibm.wala.util.intset">IntSet</a>&nbsp;s)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -316,6 +325,23 @@ initTheme();
 <dd>index \in [low,high] s.t. data[index] = key, or -1 if not found</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class in java.lang" class="external-link">IllegalArgumentException</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="binarySearchInsertionPoint(int[],int,int,int)">
+<h3>binarySearchInsertionPoint</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">binarySearchInsertionPoint</span><wbr><span class="parameters">(int[]&nbsp;data,
+ int&nbsp;key,
+ int&nbsp;low,
+ int&nbsp;high)</span></div>
+<div class="block">Find the insertion point for a key in a sorted array.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>index where key is found (if present), or the index where it should be inserted to
+    maintain sorted order (if not present)</dd>
 </dl>
 </div>
 </section>
