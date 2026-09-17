@@ -786,6 +786,7 @@ constant, but rather a computed value.</div>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#add(T)" class="member-name-link">add(T)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Add an object to this bit set.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/MutableMapping.html#add(T)" class="member-name-link">add(T)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/MutableMapping.html" title="class in com.ibm.wala.util.intset">MutableMapping</a></dt>
@@ -846,6 +847,7 @@ constant, but rather a computed value.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#addAll(com.ibm.wala.util.intset.BitSet)" class="member-name-link">addAll(BitSet)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Add all elements in bitset B to this bit set</div>
 </dd>
 <dt><a href="com/ibm/wala/fixpoint/BitVectorVariable.html#addAll(com.ibm.wala.util.intset.BitVector)" class="member-name-link">addAll(BitVector)</a> - Method in class com.ibm.wala.fixpoint.<a href="com/ibm/wala/fixpoint/BitVectorVariable.html" title="class in com.ibm.wala.fixpoint">BitVectorVariable</a></dt>
@@ -854,6 +856,7 @@ constant, but rather a computed value.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#addAll(com.ibm.wala.util.intset.BitVector)" class="member-name-link">addAll(BitVector)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Add all bits in BitVector B to this bit set</div>
 </dd>
 <dt><a href="com/ibm/wala/fixpoint/IntSetVariable.html#addAll(com.ibm.wala.util.intset.IntSet)" class="member-name-link">addAll(IntSet)</a> - Method in class com.ibm.wala.fixpoint.<a href="com/ibm/wala/fixpoint/IntSetVariable.html" title="class in com.ibm.wala.fixpoint">IntSetVariable</a></dt>
@@ -3685,10 +3688,14 @@ constant.</div>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html" class="type-name-link" title="class in com.ibm.wala.util.intset">BitSet&lt;T&gt;</a> - Class in <a href="com/ibm/wala/util/intset/package-summary.html">com.ibm.wala.util.intset</a></dt>
 <dd>
-<div class="block">A bit set is a set of elements, each of which corresponds to a unique integer from [0,MAX].</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Use an <a href="com/ibm/wala/util/intset/IntSet.html" title="interface in com.ibm.wala.util.intset"><code>IntSet</code></a> such as <a href="com/ibm/wala/util/intset/MutableSparseIntSet.html" title="class in com.ibm.wala.util.intset"><code>MutableSparseIntSet</code></a> or <a href="com/ibm/wala/util/intset/BitVectorIntSet.html" title="class in com.ibm.wala.util.intset"><code>BitVectorIntSet</code></a>
+    together with an <a href="com/ibm/wala/util/intset/OrdinalSetMapping.html" title="interface in com.ibm.wala.util.intset"><code>OrdinalSetMapping</code></a> instead. This class has no known use within WALA.</div>
+</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#%3Cinit%3E(com.ibm.wala.util.intset.OrdinalSetMapping)" class="member-name-link">BitSet(OrdinalSetMapping)</a> - Constructor for class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Constructor: create an empty set corresponding to a given mapping</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitVector.html" class="type-name-link" title="class in com.ibm.wala.util.intset">BitVector</a> - Class in <a href="com/ibm/wala/util/intset/package-summary.html">com.ibm.wala.util.intset</a></dt>
@@ -5423,10 +5430,12 @@ class hierarchy.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#clear(T)" class="member-name-link">clear(T)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Remove an object from this bit set.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#clearAll()" class="member-name-link">clearAll()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Set all the bits to 0.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitVectorBase.html#clearAll()" class="member-name-link">clearAll()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitVectorBase.html" title="class in com.ibm.wala.util.intset">BitVectorBase</a></dt>
@@ -6868,6 +6877,7 @@ from the standard libraries.</div>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#contains(T)" class="member-name-link">contains(T)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Does this set contain a certain object?</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/OrdinalSet.html#contains(T)" class="member-name-link">contains(T)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/OrdinalSet.html" title="class in com.ibm.wala.util.intset">OrdinalSet</a></dt>
@@ -7212,6 +7222,7 @@ java/lang/Object)</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#copyBits(com.ibm.wala.util.intset.BitSet)" class="member-name-link">copyBits(BitSet)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Method copy.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitVectorBase.html#copyBits(com.ibm.wala.util.intset.BitVectorBase)" class="member-name-link">copyBits(BitVectorBase)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitVectorBase.html" title="class in com.ibm.wala.util.intset">BitVectorBase</a></dt>
@@ -7605,7 +7616,9 @@ name.</div>
 <dt><a href="com/ibm/wala/cast/java/translator/jdt/FakeExceptionTypeBinding.html#createArrayType(int)" class="member-name-link">createArrayType(int)</a> - Method in class com.ibm.wala.cast.java.translator.jdt.<a href="com/ibm/wala/cast/java/translator/jdt/FakeExceptionTypeBinding.html" title="class in com.ibm.wala.cast.java.translator.jdt">FakeExceptionTypeBinding</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#createBitSet(com.ibm.wala.util.intset.BitSet)" class="member-name-link">createBitSet(BitSet)</a> - Static method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="com/ibm/wala/dataflow/IFDS/BoundedTabulationSolver.html#createBoundedTabulationSolver(com.ibm.wala.dataflow.IFDS.TabulationProblem,int,com.ibm.wala.util.MonitorUtil.IProgressMonitor)" class="member-name-link">createBoundedTabulationSolver(TabulationProblem, int, MonitorUtil.IProgressMonitor)</a> - Static method in class com.ibm.wala.dataflow.IFDS.<a href="com/ibm/wala/dataflow/IFDS/BoundedTabulationSolver.html" title="class in com.ibm.wala.dataflow.IFDS">BoundedTabulationSolver</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/ipa/callgraph/CallGraphBuilderCancelException.html#createCallGraphBuilderCancelException(java.lang.Exception,com.ibm.wala.ipa.callgraph.CallGraph,com.ibm.wala.ipa.callgraph.propagation.PointerAnalysis)" class="member-name-link">createCallGraphBuilderCancelException(Exception, CallGraph, PointerAnalysis)</a> - Static method in exception class com.ibm.wala.ipa.callgraph.<a href="com/ibm/wala/ipa/callgraph/CallGraphBuilderCancelException.html" title="class in com.ibm.wala.ipa.callgraph">CallGraphBuilderCancelException</a></dt>
@@ -8699,6 +8712,7 @@ from the nodes in the given enumeration.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#difference(com.ibm.wala.util.intset.BitSet)" class="member-name-link">difference(BitSet)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Perform the difference of two bit sets</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/SparseIntSet.html#diffInternal(com.ibm.wala.util.intset.SparseIntSet,com.ibm.wala.util.intset.SparseIntSet)" class="member-name-link">diffInternal(SparseIntSet, SparseIntSet)</a> - Static method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/SparseIntSet.html" title="class in com.ibm.wala.util.intset">SparseIntSet</a></dt>
@@ -24893,6 +24907,7 @@ integers</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#intersect(com.ibm.wala.util.intset.BitSet)" class="member-name-link">intersect(BitSet)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Perform intersection of two bitsets</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/OrdinalSet.html#intersect(com.ibm.wala.util.intset.OrdinalSet,com.ibm.wala.util.intset.OrdinalSet)" class="member-name-link">intersect(OrdinalSet, OrdinalSet)</a> - Static method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/OrdinalSet.html" title="class in com.ibm.wala.util.intset">OrdinalSet</a></dt>
@@ -25822,7 +25837,9 @@ invokeinterface or invokevirtual</div>
 <dt><a href="com/ibm/wala/util/intset/BimodalMutableIntSet.html#isEmpty()" class="member-name-link">isEmpty()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BimodalMutableIntSet.html" title="class in com.ibm.wala.util.intset">BimodalMutableIntSet</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#isEmpty()" class="member-name-link">isEmpty()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitVectorIntSet.html#isEmpty()" class="member-name-link">isEmpty()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitVectorIntSet.html" title="class in com.ibm.wala.util.intset">BitVectorIntSet</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/EmptyIntSet.html#isEmpty()" class="member-name-link">isEmpty()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/EmptyIntSet.html" title="class in com.ibm.wala.util.intset">EmptyIntSet</a></dt>
@@ -27605,6 +27622,7 @@ the entire graph.</div>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#iterator()" class="member-name-link">iterator()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Not very efficient.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/MutableMapping.html#iterator()" class="member-name-link">iterator()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/MutableMapping.html" title="class in com.ibm.wala.util.intset">MutableMapping</a></dt>
@@ -29809,7 +29827,9 @@ statements.</div>
 <dt><a href="com/ibm/wala/core/util/strings/ImmutableByteArray.html#length()" class="member-name-link">length()</a> - Method in class com.ibm.wala.core.util.strings.<a href="com/ibm/wala/core/util/strings/ImmutableByteArray.html" title="class in com.ibm.wala.core.util.strings">ImmutableByteArray</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#length()" class="member-name-link">length()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitVector.html#length()" class="member-name-link">length()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitVector.html" title="class in com.ibm.wala.util.intset">BitVector</a></dt>
 <dd>
 <div class="block">Calculates and returns the set's size in bits.</div>
@@ -38106,6 +38126,7 @@ active.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#sameBits(com.ibm.wala.util.intset.BitSet)" class="member-name-link">sameBits(BitSet)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Does this object hold the same bits as other?</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitVector.html#sameBits(com.ibm.wala.util.intset.BitVector)" class="member-name-link">sameBits(BitVector)</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitVector.html" title="class in com.ibm.wala.util.intset">BitVector</a></dt>
@@ -38506,6 +38527,7 @@ positions.</div>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#setAll()" class="member-name-link">setAll()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Set all the bits to 1.</div>
 </dd>
 <dt><a href="com/ibm/wala/util/intset/BitVector.html#setAll()" class="member-name-link">setAll()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitVector.html" title="class in com.ibm.wala.util.intset">BitVector</a></dt>
@@ -39608,7 +39630,9 @@ queue and have not been popped.</div>
 <dt><a href="com/ibm/wala/util/intset/BimodalMutableIntSet.html#size()" class="member-name-link">size()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BimodalMutableIntSet.html" title="class in com.ibm.wala.util.intset">BimodalMutableIntSet</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#size()" class="member-name-link">size()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitVectorIntSet.html#size()" class="member-name-link">size()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitVectorIntSet.html" title="class in com.ibm.wala.util.intset">BitVectorIntSet</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/EmptyIntSet.html#size()" class="member-name-link">size()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/EmptyIntSet.html" title="class in com.ibm.wala.util.intset">EmptyIntSet</a></dt>
@@ -42502,7 +42526,9 @@ value numbers).</div>
 <dt><a href="com/ibm/wala/util/intset/BimodalMutableIntSet.html#toString()" class="member-name-link">toString()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BimodalMutableIntSet.html" title="class in com.ibm.wala.util.intset">BimodalMutableIntSet</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitSet.html#toString()" class="member-name-link">toString()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitSet.html" title="class in com.ibm.wala.util.intset">BitSet</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitVectorBase.html#toString()" class="member-name-link">toString()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitVectorBase.html" title="class in com.ibm.wala.util.intset">BitVectorBase</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/util/intset/BitVectorIntSet.html#toString()" class="member-name-link">toString()</a> - Method in class com.ibm.wala.util.intset.<a href="com/ibm/wala/util/intset/BitVectorIntSet.html" title="class in com.ibm.wala.util.intset">BitVectorIntSet</a></dt>
