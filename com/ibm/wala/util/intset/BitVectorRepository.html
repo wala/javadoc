@@ -88,7 +88,25 @@ initTheme();
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">BitVectorRepository</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a></span></div>
-<div class="block">A repository for shared bit vectors as described by Heintze</div>
+<div class="block">A repository for shared bit vectors as described by Heintze.
+
+<p>Points-to sets that cross their sparse-to-dense threshold delegate their dense part here via
+<a href="#findOrCreateSharedSubset(com.ibm.wala.util.intset.BitVectorIntSet)"><code>findOrCreateSharedSubset(BitVectorIntSet)</code></a>: the repository keeps one canonical
+representative per distinct bit pattern and hands it back on later lookups, so equal sets share a
+single backing array instead of each holding its own copy. Representatives are held by <a href="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/ref/WeakReference.html" title="class in java.lang.ref" class="external-link"><code>WeakReference</code></a> so the repository never pins memory; entries whose representative
+has been collected are pruned opportunistically during lookups.
+
+<p>Representatives are bucketed by cardinality. Lookups scan the queried cardinality first, then
+successively smaller cardinalities down to 5 elements below it. In the
+exact-size bucket, a subset match of equal cardinality is necessarily bit-for-bit equality, so
+each entry's cached <code>fingerprint(int[])</code> rejects non-matching candidates with a single
+<code>long</code> comparison before the word-by-word <code>BitVector.isSubset</code> confirmation runs.
+Strictly smaller buckets keep the exact exhaustive subset scan; no scalar prefilter is sound
+there because a strict subset's fingerprint need not match the queried set's.
+
+<p>The repository is a process-wide singleton guarded by <code>synchronized</code> on the lookup, and
+lookups never mutate caller-visible state. The representative chosen for a given query is
+deterministic (bucket insertion order), which keeps downstream iteration order stable.</div>
 </div>
 </section>
 <section class="summary">
