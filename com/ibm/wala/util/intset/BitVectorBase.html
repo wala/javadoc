@@ -252,7 +252,10 @@ implements <a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nextSetBit(int)" class="member-name-link">nextSetBit</a><wbr>(int&nbsp;start)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the index of the first bit that is set that occurs on or after the specified starting
+index.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#or(T)" class="member-name-link">or</a><wbr>(<a href="#type-param-T" title="type parameter in BitVectorBase">T</a>&nbsp;other)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
@@ -595,10 +598,8 @@ implements <a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base
 <h3>nextSetBit</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">nextSetBit</span><wbr><span class="parameters">(int&nbsp;start)</span></div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>min j &gt;= start s.t get(j)</dd>
-</dl>
+<div class="block">Returns the index of the first bit that is set that occurs on or after the specified starting
+index. If no such bit exists then -1 is returned.</div>
 </div>
 </section>
 </li>
