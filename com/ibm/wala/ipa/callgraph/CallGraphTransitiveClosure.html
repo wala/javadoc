@@ -178,7 +178,14 @@ given the results for individual nodes.</div>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a>&lt;<a href="CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>, <a href="../../util/intset/OrdinalSet.html" title="class in com.ibm.wala.util.intset">OrdinalSet</a>&lt;T&gt;&gt;</span>&nbsp;<span class="element-name">transitiveClosure</span><wbr><span class="parameters">(<a href="CallGraph.html" title="interface in com.ibm.wala.ipa.callgraph">CallGraph</a>&nbsp;cg,
  <a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/util/Map.html" title="interface in java.util" class="external-link">Map</a>&lt;<a href="CGNode.html" title="interface in com.ibm.wala.ipa.callgraph">CGNode</a>, <a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/util/Collection.html" title="interface in java.util" class="external-link">Collection</a>&lt;T&gt;&gt;&nbsp;nodeResults)</span></div>
-<div class="block">Compute the transitive closure of an analysis result over all callees.</div>
+<div class="block">Compute the transitive closure of an analysis result over all callees.
+
+<p>The closure is computed over the strongly connected components of <code>cg</code>, callees first.
+Each component's result is the union of its members' own results and the results of the
+components its members call, so every node in a component shares the same result.
+
+<p>The elements of the results are identified by <a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" class="external-link"><code>Object.equals(Object)</code></a> and <a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/Object.html#hashCode()" class="external-link"><code>Object.hashCode()</code></a>, so equal elements are treated as one, and an element must not change in a way
+that affects either method while the closure is computed.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>cg</code> - the call graph</dd>
