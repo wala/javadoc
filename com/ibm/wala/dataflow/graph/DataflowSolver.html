@@ -262,10 +262,14 @@ evaluated again.</div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#type-param-V" title="type parameter in DataflowSolver">V</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getIn(java.lang.Object)" class="member-name-link">getIn</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>&nbsp;node)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the IN variable for a node in the problem's flow graph.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#type-param-V" title="type parameter in DataflowSolver">V</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getOut(java.lang.Object)" class="member-name-link">getOut</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>&nbsp;node)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the OUT variable for a node in the problem's flow graph.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="IKilldallFramework.html" title="interface in com.ibm.wala.dataflow.graph">IKilldallFramework</a><wbr>&lt;<a href="#type-param-T" title="type parameter in DataflowSolver">T</a>,<wbr><a href="#type-param-V" title="type parameter in DataflowSolver">V</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProblem()" class="member-name-link">getProblem</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -544,8 +548,19 @@ evaluated again.</div>
 <section class="detail" id="getOut(java.lang.Object)">
 <h3>getOut</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@NullUnmarked
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="#type-param-V" title="type parameter in DataflowSolver">V</a></span>&nbsp;<span class="element-name">getOut</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>&nbsp;node)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="#type-param-V" title="type parameter in DataflowSolver">V</a></span>&nbsp;<span class="element-name">getOut</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>&nbsp;node)</span></div>
+<div class="block">Returns the OUT variable for a node in the problem's flow graph.
+
+<p>The solver must have initialized its variables, and the problem must provide node transfer
+functions.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>node</code> - a node in the problem's flow graph</dd>
+<dt>Returns:</dt>
+<dd>the node's OUT variable</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/NullPointerException.html" title="class in java.lang" class="external-link">NullPointerException</a></code> - if the node has no initialized OUT variable</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -553,8 +568,18 @@ evaluated again.</div>
 <section class="detail" id="getIn(java.lang.Object)">
 <h3>getIn</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations">@NullUnmarked
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="#type-param-V" title="type parameter in DataflowSolver">V</a></span>&nbsp;<span class="element-name">getIn</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>&nbsp;node)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="#type-param-V" title="type parameter in DataflowSolver">V</a></span>&nbsp;<span class="element-name">getIn</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/Object.html" title="class in java.lang" class="external-link">Object</a>&nbsp;node)</span></div>
+<div class="block">Returns the IN variable for a node in the problem's flow graph.
+
+<p>The solver must have initialized its variables.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>node</code> - a node in the problem's flow graph</dd>
+<dt>Returns:</dt>
+<dd>the node's IN variable</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/NullPointerException.html" title="class in java.lang" class="external-link">NullPointerException</a></code> - if the node has no initialized IN variable</dd>
+</dl>
 </div>
 </section>
 </li>

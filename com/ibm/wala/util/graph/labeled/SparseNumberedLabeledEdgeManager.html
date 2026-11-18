@@ -173,11 +173,13 @@ implements <a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addEdge(T,T)" class="member-name-link">addEdge</a><wbr>(<a href="#type-param-T" title="type parameter in SparseNumberedLabeledEdgeManager">T</a>&nbsp;src,
  <a href="#type-param-T" title="type parameter in SparseNumberedLabeledEdgeManager">T</a>&nbsp;dst)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds an edge with the configured default label.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addEdge(T,T,U)" class="member-name-link">addEdge</a><wbr>(<a href="#type-param-T" title="type parameter in SparseNumberedLabeledEdgeManager">T</a>&nbsp;src,
  <a href="#type-param-T" title="type parameter in SparseNumberedLabeledEdgeManager">T</a>&nbsp;dst,
- @Nullable <a href="#type-param-U" title="type parameter in SparseNumberedLabeledEdgeManager">U</a>&nbsp;label)</code></div>
+ <a href="#type-param-U" title="type parameter in SparseNumberedLabeledEdgeManager">U</a>&nbsp;label)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">adds an edge with some label</div>
 </div>
@@ -347,7 +349,7 @@ some label.</div>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addEdge</span><wbr><span class="parameters">(<a href="#type-param-T" title="type parameter in SparseNumberedLabeledEdgeManager">T</a>&nbsp;src,
  <a href="#type-param-T" title="type parameter in SparseNumberedLabeledEdgeManager">T</a>&nbsp;dst,
- @Nullable <a href="#type-param-U" title="type parameter in SparseNumberedLabeledEdgeManager">U</a>&nbsp;label)</span></div>
+ <a href="#type-param-U" title="type parameter in SparseNumberedLabeledEdgeManager">U</a>&nbsp;label)</span></div>
 <div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="LabeledEdgeManager.html#addEdge(T,T,U)">LabeledEdgeManager</a></code></span></div>
 <div class="block">adds an edge with some label</div>
 <dl class="notes">
@@ -559,9 +561,12 @@ some label.
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addEdge</span><wbr><span class="parameters">(<a href="#type-param-T" title="type parameter in SparseNumberedLabeledEdgeManager">T</a>&nbsp;src,
  <a href="#type-param-T" title="type parameter in SparseNumberedLabeledEdgeManager">T</a>&nbsp;dst)</span></div>
+<div class="block">Adds an edge with the configured default label.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="../EdgeManager.html#addEdge(T,T)">addEdge</a></code>&nbsp;in interface&nbsp;<code><a href="../EdgeManager.html" title="interface in com.ibm.wala.util.graph">EdgeManager</a>&lt;<a href="#type-param-T" title="type parameter in SparseNumberedLabeledEdgeManager">T</a>&gt;</code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class in java.lang" class="external-link">IllegalArgumentException</a></code> - if no default label was configured</dd>
 </dl>
 </div>
 </section>

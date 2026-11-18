@@ -195,7 +195,9 @@ initTheme();
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ArraySet.html" title="class in com.ibm.wala.util.collections">ArraySet</a><wbr>&lt;<a href="#type-param-V" title="type parameter in ArraySetMultiMap">V</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#get(K)" class="member-name-link">get</a><wbr>(@Nullable <a href="#type-param-K" title="type parameter in ArraySetMultiMap">K</a>&nbsp;key)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the values associated with <code>key</code>, or an empty set if <code>key</code> is null.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isEmpty()" class="member-name-link">isEmpty</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -323,6 +325,11 @@ this multi-map.</div>
 <h3 id="get(java.lang.Object)">get</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="ArraySet.html" title="class in com.ibm.wala.util.collections">ArraySet</a>&lt;<a href="#type-param-V" title="type parameter in ArraySetMultiMap">V</a>&gt;</span>&nbsp;<span class="element-name">get</span><wbr><span class="parameters">(@Nullable <a href="#type-param-K" title="type parameter in ArraySetMultiMap">K</a>&nbsp;key)</span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="MultiMap.html#get(K)">MultiMap</a></code></span></div>
+<div class="block">Returns the values associated with <code>key</code>, or an empty set if <code>key</code> is null.
+
+<p>For a missing non-null key, implementations may create and return a mutable set, or return
+an empty set without changing the map. A null lookup never creates a mapping.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="MultiMap.html#get(K)">get</a></code>&nbsp;in interface&nbsp;<code><a href="MultiMap.html" title="interface in com.ibm.wala.util.collections">MultiMap</a>&lt;<a href="#type-param-K" title="type parameter in ArraySetMultiMap">K</a>,<wbr><a href="#type-param-V" title="type parameter in ArraySetMultiMap">V</a>&gt;</code></dd>
