@@ -120,11 +120,18 @@ initTheme();
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">PrunedCFG&lt;I, T extends <a href="../../cfg/IBasicBlock.html" title="interface in com.ibm.wala.cfg">IBasicBlock</a>&lt;I&gt;&gt;</span>
 <span class="extends-implements">extends <a href="../../util/graph/AbstractNumberedGraph.html" title="class in com.ibm.wala.util.graph">AbstractNumberedGraph</a>&lt;T&gt;
 implements <a href="../../cfg/ControlFlowGraph.html" title="interface in com.ibm.wala.cfg">ControlFlowGraph</a>&lt;I,<wbr>T&gt;</span></div>
-<div class="block">A pruned view of a <a href="../../cfg/ControlFlowGraph.html" title="interface in com.ibm.wala.cfg"><code>ControlFlowGraph</code></a>. Use this class along with an <a href="EdgeFilter.html" title="interface in com.ibm.wala.ipa.cfg"><code>EdgeFilter</code></a> to
-produce a custom view of a CFG.
+<div class="block">A view of a <a href="../../cfg/ControlFlowGraph.html" title="interface in com.ibm.wala.cfg"><code>ControlFlowGraph</code></a> restricted to paths from entry to exit that use edges
+accepted by an <a href="EdgeFilter.html" title="interface in com.ibm.wala.ipa.cfg"><code>EdgeFilter</code></a>.
 
-<p>For example, you can use this class to produce a CFG view that ignores certain types of
-exceptional edges.</div>
+<p>A block is retained only if it is both reachable from entry and able to reach exit using
+accepted edges. The entry and exit blocks are always retained, even if no path connects them.
+Edges are retained only when accepted by the filter and both endpoints are retained.
+
+<p>For example, filtering all exceptional exits from a method that always throws can remove its
+entire body from the view, leaving only disconnected entry and exit blocks. Removed blocks may
+contain instructions that execute before the filtered exception is thrown; removal does not imply
+that those instructions are unreachable in the original CFG. This also removes reachable loops
+that have no path to exit.</div>
 </div>
 </section>
 <section class="summary">
@@ -197,7 +204,9 @@ exceptional edges.</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;I, T extends <a href="../../cfg/IBasicBlock.html" title="interface in com.ibm.wala.cfg">IBasicBlock</a>&lt;I&gt;&gt;<br><a href="PrunedCFG.html" title="class in com.ibm.wala.ipa.cfg">PrunedCFG</a><wbr>&lt;I,<wbr>T&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#make(com.ibm.wala.cfg.ControlFlowGraph,com.ibm.wala.ipa.cfg.EdgeFilter)" class="member-name-link">make</a><wbr>(<a href="../../cfg/ControlFlowGraph.html" title="interface in com.ibm.wala.cfg">ControlFlowGraph</a>&lt;I,<wbr>T&gt;&nbsp;cfg,
  <a href="EdgeFilter.html" title="interface in com.ibm.wala.ipa.cfg">EdgeFilter</a>&lt;T&gt;&nbsp;filter)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Creates a view with the edge and block restrictions described by <a href="PrunedCFG.html" title="class in com.ibm.wala.ipa.cfg"><code>PrunedCFG</code></a>.</div>
+</div>
 </div>
 </div>
 </div>
@@ -340,12 +349,13 @@ exceptional edges.</div>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;I, T extends <a href="../../cfg/IBasicBlock.html" title="interface in com.ibm.wala.cfg">IBasicBlock</a>&lt;I&gt;&gt;</span>
 <span class="return-type"><a href="PrunedCFG.html" title="class in com.ibm.wala.ipa.cfg">PrunedCFG</a>&lt;I,<wbr>T&gt;</span>&nbsp;<span class="element-name">make</span><wbr><span class="parameters">(<a href="../../cfg/ControlFlowGraph.html" title="interface in com.ibm.wala.cfg">ControlFlowGraph</a>&lt;I,<wbr>T&gt;&nbsp;cfg,
  <a href="EdgeFilter.html" title="interface in com.ibm.wala.ipa.cfg">EdgeFilter</a>&lt;T&gt;&nbsp;filter)</span></div>
+<div class="block">Creates a view with the edge and block restrictions described by <a href="PrunedCFG.html" title="class in com.ibm.wala.ipa.cfg"><code>PrunedCFG</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>cfg</code> - the original CFG that you want a view of</dd>
 <dd><code>filter</code> - an object that selectively filters edges in the original CFG</dd>
 <dt>Returns:</dt>
-<dd>a view of cfg that includes only edges accepted by the filter.</dd>
+<dd>a view containing blocks on accepted paths from entry to exit, plus entry and exit</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/27/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class in java.lang" class="external-link">IllegalArgumentException</a></code> - if cfg is null</dd>
 </dl>

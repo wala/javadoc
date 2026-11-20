@@ -30384,7 +30384,9 @@ this saves a byte (probably actually a whole word) in each created object.</div>
 <dt><a href="com/ibm/wala/ipa/cfg/ExceptionPrunedCFG.html#make(com.ibm.wala.cfg.ControlFlowGraph)" class="member-name-link">make(ControlFlowGraph)</a> - Static method in class com.ibm.wala.ipa.cfg.<a href="com/ibm/wala/ipa/cfg/ExceptionPrunedCFG.html" title="class in com.ibm.wala.ipa.cfg">ExceptionPrunedCFG</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/ipa/cfg/PrunedCFG.html#make(com.ibm.wala.cfg.ControlFlowGraph,com.ibm.wala.ipa.cfg.EdgeFilter)" class="member-name-link">make(ControlFlowGraph, EdgeFilter)</a> - Static method in class com.ibm.wala.ipa.cfg.<a href="com/ibm/wala/ipa/cfg/PrunedCFG.html" title="class in com.ibm.wala.ipa.cfg">PrunedCFG</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a view with the edge and block restrictions described by <a href="com/ibm/wala/ipa/cfg/PrunedCFG.html" title="class in com.ibm.wala.ipa.cfg"><code>PrunedCFG</code></a>.</div>
+</dd>
 <dt><a href="com/ibm/wala/ssa/SSABuilder.html#make(com.ibm.wala.classLoader.IBytecodeMethod,com.ibm.wala.ssa.SSACFG,com.ibm.wala.cfg.ShrikeCFG,com.ibm.wala.ssa.SSAInstruction%5B%5D,com.ibm.wala.ssa.SymbolTable,boolean,com.ibm.wala.ssa.SSAPiNodePolicy)" class="member-name-link">make(IBytecodeMethod, SSACFG, ShrikeCFG, SSAInstruction[], SymbolTable, boolean, SSAPiNodePolicy)</a> - Static method in class com.ibm.wala.ssa.<a href="com/ibm/wala/ssa/SSABuilder.html" title="class in com.ibm.wala.ssa">SSABuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/cfg/ShrikeCFG.html#make(com.ibm.wala.classLoader.IBytecodeMethod)" class="member-name-link">make(IBytecodeMethod)</a> - Static method in class com.ibm.wala.cfg.<a href="com/ibm/wala/cfg/ShrikeCFG.html" title="class in com.ibm.wala.cfg">ShrikeCFG</a></dt>
@@ -36151,7 +36153,8 @@ result.</div>
 <dd>&nbsp;</dd>
 <dt><a href="com/ibm/wala/ipa/cfg/PrunedCFG.html" class="type-name-link" title="class in com.ibm.wala.ipa.cfg">PrunedCFG&lt;I,<wbr>T&gt;</a> - Class in <a href="com/ibm/wala/ipa/cfg/package-summary.html">com.ibm.wala.ipa.cfg</a></dt>
 <dd>
-<div class="block">A pruned view of a <a href="com/ibm/wala/cfg/ControlFlowGraph.html" title="interface in com.ibm.wala.cfg"><code>ControlFlowGraph</code></a>.</div>
+<div class="block">A view of a <a href="com/ibm/wala/cfg/ControlFlowGraph.html" title="interface in com.ibm.wala.cfg"><code>ControlFlowGraph</code></a> restricted to paths from entry to exit that use edges
+accepted by an <a href="com/ibm/wala/ipa/cfg/EdgeFilter.html" title="interface in com.ibm.wala.ipa.cfg"><code>EdgeFilter</code></a>.</div>
 </dd>
 <dt><a href="com/ibm/wala/examples/drivers/PDFCallGraph.html#pruneForAppLoader(com.ibm.wala.ipa.callgraph.CallGraph)" class="member-name-link">pruneForAppLoader(CallGraph)</a> - Static method in class com.ibm.wala.examples.drivers.<a href="com/ibm/wala/examples/drivers/PDFCallGraph.html" title="class in com.ibm.wala.examples.drivers">PDFCallGraph</a></dt>
 <dd>&nbsp;</dd>
