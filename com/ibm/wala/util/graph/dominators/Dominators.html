@@ -207,7 +207,7 @@ the number of edges in the CFG and n is the number of nodes.
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a><wbr>&lt;<a href="#type-param-T" title="type parameter in Dominators">T</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#dominatorTree()" class="member-name-link">dominatorTree</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">return the dominator tree, which has an edge from n to n' if n dominates n'</div>
+<div class="block">Returns a graph with an edge from each immediate dominator to the node it dominates.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Nullable <a href="#type-param-T" title="type parameter in Dominators">T</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getIdom(T)" class="member-name-link">getIdom</a><wbr>(@Nullable <a href="#type-param-T" title="type parameter in Dominators">T</a>&nbsp;node)</code></div>
@@ -349,7 +349,8 @@ the number of edges in the CFG and n is the number of nodes.
 <h3>dominatorTree</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../Graph.html" title="interface in com.ibm.wala.util.graph">Graph</a>&lt;<a href="#type-param-T" title="type parameter in Dominators">T</a>&gt;</span>&nbsp;<span class="element-name">dominatorTree</span>()</div>
-<div class="block">return the dominator tree, which has an edge from n to n' if n dominates n'</div>
+<div class="block">Returns a graph with an edge from each immediate dominator to the node it dominates. Nodes
+unreachable from the root are isolated, with no predecessors or successors.</div>
 </div>
 </section>
 </li>
