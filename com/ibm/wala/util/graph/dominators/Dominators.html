@@ -212,10 +212,11 @@ the number of edges in the CFG and n is the number of nodes.
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Nullable <a href="#type-param-T" title="type parameter in Dominators">T</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getIdom(T)" class="member-name-link">getIdom</a><wbr>(@Nullable <a href="#type-param-T" title="type parameter in Dominators">T</a>&nbsp;node)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">return the immediate dominator of node</div>
+<div class="block">Returns the immediate dominator of <code>node</code>, or <code>null</code> for the root, an unreachable
+node, or a <code>null</code> argument.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract <a href="Dominators.html" title="class in com.ibm.wala.util.graph.dominators">Dominators</a>&lt;<a href="#type-param-T" title="type parameter in Dominators">T</a>&gt;.<a href="Dominators.DominatorInfo.html" title="class in com.ibm.wala.util.graph.dominators">DominatorInfo</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getInfo(T)" class="member-name-link">getInfo</a><wbr>(@Nullable <a href="#type-param-T" title="type parameter in Dominators">T</a>&nbsp;node)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getInfo(T)" class="member-name-link">getInfo</a><wbr>(<a href="#type-param-T" title="type parameter in Dominators">T</a>&nbsp;node)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isDominatedBy(T,T)" class="member-name-link">isDominatedBy</a><wbr>(<a href="#type-param-T" title="type parameter in Dominators">T</a>&nbsp;node,
@@ -331,7 +332,8 @@ the number of edges in the CFG and n is the number of nodes.
 <h3 id="getIdom(java.lang.Object)">getIdom</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">@Nullable <a href="#type-param-T" title="type parameter in Dominators">T</a></span>&nbsp;<span class="element-name">getIdom</span><wbr><span class="parameters">(@Nullable <a href="#type-param-T" title="type parameter in Dominators">T</a>&nbsp;node)</span></div>
-<div class="block">return the immediate dominator of node</div>
+<div class="block">Returns the immediate dominator of <code>node</code>, or <code>null</code> for the root, an unreachable
+node, or a <code>null</code> argument.</div>
 </div>
 </section>
 </li>
@@ -367,7 +369,7 @@ unreachable from the root are isolated, with no predecessors or successors.</div
 <section class="detail" id="getInfo(T)">
 <h3 id="getInfo(java.lang.Object)">getInfo</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">protected abstract</span>&nbsp;<span class="return-type"><a href="Dominators.html" title="class in com.ibm.wala.util.graph.dominators">Dominators</a>&lt;<a href="#type-param-T" title="type parameter in Dominators">T</a>&gt;.<a href="Dominators.DominatorInfo.html" title="class in com.ibm.wala.util.graph.dominators">DominatorInfo</a></span>&nbsp;<span class="element-name">getInfo</span><wbr><span class="parameters">(@Nullable <a href="#type-param-T" title="type parameter in Dominators">T</a>&nbsp;node)</span></div>
+<div class="member-signature"><span class="modifiers">protected abstract</span>&nbsp;<span class="return-type"><a href="Dominators.html" title="class in com.ibm.wala.util.graph.dominators">Dominators</a>&lt;<a href="#type-param-T" title="type parameter in Dominators">T</a>&gt;.<a href="Dominators.DominatorInfo.html" title="class in com.ibm.wala.util.graph.dominators">DominatorInfo</a></span>&nbsp;<span class="element-name">getInfo</span><wbr><span class="parameters">(<a href="#type-param-T" title="type parameter in Dominators">T</a>&nbsp;node)</span></div>
 </div>
 </section>
 </li>
